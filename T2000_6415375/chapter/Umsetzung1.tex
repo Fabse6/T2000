@@ -6,7 +6,7 @@ Für die Umsetzung der Anwendung wurde die in Kapitel 6 entwickelte MVVM-Archite
 
 Im Verlauf der Implementierung zeigte sich insbesondere bei der Verarbeitung großer Nachrichtenmengen die Bedeutung dieser Trennung. Analysefunktionen konnten erweitert werden, ohne Änderungen an der Benutzeroberfläche vornehmen zu müssen. Gleichzeitig war es möglich, einzelne Komponenten unabhängig voneinander zu testen.
 
-Zur Verringerung des Implementierungsaufwands wurde das CommunityToolkit.Mvvm eingesetzt. Dadurch konnten Eigenschaften und Befehle automatisiert erzeugt werden, wodurch sich der manuell zu implementierende Programmcode deutlich reduzierte.
+Zur Verringerung des Implementierungsaufwands wurde das CommunityToolkit.MVVM eingesetzt. Dadurch konnten Eigenschaften und Befehle automatisiert erzeugt werden, wodurch sich der manuell zu implementierende Programmcode deutlich reduzierte.
 \section{Verarbeitung eingehender MQTT-Nachrichten}
 Der Empfang der MQTT-Nachrichten sowie auch der Verbindungsaufbau, Verbindungsabbau und Erkennung von Verbindungsunterbrechungen wurde innerhalb einer zentralen MQTT-Serviceklasse realisiert. Diese Funktionen werden über die \textit{MQTTnet}-Bibliothek implementiert. Nach erfolgreicher Verbindung zum Broker werden alle Topics durch die Wildcard ,,\#'' abonniert. Bei einer neuen Nachricht wird das bibliothekseigene Event \lstinline{ApplicationMessageReceivedAsync} ausgelöst. In der MQTT-Serviceklasse registriert sich ein Eventhandler auf dieses Event. Der Eventhandler löst daraufhin ein weiteres Event aus, dem sowohl Topic und Payload als auch die Retain-Flag der eingehenden Nachricht übergeben wird.
 
@@ -22,7 +22,59 @@ Eine zentrale Anforderung der Anwendung bestand in der langfristigen Speicherung
 
 Die Speicherung der Daten in der Datenbank erfolgt durch SQL-Zugriffe in den Repository-Klassen. Dabei greifen die Repository-Klassen zur Übersichtlichkeit jeweils auf lediglich eine Datentabelle in der  Datenbank zu. Damit die Datenbank jedoch nicht zur gleichen Zeit beschrieben wird und so keine Fehler entstehen können, wurde ein sogenannter Semaphore für konkurrierende Schreibzugriffe verwendet. Ein Semaphore ist dabei ein Werkzeug, welches auf einzelne Prozesse warten kann, wenn Wartezeiten erwartet werden. Das wird hauptsächlich bei begrenzten Ressourcen wie Dateien verwendet, damit der Zugriff auf gemeinsame Ressourcen kontrolliert werden kann \autocite{billwagnerSemaphorUndSemaphoreSlim}. Für die Realisierung eines Semaphores wurde die \lstinline{SemaphoreSlim}-Klasse herangezogen und bei jedem Schreibzugriff aufgerufen.
 \section{Realisierung des Paging-Konzepts}
+Bei der Implementierung des Paging-Konzepts wurde festgelegt, dass zu jedem Zeitpunkt nur ein begrenzter Ausschnitt der Nachrichten im Arbeitsspeicher gehalten wird. Diese Anzahl kann durch den Benutzer zwischen 20 und 60 Nachrichten konfiguriert werden. Kleinere Werte reduzieren den Arbeitsspeicherbedarf und beschleunigen die Aktualisierung der Benutzeroberfläche, während größere Werte einen besseren Überblick über den Nachrichtenverlauf ermöglichen. Die Parametrierbarkeit erlaubt somit eine Anpassung an verschiedene Voraussetzungen, wie beispielsweise die Leistungsfähigkeit des verwendeten Rechners oder die Anzahl der gleichzeitig verarbeiteten Nachrichten.
 
+Für das Nachladen der Daten wurde zunächst das vollständige Neuladen der aktuellen Seite betrachtet. Diese Vorgehen führte jedoch zu sichtbaren Sprüngen innerhalb der Darstellung und verursachte unnötige Datenbankzugriffe, wodurch die Performance der Anwendung beeinträchtigt wurde. Stattdessen wurde ein gleitende Paging-Konzept umgesetzt. dabei werden beim Erreichen des oberen oder unteren Listenendes lediglich zehn zusätzliche Nachrichten aus der Datenbank geladen. Gleichzeitig werden zehn nicht mehr benötigte Nachrichten aus dem Arbeitsspeicher entfernt. Dadurch wird die Performance der Anwendung verbessert und die Darstellung wirkt flüssiger. Außerdem bleibt die Anzahl der im Arbeitsspeicher befindlichen Objekte konstant.
+
+Die Auswahl von zehn Nachrichten pro Nachladevorgang ergab sich aus praktischen Versuchen während der Entwicklung. Bei kleineren Werten traten aufgrund der häufigen Datenbankzugriffe vermehrt Nachladevorgänge auf. Größere Werte führten hingegen zu einer verzögerten Aktualisierung der Benutzeroberfläche und erhöhten den Speicherbedarf. Die gewählte Größe stellte einen geeigneten Kompromiss zwischen Reaktionsgeschwindigkeit und Ressourcenverbrauch dar.
+
+Das Nachladen wird ereignisgesteuert ausgelöst. Sobald der Benutzer bis zum Anfang oder Ende der aktuell angezeigten Nachrichtenliste navigiert, wird ein entsprechendes Ereignis erzeugt. Die Anwendung bestimmt daraufhin den benötigten ID-Bereich und fordert ausschließlich die noch nicht geladenen Nachrichten aus der Datenbank an. Anschließend wird die bestehende \lstinline{ObservableCollection} aktualisiert, ohne die komplette Ansicht neu aufzubauen.
+
+Listing \ref{lst:Paging} zeigt den grundlegenden Aufbau der Paging-Funktionalität. Anhand der Identifikationsnummer des aktuell ersten beziehungsweise letzten Elements werden die benötigten Identifikationsnummern für die Nachrichten in der Datenbank ermittelt. Nach dem Laden der Datensätze werden die neuesten Elemente aus der Anzeige entfernt und die neuen Elemente an der entsprechenden Position eingefügt. Dadurch bleibt die Reihenfolge der Nachrichten in der Anzeige erhalten.
+
+\begin{lstlisting}[
+    language={[Sharp]C},
+    caption={Programmcode für MQTT-Verbindung},
+    label={lst:Paging}
+    ]
+public async Task<int> LoadNewerMessages()
+{
+    if (messageCount <= MaxLoadedMessages)
+        return 0;
+    int startId = Messages[Messages.Count -1].Id + 1;
+    int endId = Math.Min(messageCount, startId + loadnewMessages);
+    if (startId > messageCount)
+        return 0;
+    var messages = await _pagingService.LoadNewerMessages(startId, endId, messageCount, loadnewMessages, SelectedTopic ?? "", SearchText ?? "");
+    Application.Current.Dispatcher.Invoke(() =>
+    {
+        for (int i = 0; i < messages.Count; i++)
+        {
+            Messages.RemoveAt(0);
+        }
+
+        for (int i = 0; i < messages.Count; i++)
+        {
+            Messages.Insert(Messages.Count, messages[i]);
+        }
+    });
+    return messages.Count;
+}
+\end{lstlisting}
+
+Da neben vielen MQTT-Nachrichten auch viele Fehler und Prozessinformationen verarbeitet und angezeigt werden müssen, wurde das Paging-Konzept auch auf diese Daten angewendet. Dadurch konnte die Performance der Anwendung weiter verbessert werden und der Arbeitsspeicherbedarf reduziert werden. Die Implementierung erfolgte analog zu der bereits beschriebenen Vorgehensweise für die MQTT-Nachrichten.
 \section{Teilnehmerüberwachung}
-\section{Realisierung der Prozessanalyse}
-\section{Benutzeroberfäche}
+Die Teilnehmerüberwachung übernimmt mehrere Aufgaben innerhalb der Anwendung. Zum einen werden automatisch Diagramme für jeden einzelnen Teilnehmer erstellt, in der OMAC-Zustände in Abhängigkeit von der Zeit dargestellt werden. Zum anderen werden Informationen wie die Zeit der letzten Nachricht sowie Position innerhalb der Verpackungslinie für andere Analysefunktionen bereitgestellt.
+
+Die dafür benötigten Informationen werden in einer Serviceklasse bereitgestellt, die Teilnehmer zum einen durch das Auslesen der Linienkonfiguration erkennt, zum anderen aber auch durch die Analyse der Payloads OMAC-Zustände sowie Verbindungsstatusverläufe in der Datenbank speichert. Die Diagramme werden in einer anderen Serviceklasse durch die Übergabe der gespeicherten Zustände und Verläufe erstellt. Dazu dient die \textit{OxyPlot}-Bibliothek, welche eine einfache Erstellung von Diagrammen ermöglicht. Die Diagramme werden anschließend in der Benutzeroberfläche angezeigt.
+
+Die Teilnehmerüberwachung erfüllt damit nicht nur die Aufgabe der Verbindungsüberwachung, sondern stellt auch eine Grundlage für die Prozessanalyse bereit. Die erfassten Informationen können von den anderen Analysefunktionen genutzt werden, um Abläufe zu erkennen und Fehler zu identifizieren.
+\section{Realisierung der Automatisierungsablaufanalyse}
+Die Analyse von Automatisierungsabläufen stellt die zentrale Diagnosefunktion der Anwendung dar. Ziel der Implementierung war es, aus den empfangenen MQTT-Nachrichten verschiedene automatisierte Abläufe der Verpackungslinie zu erkennen und Fehler innerhalb dieser Abläufe zu identifizieren. 
+
+Aufgrund der unterschiedlichen Kommunikationsstrukturen und prozessspezifischen Abläufe verschiedener Verpackungslinien wurde der Umfang der automatischen Fehlererkennung bewusst auf eindeutig identifizierbare Ablaufverletzungen beschränkt. Fehler können nur dann erkannt werden, wenn neue Abläufe starten, während noch nicht alle erwarteten Nachrichten des vorherigen Ablaufs empfangen wurden. Die verschiedenen Anfangsnachrichten der Abläufe sowie die erwarteten Nachrichten können aus der Tabelle \ref{tab:erwarteteNachrichten} entnommen werden.
+
+Die Erkennung der erwarteten Nachrichten erfolgt durch die Ablauf-Serviceklasse. Diese erkennt aufgrund der definierten Anfangsnachrichten, dass ein neuer Ablauf gestartet wurde und speichert die dafür erwarteten Nachrichtenmodelle in jeweils für den Ablauf erstellten Listen. Die erwarteten Nachrichtenmodelle enthalten das erwartete MQTT-Topic sowie zusätzliche Zustandsinformationen, die innerhalb der Payload überprüft werden. In einer anderen Methode wird daraufhin jede Nachricht mit diesem Nachrichtenmodell verglichen und bei Übereinstimmung aus der Liste entfernt. Sobald die Liste der erwarteten Nachrichten leer ist, wird der Ablauf als abgeschlossen betrachtet und mit Endzeitstempel in der Datenbank abgespeichert. Sollte eine neue Anfangsnachricht empfangen werden, während noch nicht alle erwarteten Nachrichten des vorherigen Ablaufs empfangen wurden, wird der Ablauf als fehlerhaft betrachtet und ebenfalls mit Endzeitstempel in der Datenbank abgespeichert. Dazu wird die Fehlermeldung ,,Prozess nicht abgeschlossen'' in der Datenbank hinterlegt und an die Fehlererkennung weitergeleitet. 
+
+In der Benutzeroberfläche können sowohl aktive als auch bereits abgeschlossene Prozesse angezeigt werden. Neben Start- und Endzeitpunkt werden dabei auch die bereits empfangenen sowie die noch ausstehenden Nachrichten dargestellt. Dadurch kann der Benutzer nicht nur fehlerhafte Prozesse identifizieren, sondern auch nachvollziehen, an welcher Stelle eines Ablaufs die erwartete Kommunikation unterbrochen wurde.
+\section{Benutzeroberfläche}

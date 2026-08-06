@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  6 AUG 2026 14:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  6 AUG 2026 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2285,43 +2285,32 @@ halb ei-ner zen-tra-len MQTT-Serviceklasse
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[44])
+[44]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [45]
-\openout2 = `chapter/TestkonzeptundTests.aux'.
-
- (chapter/TestkonzeptundTests.tex
-chapter 8.
-[46
-
-
-
-
-
-]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[47]
+[46]
 
-LaTeX Warning: Reference `tab:performancetests' on page 48 undefined on input l
-ine 29.
+LaTeX Warning: Reference `tab:erwarteteNachrichten' on page 47 undefined on inp
+ut line 75.
 
 
-LaTeX Warning: Reference `fig: Messwerte' on page 48 undefined on input line 29
-.
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
-)
+
+[47])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [48]
-\openout2 = `chapter/BewertungundErgebnis.aux'.
+\openout2 = `chapter/TestkonzeptundTests.aux'.
 
- (chapter/BewertungundErgebnis.tex
-chapter 9.
+ (chapter/TestkonzeptundTests.tex
+chapter 8.
 [49
 
 
@@ -2332,16 +2321,44 @@ chapter 9.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[50])
+[50]
+
+LaTeX Warning: Reference `tab:performancetests' on page 51 undefined on input l
+ine 29.
+
+
+LaTeX Warning: Reference `fig: Messwerte' on page 51 undefined on input line 29
+.
+
+)
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [51]
+\openout2 = `chapter/BewertungundErgebnis.aux'.
+
+ (chapter/BewertungundErgebnis.tex
+chapter 9.
+[52
+
+
+
+
+
+]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[53])
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[54]
 \openout2 = `chapter/FazitundAusblick.aux'.
 
  (chapter/FazitundAusblick.tex
 chapter 10.
-[52
+[55
 
 
 
@@ -2351,7 +2368,7 @@ chapter 10.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[53]
+[56]
 chapter without number
 
 Package biblatex Warning: Split bibliography detected.
@@ -2362,7 +2379,7 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-[54
+[57
 
 
 
@@ -2381,11 +2398,11 @@ Package biblatex Warning: Split bibliography detected.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[55]
+[58]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[56]
+[59]
 No file WissBer_PA_SA_BA.acr.
 (pages/formelzeichen.tex)
 No file WissBer_PA_SA_BA.nls.
@@ -2393,11 +2410,11 @@ No file WissBer_PA_SA_BA.nls.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[57] (WissBer_PA_SA_BA.lof)
+[60] (WissBer_PA_SA_BA.lof)
 \tf@lof=\write10
 \openout10 = `WissBer_PA_SA_BA.lof'.
 
- [58
+ [61
 
 
 ] (WissBer_PA_SA_BA.lot)
@@ -2408,7 +2425,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 Package glossaries Warning: Glossary `main' doesn't exist on input line 318.
 
-[59
+[62
 
 
 ]
@@ -2416,7 +2433,7 @@ Package glossaries Warning: Glossary `main' doesn't exist on input line 318.
 
  (chapter/anhang.tex
 chapter without number
-[60
+[63
 
 
 
@@ -2428,11 +2445,11 @@ Underfull \hbox (badness 1454) in paragraph at lines 42--42
 -fan-ge-ner MQTT- 
  []
 
-[61
+[64
 
 
 ]
-<images/floatchartmessages.png, id=953, 743.77875pt x 1075.01625pt>
+<images/floatchartmessages.png, id=984, 743.77875pt x 1075.01625pt>
 File: images/floatchartmessages.png Graphic file (type png)
 <use images/floatchartmessages.png>
 Package pdftex.def Info: images/floatchartmessages.png  used on input line 86.
@@ -2441,29 +2458,17 @@ Package pdftex.def Info: images/floatchartmessages.png  used on input line 86.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[62]
+[65]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[63 <./images/floatchartmessages.png>]
+[66 <./images/floatchartmessages.png>]
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 )
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[64]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[65]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[66]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2476,6 +2481,18 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [69]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[70]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[71]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[72]
 Overfull \hbox (1.04623pt too wide) in paragraph at lines 407--407
 []|\T1/lmr/bx/n/12 Test-
  []
@@ -2845,28 +2862,28 @@ ignored: Infinite glue shrinkage found in box being split
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[70]
+[73]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[71]
+[74]
 chapter without number
-[72
+[75
 
 
 ]
 chapter without number
-[73
+[76
 
 
 ]
 chapter without number
-<docs/EingebundenesPDF.pdf, id=1306, 597.55246pt x 845.07718pt>
+<docs/EingebundenesPDF.pdf, id=1337, 597.55246pt x 845.07718pt>
 File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 <use docs/EingebundenesPDF.pdf>
 Package pdftex.def Info: docs/EingebundenesPDF.pdf  used on input line 445.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<docs/EingebundenesPDF.pdf, id=1308, page=2, 597.55246pt x 845.07718pt>
+<docs/EingebundenesPDF.pdf, id=1339, page=2, 597.55246pt x 845.07718pt>
 File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 <use docs/EingebundenesPDF.pdf, page 2>
 Package pdftex.def Info: docs/EingebundenesPDF.pdf , page2 used on input line 4
@@ -2877,7 +2894,7 @@ File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 Package pdftex.def Info: docs/EingebundenesPDF.pdf , page2 used on input line 4
 45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-[74
+[77
 
 
 {C:/Users/wiedemaf/Documents/MikTex/fonts/enc/dvips/lm/lm-mathsy.enc}]
@@ -2897,10 +2914,10 @@ Package pdftex.def Info: docs/EingebundenesPDF.pdf , page2 used on input line 4
 45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 
-[75
+[78
 
  <./docs/EingebundenesPDF.pdf>]
-<docs/EingebundenesPDF.pdf, id=1331, page=3, 597.55246pt x 845.07718pt>
+<docs/EingebundenesPDF.pdf, id=1361, page=3, 597.55246pt x 845.07718pt>
 File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 <use docs/EingebundenesPDF.pdf, page 3>
 Package pdftex.def Info: docs/EingebundenesPDF.pdf , page3 used on input line 4
@@ -2916,10 +2933,10 @@ File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 Package pdftex.def Info: docs/EingebundenesPDF.pdf , page3 used on input line 4
 45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [76
+ [79
 
  <./docs/EingebundenesPDF.pdf>]
-<docs/EingebundenesPDF.pdf, id=1336, page=4, 597.55246pt x 845.07718pt>
+<docs/EingebundenesPDF.pdf, id=1366, page=4, 597.55246pt x 845.07718pt>
 File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 <use docs/EingebundenesPDF.pdf, page 4>
 Package pdftex.def Info: docs/EingebundenesPDF.pdf , page4 used on input line 4
@@ -2935,12 +2952,12 @@ File: docs/EingebundenesPDF.pdf Graphic file (type pdf)
 Package pdftex.def Info: docs/EingebundenesPDF.pdf , page4 used on input line 4
 45.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [77
+ [80
 
  <./docs/EingebundenesPDF.pdf>])
 runsystem(makeindex WissBer_PA_SA_BA.idx)...executed safely (allowed).
 
- (WissBer_PA_SA_BA.ind) [78
+ (WissBer_PA_SA_BA.ind) [81
 
 
 
@@ -2965,19 +2982,17 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                WissBer_PA_SA_BA
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'WissBer_PA_SA_BA.run.xml'.
 \openout1 = `WissBer_PA_SA_BA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64474 strings out of 467691
- 1493317 string characters out of 5419788
- 2953959 words of memory out of 5000000
- 91919 multiletter control sequences out of 15000+600000
+ 64534 strings out of 467691
+ 1493898 string characters out of 5419788
+ 2953029 words of memory out of 5000000
+ 91954 multiletter control sequences out of 15000+600000
  697648 words of font info for 77 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,17n,108p,11257b,2862s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3032,9 +3047,9 @@ ers/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmss12.pfb><C:/Users/wiedem
 af/Documents/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/wiedemaf/Docum
 ents/MikTex/fonts/type1/public/lm/lmsy10.pfb><C:/Users/wiedemaf/Documents/MikTe
 x/fonts/type1/public/lm/lmtt12.pfb>
-Output written on WissBer_PA_SA_BA.pdf (88 pages, 1344980 bytes).
+Output written on WissBer_PA_SA_BA.pdf (91 pages, 1356300 bytes).
 PDF statistics:
- 1860 PDF objects out of 2073 (max. 8388607)
- 645 named destinations out of 1000 (max. 500000)
+ 1897 PDF objects out of 2073 (max. 8388607)
+ 670 named destinations out of 1000 (max. 500000)
  929 words of extra memory for PDF output out of 10000 (max. 10000000)
 

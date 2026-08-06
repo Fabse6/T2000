@@ -88,21 +88,20 @@
 \contentsline {subsection}{\numberline {10.2.2}Verbesserte Konfigurierbarkeit}{56}{subsection.10.2.2}%
 \contentsline {subsection}{\numberline {10.2.3}Linux / HMI}{56}{subsection.10.2.3}%
 \contentsline {chapter}{\nonumberline Quellenverzeichnis}{57}{chapter*.12}%
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{61}{chapter*.13}%
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{62}{chapter*.14}%
-\def \@chapapp {\appendixname }
-\contentsline {chapter}{\nonumberline A Anmerkung zur Nutzung von Künstlicher Intelligenz}{63}{chapter*.15}%
-\contentsline {chapter}{\nonumberline B Ergänzungen}{64}{chapter*.17}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{61}{chapter*.15}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{62}{chapter*.16}%
+\contentsline {chapter}{\nonumberline A Anmerkung zur Nutzung von Künstlicher Intelligenz}{63}{chapter*.17}%
+\contentsline {chapter}{\nonumberline B Ergänzungen}{64}{chapter*.19}%
 \contentsline {section}{\numberline {B.1}Details zu bestimmten theoretischen Grundlagen}{64}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Weitere Details, welche im Hauptteil den Lesefluss behindern}{64}{section.B.2}%
-\contentsline {chapter}{\nonumberline C Details zu Laboraufbauten und Messergebnissen}{75}{chapter*.19}%
-\contentsline {section}{\numberline {C.1}Versuchsanordnung}{75}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Liste der verwendeten Messgeräte}{75}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Übersicht der Messergebnisse}{75}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Schaltplan und Bild der Prototypenplatine}{75}{section.C.4}%
-\contentsline {chapter}{\nonumberline D Zusatzinformationen zu verwendeter Software}{76}{chapter*.20}%
-\contentsline {section}{\numberline {D.1}Struktogramm des Programmentwurfs}{76}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Wichtige Teile des Quellcodes}{76}{section.D.2}%
-\contentsline {chapter}{\nonumberline E Datenblätter}{77}{chapter*.21}%
-\contentsline {chapter}{Sachwortverzeichnis}{81}{section*.22}%
+\contentsline {chapter}{\nonumberline C Details zu Laboraufbauten und Messergebnissen}{69}{chapter*.21}%
+\contentsline {section}{\numberline {C.1}Versuchsanordnung}{69}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Liste der verwendeten Messgeräte}{69}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Übersicht der Messergebnisse}{69}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Schaltplan und Bild der Prototypenplatine}{69}{section.C.4}%
+\contentsline {chapter}{\nonumberline D Zusatzinformationen zu verwendeter Software}{70}{chapter*.22}%
+\contentsline {section}{\numberline {D.1}Struktogramm des Programmentwurfs}{70}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Wichtige Teile des Quellcodes}{70}{section.D.2}%
+\contentsline {chapter}{\nonumberline E Datenblätter}{75}{chapter*.23}%
+\contentsline {chapter}{Sachwortverzeichnis}{76}{section*.24}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

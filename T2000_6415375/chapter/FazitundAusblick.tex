@@ -1,0 +1,21 @@
+\chapter{Fazit und Ausblick}
+\label{cha:Fazit und Ausblick}
+
+\section{Überblick über das Projekt}
+Ziel dieser Arbeit war die Entwicklung einer Überwachungs- und Diagnose-Applikation zur Analyse der MQTT-basierten Maschinenkommunikation in Verpackungslinien. Hierzu wurde zunächst die bestehende Situation untersucht und verschiedene vorhandene Werkzeuge hinsichtlich ihrer Eignung bewertet. Auf Basis der identifizierten Anforderungen wurde anschließend eine eigenständige Anwendung entwickelt.
+
+Die entwickelte Applikation ermöglicht die Speicherung und Analyse von MQTT-Nachrichten, die Überwachung von Kommunikationsteilnehmern sowie die automatische Erkennung von Struktur- und Prozessfehlern. Darüber hinaus können verschiedene Automatisierungsabläufe erkannt und visualisiert werden.
+
+Die durchgeführten Funktionstests zeigen, dass die wesentlichen Anforderungen erfolgreich umgesetzt werden konnten. Trotz einzelner Einschränkungen bei der vollständigen Validierung aller Automatisierungsabläufe und der nicht vollständig erreichten Performance-Ziele konnte die Anwendung stabil betrieben werden.
+
+Besonders hervorzuheben ist, dass die entwickelte Software bereits von Softwareentwicklern im Arbeitsumfeld genutzt wird. Dadurch konnte gezeigt werden, dass die Lösung nicht nur prototypischen Charakter besitzt, sondern einen praktischen Nutzen für die Inbetriebnahme und Fehlersuche an Verpackungslinien bietet.
+
+\section{Zukünftige Entwicklung der Anwendung}
+\subsection{Weitere Automatisierungsabläufe}
+Die aktuelle Implementierung unterstützt bereits die wichtigsten Automatisierungsabläufe. Für eine umfassendere automatische Analyse der Verpackungslinien durch die Software können weitere Ablaufvarianten ergänzt werden. Dafür muss lediglich die \textit{ProcessService}-Datei erweitert werden.
+
+\subsection{Verbesserte Konfigurierbarkeit}
+Darüber hinaus kann die fehlende Anforderung der konfigurierbaren Analyse- und Validierungslogik umgesetzt werden. Dadurch sollen neue Prüfmechanismen ohne Änderungen am Quellcode ergänzt werden können.
+
+\subsection{Linux / HMI}
+Ein weiterer Entwicklungsschwerpunkt ergibt sich aus der geplanten Umstellung zukünfitger Bedienoberflächen auf Linux-basierte Systeme. Da die vorliegende Anwendung auf WPF basiert, ist diese aktuell an Windows gebunden. Für einen zukünftigen Einsatz direkt auf den HMIs könnte die Anwendung auf ein plattformübergreifendes Framework wie .NET MAUI oder Avalonia portiert werden. Die verwendete MVVM-Architektur erleichtert eine solche Migration, da große Teile der Anwendungslogik bereits von der Benutzeroberfläche getrennt sind. Dadurch könnte die entwickelte Lösung zukünftig direkt auf den Bediengeräten der Maschine eingesetzt werden und den Anwendern ohne zusätzliche Hardware zur Verfügung stehen.

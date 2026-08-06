@@ -1,0 +1,132 @@
+\chapter{Technische Rahmenbedingungen}
+\label{cha:Anforderungsanalyse}
+\section{Anforderungen an die Programmiersprache}
+    Bei der Auswahl einer geeigneten Programmiersprache sind zahlreiche Eigenschaften und Anforderungen zu berücksichtigen. Die Objektorientierung in der Programmierung ist essenziell für die Trennung der Netzwerk-, Logik- und Darstellungsschicht. Für die Anwendung ergibt sich, dass ein Zugriff auf asynchrone Programmiermodelle erforderlich ist, da MQTT ereignis- und nachrichtenbasiert arbeitet.
+    Zur Erleichterung der Programmierung müssen für die genutzte Sprache MQTT-Client-Bibliotheken zur Verfügung stehen. Mit diesen 
+    können Prozesse wie Subscribe, Publish, Connect oder Nachrichtenempfang mit nur wenigen Zeilen Programmcode programmiert werden.
+    Neben einer MQTT-Bibliothek sollte die Programmiersprache auch eine einfache Entwicklung grafischer Benutzeroberflächen ermöglichen und plattformübergreifend unterstützt werden.
+
+    \subsection{Eignung der Sprache C\# für die Umsetzung}
+       Für die Umsetzung der Applikation eignet sich insbesondere die Programmiersprache C\#. Sie bietet die Möglichkeit, Ereignisse asynchron zu verarbeiten, was bei großen Datenmengen eine entscheidende Rolle spielt. 
+        Dadurch werden andere Vorgänge beziehungsweise Prozesse nicht blockiert und die GUI bleibt bedienbar. Diese nicht blockierende Verarbeitung wird über die Befehle \texttt{await} beim Aufruf von Funktionen und \texttt{async} bei der Funktionsdeklaration möglich \autocite[334--343]{AsyncAwait}.
+        
+        Neben der asynchronen Verarbeitung bietet C\# außerdem ein großes Angebot an Bibliotheken, wodurch Datenbankzugriffe und Netzwerkverbindungen programmtechnisch wesentlich vereinfacht werden. 
+
+        C\# wird häufig für die Entwicklung technischer Desktop-Anwendungen verwendet, da es im Gegensatz zu vielen anderen Programmiersprachen wie Java eine tiefere Einbindung in das .NET-Ökosystem bietet. Verschiedene Frameworks wie Windows Presentation Foundation oder .NET MAUI erleichtern die Entwicklung moderner Anwendungen erheblich. Insbesondere WPF wurde für die Entwicklung von Windows-Anwendungen konzipiert. \autocite[5--6]{CSwith.NET}. 
+        
+        Deshalb wird für die Erstellung der Monitoring- und Diagnose-Software die Programmiersprache C\# verwendet.
+
+    \subsection{MQTT-Client-Bibliothek}
+        Die eingesetzte MQTT-Bibliothek muss eine Unterstützung für MQTT 5.0 anbieten und dabei eine vollständige Implementierung der MQTT-Kernfunktionen 
+        bereitstellen.
+        Die Kernfunktionen bestehen dabei vor allem aus \textit{Connect} und \textit{Disconnect}, \textit{Subscribe} und \textit{Unsubscribe} und dem Veröffentlichen
+        von Nachrichten. Außerdem sollte sie ähnlich wie bei MQTT.fx Quality-of-Service-Level, Retained Messages, Last-Will-Nachrichten und Clean Sessions abbilden können. 
+        
+        Diese Funktionen können durch die Bibliothek \textit{MQTTnet} durch wenige Zeilen Programmcode vereinfacht in C\# umgesetzt werden \autocite{teamHowUseMQTT}. 
+        Durch diese Bibliothek lassen sich auch Ereignis- und Callback-Mechanismen über Event-Handler implementieren. Callbacks sind registrierte Rückruffunktionen, die vom System oder
+        Framework automatisch aufgerufen werden, sobald ein Ereignis eintritt. Dadurch können nach dem Abonnieren von Topics empfangene Nachrichten ereignisbasiert 
+        verarbeitet werden, ohne dass eine direkte Kopplung zwischen Netzwerk- und Anwendungslogik erforderlich ist.
+         Somit ist eine Trennung zwischen Netzwerk- und Grafik-Logik möglich. Dies ist notwendig, um hohe Nachrichtenraten 
+        effizient verarbeiten zu können, ohne ständig die Benutzeroberfläche zu blockieren \autocite[113]{embeddedtechnologies}. 
+        Neben dem Empfangen der Nachrichten deckt die Bibliothek auch das Senden von Nachrichten unter beliebigen Topics ab \autocite{teamHowUseMQTT}. 
+        
+    \subsection{Datenbank-Bibliothek}
+    ,,Eine Datenbank ist eine Kollektion von Daten, die in einer Datenbasis gespeichert sind'' \autocite[50]{SchubertDatenbanken}. Neben der reinen Speicherung verwalten Datenbanken auch gleichzeitig Benutzeranfragen, die von dem Datenbankmanagementsystem bearbeitet werden \autocite[50]{SchubertDatenbanken}.
+    Für diese Projektarbeit stehen viele verschiedene Datenbankmanagementsysteme zur Auswahl, darunter SQLite, MySQL und Microsoft SQL Server. Diese werden im Folgenden vorgestellt und hinsichtlich ihrer Vor- und Nachteile bewertet:
+    
+    	SQLite ist eine leichtgewichtige eingebettete Datenbank, die direkt durch eine Bibliothek in die Anwendung integriert werden kann, ohne dafür einen Server zu implementieren \autocite[1--2]{kreibichUsingSQLite2010}.
+    	Durch die Speicherung von Daten genügt ein einziges Dokument, wodurch die Portabilität der Anwendung nicht durch die Datenbank erschwert wird und Daten einfach gesichert und übertragen werden können \autocite[3--4]{kreibichUsingSQLite2010}.
+        
+        MySQL ist ein serverbasiertes Datenbankmanagementsystem, das aus den drei Ebenen ,,Client'', ,,Server'' und ,,Speicher'' besteht \autocite[4]{Vileikis}. Neben der Implementierung eines Servers sind einige weitere Implementierungsschritte zur funktionstauglichen Nutzung der Datenbank nötig \autocite[5--9]{Vileikis}.
+        Während zwar MySQL durch diese verschiedenen Implementierungsschritte viele weitere Funktionen wie Sicherheit durch Reihenisolation oder die Benutzung der Datenbank von mehreren Benutzern gleichzeitig mit sich bringt, ist es mit einem höheren Ressourcenbedarf verbunden. \autocite[41--42]{Vileikis}.
+        
+        Microsoft SQL Server benötigt ähnlich wie MySQL auch die Implementierung einer oder mehrerer Serverinstanzen \autocite[36--37]{Panther}. Hier ist der Aufwand einer allgemeinen Implementierung im Gegensatz zu SQLite deutlich höher, wie man schon an den Systemvoraussetzungen \autocite[30]{Panther}, aber auch an den verschiedenen zu installierenden Werkzeugen sehen kann \autocite[31--56]{Panther}.
+        Neben der schon aufwendigen Implementierung des Servers kommt die Implementierung in C\# dazu. Dafür muss erst eine Verbindung zum Server aufgebaut werden \autocite{dotnet-botSqlConnectionClassMicrosoftDataSqlClient}. Im Gegensatz dazu genügt bei SQLite ein Befehl zur Übergabe des Pfades der Datenbankdatei.
+        
+        Die aufwendige Serverimplementierung bei MySQL und SQL Server führt dann aber auch dazu, dass mehrere Schreibzugriffe gleichzeitig möglich sind. Daneben werden Schreibzugriffe bei SQLite serialisiert, wodurch die Performance bei mehreren Zugriffen zur selben Zeit sinkt. 
+        
+        Da die entwickelte Monitoring-Applikation ausschließlich lokal auf einem einzelnen Rechner betrieben wird und kein Mehrbenutzerbetrieb vorgesehen ist, bieten die zusätzlichen Funktionen von MySQL beziehungsweise Microsoft SQL Server keinen wesentlichen Mehrwert. Aufgrund dessen kann über die Nachteile der Serialisierung von Schreiboperationen und die daraus entstehenden Performance-Einbußen hinweggesehen werden. Wegen der serverlosen Architektur, des geringen Installationsaufwands sowie der einfachen Bereitstellung wird daher SQLite als Datenbankmanagementsystem ausgewählt. Da sowohl SQLite als auch die anderen vorgestellten Datenbankmanagementsysteme Datenbankzugriffe in SQL modelliert, ist eine Erweiterung mit anderen Managementsystemen in Zukunft möglich.
+        
+        Zur Integration in C\# wird die Bibliothek Microsoft.Data.Sqlite verwendet. 
+        Diese stellt eine moderne und leichtgewichtige Schnittstelle zur SQLite-Datenbank 
+        bereit und unterstützt asynchrone Datenbankzugriffe, wodurch eine effiziente 
+        und nicht-blockierende Verarbeitung der Daten gewährleistet werden kann. Darüber hinaus integriert sich die Bibliothek nahtlos in das .NET-Ökosystem \autocite{ajcvickersOverviewMicrosoftDataSqlite}.
+        
+    \subsection{Graphical User Interface Framework}
+        Für die Umsetzung einer Monitoring- und Visualisierungsapplikation muss das \acrshort{acr:GUI}-Framework ein ereignisgesteuertes Modell mit einer
+        zentralen Ereignisschleife (Eventloop) bereitstellen. Dazu muss es den User-Interface-(UI)-Thread durch Callbacks von den Hintergrundoperationen wie Netzwerkkommunikation und Datenverarbeitung
+        trennen, aber auch die Möglichkeit bieten, grafische Aktualisierungen aus Hintergrundprozessen sicher anzustoßen.
+
+        Zur übersichtlichen Darstellung der MQTT-Nachrichten sollte die GUI-Bibliothek Tabellenansichten und hierarchische Strukturen einfach implementieren lassen. 
+        Dabei ist eine automatisierte Aktualisierung bei Datenänderung oder neuen Daten ausschlaggebend.
+
+        Bei C\# stehen verschiedene Technologien zur Verfügung, darunter insbesondere die bereits erwähnte \acrlong{acr:WPF} (\acrshort{acr:WPF}), WinUI sowie .NET MAUI \autocite{XAMLMitWPF}.
+        Diese Frameworks unterscheiden sich vor allem hinsichtlich ihres Plattformumfangs, Reifegrades sowie ihrer Ausrichtung auf zukünftige Anwendungsbereiche.
+
+        Jede der drei Technologien bietet eine Abstraktionsschicht zwischen der Anwendungslogik und der grafischen Darstellung. Dadurch wird eine klare Trennung 
+        von Darstellung und Geschäftslogik ermöglicht \autocite{XAMLMitWPF}. Insbesondere durch die Verwendung von XAML wird die deklarative Beschreibung von Benutzeroberflächen unterstützt,
+        was die Strukturierung und Wartbarkeit von Anwendungen verbessert.
+        
+        WPF stellt eine etablierte und weit verbreitete Technologie für die Entwicklung von Desktop-Anwendungen unter Windows dar. 
+        Durch ein integriertes Event-System sowie einen zentralen Eventloop eignet sich WPF besonders für ereignisgesteuerte Anwendungen.
+        Zudem bietet das Framework eine umfangreiche Unterstützung für Datenbindung, Styles sowie das MVVM-Architekturmuster, wodurch datengetriebene Benutzeroberflächen
+        effizient umgesetzt werden können \autocite{XAMLMitWPF}.
+        Insbesondere bei Anwendungen wie Monitoring-Systemen, bei denen kontinuierlich neue Daten wie zum Beispiel Nachrichten verarbeitet und dargestellt werden müssen,
+        spielt diese Eigenschaft eine zentrale Rolle.
+
+        WinUI ist eine modernere Weiterentwicklung im Windows-Ökosystem und ist Teil des Windows App SDK. Es basiert auf ähnlichen Konzepten
+        wie WPF, insbesondere der Nutzung von XAML, setzt jedoch stärker auf moderne UI-Designs. Durch eine engere Integration in die aktuellen Windows-Versionen
+        empfiehlt Microsoft WinUI für neue native Windows-Anwendungen \autocite{XAMLMitWPF}.
+
+        Im Gegensatz dazu verfolgt .NET MAUI einen plattformübergreifenden Ansatz. Es ermöglicht die Entwicklung von Anwendungen für 
+        Windows, macOS, iOS und Android auf Basis einer gemeinsamen Codebasis. Dadurch ist MAUI insbesondere für Projekte geeignet, bei denen eine breite Plattformunterstützung 
+        erforderlich ist. Im Gegensatz zu WPF ist dieses Framework weniger ausgereift, da es sich noch in aktiver Weiterentwicklung befindet. Dadurch 
+        kann es in bestimmten Szenarien noch zu Einschränkungen hinsichtlich Stabilität und Tooling kommen \autocite{XAMLMitWPF}.
+
+        Der zentrale Unterschied zwischen diesen Technologien liegt in ihrer Zielsetzung. Während WPF den Fokus auf eine stabile und leistungsfähige Windows-Desktopanwendung legt,
+        legt WinUI den Fokus auf moderne Grafik und richtet sich auf die Zukunft aus. MAUI hingegen verfolgt das Ziel, plattformübergreifende Anwendungen zu schaffen \autocite{XAMLMitWPF}.
+
+        Für die Umsetzung dieser Arbeit bietet WPF aufgrund seiner hohen Reife, stabilen Architektur sowie der sehr guten Unterstützung datengetriebener, ereignisbasierter 
+        Benutzeroberflächen eine besonders geeignete Grundlage. Durch die langjährige Etablierung des Frameworks sowie die große Community stehen umfangreiche Dokumentationen und Unterstützungsmöglichkeiten zur Verfügung.
+        
+        Obwohl WPF aufgrund seines hohen Reifegrades und seiner umfassenden Unterstützung verschiedener Funktionen ausgewählt wurde, stellt die Beschränkung auf das Windows-Betriebssystem einen Nachteil dar. Eine spätere Unterstützung von Linux oder macOS würde eine Umstellung auf MAUI oder andere plattformübergreifende Technologien erforderlich machen.
+        
+\section{Anforderungen an die Test- und Entwicklungsumgebung}
+    \subsection{Entwicklungsumgebung}
+        Für die integrierte Entwicklungsumgebung (IDE) für dieses Projekt gibt es einige Anforderungen, denen sie gerecht werden müssen. 
+        Die IDE muss die Programmiersprache C\#, das \texttt{.NET}-Ökosystem sowie XAML zur \acrshort{acr:GUI}-Entwicklung unterstützen.
+        Sie muss die Möglichkeit bereitstellen, Desktop-Anwendungen unter Windows zu entwickeln. 
+        Um Fehler leichter zu finden, ist auch das Debugging von asynchronem Code und nebenläufigen Prozessen gefordert.
+        Außerdem wird eine Abhängigkeitsverwaltung sowie eine Projekt- und Buildverwaltung benötigt.
+        
+        Gängige Entwicklungsumgebungen sind Visual Studio 2022, Visual Studio Code oder JetBrains Rider. Diese unterscheiden sich vor allem 
+       durch den Umfang der GUI-Entwicklungshilfen, die Unterstützung von XAML, das Debugging-Verhalten sowie die Benutzerfreundlichkeit.
+
+        Visual Studio 2022 bietet eine vollwertige IDE, die speziell für C\# und \texttt{.NET} entwickelt wurde. 
+        Es ist die offizielle Entwicklungsumgebung von Microsoft und hat daher eine sehr gute Integration von WPF, WinUI und XAML. 
+        Benutzeroberflächen lassen sich durch einen grafischen Designer schon während der Programmierung anzeigen, ohne dafür das Projekt bauen zu müssen.
+        Das erleichtert die XAML-Programmierung erheblich. Durch die Unterstützung von Drag and Drop 
+        können kleine Anwendungen sogar ohne Kenntnisse über XAML erstellt werden. Neben dem leistungsfähigen Debugging inklusive Threads, async und Tasks liefert Visual 
+        Studio integrierte Tools für die Paketverwaltung, Build-Prozesse und Projektverwaltung. 
+        Visual Studio 2022 eignet sich daher besonders für die Entwicklung von Windows-Desktop-Anwendungen und bietet durch seine große Community 
+        eine ausführliche Dokumentation \autocite{mikejo5000WasIstVisual}. 
+
+        JetBrains Rider bietet ebenfalls eine gute Unterstützung für C\#- und \texttt{.NET}-Programmierung. Es stellt starke Code-Analyse- und Refactoring-Funktionen bereit.
+        Im Gegensatz zu Visual Studio 2022 bietet es keinen vollständig integrierten visuellen XAML-Designer. Dadurch ist zwar die GUI-Entwicklung möglich, aber weniger 
+        komfortabel als in Visual Studio. Insgesamt ist JetBrains Rider besonders für große Projekte und erfahrene Entwickler geeignet \autocite{RiderCrossplatformNET}.
+
+        Visual Studio Code gilt als leichtgewichtiger Editor und ist somit keine vollständige IDE. Es lässt sich zwar durch Plugins wie zum Beispiel C\#-Extensions
+        fast unendlich erweitern, bietet aber keinen grafischen XAML-Designer, wodurch die GUI-Entwicklung komplex wird. Visual Studio Code legt den Fokus eher auf 
+        die Webentwicklung und auf Skripte, weswegen es zur Entwicklung von Desktop-Anwendungen nur eingeschränkt geeignet ist \autocite{Working}. 
+
+        Insgesamt zeigt die Analyse, dass Visual Studio 2022 alle definierten Anforderungen an eine IDE vollständig erfüllt. Dabei ist die nahtlose Integration
+        in das \textit{.NET}-Ökosystem und die umfassende Unterstützung von C\# und XAML besonders hervorzuheben. Es bietet eine besonders geeignete Kombination aus Funktionsumfang, Benutzerfreundlichkeit und Stabilität, weswegen es in dieser Arbeit zur Entwicklung der Monitoring-Applikation verwendet
+        wird.
+
+    \subsection{Testumgebung}
+        Für die Entwicklung und Validierung der Applikation ist eine reproduzierbare Testumgebung erforderlich. Diese muss es ermöglichen, reale MQTT-Kommunikation 
+        von produktiven Systemen zu simulieren und zu analysieren. Dabei sollte die Testumgebung einen MQTT-Broker bereitstellen und reale Topics und Nachrichtenlasten 
+        unterstützen.
+
+        Daneben wird eine Möglichkeit zur Erzeugung hoher Nachrichtenfrequenzen benötigt, damit die Reaktionsfähigkeit und das Zusammenspiel der verschiedenen Programmebenen 
+        analysiert werden kann. Dadurch können die Leistungsgrenzen der Applikation ermittelt werden.

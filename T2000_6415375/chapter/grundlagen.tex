@@ -1,0 +1,152 @@
+\chapter{Grundlagen}
+\label{cha:Grundlagen}
+
+\section{Grundprinzip MQTT}
+Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können, wird eine Kommunikationsschnittstelle benötigt. Bei MULTIVAC wird dafür \acrshort{acr:MQTT} (\acrlong{acr:MQTT}) verwendet. 
+    \acrshort{acr:MQTT} ist ein leichtgewichtiges, ereignisbasiertes Nachrichtenprotokoll, welches auf dem Publish/Subscribe-Prinzip basiert \autocite[5--6]{ottenwalderChurnDynamischenPublish}.
+    Das Protokoll wurde für Umgebungen mit begrenzten Ressourcen, niedriger Bandbreite und potenziell instabilen Netzwerken entwickelt und ist daher besonders für \acrshort{acr:IoT}- und Automatisierungsanwendungen geeignet.  
+    Das Publish/Subscribe-Modell sorgt dabei für eine räumliche, zeitliche und logische Entkopplung \autocite[5]{ottenwalderChurnDynamischenPublish}. Die Entkopplung wird durch die Kommunikation über einen Broker etabliert. Dadurch sind Sender und Empfänger nicht direkt miteinander verbunden, wodurch die Kommunikation nicht durch fehlende oder fehlerhafte Empfänger unterbrochen wird \autocite[9]{hivemqMQTTMQTT5}.
+
+    \subsection{Publisher}
+        Jeder \acrshort{acr:MQTT}-Client kann sogenannter Publisher sein, der mit dem Broker verbunden ist. Er erzeugt Nachrichten und sendet diese an den Broker.
+        Die Nachrichten werden nicht an einen konkreten Empfänger adressiert, sondern unter einem sogenannten Topic veröffentlicht.
+        Der Publisher besitzt keine Kenntnis darüber, welche Clients die Nachricht empfangen sollen, wodurch eine logische Entkopplung zwischen Sender und Empfänger entsteht \autocite[15--16]{hivemqMQTTMQTT5}.
+
+    \subsection{Subscriber}
+        Ein Client des \acrshort{acr:MQTT}-Brokers kann neben der Rolle als Publisher auch ein Subscriber sein. Dieser registriert sich für bestimmte Topics. Dafür sendet er eine \lstinline|SUBSCRIBE|-Nachricht, in der jedes einzelne Topic, das der Client abonnieren will, mit dem zugehörigen Quality of Service Level angegeben wird \autocite[16]{hivemqMQTTMQTT5}.
+        Der Subscriber erhält durch den Broker automatisch alle Nachrichten, die unter den von ihm abonnierten Topics veröffentlicht werden. 
+        Genau wie die Publisher keine Kenntnisse über Empfänger haben, haben die Subscriber auch keine direkten Informationen über den Sender und über die Existenz von Publishern \autocite{hivemqMQTTMQTT5}. Die Information über den Sender einer Nachricht kann dadurch erst in der Nachricht selbst freigegeben werden.            
+
+    \subsection{Broker}
+        Der MQTT-Broker selbst ist die zentrale Instanz im \acrshort{acr:MQTT}-System. Er ist für den Empfang von Nachrichten seitens der Publisher zuständig, verwaltet die Topic-Abonnements und verteilt die Nachrichten an die entsprechenden Subscriber.
+        Dabei entscheidet der Broker anhand von Topic-Filtern und Quality-of-Service-Parametern, wie und an wen eine Nachricht weitergeleitet wird \autocite[11]{hivemqMQTTMQTT5}. Durch den Broker kommunizieren Publisher und Subscriber niemals direkt miteinander. Da der MQTT-Broker zahlreiche Aufgaben übernimmt, benötigt dieser eine entsprechend leistungsfähige Hardware. Im Gegensatz dazu sind die Anforderungen an die Clients durch das Nutzen eines Brokers so klein, dass diese wenig performante Hardware benötigen, wodurch nahezu jedes IoT-Gerät als Client implementiert werden kann  \autocite[117--118]{angewandteNetzwerktechnik}. 
+        
+        Zum Nachrichtenaustausch zwischen Broker und Client nutzt MQTT grundsätzlich das TCP/IP-Protokoll. Neben TCP/IP kann MQTT auch über WebSockets betrieben werden. TCP/IP und Websocket ermöglichen dabei ein sicheres Senden von Nachrichten und erkennen Verbindungsabbrüche durch das Fehlen einer Bestätigung vom Client nach dem Senden. Damit auch der Client einen Verbindungsabbruch bemerkt, wird von ihm, sofern keine Nachrichten veröffentlicht werden, in einem festgelegten Intervall eine leere Nachricht, ein sogenanntes ,,PINGREQ'', gesendet. Der Broker reagiert auf diese Mitteilung mit einer sogenannten ,,PINGRESP''-Nachricht. Bleibt diese Nachricht des Brokers aus, erkennt der Client einen Verbindungsabbruch. Sollte die Verbindung unterbrochen sein, sendet der Broker automatisch eine ,,Last Will and Testament (LWT)''-Nachricht an die anderen Clients. Diese wird bereits beim Verbindungsaufbau der Clients an den Broker übermittelt und sorgt dafür, dass die anderen Clients, die das entsprechende Topic des entkoppelten Clients abonniert haben, von dem Verbindungsabbruch erfahren \autocite[119]{angewandteNetzwerktechnik}.
+    
+    \subsection{Topics als Adressierungsmechanismus}
+        Topics sind logische Adressen innerhalb des \acrshort{acr:MQTT}-Systems. Sie sind als hierarchische Zeichenkette aufgebaut, wie zum Beispiel: \texttt{machine/line1/press/status}. Dabei trennen die Schrägstriche die einzelnen Topic-Ebenen, die der Filterung der Nachrichten dienen \autocite[19]{hivemqMQTTMQTT5}. Für den Fall, dass mehrere Topics auf einmal oder aber alle Topics abonniert werden sollen, fungieren sogenannte Wildcards als Platzhalter.   Der Zeichenfolge ,,\#'' kommt die Funktion zu, sämtliche nachfolgenden Topic-Hierarchien zu ersetzen. Ihre Positionierung ist dabei zwingend am Ende des betreffenden Topics zu erfolgen. Demgegenüber steht die Funktion der ,,+''-Wildcard, die eine Auswahl aller Topics einer bestimmten Topic-Hierarchie ermöglicht \autocite[120]{angewandteNetzwerktechnik}.
+        
+        Durch diesen Aufbau wird eine strukturierte und skalierbare Organisation von Nachrichten ermöglicht und macht das System flexibel und einfach erweiterbar \autocite[21]{hivemqMQTTMQTT5}. 
+
+
+
+\section{Architektur der MQTT-Nachrichten}
+    \acrshort{acr:MQTT} ist ein binäres Protokoll, das im OSI-Modell auf Anwendungsschichtebene ausgeführt wird. 
+    Alle \acrshort{acr:MQTT}-Nachrichten werden als sogenannte Control Packets übertragen, welche einem einheitlichen strukturellen Aufbau folgen. 
+    Dieser Aufbau ist bei jedem Nachrichtentyp genau gleich \autocite[21--29]{oasisMQTTVersion502019}.
+
+    \subsection{Aufbau eines MQTT-Control-Packets}
+        Eine \acrshort{acr:MQTT}-Nachricht besteht aus drei logisch getrennten Bereichen:
+
+        Der Fixed Header beinhaltet mindestens 2 Bytes. Das erste Byte bestimmt den Control-Packet Typ und Flags.
+        Der Control-Packet Typ definiert die Nachricht \autocite[30]{oasisMQTTVersion502019}:
+        \begin{itemize}
+            \item CONNECT (Verbindungsaufbau)
+            \item PUBLISH (Nachricht senden)
+            \item SUBSCRIBE (Topic abonnieren)
+            \item DISCONNECT (Verbindung trennen)
+        \end{itemize}
+        Flags besitzen je nach Pakettyp unterschiedliche Bedeutungen. Beim PUBLISH-Paket enthalten die Flags unter anderem ein DUP, was eine wiederholte Übertragung bedeutet, das Quality-of-Service-Level oder ein RETAIN-Flag \autocite[15]{hivemqMQTTMQTT5}. Dieses RETAIN-Flag ist dafür zuständig, dass der Broker diese Nachricht speichert. Verbindet sich ein neuer Client als Subscriber und abonniert das Topic dieser Nachricht, sendet der Broker sofort automatisch die RETAIN-Nachrichten \autocite[29]{hivemqMQTTMQTT5}. Dadurch erhalten Clients nach der Verbindung zum Client beispielsweise die wichtigsten Informationen über den aktuellen Stand, andere Teilnehmer und vieles mehr, sobald sie sich mit dem Broker verbinden.
+        
+        Das zweite bis optional fünfte Byte enthält dann, wie viele Bytes nach dem Fixed Header folgen \autocite[30]{oasisMQTTVersion502019}. Die variable Kodierung zwischen zwei und fünf Bytes sorgt dafür, dass kleine Nachrichten sehr kurze Header besitzen. 
+        Dies ist ein wesentlicher Faktor für die Effizienz von \acrshort{acr:MQTT}, vor allem bei kleinen Payloads.
+
+        Der Variable Header enthält steuerungsrelevante Zusatzinformationen und ist abhängig vom jeweiligen Control-Packet Typ.
+        Er enthält zum Beispiel den Topic-Namen, Protokollnamen und -Versionen und Verbindungsflags \autocite[30--39]{oasisMQTTVersion502019}.
+
+        Die Payload enthält die eigentlichen Nutzdaten der \acrshort{acr:MQTT}-Nachricht. Aufgrund der agnostischen Natur von MQTT existieren keine Vorgaben bezüglich des Datenformats oder der Struktur. 
+        Der Begriff ,,agnostisch'' beschreibt die Tatsache, dass MQTT über keine detaillierten Kenntnisse bezüglich des Systems verfügt, sondern lediglich die Einhaltung von Standards gewährleisten muss. Eine einheitliche Kodierung ist dabei ein mögliches Beispiel für einen Standard \autocite{Agnostisch}.
+        Mögliche Inhalte sind beispielsweise Texte, JSON-Daten oder Binärdaten. Diese sind typischerweise maximal wenige Kilobytes groß. Bei MULTIVAC ist die Payload als JSON-Dokument definiert. Die Interpretation der Payload erfolgt ausschließlich in der Anwendungsschicht, nicht durch den Broker.
+        Dadurch ist \acrshort{acr:MQTT} universell einsetzbar \autocite[15]{hivemqMQTTMQTT5}\autocite[124]{angewandteNetzwerktechnik}.
+   
+    \subsection{Datensicherheit bei \acrshort{acr:MQTT}}
+        In der Grundkonfiguration eines \acrshort{acr:MQTT}-Brokers ist \acrshort{acr:MQTT} ebenso unsicher wie HTTP. 
+        Das heißt, dass jeder, der den Port des Brokers kennt, alle Nachrichten mitverfolgen kann.
+        Außerdem und viel schwerwiegender ist jedoch die Möglichkeit, schädliche Nachrichten unter bestimmten Topics zu senden. Diese können beispielsweise dazu führen, dass eine gesamte Maschine kurz- oder langfristig lahmgelegt wird.
+        Um dieses Problem zu umgehen, besteht die Möglichkeit, die Kommunikation mit SSL/TLS zu verschlüsseln \autocite{MQTTMessageQueue}. 
+
+        Im Rahmen des TLS-Handshakes tauschen Client und Broker Informationen aus, aus denen anschließend ein gemeinsamer Sitzungsschlüssel abgeleitet wird. \autocite[5--7]{tslsslKastning}.
+        
+        Für die Authentifizierung von Publishern und Subscribern kann außerdem
+        ein Benutzername und ein Passwort hinterlegt werden, damit der Broker nicht frei zugänglich ist \autocite{MQTTMessageQueue}.    
+        
+        Bei Verpackungslinien von MULTIVAC ist das Netzwerk nicht von außen zugänglich, weswegen auf Verschlüsselung und das Nutzen von Benutzername und Passwort verzichtet wird.
+
+\section{Quality of Service}
+    \subsection{Allgemeine Definition}
+        \acrlong{acr:QoS} (\acrshort{acr:QoS}) beschreibt bei \acrshort{acr:MQTT} die Zuverlässigkeit der Nachrichtenübertragung und betrifft somit immer die Verbindungen vom Publisher zum Broker und vom Broker zum Subscriber.
+        Dabei können Nachrichten an beiden Stellen verloren gehen \autocite[22]{hivemqMQTTMQTT5}. Publisher und Subscriber können jedoch jeweils ein eigenes \acrshort{acr:QoS}-Level festlegen, während der Broker aber immer das \acrshort{acr:QoS}-Level des Subscribers verwendet, 
+        falls die \acrshort{acr:QoS}-Level unterschiedlich sind \autocite[25]{hivemqMQTTMQTT5}. 
+  
+    \subsection{Übersicht der Quality-of-Service-Level}
+        \acrshort{acr:MQTT} definiert drei unterschiedliche \acrshort{acr:QoS}-Level: null, eins und zwei. Dabei steht null dafür, dass die Nachricht maximal einmal empfangen wird, eins dafür, dass die Nachricht mindestens einmal empfangen wird und zwei, dass die Nachricht genau einmal empfangen wird.
+
+        Bei Level null wird die Nachricht einmal gesendet, wodurch der Empfang nicht garantiert wird. Es gibt nämlich keine Empfangsbestätigung, ein sogenanntes Acknowledgement. Da aber nur einmal eine Nachricht gesendet wird, ist dieses Level sehr effizient. 
+       Dadurch eignet sich dieses QoS-Level insbesondere für hochfrequente Sensor- oder Telemetriedaten, bei denen der Verlust einzelner Datenpakete unkritisch ist. \autocite[22]{hivemqMQTTMQTT5}.
+
+        Bei Level eins wird die Nachricht mindestens einmal zugestellt. Der Publisher sendet die Nachricht so lange erneut, bis ein Acknowledgement namens PUBACK empfangen wird. Währenddessen wird die Nachricht beim Publisher zwischengespeichert. 
+        Sollte der Publisher nach dem ersten Senden kein PUBACK empfangen, sind doppelte Zustellungen möglich. 
+        Das kann zum Beispiel durch Verbindungsabbrüche geschehen. Kommt eine Empfangsbestätigung wegen eines Verbindungsabbruchs nicht an, sendet der Publisher dieselbe Nachricht erneut, obwohl sie beim Broker schon angekommen ist.
+        Damit ist das \acrshort{acr:QoS}-Level 1 ein guter Kompromiss zwischen Zuverlässigkeit und Performance. 
+        Typische Anwendungen für dieses Level sind Alarme, Statusmeldungen und sicherheitsrelevante, aber Duplikat-tolerante Daten \autocite[23]{hivemqMQTTMQTT5}. 
+
+        Bei Level zwei werden Nachrichten genau einmal zugestellt. Diese Zusicherung wird durch einen vierstufigen Handshake sichergestellt. Dabei empfängt der Publisher nach dem Senden ein Acknowledgement für das Senden und sendet daraufhin ein weiteres Acknowledgement zurück. 
+        Die vierte Stufe ist dann ein weiteres Acknowledgement PUBCOMP zur Sicherstellung, dass wirklich alle Acknowledgements angekommen sind. 
+        Damit besitzt Level 2 die höchste Zuverlässigkeit, ist aber durch die hohe Netz- und Brokerlast auch ineffizient. 
+        Somit eignet sich dieses \acrshort{acr:QoS}-Level für kritische Nachrichten, die sicher, aber niemals doppelt ankommen dürfen \autocite[23--24]{hivemqMQTTMQTT5}. 
+
+        Die Auswahl des passenden \acrshort{acr:QoS}-Levels hängt dadurch von der Kritikalität der Nachricht, Sendefrequenz und der Toleranz gegenüber Datenverlust oder Duplikaten ab. 
+        Neben den reinen Nachrichteneigenschaften spielt die gesamte System- und Brokerlast bei der Auswahl des Levels auch eine entscheidende Rolle. 
+        Dabei ist ein höheres \acrshort{acr:QoS}-Level nicht immer besser \autocite[25]{hivemqMQTTMQTT5}.
+
+\section{Vorteile von MQTT in der Automatisierung}
+        \acrshort{acr:MQTT} ist durch den sehr kleinen Nachrichten-Header, der aus nur zwei bis fünf Bytes besteht, ein sehr leichtgewichtiges Protokoll. Dadurch benötigt es nur geringe Bandbreite, wodurch es sich vor allem für ressourcenarme Geräte und \acrshort{acr:IoT}-Sensoren eignet \autocite[68--69]{IoTMQTT}. 
+
+        Durch das Publish-/Subscribe-Modell entsteht eine Entkopplung von Sendern und Empfängern, wodurch keine Geräte-zu-Geräte-Kommunikation notwendig ist. 
+        So wird der Netzwerkverkehr im Vergleich zu Polling-Methoden wie HTTP oder \acrshort{acr:OPC} (\acrlong{acr:OPC}) sehr stark reduziert \autocite[31--32]{KommunikationskonzepteIoT}. Außerdem kann der Broker 
+        eine große Anzahl an Clients verwalten und unterstützt bis zu tausend Verbindungsteilnehmer gleichzeitig. Dadurch ist die Erweiterung von Systemen ohne Eingriffe an den bestehenden 
+        Komponenten möglich \autocite[11]{hivemqMQTTMQTT5}. Aufgrund seiner Payload-Agnostik erlaubt \acrshort{acr:MQTT} eine anwendungsagnostische Datenübertragung und kann somit flexibel an
+        unterschiedliche Einsatzszenarien angepasst werden. Das erleichtert auch die mögliche Weiterentwicklung der Anwendungsschicht, da diese klar von der Kommunikationsschicht
+        getrennt ist \autocite{IPCOMMProtocolsMQTT}.
+
+        Durch die flexible Anpassung der Daten-Kritikalität durch die Quality-of-Service-Stufen ist \acrshort{acr:MQTT} sehr gut für instabile Netzwerke geeignet. Dazu hilft auch die Unterstützung 
+für die Session-Wiederaufnahme, genauso wie die Zwischenspeicherung der Nachrichten und der Last-Will-Mechanismus zur Statusüberwachung \autocite[73--74]{IoTMQTT}. 
+
+
+    
+  \section{.Net als Laufzeitplattform}
+  Im Rahmen dieser Arbeit wird \textit{.NET} als Ausführungsplattform eingesetzt. Das ,,.Net-Framework ist eine Technologie, die die Erstellung und Ausführung von Windows-Apps und Webdiensten unterstützt'' \autocite{gewarrenUebersichtUeberNET}.  Es besteht aus der \acrlong{acr:CLR} (\acrshort{acr:CLR}) und der .NET-Framework-Klassenbibliothek. 
+ Die \acrshort{acr:CLR} bildet die Laufzeitumgebung von \textit{.NET}. Sie ist für die Programmausführung, die Speicherverwaltung, das Thread-Management sowie sicherheitsrelevante Funktionen verantwortlich.
+Die Klassenbibliothek stellt eine Vielzahl objektorientierter Typen und Funktionen bereit, die bei der Entwicklung von Anwendungen genutzt werden können. Dazu zählen unter anderem Bibliotheken für Netzwerkkommunikation, Datenbankzugriffe und die Entwicklung grafischer Benutzeroberflächen. Darüber hinaus umfasst .NET verschiedene Frameworks zur Erstellung von Benutzeroberflächen, beispielsweise Windows Presentation Foundation (WPF) und .NET MAUI \autocite{gewarrenUebersichtUeberNET}.
+  
+  
+\section{XAML und Deklarative Benutzeroberflächen}
+    XAML (eXtensible Application Markup Language) ist eine deklarative, XML-basierte Beschreibungssprache zur Definition grafischer Benutzeroberflächen in 
+    .NET-basierten \acrlong{acr:GUI} (\acrshort{acr:GUI})-Frameworks wie WPF und WinUI. Sie dient dazu, die Struktur und das visuelle Erscheinungsbild einer Oberfläche unabhängig von der zugrunde 
+    liegenden Anwendungslogik zu beschreiben \autocite[17--18]{wegenerWPF45Und2012}.
+    
+    Im Gegensatz zur imperativen UI-Erstellung im Quellcode werden in XAML Benutzeroberflächen in hierarchische Strukturen von UI-Elementen formuliert. 
+    Dies ermöglicht eine klare Entkopplung zwischen Darstellung und Programmlogik, da die Interaktions- und Verarbeitungslogik in Programmiersprachen wie C\# implementiert wird, 
+    während XAML ausschließlich die Oberfläche beschreibt \autocite[17--18]{wegenerWPF45Und2012}.
+    
+Die in XAML beschriebenen Elemente werden zur Laufzeit durch das jeweilige Framework instanziiert und mit den zugehörigen Programmkomponenten verknüpft. In Verbindung mit Mechanismen wie Data Binding unterstützt XAML die Umsetzung strukturierter Softwarearchitekturen und fördert eine lose Kopplung zwischen Benutzeroberfläche und Anwendungslogik \autocite{adegeoXAMLLanguageOverview} \autocite{XAMLMitWPF}.
+
+Durch diese Eigenschaften verbessert XAML die Wartbarkeit, Erweiterbarkeit und Wiederverwendbarkeit grafischer Anwendungen, da Änderungen an der Benutzeroberfläche weitgehend unabhängig von der zugrunde liegenden Programmlogik vorgenommen werden können.
+
+  \section{\acrlong{acr:MVVM} als Architekturstruktur}
+\acrshort{acr:MVVM} (\acrlong{acr:MVVM}) ist ein Architekturmuster zur strukturierten Entwicklung von Anwendungen mit grafischer Benutzeroberfläche. Ziel des Musters ist die Trennung von Darstellung, Anwendungslogik und Datenmodell, wodurch die Wartbarkeit, Erweiterbarkeit und Testbarkeit einer Anwendung verbessert werden \autocite{MVVM}.
+
+Insbesondere bei datengetriebenen Anwendungen mit umfangreicher Benutzerinteraktion steigt die Komplexität der Softwarearchitektur. Ohne eine klare Trennung der Verantwortlichkeiten kann dies zu einer starken Kopplung zwischen Benutzeroberfläche und Anwendungslogik führen. Architekturmuster wie MVVM begegnen diesem Problem durch die Aufteilung der Anwendung in klar definierte Komponenten \autocite{MVVM}.
+
+Das MVVM-Muster unterteilt eine Anwendung in die drei Hauptbestandteile Model, View und View-Model. Das Model repräsentiert die fachlichen Daten. Die View definiert die grafische Benutzeroberfläche und dient ausschließlich der Darstellung der Daten. Das View-Model fungiert als Vermittlungsschicht zwischen Model und View. Es stellt der Benutzeroberfläche die benötigten Daten und Befehle bereit und verarbeitet Benutzerinteraktionen.
+
+Die Kommunikation zwischen View und View-Model erfolgt üblicherweise über Data Bindings. Änderungen an den Datenmodellen können dadurch automatisch in der Benutzeroberfläche dargestellt werden, ohne dass eine direkte Kopplung zwischen den Komponenten erforderlich ist. Dies reduziert den Implementierungsaufwand und erleichtert spätere Erweiterungen der Anwendung \autocite{michaelstonisModelViewViewModelNET}.
+
+Durch die konsequente Trennung von Zuständigkeiten unterstützt MVVM die Entwicklung modularer Anwendungen und stellt insbesondere bei Anwendungen mit umfangreicher Benutzeroberfläche eine etablierte Architekturstruktur dar \autocite{MVVM}.
+
+
+
+
+  
+  
+  

@@ -1,0 +1,1521 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{adegeoXAMLLanguageOverview}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ecd74085a04ef7487f1cde27f0a0cec}{%
+           family={{adegeo}},
+           familyi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{fullhash}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{fullhashraw}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{bibnamehash}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{authorbibnamehash}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{authornamehash}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{authorfullhash}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \strng{authorfullhashraw}{9ecd74085a04ef7487f1cde27f0a0cec}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET.}
+      \field{langid}{american}
+      \field{title}{{{XAML}} Language Overview - {{WPF}}}
+      \field{urlday}{24}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\HK3T5IL9\xaml.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/dotnet/desktop/wpf/xaml/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/dotnet/desktop/wpf/xaml/
+      \endverb
+    \endentry
+    \entry{ajcvickersOverviewMicrosoftDataSqlite}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=4d6008eaec1134665fe29ef987d3ecaa}{%
+           family={{ajcvickers}},
+           familyi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{fullhash}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{fullhashraw}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{bibnamehash}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{authorbibnamehash}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{authornamehash}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{authorfullhash}{4d6008eaec1134665fe29ef987d3ecaa}
+      \strng{authorfullhashraw}{4d6008eaec1134665fe29ef987d3ecaa}
+      \field{sortinit}{a}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An overview of Microsoft.Data.Sqlite}
+      \field{langid}{american}
+      \field{title}{Overview - {{Microsoft}}.{{Data}}.{{Sqlite}}}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\KRH8TJ97\sqlite.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/
+      \endverb
+    \endentry
+    \entry{AsyncioAsynchronous}{online}{}{}
+      \list{organization}{1}{%
+        {Python documentation}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hello World!: asyncio is a library to write concurrent code using the async/await syntax. asyncio is used as a foundation for multiple Python asynchronous frameworks that provide high-performance n...}
+      \field{langid}{english}
+      \field{title}{Asyncio — {{Asynchronous I}}/{{O}}}
+      \field{urlday}{23}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\M87KKJ3I\asyncio.html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.python.org/3/library/asyncio.html
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/library/asyncio.html
+      \endverb
+    \endentry
+    \entry{EtherCAT}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=f88f4792f3c82e0f9deb2f4acc140e0f}{%
+           family={Babel},
+           familyi={B\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{fullhash}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{fullhashraw}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{bibnamehash}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{authorbibnamehash}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{authornamehash}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{authorfullhash}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \strng{authorfullhashraw}{f88f4792f3c82e0f9deb2f4acc140e0f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-3-658-42987-4}
+      \field{title}{Systemintegration in {{Industrie}} 4.0 Und {{IoT}}}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\3C72BP79\Babel - Systemintegration in Industrie 4.0 und IoT.pdf
+      \endverb
+    \endentry
+    \entry{PythonVSCS}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=ed9f8c012016cdf533348328d59500d7}{%
+           family={Bahar},
+           familyi={B\bibinitperiod},
+           given={Abdullrahman\bibnamedelima Yousif},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=fff54e56cd915356c18a640391e1a488}{%
+           family={Shorman},
+           familyi={S\bibinitperiod},
+           given={Samer\bibnamedelima Mahmoud},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d9cfae67642a6b4df97dc81b16e79318}{%
+           family={Khder},
+           familyi={K\bibinitperiod},
+           given={Moaiad\bibnamedelima Ahmad},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2b29a5b0b2ab8105b9009f09542bc013}{%
+           family={Quadir},
+           familyi={Q\bibinitperiod},
+           given={Abdullah\bibnamedelima Muhammad},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3d3859ed7f69d0c18f93b68531d04d25}{%
+           family={Almosawi},
+           familyi={A\bibinitperiod},
+           given={Sayed\bibnamedelima Ahmed},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c18fde7d00aaa9f2b6c68b6d52f845a}
+      \strng{fullhash}{ea766d5509e4bdd0b673edb7c880e694}
+      \strng{fullhashraw}{ea766d5509e4bdd0b673edb7c880e694}
+      \strng{bibnamehash}{3c18fde7d00aaa9f2b6c68b6d52f845a}
+      \strng{authorbibnamehash}{3c18fde7d00aaa9f2b6c68b6d52f845a}
+      \strng{authornamehash}{3c18fde7d00aaa9f2b6c68b6d52f845a}
+      \strng{authorfullhash}{ea766d5509e4bdd0b673edb7c880e694}
+      \strng{authorfullhashraw}{ea766d5509e4bdd0b673edb7c880e694}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Nowadays computer became an important part of our day-to-day life. Computer programs are developed in many different programming languages and each of these languages have its own strength and weakness. In addition, nowadays many programming languages are available in the market but only few of these languages have shined out of all the other programming language. For this paper we are going to explore the difference between three of the top programming languages in the market, these languages are python, C\# and Java. To conclude, each of these programming languages has its own set of applications, and it's difficult to distinguish between them because it all relies on the developer's preferences and the tasks he or she wants to do.}
+      \field{booktitle}{2022 {{ASU International Conference}} in {{Emerging Technologies}} for {{Sustainability}} and {{Intelligent Systems}} ({{ICETSIS}})}
+      \field{eventtitle}{2022 {{ASU International Conference}} in {{Emerging Technologies}} for {{Sustainability}} and {{Intelligent Systems}} ({{ICETSIS}})}
+      \field{month}{6}
+      \field{title}{Survey on {{Features}} and {{Comparisons}} of {{Programming Languages}} ({{PYTHON}}, {{JAVA}}, {{AND C}}\#)}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{154\bibrangedash 163}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/ICETSIS55481.2022.9888839
+      \endverb
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\WF7DFPHF\Bahar et al. - 2022 - Survey on Features and Comparisons of Programming Languages (PYTHON, JAVA, AND C#).pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/abstract/document/9888839
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/abstract/document/9888839
+      \endverb
+      \keyw{C,C languages,Intelligent systems,Java,JAVA,Programming,Programming Language,PYTHON,Sustainable development,Syntactics,Task analysis}
+    \endentry
+    \entry{billwagnerSemaphorUndSemaphoreSlim}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e3a36de53b51204b5b96e1974ca0488e}{%
+           family={BillWagner},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{fullhash}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{fullhashraw}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{bibnamehash}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{authorbibnamehash}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{authornamehash}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{authorfullhash}{e3a36de53b51204b5b96e1974ca0488e}
+      \strng{authorfullhashraw}{e3a36de53b51204b5b96e1974ca0488e}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Erfahren Sie mehr über Semaphore \& SemaphoreSlim. Class Semaphor ist ein dünner Wrapper um das Win32-Semaphorobjekt. Die Klasse SemaphoreSlim ist eine schnelle, einfache Variante der Klasse Semaphore.}
+      \field{langid}{german}
+      \field{title}{Semaphor und SemaphoreSlim - .NET}
+      \field{urlday}{22}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\SRV56HP5\semaphore-and-semaphoreslim.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/de-de/dotnet/standard/threading/semaphore-and-semaphoreslim
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/de-de/dotnet/standard/threading/semaphore-and-semaphoreslim
+      \endverb
+    \endentry
+    \entry{zotero-item-198}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=5b6409425cc423d40fb2d7983c07b129}{%
+           family={{chkr1011}},
+           familyi={c\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Github Enterprise}%
+      }
+      \strng{namehash}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{fullhash}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{fullhashraw}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{bibnamehash}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{authorbibnamehash}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{authornamehash}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{authorfullhash}{5b6409425cc423d40fb2d7983c07b129}
+      \strng{authorfullhashraw}{5b6409425cc423d40fb2d7983c07b129}
+      \field{sortinit}{c}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{2}
+      \field{title}{{{mqttMultimeter}}}
+      \field{urlday}{8}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/chkr1011/mqttMultimeter
+      \endverb
+      \verb{url}
+      \verb https://github.com/chkr1011/mqttMultimeter
+      \endverb
+    \endentry
+    \entry{ConnectMQTTfxEMQX}{online}{}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Connect with {{MQTT}}.Fx | {{EMQX Cloud Docs}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\H4UZCAVZ\mqttfx.html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.emqx.com/en/cloud/latest/connect_to_deployments/mqttfx.html
+      \endverb
+      \verb{url}
+      \verb https://docs.emqx.com/en/cloud/latest/connect_to_deployments/mqttfx.html
+      \endverb
+    \endentry
+    \entry{IoTMQTT}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d26a9065d0b79ea3ed4a73f035dac9e9}{%
+           family={Desbiens},
+           familyi={D\bibinitperiod},
+           given={Frederic},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berkeley}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{fullhash}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{fullhashraw}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{bibnamehash}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{authorbibnamehash}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{authornamehash}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{authorfullhash}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \strng{authorfullhashraw}{d26a9065d0b79ea3ed4a73f035dac9e9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{978-1-4842-8882-5}
+      \field{title}{Building {{Enterprise IoT Solutions}} with {{Eclipse IoT Technologies}} : {{An Open Source Approach}} to {{Edge Computing}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
+    \endentry
+    \entry{MQTTTestingDebugging}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=e55bc946a30a08fe0d90cc5193e1782f}{%
+           family={Deters},
+           familyi={D\bibinitperiod},
+           given={Jens},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{fullhash}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{fullhashraw}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{bibnamehash}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{authorbibnamehash}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{authornamehash}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{authorfullhash}{e55bc946a30a08fe0d90cc5193e1782f}
+      \strng{authorfullhashraw}{e55bc946a30a08fe0d90cc5193e1782f}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{MQTT Testing}} and {{Debugging Using MQTT}}.Fx {{HiveMQ Cloud Edition}}}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\P4S8Q2PB\mqtt-testing-debugging-using-mqttfx-hivemq-cloud.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.hivemq.com/blog/mqtt-testing-debugging-using-mqttfx-hivemq-cloud/
+      \endverb
+      \verb{url}
+      \verb https://www.hivemq.com/blog/mqtt-testing-debugging-using-mqttfx-hivemq-cloud/
+      \endverb
+    \endentry
+    \entry{dotnet-botDispatcherClassSystemWindowsThreading}{online}{}{}
+      \name{author}{1}{}{%
+        {{useprefix=true,hash=9fcc72359fa4d20fd72c937e5870be23}{%
+           family={bot},
+           familyi={b\bibinitperiod},
+           prefix={dotnet-},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{fullhash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{fullhashraw}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{bibnamehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authorbibnamehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authornamehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authorfullhash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authorfullhashraw}{9fcc72359fa4d20fd72c937e5870be23}
+      \field{extraname}{1}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Provides services for managing the queue of work items for a thread.}
+      \field{langid}{american}
+      \field{title}{Dispatcher {{Class}} ({{System}}.{{Windows}}.{{Threading}})}
+      \field{urlday}{29}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\4LIJP4EH\system.windows.threading.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/dotnet/api/system.windows.threading.dispatcher?view=windowsdesktop-10.0
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/dotnet/api/system.windows.threading.dispatcher?view=windowsdesktop-10.0
+      \endverb
+    \endentry
+    \entry{dotnet-botSqlConnectionClassMicrosoftDataSqlClient}{online}{}{}
+      \name{author}{1}{}{%
+        {{useprefix=true,hash=9fcc72359fa4d20fd72c937e5870be23}{%
+           family={bot},
+           familyi={b\bibinitperiod},
+           prefix={dotnet-},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{fullhash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{fullhashraw}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{bibnamehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authorbibnamehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authornamehash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authorfullhash}{9fcc72359fa4d20fd72c937e5870be23}
+      \strng{authorfullhashraw}{9fcc72359fa4d20fd72c937e5870be23}
+      \field{extraname}{2}
+      \field{sortinit}{d}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Represents a connection to a SQL Server database. This class cannot be inherited.}
+      \field{langid}{american}
+      \field{title}{{{SqlConnection Class}} ({{Microsoft}}.{{Data}}.{{SqlClient}})}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\3AN3ILUE\microsoft.data.sqlclient.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlconnection?view=sqlclient-dotnet-core-6.1
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlconnection?view=sqlclient-dotnet-core-6.1
+      \endverb
+    \endentry
+    \entry{hivemqMQTTMQTT5}{book}{}{}
+      \name{editor}{1}{}{%
+        {{hash=60979dd7cdfc198a564fa3fbca58fde7}{%
+           family={HIVEMQ},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Landshut}%
+      }
+      \strng{namehash}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{fullhash}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{fullhashraw}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{bibnamehash}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{editorbibnamehash}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{editornamehash}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{editorfullhash}{60979dd7cdfc198a564fa3fbca58fde7}
+      \strng{editorfullhashraw}{60979dd7cdfc198a564fa3fbca58fde7}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-00-067913-1}
+      \field{title}{{{MQTT}} \& {{MQTT}} 5 {{Essentials}}}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\ZU6SBCXL\HIVEMQ - MQTT & MQTT 5 Essentials.pdf
+      \endverb
+    \endentry
+    \entry{IPCOMMProtocolsMQTT}{online}{}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{{{IPCOMM}}, {{Protocols}}: {{MQTT}}}
+      \field{urlday}{24}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\6TD9RVRP\sheet.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ipcomm.de/protocol/MQTT/en/sheet.html
+      \endverb
+      \verb{url}
+      \verb https://www.ipcomm.de/protocol/MQTT/en/sheet.html
+      \endverb
+    \endentry
+    \entry{tslsslKastning}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=702ad4053ae68205fa308e5b5e6b4a0e}{%
+           family={Kastning},
+           familyi={K\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{fullhash}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{fullhashraw}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{bibnamehash}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{authorbibnamehash}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{authornamehash}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{authorfullhash}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \strng{authorfullhashraw}{702ad4053ae68205fa308e5b5e6b4a0e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{8}
+      \field{title}{{{TLS}}/{{SSL Kochbuch}}}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\GQNDFAWK\Kastning - 2016 - TLSSSL Kochbuch.pdf
+      \endverb
+    \endentry
+    \entry{XAMLMitWPF}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=014731605a5f3e312b49d3562b51f137}{%
+           family={Kirsch},
+           familyi={K\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {KIRSCH Software}%
+      }
+      \strng{namehash}{014731605a5f3e312b49d3562b51f137}
+      \strng{fullhash}{014731605a5f3e312b49d3562b51f137}
+      \strng{fullhashraw}{014731605a5f3e312b49d3562b51f137}
+      \strng{bibnamehash}{014731605a5f3e312b49d3562b51f137}
+      \strng{authorbibnamehash}{014731605a5f3e312b49d3562b51f137}
+      \strng{authornamehash}{014731605a5f3e312b49d3562b51f137}
+      \strng{authorfullhash}{014731605a5f3e312b49d3562b51f137}
+      \strng{authorfullhashraw}{014731605a5f3e312b49d3562b51f137}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{6}
+      \field{title}{{{XAML}} Mit {{WPF}}, {{UWP}}, {{WinUI}} 3 Und .{{NET MAUI}} - {{Kirsch Software}}}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\4C9ZBZ2I\XAML-Frameworks-WPF-UWP-WinUI3-MAUI.html
+      \endverb
+      \verb{urlraw}
+      \verb https://kirsch-software.de/blog/XAML-Frameworks-WPF-UWP-WinUI3-MAUI
+      \endverb
+      \verb{url}
+      \verb https://kirsch-software.de/blog/XAML-Frameworks-WPF-UWP-WinUI3-MAUI
+      \endverb
+    \endentry
+    \entry{kreibichUsingSQLite2010}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b71dc4c9809f89cb578ee0b8caf851cb}{%
+           family={Kreibich},
+           familyi={K\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {"O'Reilly Media, Inc."}%
+      }
+      \strng{namehash}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{fullhash}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{fullhashraw}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{bibnamehash}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{authorbibnamehash}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{authornamehash}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{authorfullhash}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \strng{authorfullhashraw}{b71dc4c9809f89cb578ee0b8caf851cb}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Application developers, take note: databases aren't just for the IS group any more. You can build database-backed applications for the desktop, Web, embedded systems, or operating systems without linking to heavy-duty client-server databases such as Oracle and MySQL. This book shows you how to use SQLite, a small and lightweight relational database engine that you can build directly into your application. With SQLite, you'll discover how to develop a database-backed application that remains manageable in size and complexity. This book guides you every step of the way. You'll get a crash course in data modeling, become familiar with SQLite's dialect of the SQL database language, and much more. Learn how to maintain localized storage in a single file that requires no configuration Build your own SQLite library or use a precompiled distribution in your application Get a primer on SQL, and learn how to use several language functions and extensions Work with SQLite using a scripting language or a C-based language such as C\# or Objective-C Understand the basics of database design, and learn how to transfer what you already know to SQLite Take advantage of virtual tables and modules "Complex SQL concepts explained clearly." --D. Richard Hipp, creator of SQLite}
+      \field{day}{17}
+      \field{eprinttype}{googlebooks}
+      \field{isbn}{978-0-596-52118-9}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{pagetotal}{526}
+      \field{title}{Using {{SQLite}}}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb HFIM47wp0X0C
+      \endverb
+      \keyw{Computers / Business & Productivity Software / Databases,Computers / Computer Science,Computers / Database Administration & Management,Computers / Desktop Applications / General,Computers / General,Computers / Languages / SQL,Computers / Programming / Open Source}
+    \endentry
+    \entry{michaelstonisModelViewViewModelNET}{online}{}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Overview of the Model-View-ViewModel pattern used by .NET MAUI}
+      \field{langid}{american}
+      \field{title}{Model-{{View-ViewModel}} - .{{NET}}}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\SXY3U3UN\mvvm.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm
+      \endverb
+    \endentry
+    \entry{MQTTMessageQueue}{online}{}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{title}{{{MQTT}} - {{Message Queue Telemetry Transport}}}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\JN2XK644\2204051.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.elektronik-kompendium.de/sites/net/2204051.htm
+      \endverb
+      \verb{url}
+      \verb https://www.elektronik-kompendium.de/sites/net/2204051.htm
+      \endverb
+    \endentry
+    \entry{MQTTfxGrafischesWerkzeug}{online}{}{}
+      \list{organization}{1}{%
+        {codecentric AG}%
+      }
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Bereits Ende der 1990er Jahre entwickelte IBM an einem sehr schlanken und einfachen Kommunikationsprotokoll~zur~Überwachung~von Ölpipelines. Aus diesem Bestreben ist MQTT ~(Message Queue Telemetry Transport)~entstanden, das sich nun im Zuge des Internet der Dinge wachsender Beliebtheit erfreut. Ende letzten Jahres ist MQTT in der Version 3.1.1. von der~Standardisierungsorganisation OASIS dann auch~als offizieller Standard verabschiedet~worden. Für die... Weiterlesen}
+      \field{langid}{ngerman}
+      \field{shorttitle}{MQTT.fx}
+      \field{title}{MQTT.fx: Grafisches Werkzeug zum MQTT-Debugging}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\WFINNIHD\mqtt-fx-grafisches-werkzeug-zum-mqtt-debugging.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.codecentric.de/wissens-hub/blog/mqtt-fx-grafisches-werkzeug-zum-mqtt-debugging
+      \endverb
+      \verb{url}
+      \verb https://www.codecentric.de/wissens-hub/blog/mqtt-fx-grafisches-werkzeug-zum-mqtt-debugging
+      \endverb
+    \endentry
+    \entry{nijsMVVMPatternNET2023a}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=9970412018e7301064a3f145b58d0d42}{%
+           family={Nijs},
+           familyi={N\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing Ltd}%
+      }
+      \strng{namehash}{9970412018e7301064a3f145b58d0d42}
+      \strng{fullhash}{9970412018e7301064a3f145b58d0d42}
+      \strng{fullhashraw}{9970412018e7301064a3f145b58d0d42}
+      \strng{bibnamehash}{9970412018e7301064a3f145b58d0d42}
+      \strng{authorbibnamehash}{9970412018e7301064a3f145b58d0d42}
+      \strng{authornamehash}{9970412018e7301064a3f145b58d0d42}
+      \strng{authorfullhash}{9970412018e7301064a3f145b58d0d42}
+      \strng{authorfullhashraw}{9970412018e7301064a3f145b58d0d42}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Gain an in-depth understanding of MVVM and .NET MAUI and learn how to effectively apply the MVVM design pattern with the help of this practical guideKey FeaturesGet to grips with the principles and benefits of the Model-View-ViewModel design patternGain insights into .NET MAUI's MVVM-enabling components and effectively apply them with hands-on examplesLearn data binding, navigation, and testable code techniques to create dynamic, accessible, and localized appsPurchase of the print or Kindle book includes a free PDF eBookBook DescriptionIn today's fast-paced world of modern software development, teams need to be efficient, productive, and capable of rapidly adapting to changes to deliver high-quality products, making it crucial for developers to write maintainable and easy-to-test code. The MVVM Pattern in .NET MAUI helps you to thoroughly explore the Model-View-View Model (MVVM) design pattern. The chapters show you how this pattern helps in structuring code to embrace the separation of concerns, allowing for loosely coupled user interface and application logic, which ultimately empowers you to write more robust, maintainable, and testable code. The book also highlights .NET MAUI's capabilities and features, and enables you to delve into the essential components within the framework that facilitate the application of the MVVM pattern. With the help of a sample application, this definitive guide takes a hands-on approach to walk you through both the essential and advanced usages of the MVVM pattern to ensure that you successfully apply the practical aspects of the pattern to your .NET MAUI projects. By the end of this book, you’ll have gained a comprehensive understanding of the MVVM design pattern and its relevance in the context of .NET MAUI, as well as developed the skills needed to successfully apply it in practice.What you will learnGain a thorough understanding of the MVVM design patternGet to grips with the components that enable MVVM in .NET MAUIApply the MVVM pattern in practice within .NET MAUIBecome proficient in data binding in .NET MAUIDiscover how to navigate from within a view modelFind out how to effectively write testable code and unit testsWho this book is forThis book is for developers with experience in C\# and basic knowledge of .NET MAUI or Xamarin.Forms who are looking to create cross-platform applications with .NET MAUI and leverage the MVVM pattern. Through practical examples and clear explanations, this book helps both newcomers and experienced developers master the application of MVVM principles within .NET MAUI projects.}
+      \field{day}{30}
+      \field{eprinttype}{googlebooks}
+      \field{isbn}{978-1-80512-070-4}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{pagetotal}{386}
+      \field{shorttitle}{The {{MVVM Pattern}} in .{{NET MAUI}}}
+      \field{title}{The {{MVVM Pattern}} in .{{NET MAUI}}: {{The}} Definitive Guide to Essential Patterns, Best Practices, and Techniques for Cross-Platform App Development}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb 7HTkEAAAQBAJ
+      \endverb
+      \keyw{Computers / Languages / C,Computers / Software Development & Engineering / General,Computers / User Interfaces}
+    \endentry
+    \entry{oasisMQTTVersion502019}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6ec60ab9ce327f5a12fbab109e691c73}{%
+           family={OASIS},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{fullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{fullhashraw}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{bibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authorbibnamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authornamehash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authorfullhash}{6ec60ab9ce327f5a12fbab109e691c73}
+      \strng{authorfullhashraw}{6ec60ab9ce327f5a12fbab109e691c73}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{3}
+      \field{title}{{{MQTT Version}} 5.0}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\JAYYGFSS\OASIS - 2019 - MQTT Version 5.0.pdf
+      \endverb
+    \endentry
+    \entry{ottenwalderChurnDynamischenPublish}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=d2e1e19ae0de1ecf0646f266f37dc11d}{%
+           family={Ottenwalder},
+           familyi={O\bibinitperiod},
+           given={Beate},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Universität Stuttgart}%
+      }
+      \list{location}{1}{%
+        {Stuttgart}%
+      }
+      \strng{namehash}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{fullhash}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{fullhashraw}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{bibnamehash}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{authorbibnamehash}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{authornamehash}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{authorfullhash}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \strng{authorfullhashraw}{d2e1e19ae0de1ecf0646f266f37dc11d}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{langid}{ngerman}
+      \field{month}{12}
+      \field{title}{Churn in dynamischen Publish/Subscribe Systemen}
+      \field{type}{Projektarbeit}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\TQ6EY46G\Ottenwalder - 2007 - Churn in dynamischen PublishSubscribe Systemen.pdf
+      \endverb
+    \endentry
+    \entry{Panther}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=3357a841542a95ed42aec5368ba8f45a}{%
+           family={Panther},
+           familyi={P\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly}%
+      }
+      \strng{namehash}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{fullhash}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{fullhashraw}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{bibnamehash}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{authorbibnamehash}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{authornamehash}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{authorfullhash}{3357a841542a95ed42aec5368ba8f45a}
+      \strng{authorfullhashraw}{3357a841542a95ed42aec5368ba8f45a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-3-96010-222-9}
+      \field{pagetotal}{XII, 495}
+      \field{title}{Datenbankentwicklung Lernen Mit {{SQL Server}} 2017: Der Praxisorientierte {{Grundkurs}}}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
+    \entry{angewandteNetzwerktechnik}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=d0eb1814642999edacc27c619b414f7a}{%
+           family={Plenk},
+           familyi={P\bibinitperiod},
+           given={Valentin},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oberkotzau}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{d0eb1814642999edacc27c619b414f7a}
+      \strng{fullhash}{d0eb1814642999edacc27c619b414f7a}
+      \strng{fullhashraw}{d0eb1814642999edacc27c619b414f7a}
+      \strng{bibnamehash}{d0eb1814642999edacc27c619b414f7a}
+      \strng{authorbibnamehash}{d0eb1814642999edacc27c619b414f7a}
+      \strng{authornamehash}{d0eb1814642999edacc27c619b414f7a}
+      \strng{authorfullhash}{d0eb1814642999edacc27c619b414f7a}
+      \strng{authorfullhashraw}{d0eb1814642999edacc27c619b414f7a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{edition}{3}
+      \field{isbn}{978-3-658-43529-5}
+      \field{month}{6}
+      \field{pagetotal}{365}
+      \field{title}{Angewandte {{Netzwerktechnik}} Kompakt}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\I4IG45BD\Plenk - 2024 - Angewandte Netzwerktechnik kompakt.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/chapter/10.1007/978-3-658-43530-1_7
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/chapter/10.1007/978-3-658-43530-1_7
+      \endverb
+    \endentry
+    \entry{PsutilDocumentationPsutil}{online}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Psutil Documentation — Psutil 7.2.2 Documentation}
+      \field{urlday}{29}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\UZ5IU4ZE\stable.html
+      \endverb
+      \verb{urlraw}
+      \verb https://psutil.readthedocs.io/stable/
+      \endverb
+      \verb{url}
+      \verb https://psutil.readthedocs.io/stable/
+      \endverb
+    \endentry
+    \entry{RiderCrossplatformNET}{online}{}{}
+      \list{organization}{1}{%
+        {JetBrains}%
+      }
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Develop .NET, ASP.NET, MAUI, Blazor, and Azure applications – as well as games with Unity, Unreal Engine, and Godot – on Windows, macOS, and Linux.}
+      \field{langid}{english}
+      \field{shorttitle}{Rider}
+      \field{title}{Rider: The Cross-Platform .{{NET}} and Game Development {{IDE}} from {{JetBrains}}}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\XU5GIPAT\rider.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jetbrains.com/rider/
+      \endverb
+      \verb{url}
+      \verb https://www.jetbrains.com/rider/
+      \endverb
+    \endentry
+    \entry{AsyncAwait}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=552993a89df02e5fdbd40620222bb862}{%
+           family={Sarcar},
+           familyi={S\bibinitperiod},
+           given={Vaskaran},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Barkeley}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{552993a89df02e5fdbd40620222bb862}
+      \strng{fullhash}{552993a89df02e5fdbd40620222bb862}
+      \strng{fullhashraw}{552993a89df02e5fdbd40620222bb862}
+      \strng{bibnamehash}{552993a89df02e5fdbd40620222bb862}
+      \strng{authorbibnamehash}{552993a89df02e5fdbd40620222bb862}
+      \strng{authornamehash}{552993a89df02e5fdbd40620222bb862}
+      \strng{authorfullhash}{552993a89df02e5fdbd40620222bb862}
+      \strng{authorfullhashraw}{552993a89df02e5fdbd40620222bb862}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{isbn}{979-8-8688-0488-5}
+      \field{title}{Parallel {{Programming}} with {{C}}\# and .{{NET}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\RTS5LH5E\Sarcar - 2024 - Parallel Programming with C# and .NET.pdf
+      \endverb
+    \endentry
+    \entry{KommunikationskonzepteIoT}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=65b1846910bd9fd003262400fcc18117}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Nico},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Leipzig}%
+      }
+      \strng{namehash}{65b1846910bd9fd003262400fcc18117}
+      \strng{fullhash}{65b1846910bd9fd003262400fcc18117}
+      \strng{fullhashraw}{65b1846910bd9fd003262400fcc18117}
+      \strng{bibnamehash}{65b1846910bd9fd003262400fcc18117}
+      \strng{authorbibnamehash}{65b1846910bd9fd003262400fcc18117}
+      \strng{authornamehash}{65b1846910bd9fd003262400fcc18117}
+      \strng{authorfullhash}{65b1846910bd9fd003262400fcc18117}
+      \strng{authorfullhashraw}{65b1846910bd9fd003262400fcc18117}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{5}
+      \field{title}{Vergleich Und {{Bewertung}} von {{Kommunikationskonzepten}} Für {{Microservices imBereichdes Internetof Things}}}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\PXCEGGTS\Schmidt - 2021 - Vergleich und Bewertung von Kommunikationskonzepten für Microservices imBereichdes Internetof Things.pdf
+      \endverb
+    \endentry
+    \entry{SchubertDatenbanken}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=6052bccbfa9ba522320b8c8afca548e2}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
+      }
+      \list{publisher}{1}{%
+        {B. G. Teubner Verlag}%
+      }
+      \strng{namehash}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{fullhash}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{fullhashraw}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{bibnamehash}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{authorbibnamehash}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{authornamehash}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{authorfullhash}{6052bccbfa9ba522320b8c8afca548e2}
+      \strng{authorfullhashraw}{6052bccbfa9ba522320b8c8afca548e2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{isbn}{978-3-8351-0163-0}
+      \field{month}{4}
+      \field{pagetotal}{351}
+      \field{title}{Datenbanken}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\NSSD3EHJ\Schubert - 2007 - Datenbanken.pdf
+      \endverb
+    \endentry
+    \entry{sergio0694EinfuehrungMVVMToolkitCommunity}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b0d3bab480421049956ef29cd9fcb8b3}{%
+           family={Sergio0694},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{fullhash}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{fullhashraw}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{bibnamehash}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{authorbibnamehash}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{authornamehash}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{authorfullhash}{b0d3bab480421049956ef29cd9fcb8b3}
+      \strng{authorfullhashraw}{b0d3bab480421049956ef29cd9fcb8b3}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Eine Übersicht über die ersten Schritte mit dem MVVM-Toolkit und den darin enthaltenen APIs}
+      \field{langid}{german}
+      \field{title}{Einführung in das MVVM-Toolkit - Community Toolkits for .NET}
+      \field{urlday}{31}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\7D2X39YG\mvvm.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/de-de/dotnet/communitytoolkit/mvvm/
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/de-de/dotnet/communitytoolkit/mvvm/
+      \endverb
+    \endentry
+    \entry{MVVM}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=991eb1e033c962cafd66f30fa0593451}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{991eb1e033c962cafd66f30fa0593451}
+      \strng{fullhash}{991eb1e033c962cafd66f30fa0593451}
+      \strng{fullhashraw}{991eb1e033c962cafd66f30fa0593451}
+      \strng{bibnamehash}{991eb1e033c962cafd66f30fa0593451}
+      \strng{authorbibnamehash}{991eb1e033c962cafd66f30fa0593451}
+      \strng{authornamehash}{991eb1e033c962cafd66f30fa0593451}
+      \strng{authorfullhash}{991eb1e033c962cafd66f30fa0593451}
+      \strng{authorfullhashraw}{991eb1e033c962cafd66f30fa0593451}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{month}{2}
+      \field{title}{Patterns - {{WPF Apps With The Model-View-ViewModel Design Pattern}}}
+      \field{urlday}{23}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\Y6RR8VD5\patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern
+      \endverb
+    \endentry
+    \entry{teamHowUseMQTT}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d1199dfae70de74eb03bbdf09f7ce8a2}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={EMQX\bibnamedelima Cloud},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {www.emqx.com}%
+      }
+      \strng{namehash}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{fullhash}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{fullhashraw}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{bibnamehash}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{authorbibnamehash}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{authornamehash}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{authorfullhash}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \strng{authorfullhashraw}{d1199dfae70de74eb03bbdf09f7ce8a2}
+      \field{extraname}{1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This blog will provide a step-by-step guide on how to connect a Serverless MQTT Broker using the MQTTnet in C\#.}
+      \field{langid}{english}
+      \field{title}{How to {{Use MQTT}} in {{C}}\# with {{MQTTnet}}}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\RZ45DTVC\connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp
+      \endverb
+      \verb{url}
+      \verb https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp
+      \endverb
+    \endentry
+    \entry{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2f3e5c401c7181d0fab9d098ca79bf84}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={ZTABS},
+           giveni={Z\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{fullhash}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{fullhashraw}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{bibnamehash}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{authorbibnamehash}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{authornamehash}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{authorfullhash}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \strng{authorfullhashraw}{2f3e5c401c7181d0fab9d098ca79bf84}
+      \field{extraname}{2}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A decision framework for choosing between rebuilding and refactoring legacy software. Covers cost analysis, risk assessment, and migration strategies.}
+      \field{langid}{english}
+      \field{shorttitle}{Rebuild vs. {{Refactor Legacy Software}}}
+      \field{title}{Rebuild vs. {{Refactor Legacy Software}}: {{Decision Guide}}}
+      \field{urlday}{11}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{Sun Feb 22 2026 00:00:00 GMT+0000 (Coordinated Universal Time)}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\AU258KRX\when-to-rebuild-vs-refactor-legacy-software.html
+      \endverb
+      \verb{urlraw}
+      \verb https://ztabs.co/blog/when-to-rebuild-vs-refactor-legacy-software
+      \endverb
+      \verb{url}
+      \verb https://ztabs.co/blog/when-to-rebuild-vs-refactor-legacy-software
+      \endverb
+    \endentry
+    \entry{tiwariVirtualMemoryExplained2025}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d34f75c19d9bdf8d4544add532ae0f05}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Harshit},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{fullhash}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{fullhashraw}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{bibnamehash}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{authorbibnamehash}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{authornamehash}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{authorfullhash}{d34f75c19d9bdf8d4544add532ae0f05}
+      \strng{authorfullhashraw}{d34f75c19d9bdf8d4544add532ae0f05}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Virtual Memory Explained: Paging, Segmentation, and Handling Page Faults Virtual memory is a foundational aspect of modern operating systems, allowing for improved efficiency and multitasking capabilities. By enabling processes to use a larger address space than is physically available in RAM, virtual memory becomes a crucial component in managing hardware resources effectively. In this blog}
+      \field{day}{23}
+      \field{hour}{5}
+      \field{langid}{american}
+      \field{minute}{32}
+      \field{month}{10}
+      \field{second}{28}
+      \field{shorttitle}{Virtual {{Memory Explained}}}
+      \field{timezone}{Z}
+      \field{title}{Virtual {{Memory Explained}}: {{Paging}}, {{Segmentation}}, and {{Handling Page Faults}} - {{NamasteDev Blogs}}}
+      \field{urlday}{2}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\9VJQDY7H\virtual-memory-explained-paging-segmentation-and-handling-page-faults.html
+      \endverb
+      \verb{urlraw}
+      \verb https://namastedev.com/blog/virtual-memory-explained-paging-segmentation-and-handling-page-faults/
+      \endverb
+      \verb{url}
+      \verb https://namastedev.com/blog/virtual-memory-explained-paging-segmentation-and-handling-page-faults/
+      \endverb
+    \endentry
+    \entry{TkinterPythonInterface}{online}{}{}
+      \list{organization}{1}{%
+        {Python documentation}%
+      }
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Source code: Lib/tkinter/\_\_init\_\_{}.py The tkinter package (“Tk interface”) is the standard Python interface to the Tcl/Tk GUI toolkit. Both Tk and tkinter are available on most Unix platforms, inclu...}
+      \field{langid}{english}
+      \field{title}{Tkinter — {{Python}} Interface to {{Tcl}}/{{Tk}}}
+      \field{urlday}{23}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\YEDH2U8X\tkinter.html
+      \endverb
+      \verb{urlraw}
+      \verb https://docs.python.org/3/library/tkinter.html
+      \endverb
+      \verb{url}
+      \verb https://docs.python.org/3/library/tkinter.html
+      \endverb
+    \endentry
+    \entry{CSwith.NET}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=3a97a176319df98f139b24dd2146cffe}{%
+           family={Troelsen},
+           familyi={T\bibinitperiod},
+           given={Andrew\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=9be660109141e022b8c2cd793ec9af5b}{%
+           family={Japikse},
+           familyi={J\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{fullhash}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{fullhashraw}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{bibnamehash}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{authorbibnamehash}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{authornamehash}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{authorfullhash}{18065fa3d57cdcd0281634cf1ddc736c}
+      \strng{authorfullhashraw}{18065fa3d57cdcd0281634cf1ddc736c}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{11.}
+      \field{isbn}{978-1-4842-7869-7}
+      \field{title}{Pro {{C}}\# with .{{NET}} 6: Foundational Principals and Practices in Programming}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{gewarrenUebersichtUeberNET}{online}{}{}
+      \field{sortinit}{Ü}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dies ist eine Übersicht über .NET Framework, eine Technologie, die das Erstellen und Ausführen von Windows-Apps und -Webdiensten unterstützt.}
+      \field{langid}{german}
+      \field{title}{Übersicht über .NET Framework - .NET Framework}
+      \field{urlday}{15}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\URV7IJIY\overview.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/de-de/dotnet/framework/get-started/overview
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/de-de/dotnet/framework/get-started/overview
+      \endverb
+    \endentry
+    \entry{Vileikis}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b0599442316e6fb20161f2eceffc6954}{%
+           family={Vileikis},
+           familyi={V\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Siauliai}%
+      }
+      \list{publisher}{1}{%
+        {Apress Berkeley}%
+      }
+      \strng{namehash}{b0599442316e6fb20161f2eceffc6954}
+      \strng{fullhash}{b0599442316e6fb20161f2eceffc6954}
+      \strng{fullhashraw}{b0599442316e6fb20161f2eceffc6954}
+      \strng{bibnamehash}{b0599442316e6fb20161f2eceffc6954}
+      \strng{authorbibnamehash}{b0599442316e6fb20161f2eceffc6954}
+      \strng{authornamehash}{b0599442316e6fb20161f2eceffc6954}
+      \strng{authorfullhash}{b0599442316e6fb20161f2eceffc6954}
+      \strng{authorfullhashraw}{b0599442316e6fb20161f2eceffc6954}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{979-8-8688-0979-8}
+      \field{title}{Hacking {{MySQL}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\YB4D2YE8\Vileikis - 2024 - Hacking MySQL.pdf
+      \endverb
+    \endentry
+    \entry{mikejo5000WasIstVisual}{online}{}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Erkunden Sie Visual Studio, eine integrierte Entwicklungsumgebung (Integrated Development Environment, IDE), mit der Sie Ihre Apps mit KI-Unterstützung entwickeln, erstellen, debuggen, testen und bereitstellen können.}
+      \field{langid}{german}
+      \field{title}{Was ist Visual Studio?}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/de-de/visualstudio/get-started/visual-studio-ide?view=visualstudio
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/de-de/visualstudio/get-started/visual-studio-ide?view=visualstudio
+      \endverb
+    \endentry
+    \entry{wegenerWPF45Und2012}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=b8f31c7a158722efe5caedee31a1683b}{%
+           family={Wegener},
+           familyi={W\bibinitperiod},
+           given={Jörg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Carl Hanser Verlag GmbH Co KG}%
+      }
+      \strng{namehash}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{fullhash}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{fullhashraw}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{bibnamehash}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{authorbibnamehash}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{authornamehash}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{authorfullhash}{b8f31c7a158722efe5caedee31a1683b}
+      \strng{authorfullhashraw}{b8f31c7a158722efe5caedee31a1683b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{WPF 4.5 UND XAML //- Für angehende und fortgeschrittene WPF-Entwickler mit fundierten .NET-Kenntnissen- Praktischer Leitfaden mit umfassendem Know-how – von den Basics bis zu professionellen Techniken- Nachschlagewerk für die tägliche Arbeit- Mit zahlreichen Anwendungsbeispielen aus für Entwickler typischen Alltagssituationen- Alle Beispiele aus dem Buch unter: www.downloads.hanser.deMit der Windows Presentation Foundation verfügen .NET-Entwickler über ein mächtiges und flexibles Instrument zur Entwicklung moderner Desktop-Applikationen – von der einfachen Oberfläche bis hin zur geschäftlichen Anwendung.Diese Bandbreite gibt den Rahmen für dieses Buch vor: Jörg Wegener beschreibt detailliert die zentralen Elemente der WPF 4.5, ihre zugrunde liegenden Konzepte und die in WPF implementierte Beschreibungssprache XAML. Zahlreiche Beispiele zeigen Ihnen den professionellen Einsatz des Frameworks in Situationen, mit denen Sie als Entwickler tagtäglich konfrontiert sind. Einen Schwerpunkt dieser Neuauflage bilden die Neuerungen von WPF 4.5 und Visual Studio 2012. Hier geht es u.a. um die Entwicklung von Apps für Windows 8 mit XAML und der Windows Runtime. Außerdem neu hinzugekommen sind die Themen: Eingabesteuerung via Maus, Tastatur und Touchscreen; das Entwurfsmuster Model-View-View-Model; Installation und Aktualisierung von Anwendungen beim Kunden; Gestaltung mit Expression Blend.AUS DEM INHALT:Einführung in WPF \& XAML // Layout \& Steuerelemente // Aufbau von Anwendungen // Styles, Templates // Daten \& Datenbindungen // 2D-Grafik \& Multimedia // 3D-Grafik, Animationen // Individuelle Anpassungen // Eingabesteuerung in WPF // WPF \& Windows Forms // Dokumente \& Drucken // Mehrsprachigkeit // Browseranwendungen // MVVM-Entwurfsmuster // Windows Store Apps \& WinRT // Anwendungen installieren \& verteilen // Expression Blend}
+      \field{day}{6}
+      \field{eprinttype}{googlebooks}
+      \field{isbn}{978-3-446-43541-4}
+      \field{langid}{ngerman}
+      \field{month}{12}
+      \field{pagetotal}{706}
+      \field{shorttitle}{WPF 4.5 und XAML}
+      \field{title}{WPF 4.5 und XAML: Grafische Benutzeroberflächen für Windows inkl. Entwicklung von Windows Store Apps}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{eprint}
+      \verb Z7NPAgAAQBAJ
+      \endverb
+      \keyw{Computers / Information Technology}
+    \endentry
+    \entry{embeddedtechnologies}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=27e5947b319653011386e650a1821380}{%
+           family={Wietzke},
+           familyi={W\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Karlsruhe}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{27e5947b319653011386e650a1821380}
+      \strng{fullhash}{27e5947b319653011386e650a1821380}
+      \strng{fullhashraw}{27e5947b319653011386e650a1821380}
+      \strng{bibnamehash}{27e5947b319653011386e650a1821380}
+      \strng{authorbibnamehash}{27e5947b319653011386e650a1821380}
+      \strng{authornamehash}{27e5947b319653011386e650a1821380}
+      \strng{authorfullhash}{27e5947b319653011386e650a1821380}
+      \strng{authorfullhashraw}{27e5947b319653011386e650a1821380}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-642-23995-3}
+      \field{month}{1}
+      \field{series}{Xpert.Press}
+      \field{title}{Embedded {{Technologies}}}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\BNFKAQWC\Wietzke - 2012 - Embedded Technologies.pdf
+      \endverb
+    \endentry
+    \entry{Working}{online}{}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Find out how to get the best out of Visual Studio Code and C\#.}
+      \field{langid}{english}
+      \field{title}{Working with {{C}}\#}
+      \field{urlday}{6}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\3USU8NQ6\csharp.html
+      \endverb
+      \verb{urlraw}
+      \verb https://code.visualstudio.com/docs/languages/csharp
+      \endverb
+      \verb{url}
+      \verb https://code.visualstudio.com/docs/languages/csharp
+      \endverb
+    \endentry
+    \entry{Agnostisch}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=3c2a9a5cec6cec66d87c80c509bcec8c}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Gavin},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ComputerWeekly.de}%
+      }
+      \strng{namehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{fullhash}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{fullhashraw}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{bibnamehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{authorbibnamehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{authornamehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{authorfullhash}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \strng{authorfullhashraw}{3c2a9a5cec6cec66d87c80c509bcec8c}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Agnostisch ist griechisch für ohne Kenntnis und bedeutet, dass Systeme, Software oder Anwendungen so allgemein konzipiert sind, dass sie interoperabel sind.}
+      \field{langid}{ngerman}
+      \field{title}{Definition Agnostisch}
+      \field{urlday}{23}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\M2MXR5J5\Agnostisch.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.computerweekly.com/de/definition/Agnostisch
+      \endverb
+      \verb{url}
+      \verb https://www.computerweekly.com/de/definition/Agnostisch
+      \endverb
+    \endentry
+    \entry{yosifovichMemoryInformationTask2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=97abc320d485ae95bebc5b60c88587e2}{%
+           family={Yosifovich},
+           familyi={Y\bibinitperiod},
+           given={Pavel},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Pavel Yosifovich}%
+      }
+      \strng{namehash}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{fullhash}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{fullhashraw}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{bibnamehash}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{authorbibnamehash}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{authornamehash}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{authorfullhash}{97abc320d485ae95bebc5b60c88587e2}
+      \strng{authorfullhashraw}{97abc320d485ae95bebc5b60c88587e2}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{You may have been asked this question many times: “How much memory does this process consume?” The question seems innocent enough. Your first instinct might be to open Task Manager, go …}
+      \field{day}{12}
+      \field{hour}{14}
+      \field{langid}{english}
+      \field{minute}{36}
+      \field{month}{4}
+      \field{second}{53}
+      \field{timezone}{Z}
+      \field{title}{Memory {{Information}} in {{Task Manager}}}
+      \field{urlday}{29}
+      \field{urlmonth}{7}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\5QGEI4TR\memory-information-in-task-manager.html
+      \endverb
+      \verb{urlraw}
+      \verb https://scorpiosoftware.net/2023/04/12/memory-information-in-task-manager/
+      \endverb
+      \verb{url}
+      \verb https://scorpiosoftware.net/2023/04/12/memory-information-in-task-manager/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

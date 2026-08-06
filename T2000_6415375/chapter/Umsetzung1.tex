@@ -1,0 +1,28 @@
+\chapter{Umsetzung}
+\label{cha:Umsetzung}
+
+\section{Realisierung der Softwarearchitektur}
+Für die Umsetzung der Anwendung wurde die in Kapitel 6 entwickelte MVVM-Architektur verwendet. Während die Benutzeroberfläche ausschließlich für Darstellung der Informationen verantwortlich ist, erfolgt die Verarbeitung der MQTT-Nachrichten vollständig innerhalb separater Service-Komponenten. Die Datenhaltung wurde in Repository-Klassen ausgelagert, welche den Zugriff auf die SQLite-Datenbank kapseln. Dadurch konnte eine klare Trennung zwischen Darstellung, Geschäftslogik und Persistenz erreicht werden.
+
+Im Verlauf der Implementierung zeigte sich insbesondere bei der Verarbeitung großer Nachrichtenmengen die Bedeutung dieser Trennung. Analysefunktionen konnten erweitert werden, ohne Änderungen an der Benutzeroberfläche vornehmen zu müssen. Gleichzeitig war es möglich, einzelne Komponenten unabhängig voneinander zu testen.
+
+Zur Verringerung des Implementierungsaufwands wurde das CommunityToolkit.Mvvm eingesetzt. Dadurch konnten Eigenschaften und Befehle automatisiert erzeugt werden, wodurch sich der manuell zu implementierende Programmcode deutlich reduzierte.
+\section{Verarbeitung eingehender MQTT-Nachrichten}
+Der Empfang der MQTT-Nachrichten sowie auch der Verbindungsaufbau, Verbindungsabbau und Erkennung von Verbindungsunterbrechungen wurde innerhalb einer zentralen MQTT-Serviceklasse realisiert. Diese Funktionen werden über die \textit{MQTTnet}-Bibliothek implementiert. Nach erfolgreicher Verbindung zum Broker werden alle Topics durch die Wildcard ,,\#'' abonniert. Bei einer neuen Nachricht wird das bibliothekseigene Event \lstinline{ApplicationMessageReceivedAsync} ausgelöst. In der MQTT-Serviceklasse registriert sich ein Eventhandler auf dieses Event. Der Eventhandler löst daraufhin ein weiteres Event aus, dem sowohl Topic und Payload als auch die Retain-Flag der eingehenden Nachricht übergeben wird.
+
+Dieses zweistufige Eventmodell wurde genutzt, damit die verarbeitenden Klassen nicht zusätzlich die Informationen aus der Nachricht entnehmen müssen, sondern diese ohne zusätzliche wiederholte Aufbereitung der Nachrichteninformationen verwenden können. 
+
+Vor der Speicherung werden empfangene Payloads von den verarbeitenden Komponenten zunächst als JSON-Dokument geparst. Dadurch stehen die Nachrichten in einer lesbaren Form zur Verfügung und können gleichzeitig als Grundlage für die Fehlererkennung, Prozessanalyse und Teilnehmerüberwachung verwendet werden.
+
+Während der Implementierung zeigte sich, dass die im technischen Konzept vorgesehene strikt sequentielle Verarbeitung der Nachrichten nicht optimal für die Anforderungen der Benutzeroberfläche geeignet ist. Die Aufbereitung der Nachrichten erfolgt bereits unmittelbar nach dem Empfang, damit diese sowohl dargestellt als auch von den verschiedenen Analysefunktionen weiterverarbeitet werden können. Aus diesem Grund wurde die Verarbeitung in mehrere asynchron ausgeführte Teilschritte aufgeteilt.
+
+Die fachliche Struktur der im Konzept definierten Verarbeitungsschritte blieb dabei unverändert. Die technische Umsetzung wurde jedoch hinsichtlich Performance und Benutzerfreundlichkeit angepasst, sodass mehrere Verarbeitungsschritte parallel ausgeführt werden können, ohne den Nachrichtenempfang oder die Benutzeroberfläche zu blockieren.
+\section{Persistente Speicherung der Kommunikationsdaten}
+Eine zentrale Anforderung der Anwendung bestand in der langfristigen Speicherung von MQTT-Nachrichten. Hierfür wurde eine SQLite-Datenbank eingesetzt. Neben den Kommunikationsdaten werden auch Fehler, Prozessabläufe, Nachrichtenvorlagen sowie Benutzereinstellungen in der Datenbank gespeichert. Dadurch können diese Informationen über mehrere Programmsitzungen hinweg erhalten bleiben und verbrauchen weniger Arbeitsspeicherplatz.
+
+Die Speicherung der Daten in der Datenbank erfolgt durch SQL-Zugriffe in den Repository-Klassen. Dabei greifen die Repository-Klassen zur Übersichtlichkeit jeweils auf lediglich eine Datentabelle in der  Datenbank zu. Damit die Datenbank jedoch nicht zur gleichen Zeit beschrieben wird und so keine Fehler entstehen können, wurde ein sogenannter Semaphore für konkurrierende Schreibzugriffe verwendet. Ein Semaphore ist dabei ein Werkzeug, welches auf einzelne Prozesse warten kann, wenn Wartezeiten erwartet werden. Das wird hauptsächlich bei begrenzten Ressourcen wie Dateien verwendet, damit der Zugriff auf gemeinsame Ressourcen kontrolliert werden kann \autocite{billwagnerSemaphorUndSemaphoreSlim}. Für die Realisierung eines Semaphores wurde die \lstinline{SemaphoreSlim}-Klasse herangezogen und bei jedem Schreibzugriff aufgerufen.
+\section{Realisierung des Paging-Konzepts}
+
+\section{Teilnehmerüberwachung}
+\section{Realisierung der Prozessanalyse}
+\section{Benutzeroberfäche}

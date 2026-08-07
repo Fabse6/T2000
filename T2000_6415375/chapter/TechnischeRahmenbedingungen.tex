@@ -1,4 +1,4 @@
-\chapter{Technische Rahmenbedingungen}
+\chapter{Technische Rahmenbedingungen für die Neuentwicklung einer Diagnose- und Überwachungsapplikation}
 \label{cha:Anforderungsanalyse}
 \section{Anforderungen an die Programmiersprache}
     Bei der Auswahl einer geeigneten Programmiersprache sind zahlreiche Eigenschaften und Anforderungen zu berücksichtigen. Die Objektorientierung in der Programmierung ist essenziell für die Trennung der Netzwerk-, Logik- und Darstellungsschicht. Für die Anwendung ergibt sich, dass ein Zugriff auf asynchrone Programmiermodelle erforderlich ist, da MQTT ereignis- und nachrichtenbasiert arbeitet.
@@ -86,10 +86,24 @@
         Der zentrale Unterschied zwischen diesen Technologien liegt in ihrer Zielsetzung. Während WPF den Fokus auf eine stabile und leistungsfähige Windows-Desktopanwendung legt,
         legt WinUI den Fokus auf moderne Grafik und richtet sich auf die Zukunft aus. MAUI hingegen verfolgt das Ziel, plattformübergreifende Anwendungen zu schaffen \autocite{XAMLMitWPF}.
 
-        Für die Umsetzung dieser Arbeit bietet WPF aufgrund seiner hohen Reife, stabilen Architektur sowie der sehr guten Unterstützung datengetriebener, ereignisbasierter 
-        Benutzeroberflächen eine besonders geeignete Grundlage. Durch die langjährige Etablierung des Frameworks sowie die große Community stehen umfangreiche Dokumentationen und Unterstützungsmöglichkeiten zur Verfügung.
+        Zur Bewertung der drei Frameworks wurde eine Bewertungsmatrix erstellt, die verschiedene Kriterien wie MVVM-Unterstützung, Reifegrad, Dokumentation, Werkzeugunterstützung, Performance und Plattformunabhängigkeit berücksichtigt. Die Gewichtung der Kriterien wurde auf Basis der Anforderungen an die Applikation festgelegt. Die Ergebnisse der Bewertung sind in Tabelle \ref{tab:gui_bewertung} dargestellt.
         
-        Obwohl WPF aufgrund seines hohen Reifegrades und seiner umfassenden Unterstützung verschiedener Funktionen ausgewählt wurde, stellt die Beschränkung auf das Windows-Betriebssystem einen Nachteil dar. Eine spätere Unterstützung von Linux oder macOS würde eine Umstellung auf MAUI oder andere plattformübergreifende Technologien erforderlich machen.
+        \begin{table}[htbp] 
+            \centering 
+            \caption{Bewertungsmatrix zur Auswahl des GUI-Frameworks} \label{tab:gui_bewertung} 
+            \begin{tabular}{lcccc} 
+                \toprule \textbf{Kriterium} & \textbf{Gewichtung} & \textbf{WPF} & \textbf{WinUI 3} & \textbf{.NET MAUI} \\ 
+                \midrule MVVM-Unterstützung & 20 \% & 5 & 4 & 4 \\ 
+                Reifegrad und Stabilität & 20 \% & 5 & 3 & 3 \\ 
+                Dokumentation / Community & 15 \% & 5 & 4 & 3 \\ 
+                Werkzeugunterstützung in Visual Studio & 15 \% & 5 & 4 & 3 \\ 
+                Performance bei Desktop-Anwendungen & 15 \% & 5 & 4 & 4 \\ 
+                Plattformunabhängigkeit & 15 \% & 1 & 1 & 5 \\ 
+                \midrule \textbf{Gesamtbewertung} & \textbf{100 \%} & \textbf{4,40} & \textbf{3,40} & \textbf{3,65} \\ 
+            \bottomrule \end{tabular} 
+        \end{table}
+
+        Obwohl WPF aufgrund seines hohen Reifegrades und seiner umfassenden Unterstützung verschiedener Funktionen ausgewählt wurde, stellt die Beschränkung auf das Windows-Betriebssystem einen Nachteil dar. Eine spätere Unterstützung von Linux oder macOS würde eine Umstellung auf MAUI oder andere plattformübergreifende Technologien erforderlich machen. Trotzdem ist WPF für die Umsetzung der Applikation die geeignetste Wahl, da es eine stabile und leistungsfähige Grundlage für die Entwicklung von Windows-Desktop-Anwendungen bietet. Die Entscheidung für WPF ermöglicht eine effiziente Umsetzung der Anforderungen an die Monitoring- und Visualisierungssoftware, insbesondere im Hinblick auf die Verarbeitung großer Datenmengen und die Darstellung in einer benutzerfreundlichen Oberfläche.
         
 \section{Anforderungen an die Test- und Entwicklungsumgebung}
     \subsection{Entwicklungsumgebung}

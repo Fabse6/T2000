@@ -22,3 +22,29 @@ Durch die Verwendung der MVVM-Architektur sowie der Trennung von Services, Repos
 Die Anforderung an konfigurierbare Prüfmechanismen erfüllt der MQTT Analyzer nicht. Dafür ist der Prozessablauf einer jeden Maschine zu modular aufgebaut, wodurch die Umsetzung dieser Anforderung für den Umfang dieser Projektarbeit einen zu großen Aufwand mit sich bringen würde.
 
 Insgesamt zeigt die Bewertung, dass die entwickelte Anwendung für den Einsatz im Produktionsumfeld geeignet ist. Durch die Kombination aus Nachrichtenanalyse, automatischer Fehlererkennung, Teilnehmerüberwachung und Ablauferkennung bietet sie einen deutlichen Mehrwert gegenüber den bisher eingesetzten MQTT-Werkzeugen und unterstützt. Der Anwender wird dadurch bei der Inbetriebnahme, Analyse und Fehlerdiagnose von Verpackungslinien wirksam unterstützt.
+
+\section{Vergleich mit bestehenden Werkzeugen}
+Die in Kapitel \ref{cha:Ausgangssituation} beschriebenen Werkzeuge bieten nur eingeschränkte Möglichkeiten zur Analyse von MQTT-Nachrichten. Die meisten Werkzeuge sind auf die reine Anzeige von Nachrichten beschränkt und bieten keine erweiterten Funktionen wie Filterung, Volltextsuche oder automatische Fehlererkennung. Der MQTT Analyzer hingegen bietet eine umfassende Lösung für die Analyse von MQTT-Nachrichten und unterstützt den Anwender bei der Inbetriebnahme, Analyse und Fehlerdiagnose von Verpackungslinien. Für einen genaueren Vergleich der Werkzeuge wurde eine Vergleichstabelle erstellt, die die wichtigsten Funktionen der Werkzeuge gegenüberstellt (siehe Tabelle \ref{tab:Werkzeugvergleich}). 
+
+\begin{table}[htbp] 
+    \centering \caption{Nutzwertanalyse der untersuchten MQTT-Werkzeuge} 
+    \label{tab:Werkzeuganalyse} 
+    \begin{tabular}{lccccc} \hline \textbf{Kriterium} & \textbf{MQTT.fx} & \textbf{Explorer} & \textbf{Multimeter} & \textbf{Analyzer} \\ 
+        \hline Nachrichtenanzeige (5\%) & 3 & 4 & 4 & 5 \\ 
+        Topic-Filterung (15\%) & 3 & 4 & 3 & 5 \\ 
+        Volltextsuche (15\%) & 1 & 5 & 3 & 5 \\ 
+        Persistente Speicherung (10\%) & 1 & 1 & 2 & 5 \\ 
+        Analyse historischer \-Daten (10\%) & 3 & 2 & 1 & 5 \\ 
+        Teilnehmerüberwachung (10\%) & 1 & 1 & 1 & 5 \\ 
+        Automatische Fehler\-erkennung (10\%) & 1 & 1 & 1 & 5 \\ 
+        Automatisierungsablauf\-analyse (10\%) & 1 & 1 & 1 & 3 \\ 
+        Nachrichtensimulation (5\%) & 3 & 1 & 2 & 3 \\ 
+        Erweiterbarkeit (10\%) & 1 & 1 & 3 & 4 \\ 
+        \hline Gesamtpunktzahl & 1.7 & 2.3 & 2.1 & 4.6 \\ 
+        \hline 
+    \end{tabular}
+\end{table}
+
+Die Tabelle zeigt, dass der MQTT Analyzer in allen relevanten Bereichen überlegen ist und somit eine wertvolle Ergänzung zu den bestehenden Werkzeugen darstellt. Vor allem durch die Fehler- und Ablauferkennung sowie Filterung der Nachrichten bietet die selbst entwickelte Anwendung eine Möglichkeit, die Zeit für Fehlersuche und Analyse deutlich zu reduzieren. 
+
+Die Zeitersparnis wirkt sich unmittelbar auf die Wirtschaftlichkeit aus. Kürzere Analyse- und Diagnosezeiten führen zu einem geringeren Personalaufwand während der Inbetriebnahme und Fehlerbehebungen von Verpackungslinien. Gleichzeitig können Kommunikationsprobleme schneller identifiziert und behoben werden, wodurch Stillstände von Maschinen reduziert werden können.

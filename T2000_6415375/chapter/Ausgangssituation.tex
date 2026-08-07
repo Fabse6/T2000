@@ -67,7 +67,7 @@
 
     Dadurch wird die Analyse von Datenströmen, bei denen die Reihenfolge eingehender Nachrichten eine entscheidende Rolle spielt, deutlich erschwert. Aufgrund dessen erfüllt auch diese Applikation die definierten Anforderungen nicht.
 \section{Möglichkeit der Nutzung und Erweiterung bereits existenter Applikationen}
-    Eine weitere Möglichkeit neben der Verwendung von bereits fertigen Programmen ist die Weiterentwicklung existenter Applikationen, die den Programmcode veröffentlichen. Eine hierfür besonders geeignete Applikation ist MQTTMultimeter \autocite{zotero-item-198}.
+    Eine weitere Möglichkeit neben der Verwendung von bereits fertigen Programmen ist die Weiterentwicklung existenter Applikationen, die den Programmcode veröffentlichen. Eine hierfür besonders geeignete Applikation ist MQTTMultimeter. Da der Quellcode con MQTTMultimeter öffentlich verfügbar ist, konnten zentrale Komponenten der Anwendung analysiert und hinsichtlich ihrer Erweiterbarkeit bewertet werden. Die Analyse basiert auf dem auf GitHub veröffentlichten Projektstand \autocite{zotero-item-198}.
 \subsection{Funktionsweise von MQTTMultimeter}
     Als eine schon sehr ausgereifte Applikation erweist sich \enquote{MQTTMultimeter} \autocite{zotero-item-198}. Dieses Programm bietet eine geeignete Kombination aus MQTT.fx und dem \acrshort{acr:MQTT} Explorer. Es hat einen Reiter für die Anzeige der Baumstruktur, die sehr ähnlich funktioniert wie bei dem \acrshort{acr:MQTT} Explorer (siehe Abbildung \ref{fig:Baumstruktur}). Auch hier lässt sich der Nachrichtenverlauf nur durch eine Historie eines einzelnen Topics darstellen. 
     \begin{figure}[htbp]
@@ -130,7 +130,30 @@ async Task OnApplicationMessageReceived(MqttApplicationMessageReceivedEventArgs 
 \subsection{Gründe gegen die Erweiterung von MQTTMultimeter}
     Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und trennt sogar die Verbindung zum Broker. Dadurch wären grundlegende Änderungen in den Service-Komponenten erforderlich. Dieses Vorgehen erweist sich als sehr aufwendig \autocite{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}, da der Programmcode eng mit den bestehenden Funktionalitäten verbunden ist. Das erhöht zum einen das Risiko von Fehlern und zum anderen die Komplexität, den Programmcode zu verstehen. 
 
-    Deshalb wird in dieser Projektarbeit ein neues Programm von Grund auf neu erstellt. Die Architektur und Funktionsweise von MQTTMultimeter fließen jedoch in die Konzeption der zu entwickelnden Anwendung ein.
+\section{Bewertung der Ausgangssituation}
+Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse durchgeführt. Dabei wurden die drei Applikationen MQTT.fx, MQTT Explorer und MQTTMultimeter anhand von sechs Kriterien bewertet. Die Kriterien wurden mit unterschiedlichen Gewichtungen versehen, um ihre relative Bedeutung für die Zielsetzung der Arbeit zu reflektieren. Die Bewertung erfolgte auf einer Skala von 1 bis 5, wobei 1 für keine Erfüllung des Kriteriums und 5 für eine vollständige Erfüllung steht. Die Ergebnisse der Nutzwertanalyse sind in Tabelle \ref{tab:nutzwertanalyse} zusammengefasst.
+
+\begin{table}[htbp] 
+    \centering 
+    \caption{Nutzwertanalyse bestehender Lösungen} 
+    \label{tab:nutzwertanalyse}
+    \begin{tabular}{lccccc} 
+        \toprule Kriterium & Gewicht & MQTT.fx & Explorer & Multimeter \\ 
+        \midrule Persistente Speicherung & 25\% & 0 & 0 & 3 \\ 
+        Volltextsuche & 15\% & 0 & 5 & 5 \\ 
+        Erweiterbarkeit & 20\% & 1 & 1 & 3 \\ 
+        Simulationsmöglichkeiten & 10\% & 5 & 4 & 5 \\ 
+        Performance & 15\% & 4 & 4 & 2 \\ 
+        Benutzerfreundlichkeit & 15\% & 3 & 5 & 3 \\ 
+        \midrule Gesamt & 100\% & 2,0 & 2,9 & 3,4 \\ 
+        \bottomrule 
+    \end{tabular} 
+\end{table}
+
+Wie aus der Tabelle \ref{tab:nutzwertanalyse} ersichtlich wird, erfüllt keine der drei Applikationen alle Anforderungen an ein Monitoring-Tool. MQTT.fx und MQTT Explorer bieten zwar eine gute Benutzerfreundlichkeit und Simulationsmöglichkeiten, jedoch fehlen ihnen die persistente Speicherung von Nachrichten und die Volltextsuche. MQTTMultimeter hingegen bietet eine bessere Erweiterbarkeit und Simulationsmöglichkeiten, jedoch leidet die Performance bei hohen Nachrichtenfrequenzen.
+
+Da keine der bestehenden Lösungen alle Anforderungen erfüllt, wird im Rahmen dieser Arbeit eine neue Applikation entwickelt, die die Vorteile der bestehenden Lösungen kombiniert und die identifizierten Schwächen adressiert. Dabei fließen vor allem Architektur- und Designstrukturen aus MQTTMultimeter ein, um eine erweiterbare und performante Lösung zu schaffen.
+
 
     
 

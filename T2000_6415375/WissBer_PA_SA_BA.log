@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  7 AUG 2026 09:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  7 AUG 2026 11:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2088,7 +2088,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
  (chapter/Ausgangssituation.tex
 chapter 4.
-<images/mqttfx_subscribe.png, id=455, 1419.05156pt x 785.93625pt>
+<images/mqttfx_subscribe.png, id=460, 1419.05156pt x 785.93625pt>
 File: images/mqttfx_subscribe.png Graphic file (type png)
 <use images/mqttfx_subscribe.png>
 Package pdftex.def Info: images/mqttfx_subscribe.png  used on input line 20.
@@ -2120,7 +2120,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 52.
 
-<images/MQTTexplorer.png, id=477, 944.02687pt x 667.74469pt>
+<images/MQTTexplorer.png, id=482, 944.02687pt x 667.74469pt>
 File: images/MQTTexplorer.png Graphic file (type png)
 <use images/MQTTexplorer.png>
 Package pdftex.def Info: images/MQTTexplorer.png  used on input line 57.
@@ -2134,7 +2134,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [17 <./images/MQTTexplorer.png>]
-<images/MQTTMultimeter.png, id=495, 1062.97125pt x 614.295pt>
+<images/MQTTMultimeter.png, id=500, 1062.97125pt x 614.295pt>
 File: images/MQTTMultimeter.png Graphic file (type png)
 <use images/MQTTMultimeter.png>
 Package pdftex.def Info: images/MQTTMultimeter.png  used on input line 75.
@@ -2144,7 +2144,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [18 <./images/MQTTMultimeter.png>]
-<images/MQTTMultimeterInflight.png, id=505, 1069.74657pt x 615.80063pt>
+<images/MQTTMultimeterInflight.png, id=509, 1069.74657pt x 615.80063pt>
 File: images/MQTTMultimeterInflight.png Graphic file (type png)
 <use images/MQTTMultimeterInflight.png>
 Package pdftex.def Info: images/MQTTMultimeterInflight.png  used on input line 
@@ -2181,17 +2181,29 @@ chapter 5.
 
 
 ]
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [24]
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [25]
-Overfull \hbox (33.2488pt too wide) in paragraph at lines 70--76
-\T1/lmr/m/n/12 me-work ei-ne um-fang-rei-che Un-ter-stüt-zung für Da-ten-bin-du
-ng, Sty-les so-wie das MVVM-Architekturmuster,
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
  []
 
 
@@ -2199,23 +2211,57 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [26]
+Overfull \hbox (33.2488pt too wide) in paragraph at lines 70--76
+\T1/lmr/m/n/12 me-work ei-ne um-fang-rei-che Un-ter-stüt-zung für Da-ten-bin-du
+ng, Sty-les so-wie das MVVM-Architekturmuster,
+ []
+
+
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [27]
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [28])
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
+ []
+
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [29]
+Overfull \hbox (34.60179pt too wide) has occurred while \output is active
+[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
+ Diagnose- und Überwachungsapplikation []
+ []
+
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[30]
 \openout2 = `chapter/Technischeskonzept.aux'.
 
  (chapter/Technischeskonzept.tex
 chapter 6.
-[30
+[31
 
 
 
@@ -2225,15 +2271,15 @@ chapter 6.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[31]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
 [32]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [33]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[34]
 Overfull \hbox (3.96028pt too wide) in paragraph at lines 100--101
 \T1/lmr/m/n/12 stel-lung der gra-fi-schen Ober-flä-che, aber auch für die Da-te
 n-hal-tung über die Ar-rays ÿelf.messagesünd
@@ -2245,15 +2291,15 @@ File: lstlang1.sty 2025/11/14 1.11b listings language file
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[34]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
 [35]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [36]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[37]
 Overfull \hbox (17.19641pt too wide) in paragraph at lines 175--177
 \T1/lmr/m/n/12 Als Ar-chi-tek-tur-grund-stein für die Ap-pli-ka-ti-on wird die 
 [][]MVVM[] ([][]Model-View-ViewModel[])-Architektur
@@ -2263,17 +2309,7 @@ Overfull \hbox (17.19641pt too wide) in paragraph at lines 175--177
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[37]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
 [38]
-Overfull \hbox (1.63539pt too wide) in paragraph at lines 187--188
-[]\T1/lmr/m/n/12 Zur er-leich-ter-ten Um-set-zung der MVVM-Struktur wird die ,,
-CommunityToolkit.Mvvm''-Bibliothek
- []
-
-
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2286,7 +2322,11 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [41]
-<images/GUIKonzept.png, id=750, 685.8122pt x 481.04718pt>
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[42]
+<images/GUIKonzept.png, id=764, 685.8122pt x 481.04718pt>
 File: images/GUIKonzept.png Graphic file (type png)
 <use images/GUIKonzept.png>
 Package pdftex.def Info: images/GUIKonzept.png  used on input line 233.
@@ -2295,7 +2335,7 @@ Package pdftex.def Info: images/GUIKonzept.png  used on input line 233.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[42 <./images/GUIKonzept.png>]
+[43 <./images/GUIKonzept.png>]
 \openout2 = `chapter/Umsetzung1.aux'.
 
  (chapter/Umsetzung1.tex
@@ -2306,17 +2346,13 @@ Overfull \hbox (1.14827pt too wide) in paragraph at lines 11--12
 halb ei-ner zen-tra-len MQTT-Serviceklasse
  []
 
-[43
+[44
 
 
 
 
 
 ]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[44]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2332,48 +2368,40 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[48] (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-(C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-))
+[48]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [49]
-\openout2 = `chapter/TestkonzeptundTests.aux'.
+<images/Prozesserkennungsablauf.png, id=859, 564.1075pt x 343.2825pt>
+File: images/Prozesserkennungsablauf.png Graphic file (type png)
+<use images/Prozesserkennungsablauf.png>
+Package pdftex.def Info: images/Prozesserkennungsablauf.png  used on input line
+ 122.
+(pdftex.def)             Requested size: 398.34013pt x 242.40704pt.
 
- (chapter/TestkonzeptundTests.tex
-chapter 8.
-[50
-
-
-
-
-
-]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[51]
-
-LaTeX Warning: Reference `tab:performancetests' on page 52 undefined on input l
-ine 29.
-
-
-LaTeX Warning: Reference `fig: Messwerte' on page 52 undefined on input line 29
-.
-
+[50 <./images/Prozesserkennungsablauf.png>]
+(C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
 )
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[52]
-\openout2 = `chapter/BewertungundErgebnis.aux'.
+[51])
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
- (chapter/BewertungundErgebnis.tex
-chapter 9.
+
+[52]
+\openout2 = `chapter/TestkonzeptundTests.aux'.
+
+ (chapter/TestkonzeptundTests.tex
+chapter 8.
 [53
 
 
@@ -2384,16 +2412,53 @@ chapter 9.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[54])
+[54]
+
+LaTeX Warning: Reference `tab:performancetests' on page 55 undefined on input l
+ine 29.
+
+
+LaTeX Warning: Reference `fig: Messwerte' on page 55 undefined on input line 29
+.
+
+)
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [55]
+\openout2 = `chapter/BewertungundErgebnis.aux'.
+
+ (chapter/BewertungundErgebnis.tex
+chapter 9.
+[56
+
+
+
+
+
+]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[57]
+
+LaTeX Warning: Reference `tab:Werkzeugvergleich' on page 58 undefined on input 
+line 27.
+
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[58])
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[59]
 \openout2 = `chapter/FazitundAusblick.aux'.
 
  (chapter/FazitundAusblick.tex
 chapter 10.
-[56
+[60
 
 
 
@@ -2403,7 +2468,7 @@ chapter 10.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[57]
+[61]
 chapter without number
 
 Package biblatex Warning: Split bibliography detected.
@@ -2414,7 +2479,7 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-[58
+[62
 
 
 
@@ -2433,11 +2498,11 @@ Package biblatex Warning: Split bibliography detected.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[59]
+[63]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[60]
+[64]
 No file WissBer_PA_SA_BA.acr.
 (pages/formelzeichen.tex)
 No file WissBer_PA_SA_BA.nls.
@@ -2445,11 +2510,11 @@ No file WissBer_PA_SA_BA.nls.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[61] (WissBer_PA_SA_BA.lof)
+[65] (WissBer_PA_SA_BA.lof)
 \tf@lof=\write10
 \openout10 = `WissBer_PA_SA_BA.lof'.
 
- [62
+ [66
 
 
 ] (WissBer_PA_SA_BA.lot)
@@ -2460,7 +2525,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 Package glossaries Warning: Glossary `main' doesn't exist on input line 320.
 
-[63
+[67
 
 
 ]
@@ -2468,13 +2533,13 @@ Package glossaries Warning: Glossary `main' doesn't exist on input line 320.
 
  (chapter/anhang.tex
 chapter without number
-[64
+[68
 
 
 
 ]
 chapter without number
-<images/floatchartmessages.png, id=982, 743.77875pt x 1075.01625pt>
+<images/floatchartmessages.png, id=1053, 743.77875pt x 1075.01625pt>
 File: images/floatchartmessages.png Graphic file (type png)
 <use images/floatchartmessages.png>
 Package pdftex.def Info: images/floatchartmessages.png  used on input line 42.
@@ -2525,7 +2590,7 @@ Overfull \hbox (17.31319pt too wide) in paragraph at lines 56--56
  []
 
 
-ignored: Infinite glue shrinkage found in box being split [65
+ignored: Infinite glue shrinkage found in box being split [69
 
 
 ]
@@ -2533,7 +2598,7 @@ ignored: Infinite glue shrinkage found in box being split
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[66]
+[70]
 Overfull \hbox (1.04623pt too wide) in paragraph at lines 61--61
 []|\T1/lmr/bx/n/12 Test-
  []
@@ -2903,30 +2968,12 @@ ignored: Infinite glue shrinkage found in box being split
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[67]
+[71]
 ignored: Infinite glue shrinkage found in box being split
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[68]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[69]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[70 <./images/floatchartmessages.png>]
-chapter without number
-[71
-
-
-]
-chapter without number
-[72
-
-
-]
+[72]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2934,23 +2981,41 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[74]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[75]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[76]
+[74 <./images/floatchartmessages.png>]
 chapter without number
-[77
+[75
+
+
+]
+chapter without number
+[76
+
+
+]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[77]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[78]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[79]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[80]
+chapter without number
+[81
 
 
 ])
 runsystem(makeindex WissBer_PA_SA_BA.idx)...executed safely (allowed).
 
- (WissBer_PA_SA_BA.ind) [78
+ (WissBer_PA_SA_BA.ind) [82
 
 
 
@@ -2978,10 +3043,10 @@ Package logreq Info: Writing requests to 'WissBer_PA_SA_BA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64380 strings out of 467691
- 1491211 string characters out of 5419788
- 2939960 words of memory out of 5000000
- 91947 multiletter control sequences out of 15000+600000
+ 64481 strings out of 467691
+ 1492910 string characters out of 5419788
+ 2940434 words of memory out of 5000000
+ 92004 multiletter control sequences out of 15000+600000
  694656 words of font info for 76 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,11n,108p,11257b,2862s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -3034,9 +3099,9 @@ c/lm/lmri12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmro1
 2.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmss12.pfb><C:/
 Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/wi
 edemaf/Documents/MikTex/fonts/type1/public/lm/lmtt12.pfb>
-Output written on WissBer_PA_SA_BA.pdf (88 pages, 1257439 bytes).
+Output written on WissBer_PA_SA_BA.pdf (92 pages, 1294644 bytes).
 PDF statistics:
- 1677 PDF objects out of 1728 (max. 8388607)
- 519 named destinations out of 1000 (max. 500000)
- 904 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1763 PDF objects out of 2073 (max. 8388607)
+ 563 named destinations out of 1000 (max. 500000)
+ 925 words of extra memory for PDF output out of 10000 (max. 10000000)
 

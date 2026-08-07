@@ -2,7 +2,7 @@
 \label{cha:Umsetzung}
 
 \section{Realisierung der Softwarearchitektur}
-Für die Umsetzung der Anwendung wurde die in Kapitel 6 entwickelte MVVM-Architektur verwendet. Während die Benutzeroberfläche ausschließlich für Darstellung der Informationen verantwortlich ist, erfolgt die Verarbeitung der MQTT-Nachrichten vollständig innerhalb separater Service-Komponenten. Die Datenhaltung wurde in Repository-Klassen ausgelagert, welche den Zugriff auf die SQLite-Datenbank kapseln. Dadurch konnte eine klare Trennung zwischen Darstellung, Geschäftslogik und Persistenz erreicht werden.
+Die entwickelte Anwendung umfasst in Summe 57 unterschiedliche Klassen, die jeweils in eigenen Programmdateien implementiert wurden. Die Klassen sind dabei in die Namensräume ,,View'', ,,ViewModel'', ,,Model'', ,,Service'' und ,,Repository'' unterteilt. Die Namensräume ,,View'' und ,,ViewModel'' beinhalten die Klassen für die Benutzeroberfläche, während die Namensräume ,,Service'' und ,,Repository'' die Geschäftslogik und Persistenz der Anwendung abbilden. Die ,,Models'' enthalten die Datenstrukturen, die für eine einheitliche Datenhaltung innerhalb der Anwendung sorgen. Dadurch konnte eine klare Trennung zwischen Darstellung, Geschäftslogik und Persistenz erreicht werden. Insgesamt umfasst die Anwendung über mehr als 10.000 Zeilen Programmcode, die in den verschiedenen Klassen und XAML-Dateien implementiert wurden.
 
 Im Verlauf der Implementierung zeigte sich insbesondere bei der Verarbeitung großer Nachrichtenmengen die Bedeutung dieser Trennung. Analysefunktionen konnten erweitert werden, ohne Änderungen an der Benutzeroberfläche vornehmen zu müssen. Gleichzeitig war es möglich, einzelne Komponenten unabhängig voneinander zu testen.
 
@@ -21,6 +21,48 @@ Die fachliche Struktur der im Konzept definierten Verarbeitungsschritte blieb da
 Eine zentrale Anforderung der Anwendung bestand in der langfristigen Speicherung von MQTT-Nachrichten. Hierfür wurde eine SQLite-Datenbank eingesetzt. Neben den Kommunikationsdaten werden auch Fehler, Prozessabläufe, Nachrichtenvorlagen sowie Benutzereinstellungen in der Datenbank gespeichert. Dadurch können diese Informationen über mehrere Programmsitzungen hinweg erhalten bleiben und verbrauchen weniger Arbeitsspeicherplatz.
 
 Die Speicherung der Daten in der Datenbank erfolgt durch SQL-Zugriffe in den Repository-Klassen. Dabei greifen die Repository-Klassen zur Übersichtlichkeit jeweils auf lediglich eine Datentabelle in der  Datenbank zu. Damit die Datenbank jedoch nicht zur gleichen Zeit beschrieben wird und so keine Fehler entstehen können, wurde ein sogenannter Semaphore für konkurrierende Schreibzugriffe verwendet. Ein Semaphore ist dabei ein Werkzeug, welches auf einzelne Prozesse warten kann, wenn Wartezeiten erwartet werden. Das wird hauptsächlich bei begrenzten Ressourcen wie Dateien verwendet, damit der Zugriff auf gemeinsame Ressourcen kontrolliert werden kann \autocite{billwagnerSemaphorUndSemaphoreSlim}. Für die Realisierung eines Semaphores wurde die \lstinline{SemaphoreSlim}-Klasse herangezogen und bei jedem Schreibzugriff aufgerufen.
+
+Listing \ref{lst:Datenspeicherung} zeigt die Repository-Methode für das Speichern von Nachrichtenmodellen in der Datenbank. Dazu wird als erstes die Semaphore-Methode \lstinline{semaphore.WaitAsync} aufgerufen, die den Datenbankzugriff zu der Warteschleife hinzufügt. Sobald der Zugriff frei ist, wird eine Verbindung zur Datenbank-Datei aufgebaut und das Nachrichtenmodell durch einen Befehlstext und einfügen der Nachrichtenmodell-Variablen in der Datenbank gespeichert.
+
+\begin{lstlisting}[
+    language={[Sharp]C},
+    caption={Speicherung von Nachrichtenmodellen in die Datenbank},
+    label= {lst:Datenspeicherung}
+    ]
+public async Task AddMessage(string topic, string payload, string sender, string retain)
+{
+    await semaphore.WaitAsync();
+    try
+    {
+        DateTime timestamp = DateTime.Now;
+
+        using var connection = new SqliteConnection(connectionstring);
+        await connection.OpenAsync();
+        var command = connection.CreateCommand();
+        command.CommandText =
+        @"
+            INSERT INTO Messages
+            (Sender, Topic, Payload, Timestamp, RetainFlag)
+
+            VALUES
+            ($sender, $topic, $payload, $timestamp, $retain);
+        ";
+        command.Parameters.AddWithValue("$sender", sender);
+        command.Parameters.AddWithValue("$topic", topic);
+        command.Parameters.AddWithValue("$payload", payload);
+        command.Parameters.AddWithValue("$retain", retain);
+        command.Parameters.AddWithValue(
+            "$timestamp",
+            timestamp.ToString("HH:mm:ss"));
+
+        await command.ExecuteNonQueryAsync();
+    }
+    finally
+    {
+        semaphore.Release();
+    }
+}
+\end{lstlisting}
 \section{Realisierung des Paging-Konzepts}
 Bei der Implementierung des Paging-Konzepts wurde festgelegt, dass zu jedem Zeitpunkt nur ein begrenzter Ausschnitt der Nachrichten im Arbeitsspeicher gehalten wird. Diese Anzahl kann durch den Benutzer zwischen 20 und 60 Nachrichten konfiguriert werden. Kleinere Werte reduzieren den Arbeitsspeicherbedarf und beschleunigen die Aktualisierung der Benutzeroberfläche, während größere Werte einen besseren Überblick über den Nachrichtenverlauf ermöglichen. Die Parametrierbarkeit erlaubt somit eine Anpassung an verschiedene Voraussetzungen, wie beispielsweise die Leistungsfähigkeit des verwendeten Rechners oder die Anzahl der gleichzeitig verarbeiteten Nachrichten.
 
@@ -74,7 +116,13 @@ Die Analyse von Automatisierungsabläufen stellt die zentrale Diagnosefunktion d
 
 Aufgrund der unterschiedlichen Kommunikationsstrukturen und prozessspezifischen Abläufe verschiedener Verpackungslinien wurde der Umfang der automatischen Fehlererkennung bewusst auf eindeutig identifizierbare Ablaufverletzungen beschränkt. Fehler können nur dann erkannt werden, wenn neue Abläufe starten, während noch nicht alle erwarteten Nachrichten des vorherigen Ablaufs empfangen wurden. Die verschiedenen Anfangsnachrichten der Abläufe sowie die erwarteten Nachrichten können aus der Tabelle \ref{tab:automatisierungsabläufe} entnommen werden.
 
-Die Erkennung der erwarteten Nachrichten erfolgt durch die Ablauf-Serviceklasse. Diese erkennt aufgrund der definierten Anfangsnachrichten, dass ein neuer Ablauf gestartet wurde und speichert die dafür erwarteten Nachrichtenmodelle in jeweils für den Ablauf erstellten Listen. Die erwarteten Nachrichtenmodelle enthalten das erwartete MQTT-Topic sowie zusätzliche Zustandsinformationen, die innerhalb der Payload überprüft werden. In einer anderen Methode wird daraufhin jede Nachricht mit diesem Nachrichtenmodell verglichen und bei Übereinstimmung aus der Liste entfernt. Sobald die Liste der erwarteten Nachrichten leer ist, wird der Ablauf als abgeschlossen betrachtet und mit Endzeitstempel in der Datenbank abgespeichert. Sollte eine neue Anfangsnachricht empfangen werden, während noch nicht alle erwarteten Nachrichten des vorherigen Ablaufs empfangen wurden, wird der Ablauf als fehlerhaft betrachtet und ebenfalls mit Endzeitstempel in der Datenbank abgespeichert. Dazu wird die Fehlermeldung ,,Prozess nicht abgeschlossen'' in der Datenbank hinterlegt und an die Fehlererkennung weitergeleitet. 
+Die Erkennung der erwarteten Nachrichten erfolgt durch die Ablauf-Serviceklasse. Für die Visualisierung der Funktionsweise dieser Serviceklasse dient Abbildung \ref{fig:Ablaufanalyse}. Diese erkennt aufgrund der definierten Anfangsnachrichten, dass ein neuer Ablauf gestartet wurde und speichert die dafür erwarteten Nachrichtenmodelle in jeweils für den Ablauf erstellten Listen. Die erwarteten Nachrichtenmodelle enthalten das erwartete MQTT-Topic sowie zusätzliche Zustandsinformationen, die innerhalb der Payload überprüft werden. In einer anderen Methode wird daraufhin jede Nachricht mit diesem Nachrichtenmodell verglichen und bei Übereinstimmung aus der Liste entfernt. Sobald die Liste der erwarteten Nachrichten leer ist, wird der Ablauf als abgeschlossen betrachtet und mit Endzeitstempel in der Datenbank abgespeichert. Sollte eine neue Anfangsnachricht empfangen werden, während noch nicht alle erwarteten Nachrichten des vorherigen Ablaufs empfangen wurden, wird der Ablauf als fehlerhaft betrachtet und ebenfalls mit Endzeitstempel in der Datenbank abgespeichert. Dazu wird die Fehlermeldung ,,Prozess nicht abgeschlossen'' in der Datenbank hinterlegt und an die Fehlererkennung weitergeleitet. 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Prozesserkennungsablauf.png}
+    \caption{Floatchart-Diagramm für die Automatisierungsablaufanalyse}
+    \label{fig:Ablaufanalyse}
+\end{figure}
 
 In der Benutzeroberfläche können sowohl aktive als auch bereits abgeschlossene Prozesse angezeigt werden. Neben Start- und Endzeitpunkt werden dabei auch die bereits empfangenen sowie die noch ausstehenden Nachrichten dargestellt. Dadurch kann der Benutzer nicht nur fehlerhafte Prozesse identifizieren, sondern auch nachvollziehen, an welcher Stelle eines Ablaufs die erwartete Kommunikation unterbrochen wurde.
 

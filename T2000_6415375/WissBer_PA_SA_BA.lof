@@ -15,9 +15,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\def \@chapapp {\appendixname }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Floatchart-Diagramm für die Nachrichtenverarbeitung}}{65}{figure.caption.20}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Floatchart-Diagramm für die Nachrichtenverarbeitung}}{70}{figure.caption.18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -38,78 +38,44 @@ Im Rahmen dieser Arbeit wurden Künstliche Intelligenz (\acrshort{acr:KI})\index
 
 
 \begin{figure}[htbp]
-            \centering
-            \includegraphics[width=0.8\textwidth]{images/floatchartmessages.png}
-            \caption{Floatchart-Diagramm für die Nachrichtenverarbeitung}
-            \label{fig:FloatchartMessages}
-        \end{figure}
-        
-         
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/floatchartmessages.png}
+    \caption{Floatchart-Diagramm für die Nachrichtenverarbeitung}
+    \label{fig:FloatchartMessages}
+\end{figure}
 
+\begin{longtable}{p{2.5cm} p{12cm}}
+    \caption{Übersicht der Automatisierungsabläufe} 
+    \label{tab:automatisierungsabläufe} \\ 
+    \toprule \textbf{Prozess} & \textbf{Beschreibung} \\ 
+    \midrule \endfirsthead \toprule \textbf{Prozess} & \textbf{Beschreibung} \\ 
+    \midrule \endhead Linienstopp & \begin{itemize} \item Anfangstopic \begin{itemize} \item mlc/v1/cmd/desired/\{MLC\} \item messageType: T\_EXTERNAL\_LINE\_COMMAND\_\-DESIRED\_EVENT \item commandString: LINE\_STOP \end{itemize} \item Erwartete Topics \begin{itemize} \item mlc/v1/omac/reported/\{machineName\} \end{itemize} \item Zusatzinformationen \begin{itemize} \item Durchlaufene OMAC-Zustände: STOPPING, STOPPED \end{itemize} \end{itemize} \\ 
+    \midrule Linienstart & \begin{itemize} \item Anfangstopic \begin{itemize} \item mlc/v1/cmd/desired/\{MLC\} \item messageType: T\_EXTERNAL\_LINE\_COMMAND\_\-DESIRED\_EVENT \item commandString: LINE\_START \end{itemize} \item Erwartete Topics \begin{itemize} \item mlc/v1/omac/reported/\{machineName\} \end{itemize} \item Zusatzinformationen \begin{itemize} \item Durchlaufene OMAC-Zustände: RESETTING, IDLE, STARTING, EXECUTE \end{itemize} \end{itemize} \\ 
+    \midrule Linienquittierung & \begin{itemize} \item Anfangstopic \begin{itemize} \item mlc/v1/cmd/desired/\{MLC\} \item messageType: T\_EXTERNAL\_LINE\_COMMAND\_\-DESIRED\_EVENT \item commandString: LINE\_QUIT \end{itemize} \item Erwartete Topics \begin{itemize} \item mlc/v1/cmd/desired/\{MLC\} (Bestätigung der MLC) \item diagnosis/v1/messagesAcknowledged/reported/\{ma\-chineName\} \end{itemize} \item Zusatzinformationen \begin{itemize} \item Alle Maschinen mit Fehler müssen die Fehlernachrichtquittierung bestätigen. \end{itemize} \end{itemize} \\ 
+    \midrule Artikelwechsel & \begin{itemize} \item Anfangstopic \begin{itemize} \item mlc/v1/conf/desired/\{MLC\} \item Linienartikel \item Teilnehmer am Artikelwechsel \end{itemize} \item Erwartete Topics \begin{itemize} \item mlc/v1/lineArticle/reported/\{machineName\} \end{itemize} \item Zusatzinformationen \begin{itemize} \item Maschinenartikel, der von den jeweiligen Teilnehmern geladen werden musste. \end{itemize} \end{itemize} \\ 
+    \midrule Leerfahren & \begin{itemize} \item Anfangstopic \begin{itemize} \item mlc/v1/conf/desired/{MLC} \item desiredAction: RunEmpty \item Teilnehmer am Leerfahren \end{itemize} \item Erwartete Topics \begin{itemize} \item mlc/v1/batch/reported/\{machineName\} \end{itemize} \end{itemize} \\ \midrule Fliegender Artikelwechsel & \begin{itemize} \item Anfangstopic \begin{itemize} \item mlc/v1/continuousArticleChange/parameterSets/hand\-over/\{machineName\}/reported/\{MLC\} \end{itemize} \item Erwartete Topics \begin{itemize} \item mlc/v1/continuousArticleChange/parameterSets/hand\-over/reported/\{machineName\} \item mlc/v1/articleChange/producingBatches/reported/\{MLC\} \end{itemize} \end{itemize} \\ 
+    \bottomrule 
+\end{longtable}
 
-
-
-
-         \begin{lstlisting}[
-    language={[Sharp]C},
-    caption={Speicherung der gesamten Topic-Hierarchie in TopicTreeNode},
-    label={lst:AddTopicHierarchy}
-    ]
-public async Task<bool> AddTemplate(PublishModel model)
-{
-    await semaphore.WaitAsync();
-    try
-    {
-        using var connection = new SqliteConnection(_connectionString);
-
-        await connection.OpenAsync();
-        // Prüfen ob Name schon existiert
-        var checkCommand = connection.CreateCommand();
-
-        checkCommand.CommandText =
-        @"
-            SELECT COUNT(*)
-            FROM PublishTemplates
-            WHERE Name = $name
-        ";
-
-        checkCommand.Parameters.AddWithValue("$name", model.Name);
-
-        var count = (long)await checkCommand.ExecuteScalarAsync();
-
-        // Falls Name schon existiert -> nichts speichern
-        if (count > 0)
-            return false;
-
-        // Speichern
-        var command = connection.CreateCommand();
-
-        command.CommandText =
-        @"
-            INSERT INTO PublishTemplates
-            (Name, Topic, Header, Payload)
-
-            VALUES
-            ($name, $topic, $header, $payload);
-        ";
-
-        command.Parameters.AddWithValue("$name", model.Name);
-        command.Parameters.AddWithValue("$topic", model.Topic);
-        command.Parameters.AddWithValue("$header", model.Header);
-        command.Parameters.AddWithValue("$payload", model.Payload);
-
-        await command.ExecuteNonQueryAsync();
-    }
-    finally
-    {
-        semaphore.Release();
-    }
-    return true;
-}
-\end{lstlisting}
-
-
- \begin{longtable}{|p{1cm}|p{3cm}|p{4.0cm}|p{4.8cm}|p{2cm}|} \hline \textbf{Test-ID} & \textbf{Testfall} & \textbf{Testdurchführung} & \textbf{Erwartetes Ergebnis} & \textbf{Ergebnis} \\ \hline FT-01 & Verbindungs-Aufbau & Verbindung mit gültigem Broker herstellen & Verbindung wird aufgebaut und angezeigt & X \\ \hline FT-02 & Ungültige Broker-IP & Falsche IP-Adresse eintragen & 5 Sekunden lang versuchen, dann Fehlermeldung anzeigen & X \\ \hline FT-03 & Ungültiger Broker-Port & Falschen Port eintragen & 5 Sekunden lang versuchen, dann Fehlermeldung anzeigen & X \\ \hline FT-04 & Manuelle Verbindungstrennung & Brokerverbindung manuell trennen & Verbindung wird getrennt und angezeigt & X \\ \hline FT-05 & Verbindungs-Abbruch & Netzwerkkabel wird entfernt & Verbindungsabbruch wird in unter 3 Sekunden erkannt und Fehlermeldung wird angezeigt & X \\ \hline FT-06 & Nachrichtenempfang & Maschine sendet kontinuierlich Nachrichten; empfangene Nachrichten werden mit MQTT.fx verglichen & Alle Nachrichten werden empfangen & X \\ \hline FT-07 & Pagination & Nachrichtenliste mit mindestens 3000 Nachrichten wird ganz durchgeblättert & Alle Nachrichten werden korrekt nachgeladen und gelöscht & X \\ \hline FT-08 & Topic-Filterung & Verschiedene Topic-Filter wählen & Alle passenden Nachrichten werden gefunden und angezeigt & X \\ \hline FT-09 & Suchfunktion & Verschiedene Teilnehmernamen, Uhrzeiten und Nachrichten werden eingegeben & Alle passenden Nachrichten werden gefunden und angezeigt & X \\ \hline FT-10 & Datenbank-Speicherung & Nachrichten empfangen und Anwendung erneut laden & Gespeicherte Nachrichten bleiben erhalten & X \\ \hline FT-11 & Teilnehmer-Erkennung & Retain-Nachrichten empfangen & Alle Teilnehmer ohne ,,integrated By'' richtig anzeigen & X \\ \hline FT-12 & Zustands- und Statuserfassung & Alle OMAC-States von jedem Teilnehmer senden und empfangen & Zustände werden korrekt gespeichert und angezeigt & X \\ \hline FT-13 & Regulärer Prozessablauf & Verpackungslinie durchläuft Prozess und beendet ihn korrekt & Prozess wird erkannt und ohne Fehler abgespeichert & -- \\ \hline FT-14 & Fehlerhafter Prozess & Maschine durchläuft Prozess, beendet diesen jedoch nicht & Prozess wird erkannt und mit Fehler abgespeichert & X \\ \hline FT-15 & Prozessfehler erkennen & Maschine durchläuft Prozess, beendet diesen jedoch nicht & Prozessfehler wird erkannt und in den Fehlermeldungen angezeigt & X \\ \hline FT-16 & Strukturfehler erkennen & Alle verschiedenen Strukturfehler senden & Alle Strukturfehler werden richtig erkannt, angezeigt und können angeklickt werden & X \\ \hline FT-17 & Linienfehler anzeigen & Maschine sendet drei verschiedene linieninterne Fehlermeldungen & Fehler und Sender werden erkannt, angezeigt und sind anklickbar & X \\ \hline \caption{Ergebnisse der durchgeführten Funktionstests} \label{tab:funktionstests} \end{longtable}
+ \begin{longtable}{|p{1cm}|p{3cm}|p{4.0cm}|p{4.8cm}|p{2cm}|} \caption{Ergebnisse der durchgeführten Funktionstests} \label{tab:funktionstests} \\
+    \hline \textbf{Test-ID} & \textbf{Testfall} & \textbf{Testdurchführung} & \textbf{Erwartetes Ergebnis} & \textbf{Ergebnis} \\ \hline FT-01 & Verbindungsuf\-bau & Verbindung mit gültigem Broker herstellen & Verbindung wird aufgebaut und angezeigt & X 
+    \\ \hline FT-02 & Ungültige Broker-IP & Falsche IP-Adresse eintragen & 5 Sekunden lang versuchen, dann Fehlermeldung anzeigen & X 
+    \\ \hline FT-03 & Ungültiger Broker-Port & Falschen Port eintragen & 5 Sekunden lang versuchen, dann Fehlermeldung anzeigen & X 
+    \\ \hline FT-04 & Manuelle Verbindungstrennung & Brokerverbindung manuell trennen & Verbindung wird getrennt und angezeigt & X 
+    \\ \hline FT-05 & Verbindungs-Abbruch & Netzwerkkabel wird entfernt & Verbindungsabbruch wird in unter 3 Sekunden erkannt und Fehlermeldung wird angezeigt & X 
+    \\ \hline FT-06 & Nachrichten\-empfang & Maschine sendet kontinuierlich Nachrichten; empfangene Nachrichten werden mit MQTT.fx verglichen & Alle Nachrichten werden empfangen & X 
+    \\ \hline FT-07 & Pagination & Nachrichtenliste mit mindestens 3000 Nachrichten wird ganz durchgeblättert & Alle Nachrichten werden korrekt nachgeladen und gelöscht & X 
+    \\ \hline FT-08 & Topic-Filterung & Verschiedene Topic-Filter wählen & Alle passenden Nachrichten werden gefunden und angezeigt & X 
+    \\ \hline FT-09 & Suchfunktion & Verschiedene Teilnehmernamen, Uhrzeiten und Nachrichten werden eingegeben & Alle passenden Nachrichten werden gefunden und angezeigt & X 
+    \\ \hline FT-10 & Datenbank-Speicherung & Nachrichten empfangen und Anwendung erneut laden & Gespeicherte Nachrichten bleiben erhalten & X 
+    \\ \hline FT-11 & Teilnehmer-Erkennung & Retain-Nachrichten empfangen & Alle Teilnehmer ohne ,,integrated By'' richtig anzeigen & X 
+    \\ \hline FT-12 & Zustands- und Statuserfassung & Alle OMAC-States von jedem Teilnehmer senden und empfangen & Zustände werden korrekt gespeichert und angezeigt & X 
+    \\ \hline FT-13 & Regulärer Prozessablauf & Verpackungslinie durchläuft Prozess und beendet ihn korrekt & Prozess wird erkannt und ohne Fehler abgespeichert & -- 
+    \\ \hline FT-14 & Fehlerhafter Prozess & Maschine durchläuft Prozess, beendet diesen jedoch nicht & Prozess wird erkannt und mit Fehler abgespeichert & X 
+    \\ \hline FT-15 & Prozessfehler erkennen & Maschine durchläuft Prozess, beendet diesen jedoch nicht & Prozessfehler wird erkannt und in den Fehlermeldungen angezeigt & X 
+    \\ \hline FT-16 & Strukturfehler erkennen & Alle verschiedenen Strukturfehler senden & Alle Strukturfehler werden richtig erkannt, angezeigt und können angeklickt werden & X 
+    \\ \hline FT-17 & Linienfehler anzeigen & Maschine sendet drei verschiedene linieninterne Fehlermeldungen & Fehler und Sender werden erkannt, angezeigt und sind anklickbar & X \\ \hline  
+\end{longtable}
 
 \addchap{C Details zu Laboraufbauten und Messergebnissen}
 \setcounter{chapter}{3}

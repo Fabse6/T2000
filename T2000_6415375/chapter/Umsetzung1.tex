@@ -129,7 +129,7 @@ In der Benutzeroberfläche können sowohl aktive als auch bereits abgeschlossene
 \section{Benutzeroberfläche}
 Die Benutzeroberfläche wurde mit der \textit{Windows Presentation Foundation} (WPF) umgesetzt. Die Darstellung der Informationen erfolgt dabei durch eine Hauptansicht, in der die verschiedenen Unteransichten über ein Menü ausgewählt werden können. 
 
-Neben dem Menü finden sich oben und unten Statusanzeigen wider. Diese zeigen Informationen über alle Teilnehmer und über allgemeine Informationen wie interne Fehler der Anwendung oder die empfangene Nachrichtenanzahl. 
+Neben dem Menü finden sich oben und unten Statusanzeigen wieder. Diese zeigen Informationen über alle Teilnehmer und über allgemeine Informationen wie interne Fehler der Anwendung oder die empfangene Nachrichtenanzahl. 
 
 Die Unteransichten werden zur Ressourcenschonung nur bei Bedarf in die \lstinline{ContentControl} zwischen den Statusanzeigen der Hauptansicht geladen. Dadurch ist es nicht nötig, das gesamte Fenster bei jedem Wechsel der Unteransicht neu zu laden, wodurch die Performance der Anwendung verbessert wird. Die Unteransichten beinhalten jeweils eigene View-Models, die die Daten für die Darstellung aufbereiten. 
 

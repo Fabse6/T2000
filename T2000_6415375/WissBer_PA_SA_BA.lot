@@ -3,22 +3,21 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Nutzwertanalyse bestehender Lösungen}}{22}{table.caption.11}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Nutzwertanalyse bestehender Lösungen}}{23}{table.caption.11}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Bewertungsmatrix zur Auswahl des GUI-Frameworks}}{28}{table.caption.12}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Bewertungsmatrix zur Auswahl des GUI-Frameworks}}{30}{table.caption.12}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {9.1}{\ignorespaces Nutzwertanalyse der untersuchten MQTT-Werkzeuge}}{59}{table.caption.15}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\def \@chapapp {\appendixname }
+\contentsline {table}{\numberline {9.1}{\ignorespaces Nutzwertanalyse der untersuchten MQTT-Werkzeuge}}{61}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Liste der verwendeten Künstliche Intelligenz basierten Werkzeuge}}{68}{table.caption.20}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Übersicht der Automatisierungsabläufe}}{69}{table.B.1}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Ergebnisse der durchgeführten Funktionstests}}{71}{table.B.2}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Liste der verwendeten Künstliche Intelligenz basierten Werkzeuge}}{70}{table.caption.22}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Übersicht der Automatisierungsabläufe}}{71}{table.B.1}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Ergebnisse der durchgeführten Funktionstests}}{73}{table.B.2}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

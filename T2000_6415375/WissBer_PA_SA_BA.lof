@@ -3,23 +3,22 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Subscribe-Reiter in MQTT.fx}}{15}{figure.caption.7}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces MQTT Explorer}}{17}{figure.caption.8}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Anzeigen der Nachrichten in einer Baumstruktur im MQTTMultimeter}}{18}{figure.caption.9}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Nachrichtenverlauf im MQTTMultimeter}}{19}{figure.caption.10}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Subscribe-Reiter in MQTT.fx}}{16}{figure.caption.7}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces MQTT Explorer}}{18}{figure.caption.8}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Anzeigen der Nachrichten in einer Baumstruktur im MQTTMultimeter}}{20}{figure.caption.9}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Nachrichtenverlauf im MQTTMultimeter}}{20}{figure.caption.10}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Grundlegendes Konzept für die GUI}}{43}{figure.caption.13}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Grundlegendes Konzept für die GUI}}{45}{figure.caption.13}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Floatchart-Diagramm für die Automatisierungsablaufanalyse}}{50}{figure.caption.14}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Floatchart-Diagramm für die Automatisierungsablaufanalyse}}{52}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\def \@chapapp {\appendixname }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Floatchart-Diagramm für die Nachrichtenverarbeitung}}{74}{figure.caption.22}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Floatchart-Diagramm für die Nachrichtenverarbeitung}}{76}{figure.caption.24}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

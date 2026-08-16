@@ -1,17 +1,17 @@
-[0] Config.pm:328> INFO - This is Biber 2.21
-[0] Config.pm:331> INFO - Logfile is 'WissBer_PA_SA_BA.blg'
-[78] biber-MSWIN64:342> INFO - === 
-[111] Biber.pm:421> INFO - Reading 'WissBer_PA_SA_BA.bcf'
-[200] Biber.pm:1002> INFO - Found 43 citekeys in bib section 0
-[224] Biber.pm:4487> INFO - Processing section 0
-[233] Biber.pm:4678> INFO - Looking for bibtex file 'literature/T2000.bib' for section 0
-[383] bibtex.pm:1713> INFO - LaTeX decoding ...
-[472] bibtex.pm:1519> INFO - Found BibTeX data source 'literature/T2000.bib'
-[629] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[631] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[631] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[631] Biber.pm:4313> INFO - No sort tailoring available for locale 'de-DE'
-[657] bbl.pm:676> INFO - Writing 'WissBer_PA_SA_BA.bbl' with encoding 'UTF-8'
-[670] bbl.pm:779> INFO - Output to WissBer_PA_SA_BA.bbl
-[670] Biber.pm:132> WARN - legacy year field 'Sun Feb 22 2026 00:00:00 GMT+0000 (Coordinated Universal Time)' in entry 'teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime' is not an integer - this will probably not sort properly.
-[671] Biber.pm:134> INFO - WARNINGS: 1
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'WissBer_PA_SA_BA.blg'
+[41] biber:340> INFO - === So Aug 16, 2026, 22:42:12
+[51] Biber.pm:420> INFO - Reading 'WissBer_PA_SA_BA.bcf'
+[88] Biber.pm:994> INFO - Found 43 citekeys in bib section 0
+[97] Biber.pm:4463> INFO - Processing section 0
+[103] Biber.pm:4654> INFO - Looking for bibtex file 'literature/T2000.bib' for section 0
+[105] bibtex.pm:1713> INFO - LaTeX decoding ...
+[130] bibtex.pm:1519> INFO - Found BibTeX data source 'literature/T2000.bib'
+[247] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[247] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[247] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[247] Biber.pm:4289> INFO - No sort tailoring available for locale 'de-DE'
+[266] bbl.pm:676> INFO - Writing 'WissBer_PA_SA_BA.bbl' with encoding 'UTF-8'
+[273] bbl.pm:779> INFO - Output to WissBer_PA_SA_BA.bbl
+[273] Biber.pm:131> WARN - legacy year field 'Sun Feb 22 2026 00:00:00 GMT+0000 (Coordinated Universal Time)' in entry 'teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime' is not an integer - this will probably not sort properly.
+[273] Biber.pm:133> INFO - WARNINGS: 1

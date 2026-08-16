@@ -18,10 +18,10 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
+  \datalist[entry]{nyt/global//global/global/global}
     \entry{adegeoXAMLLanguageOverview}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=9ecd74085a04ef7487f1cde27f0a0cec}{%
+        {{un=0,uniquepart=base,hash=9ecd74085a04ef7487f1cde27f0a0cec}{%
            family={{adegeo}},
            familyi={a\bibinitperiod}}}%
       }
@@ -35,6 +35,8 @@
       \strng{authorfullhashraw}{9ecd74085a04ef7487f1cde27f0a0cec}
       \field{sortinit}{a}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET.}
@@ -56,7 +58,7 @@
     \endentry
     \entry{ajcvickersOverviewMicrosoftDataSqlite}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=4d6008eaec1134665fe29ef987d3ecaa}{%
+        {{un=0,uniquepart=base,hash=4d6008eaec1134665fe29ef987d3ecaa}{%
            family={{ajcvickers}},
            familyi={a\bibinitperiod}}}%
       }
@@ -70,6 +72,8 @@
       \strng{authorfullhashraw}{4d6008eaec1134665fe29ef987d3ecaa}
       \field{sortinit}{a}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{An overview of Microsoft.Data.Sqlite}
@@ -95,6 +99,8 @@
       }
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{abstract}{Hello World!: asyncio is a library to write concurrent code using the async/await syntax. asyncio is used as a foundation for multiple Python asynchronous frameworks that provide high-performance n...}
       \field{langid}{english}
@@ -115,11 +121,12 @@
     \endentry
     \entry{EtherCAT}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=f88f4792f3c82e0f9deb2f4acc140e0f}{%
+        {{un=0,uniquepart=base,hash=f88f4792f3c82e0f9deb2f4acc140e0f}{%
            family={Babel},
            familyi={B\bibinitperiod},
            given={Wolfgang},
-           giveni={W\bibinitperiod}}}%
+           giveni={W\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Wiesbaden}%
@@ -137,6 +144,7 @@
       \strng{authorfullhashraw}{f88f4792f3c82e0f9deb2f4acc140e0f}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1}
@@ -148,31 +156,36 @@
     \endentry
     \entry{PythonVSCS}{inproceedings}{}{}
       \name{author}{5}{}{%
-        {{hash=ed9f8c012016cdf533348328d59500d7}{%
+        {{un=0,uniquepart=base,hash=ed9f8c012016cdf533348328d59500d7}{%
            family={Bahar},
            familyi={B\bibinitperiod},
            given={Abdullrahman\bibnamedelima Yousif},
-           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
-        {{hash=fff54e56cd915356c18a640391e1a488}{%
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fff54e56cd915356c18a640391e1a488}{%
            family={Shorman},
            familyi={S\bibinitperiod},
            given={Samer\bibnamedelima Mahmoud},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=d9cfae67642a6b4df97dc81b16e79318}{%
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d9cfae67642a6b4df97dc81b16e79318}{%
            family={Khder},
            familyi={K\bibinitperiod},
            given={Moaiad\bibnamedelima Ahmad},
-           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=2b29a5b0b2ab8105b9009f09542bc013}{%
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2b29a5b0b2ab8105b9009f09542bc013}{%
            family={Quadir},
            familyi={Q\bibinitperiod},
            given={Abdullah\bibnamedelima Muhammad},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-        {{hash=3d3859ed7f69d0c18f93b68531d04d25}{%
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d3859ed7f69d0c18f93b68531d04d25}{%
            family={Almosawi},
            familyi={A\bibinitperiod},
            given={Sayed\bibnamedelima Ahmed},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{3c18fde7d00aaa9f2b6c68b6d52f845a}
       \strng{fullhash}{ea766d5509e4bdd0b673edb7c880e694}
@@ -184,6 +197,8 @@
       \strng{authorfullhashraw}{ea766d5509e4bdd0b673edb7c880e694}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Nowadays computer became an important part of our day-to-day life. Computer programs are developed in many different programming languages and each of these languages have its own strength and weakness. In addition, nowadays many programming languages are available in the market but only few of these languages have shined out of all the other programming language. For this paper we are going to explore the difference between three of the top programming languages in the market, these languages are python, C\# and Java. To conclude, each of these programming languages has its own set of applications, and it's difficult to distinguish between them because it all relies on the developer's preferences and the tasks he or she wants to do.}
@@ -215,7 +230,7 @@
     \endentry
     \entry{billwagnerSemaphorUndSemaphoreSlim}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=e3a36de53b51204b5b96e1974ca0488e}{%
+        {{un=0,uniquepart=base,hash=e3a36de53b51204b5b96e1974ca0488e}{%
            family={BillWagner},
            familyi={B\bibinitperiod}}}%
       }
@@ -229,6 +244,8 @@
       \strng{authorfullhashraw}{e3a36de53b51204b5b96e1974ca0488e}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Erfahren Sie mehr über Semaphore \& SemaphoreSlim. Class Semaphor ist ein dünner Wrapper um das Win32-Semaphorobjekt. Die Klasse SemaphoreSlim ist eine schnelle, einfache Variante der Klasse Semaphore.}
@@ -250,7 +267,7 @@
     \endentry
     \entry{zotero-item-198}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=5b6409425cc423d40fb2d7983c07b129}{%
+        {{un=0,uniquepart=base,hash=5b6409425cc423d40fb2d7983c07b129}{%
            family={{chkr1011}},
            familyi={c\bibinitperiod}}}%
       }
@@ -267,6 +284,8 @@
       \strng{authorfullhashraw}{5b6409425cc423d40fb2d7983c07b129}
       \field{sortinit}{c}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{7}
@@ -288,6 +307,8 @@
     \entry{ConnectMQTTfxEMQX}{online}{}{}
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{langid}{english}
       \field{title}{Connect with {{MQTT}}.Fx | {{EMQX Cloud Docs}}}
@@ -307,11 +328,12 @@
     \endentry
     \entry{IoTMQTT}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=d26a9065d0b79ea3ed4a73f035dac9e9}{%
+        {{un=0,uniquepart=base,hash=d26a9065d0b79ea3ed4a73f035dac9e9}{%
            family={Desbiens},
            familyi={D\bibinitperiod},
            given={Frederic},
-           giveni={F\bibinitperiod}}}%
+           giveni={F\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Berkeley}%
@@ -329,6 +351,8 @@
       \strng{authorfullhashraw}{d26a9065d0b79ea3ed4a73f035dac9e9}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1}
@@ -339,11 +363,12 @@
     \endentry
     \entry{MQTTTestingDebugging}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=e55bc946a30a08fe0d90cc5193e1782f}{%
+        {{un=0,uniquepart=base,hash=e55bc946a30a08fe0d90cc5193e1782f}{%
            family={Deters},
            familyi={D\bibinitperiod},
            given={Jens},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{e55bc946a30a08fe0d90cc5193e1782f}
       \strng{fullhash}{e55bc946a30a08fe0d90cc5193e1782f}
@@ -355,6 +380,8 @@
       \strng{authorfullhashraw}{e55bc946a30a08fe0d90cc5193e1782f}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{{MQTT Testing}} and {{Debugging Using MQTT}}.Fx {{HiveMQ Cloud Edition}}}
@@ -374,7 +401,7 @@
     \endentry
     \entry{dotnet-botSqlConnectionClassMicrosoftDataSqlClient}{online}{}{}
       \name{author}{1}{}{%
-        {{useprefix=true,hash=9fcc72359fa4d20fd72c937e5870be23}{%
+        {{un=0,uniquepart=base,useprefix=true,hash=9fcc72359fa4d20fd72c937e5870be23}{%
            family={bot},
            familyi={b\bibinitperiod},
            prefix={dotnet-},
@@ -390,6 +417,8 @@
       \strng{authorfullhashraw}{9fcc72359fa4d20fd72c937e5870be23}
       \field{sortinit}{d}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Represents a connection to a SQL Server database. This class cannot be inherited.}
@@ -411,7 +440,7 @@
     \endentry
     \entry{hivemqMQTTMQTT5}{book}{}{}
       \name{editor}{1}{}{%
-        {{hash=60979dd7cdfc198a564fa3fbca58fde7}{%
+        {{un=0,uniquepart=base,hash=60979dd7cdfc198a564fa3fbca58fde7}{%
            family={HIVEMQ},
            familyi={H\bibinitperiod}}}%
       }
@@ -428,6 +457,7 @@
       \strng{editorfullhashraw}{60979dd7cdfc198a564fa3fbca58fde7}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeldatesource}{nodate}
       \field{labelnamesource}{editor}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-00-067913-1}
@@ -439,6 +469,8 @@
     \entry{IPCOMMProtocolsMQTT}{online}{}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{title}{{{IPCOMM}}, {{Protocols}}: {{MQTT}}}
       \field{urlday}{24}
@@ -457,11 +489,12 @@
     \endentry
     \entry{tslsslKastning}{thesis}{}{}
       \name{author}{1}{}{%
-        {{hash=702ad4053ae68205fa308e5b5e6b4a0e}{%
+        {{un=0,uniquepart=base,hash=702ad4053ae68205fa308e5b5e6b4a0e}{%
            family={Kastning},
            familyi={K\bibinitperiod},
            given={Jörg},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{702ad4053ae68205fa308e5b5e6b4a0e}
       \strng{fullhash}{702ad4053ae68205fa308e5b5e6b4a0e}
@@ -473,6 +506,8 @@
       \strng{authorfullhashraw}{702ad4053ae68205fa308e5b5e6b4a0e}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{9}
@@ -486,11 +521,12 @@
     \endentry
     \entry{XAMLMitWPF}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=014731605a5f3e312b49d3562b51f137}{%
+        {{un=0,uniquepart=base,hash=014731605a5f3e312b49d3562b51f137}{%
            family={Kirsch},
            familyi={K\bibinitperiod},
            given={Stefan},
-           giveni={S\bibinitperiod}}}%
+           giveni={S\bibinitperiod},
+           givenun=0}}%
       }
       \list{organization}{1}{%
         {KIRSCH Software}%
@@ -505,6 +541,8 @@
       \strng{authorfullhashraw}{014731605a5f3e312b49d3562b51f137}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{20}
@@ -528,11 +566,12 @@
     \endentry
     \entry{kreibichUsingSQLite2010}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=b71dc4c9809f89cb578ee0b8caf851cb}{%
+        {{un=0,uniquepart=base,hash=b71dc4c9809f89cb578ee0b8caf851cb}{%
            family={Kreibich},
            familyi={K\bibinitperiod},
            given={Jay},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {"O'Reilly Media, Inc."}%
@@ -547,6 +586,8 @@
       \strng{authorfullhashraw}{b71dc4c9809f89cb578ee0b8caf851cb}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Application developers, take note: databases aren't just for the IS group any more. You can build database-backed applications for the desktop, Web, embedded systems, or operating systems without linking to heavy-duty client-server databases such as Oracle and MySQL. This book shows you how to use SQLite, a small and lightweight relational database engine that you can build directly into your application. With SQLite, you'll discover how to develop a database-backed application that remains manageable in size and complexity. This book guides you every step of the way. You'll get a crash course in data modeling, become familiar with SQLite's dialect of the SQL database language, and much more. Learn how to maintain localized storage in a single file that requires no configuration Build your own SQLite library or use a precompiled distribution in your application Get a primer on SQL, and learn how to use several language functions and extensions Work with SQLite using a scripting language or a C-based language such as C\# or Objective-C Understand the basics of database design, and learn how to transfer what you already know to SQLite Take advantage of virtual tables and modules "Complex SQL concepts explained clearly." --D. Richard Hipp, creator of SQLite}
@@ -567,6 +608,8 @@
     \entry{michaelstonisModelViewViewModelNET}{online}{}{}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{abstract}{Overview of the Model-View-ViewModel pattern used by .NET MAUI}
       \field{langid}{american}
@@ -588,6 +631,8 @@
     \entry{MQTTMessageQueue}{online}{}{}
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{title}{{{MQTT}} - {{Message Queue Telemetry Transport}}}
       \field{urlday}{24}
@@ -610,6 +655,8 @@
       }
       \field{sortinit}{M}
       \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Bereits Ende der 1990er Jahre entwickelte IBM an einem sehr schlanken und einfachen Kommunikationsprotokoll~zur~Überwachung~von Ölpipelines. Aus diesem Bestreben ist MQTT ~(Message Queue Telemetry Transport)~entstanden, das sich nun im Zuge des Internet der Dinge wachsender Beliebtheit erfreut. Ende letzten Jahres ist MQTT in der Version 3.1.1. von der~Standardisierungsorganisation OASIS dann auch~als offizieller Standard verabschiedet~worden. Für die... Weiterlesen}
       \field{langid}{ngerman}
@@ -631,11 +678,12 @@
     \endentry
     \entry{nijsMVVMPatternNET2023a}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=9970412018e7301064a3f145b58d0d42}{%
+        {{un=0,uniquepart=base,hash=9970412018e7301064a3f145b58d0d42}{%
            family={Nijs},
            familyi={N\bibinitperiod},
            given={Pieter},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Packt Publishing Ltd}%
@@ -650,6 +698,8 @@
       \strng{authorfullhashraw}{9970412018e7301064a3f145b58d0d42}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Gain an in-depth understanding of MVVM and .NET MAUI and learn how to effectively apply the MVVM design pattern with the help of this practical guideKey FeaturesGet to grips with the principles and benefits of the Model-View-ViewModel design patternGain insights into .NET MAUI's MVVM-enabling components and effectively apply them with hands-on examplesLearn data binding, navigation, and testable code techniques to create dynamic, accessible, and localized appsPurchase of the print or Kindle book includes a free PDF eBookBook DescriptionIn today's fast-paced world of modern software development, teams need to be efficient, productive, and capable of rapidly adapting to changes to deliver high-quality products, making it crucial for developers to write maintainable and easy-to-test code. The MVVM Pattern in .NET MAUI helps you to thoroughly explore the Model-View-View Model (MVVM) design pattern. The chapters show you how this pattern helps in structuring code to embrace the separation of concerns, allowing for loosely coupled user interface and application logic, which ultimately empowers you to write more robust, maintainable, and testable code. The book also highlights .NET MAUI's capabilities and features, and enables you to delve into the essential components within the framework that facilitate the application of the MVVM pattern. With the help of a sample application, this definitive guide takes a hands-on approach to walk you through both the essential and advanced usages of the MVVM pattern to ensure that you successfully apply the practical aspects of the pattern to your .NET MAUI projects. By the end of this book, you’ll have gained a comprehensive understanding of the MVVM design pattern and its relevance in the context of .NET MAUI, as well as developed the skills needed to successfully apply it in practice.What you will learnGain a thorough understanding of the MVVM design patternGet to grips with the components that enable MVVM in .NET MAUIApply the MVVM pattern in practice within .NET MAUIBecome proficient in data binding in .NET MAUIDiscover how to navigate from within a view modelFind out how to effectively write testable code and unit testsWho this book is forThis book is for developers with experience in C\# and basic knowledge of .NET MAUI or Xamarin.Forms who are looking to create cross-platform applications with .NET MAUI and leverage the MVVM pattern. Through practical examples and clear explanations, this book helps both newcomers and experienced developers master the application of MVVM principles within .NET MAUI projects.}
@@ -670,7 +720,7 @@
     \endentry
     \entry{oasisMQTTVersion502019}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=6ec60ab9ce327f5a12fbab109e691c73}{%
+        {{un=0,uniquepart=base,hash=6ec60ab9ce327f5a12fbab109e691c73}{%
            family={OASIS},
            familyi={O\bibinitperiod}}}%
       }
@@ -684,6 +734,8 @@
       \strng{authorfullhashraw}{6ec60ab9ce327f5a12fbab109e691c73}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{7}
@@ -697,11 +749,12 @@
     \endentry
     \entry{ottenwalderChurnDynamischenPublish}{thesis}{}{}
       \name{author}{1}{}{%
-        {{hash=d2e1e19ae0de1ecf0646f266f37dc11d}{%
+        {{un=0,uniquepart=base,hash=d2e1e19ae0de1ecf0646f266f37dc11d}{%
            family={Ottenwalder},
            familyi={O\bibinitperiod},
            given={Beate},
-           giveni={B\bibinitperiod}}}%
+           giveni={B\bibinitperiod},
+           givenun=0}}%
       }
       \list{institution}{1}{%
         {Universität Stuttgart}%
@@ -719,6 +772,8 @@
       \strng{authorfullhashraw}{d2e1e19ae0de1ecf0646f266f37dc11d}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{11}
@@ -734,11 +789,12 @@
     \endentry
     \entry{Panther}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=3357a841542a95ed42aec5368ba8f45a}{%
+        {{un=0,uniquepart=base,hash=3357a841542a95ed42aec5368ba8f45a}{%
            family={Panther},
            familyi={P\bibinitperiod},
            given={Robert},
-           giveni={R\bibinitperiod}}}%
+           giveni={R\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Heidelberg}%
@@ -756,6 +812,8 @@
       \strng{authorfullhashraw}{3357a841542a95ed42aec5368ba8f45a}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -767,11 +825,12 @@
     \endentry
     \entry{angewandteNetzwerktechnik}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=d0eb1814642999edacc27c619b414f7a}{%
+        {{un=0,uniquepart=base,hash=d0eb1814642999edacc27c619b414f7a}{%
            family={Plenk},
            familyi={P\bibinitperiod},
            given={Valentin},
-           giveni={V\bibinitperiod}}}%
+           giveni={V\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Oberkotzau}%
@@ -789,6 +848,8 @@
       \strng{authorfullhashraw}{d0eb1814642999edacc27c619b414f7a}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{22}
@@ -812,6 +873,8 @@
     \entry{PsutilDocumentationPsutil}{online}{}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{title}{Psutil Documentation — Psutil 7.2.2 Documentation}
       \field{urlday}{29}
@@ -834,6 +897,8 @@
       }
       \field{sortinit}{R}
       \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Develop .NET, ASP.NET, MAUI, Blazor, and Azure applications – as well as games with Unity, Unreal Engine, and Godot – on Windows, macOS, and Linux.}
       \field{langid}{english}
@@ -855,11 +920,12 @@
     \endentry
     \entry{AsyncAwait}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=552993a89df02e5fdbd40620222bb862}{%
+        {{un=0,uniquepart=base,hash=552993a89df02e5fdbd40620222bb862}{%
            family={Sarcar},
            familyi={S\bibinitperiod},
            given={Vaskaran},
-           giveni={V\bibinitperiod}}}%
+           giveni={V\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Barkeley}%
@@ -877,6 +943,8 @@
       \strng{authorfullhashraw}{552993a89df02e5fdbd40620222bb862}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{1}
@@ -890,11 +958,12 @@
     \endentry
     \entry{KommunikationskonzepteIoT}{misc}{}{}
       \name{author}{1}{}{%
-        {{hash=65b1846910bd9fd003262400fcc18117}{%
+        {{un=0,uniquepart=base,hash=65b1846910bd9fd003262400fcc18117}{%
            family={Schmidt},
            familyi={S\bibinitperiod},
            given={Nico},
-           giveni={N\bibinitperiod}}}%
+           giveni={N\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Leipzig}%
@@ -909,6 +978,8 @@
       \strng{authorfullhashraw}{65b1846910bd9fd003262400fcc18117}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{17}
@@ -922,11 +993,12 @@
     \endentry
     \entry{SchubertDatenbanken}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=6052bccbfa9ba522320b8c8afca548e2}{%
+        {{un=0,uniquepart=base,hash=6052bccbfa9ba522320b8c8afca548e2}{%
            family={Schubert},
            familyi={S\bibinitperiod},
            given={Matthias},
-           giveni={M\bibinitperiod}}}%
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Wiesbaden}%
@@ -944,6 +1016,8 @@
       \strng{authorfullhashraw}{6052bccbfa9ba522320b8c8afca548e2}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -959,11 +1033,12 @@
     \endentry
     \entry{MVVM}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=991eb1e033c962cafd66f30fa0593451}{%
+        {{un=0,uniquepart=base,hash=991eb1e033c962cafd66f30fa0593451}{%
            family={Smith},
            familyi={S\bibinitperiod},
            given={Josh},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{991eb1e033c962cafd66f30fa0593451}
       \strng{fullhash}{991eb1e033c962cafd66f30fa0593451}
@@ -975,6 +1050,8 @@
       \strng{authorfullhashraw}{991eb1e033c962cafd66f30fa0593451}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{langid}{american}
@@ -998,11 +1075,12 @@
     \endentry
     \entry{teamHowUseMQTT}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=d1199dfae70de74eb03bbdf09f7ce8a2}{%
+        {{un=1,uniquepart=given,hash=d1199dfae70de74eb03bbdf09f7ce8a2}{%
            family={Team},
            familyi={T\bibinitperiod},
            given={EMQX\bibnamedelima Cloud},
-           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=1}}%
       }
       \list{organization}{1}{%
         {www.emqx.com}%
@@ -1015,9 +1093,10 @@
       \strng{authornamehash}{d1199dfae70de74eb03bbdf09f7ce8a2}
       \strng{authorfullhash}{d1199dfae70de74eb03bbdf09f7ce8a2}
       \strng{authorfullhashraw}{d1199dfae70de74eb03bbdf09f7ce8a2}
-      \field{extraname}{1}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This blog will provide a step-by-step guide on how to connect a Serverless MQTT Broker using the MQTTnet in C\#.}
@@ -1039,11 +1118,12 @@
     \endentry
     \entry{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=2f3e5c401c7181d0fab9d098ca79bf84}{%
+        {{un=1,uniquepart=given,hash=2f3e5c401c7181d0fab9d098ca79bf84}{%
            family={Team},
            familyi={T\bibinitperiod},
            given={ZTABS},
-           giveni={Z\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+           giveni={Z\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=1}}%
       }
       \strng{namehash}{2f3e5c401c7181d0fab9d098ca79bf84}
       \strng{fullhash}{2f3e5c401c7181d0fab9d098ca79bf84}
@@ -1053,9 +1133,10 @@
       \strng{authornamehash}{2f3e5c401c7181d0fab9d098ca79bf84}
       \strng{authorfullhash}{2f3e5c401c7181d0fab9d098ca79bf84}
       \strng{authorfullhashraw}{2f3e5c401c7181d0fab9d098ca79bf84}
-      \field{extraname}{2}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{A decision framework for choosing between rebuilding and refactoring legacy software. Covers cost analysis, risk assessment, and migration strategies.}
@@ -1079,11 +1160,12 @@
     \endentry
     \entry{tiwariVirtualMemoryExplained2025}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=d34f75c19d9bdf8d4544add532ae0f05}{%
+        {{un=0,uniquepart=base,hash=d34f75c19d9bdf8d4544add532ae0f05}{%
            family={Tiwari},
            familyi={T\bibinitperiod},
            given={Harshit},
-           giveni={H\bibinitperiod}}}%
+           giveni={H\bibinitperiod},
+           givenun=0}}%
       }
       \strng{namehash}{d34f75c19d9bdf8d4544add532ae0f05}
       \strng{fullhash}{d34f75c19d9bdf8d4544add532ae0f05}
@@ -1095,6 +1177,8 @@
       \strng{authorfullhashraw}{d34f75c19d9bdf8d4544add532ae0f05}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Virtual Memory Explained: Paging, Segmentation, and Handling Page Faults Virtual memory is a foundational aspect of modern operating systems, allowing for improved efficiency and multitasking capabilities. By enabling processes to use a larger address space than is physically available in RAM, virtual memory becomes a crucial component in managing hardware resources effectively. In this blog}
@@ -1129,6 +1213,8 @@
       }
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{abstract}{Source code: Lib/tkinter/\_\_init\_\_{}.py The tkinter package (“Tk interface”) is the standard Python interface to the Tcl/Tk GUI toolkit. Both Tk and tkinter are available on most Unix platforms, inclu...}
       \field{langid}{english}
@@ -1149,16 +1235,18 @@
     \endentry
     \entry{CSwith.NET}{book}{}{}
       \name{author}{2}{}{%
-        {{hash=3a97a176319df98f139b24dd2146cffe}{%
+        {{un=0,uniquepart=base,hash=3a97a176319df98f139b24dd2146cffe}{%
            family={Troelsen},
            familyi={T\bibinitperiod},
            given={Andrew\bibnamedelima W.},
-           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-        {{hash=9be660109141e022b8c2cd793ec9af5b}{%
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9be660109141e022b8c2cd793ec9af5b}{%
            family={Japikse},
            familyi={J\bibinitperiod},
            given={Philip},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {New York}%
@@ -1176,6 +1264,8 @@
       \strng{authorfullhashraw}{18065fa3d57cdcd0281634cf1ddc736c}
       \field{sortinit}{T}
       \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{11.}
@@ -1187,6 +1277,8 @@
     \entry{gewarrenUebersichtUeberNET}{online}{}{}
       \field{sortinit}{Ü}
       \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{abstract}{Dies ist eine Übersicht über .NET Framework, eine Technologie, die das Erstellen und Ausführen von Windows-Apps und -Webdiensten unterstützt.}
       \field{langid}{german}
@@ -1207,11 +1299,12 @@
     \endentry
     \entry{Vileikis}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=b0599442316e6fb20161f2eceffc6954}{%
+        {{un=0,uniquepart=base,hash=b0599442316e6fb20161f2eceffc6954}{%
            family={Vileikis},
            familyi={V\bibinitperiod},
            given={Lukas},
-           giveni={L\bibinitperiod}}}%
+           giveni={L\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Siauliai}%
@@ -1229,6 +1322,8 @@
       \strng{authorfullhashraw}{b0599442316e6fb20161f2eceffc6954}
       \field{sortinit}{V}
       \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{979-8-8688-0979-8}
@@ -1242,6 +1337,8 @@
     \entry{mikejo5000WasIstVisual}{online}{}{}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{abstract}{Erkunden Sie Visual Studio, eine integrierte Entwicklungsumgebung (Integrated Development Environment, IDE), mit der Sie Ihre Apps mit KI-Unterstützung entwickeln, erstellen, debuggen, testen und bereitstellen können.}
       \field{langid}{german}
@@ -1259,11 +1356,12 @@
     \endentry
     \entry{wegenerWPF45Und2012}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=b8f31c7a158722efe5caedee31a1683b}{%
+        {{un=0,uniquepart=base,hash=b8f31c7a158722efe5caedee31a1683b}{%
            family={Wegener},
            familyi={W\bibinitperiod},
            given={Jörg},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{publisher}{1}{%
         {Carl Hanser Verlag GmbH Co KG}%
@@ -1278,6 +1376,8 @@
       \strng{authorfullhashraw}{b8f31c7a158722efe5caedee31a1683b}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{WPF 4.5 UND XAML //- Für angehende und fortgeschrittene WPF-Entwickler mit fundierten .NET-Kenntnissen- Praktischer Leitfaden mit umfassendem Know-how – von den Basics bis zu professionellen Techniken- Nachschlagewerk für die tägliche Arbeit- Mit zahlreichen Anwendungsbeispielen aus für Entwickler typischen Alltagssituationen- Alle Beispiele aus dem Buch unter: www.downloads.hanser.deMit der Windows Presentation Foundation verfügen .NET-Entwickler über ein mächtiges und flexibles Instrument zur Entwicklung moderner Desktop-Applikationen – von der einfachen Oberfläche bis hin zur geschäftlichen Anwendung.Diese Bandbreite gibt den Rahmen für dieses Buch vor: Jörg Wegener beschreibt detailliert die zentralen Elemente der WPF 4.5, ihre zugrunde liegenden Konzepte und die in WPF implementierte Beschreibungssprache XAML. Zahlreiche Beispiele zeigen Ihnen den professionellen Einsatz des Frameworks in Situationen, mit denen Sie als Entwickler tagtäglich konfrontiert sind. Einen Schwerpunkt dieser Neuauflage bilden die Neuerungen von WPF 4.5 und Visual Studio 2012. Hier geht es u.a. um die Entwicklung von Apps für Windows 8 mit XAML und der Windows Runtime. Außerdem neu hinzugekommen sind die Themen: Eingabesteuerung via Maus, Tastatur und Touchscreen; das Entwurfsmuster Model-View-View-Model; Installation und Aktualisierung von Anwendungen beim Kunden; Gestaltung mit Expression Blend.AUS DEM INHALT:Einführung in WPF \& XAML // Layout \& Steuerelemente // Aufbau von Anwendungen // Styles, Templates // Daten \& Datenbindungen // 2D-Grafik \& Multimedia // 3D-Grafik, Animationen // Individuelle Anpassungen // Eingabesteuerung in WPF // WPF \& Windows Forms // Dokumente \& Drucken // Mehrsprachigkeit // Browseranwendungen // MVVM-Entwurfsmuster // Windows Store Apps \& WinRT // Anwendungen installieren \& verteilen // Expression Blend}
@@ -1298,11 +1398,12 @@
     \endentry
     \entry{embeddedtechnologies}{book}{}{}
       \name{author}{1}{}{%
-        {{hash=27e5947b319653011386e650a1821380}{%
+        {{un=0,uniquepart=base,hash=27e5947b319653011386e650a1821380}{%
            family={Wietzke},
            familyi={W\bibinitperiod},
            given={Joachim},
-           giveni={J\bibinitperiod}}}%
+           giveni={J\bibinitperiod},
+           givenun=0}}%
       }
       \list{location}{1}{%
         {Karlsruhe}%
@@ -1320,6 +1421,8 @@
       \strng{authorfullhashraw}{27e5947b319653011386e650a1821380}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-3-642-23995-3}
@@ -1335,6 +1438,8 @@
     \entry{Working}{online}{}{}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labeltitlesource}{title}
       \field{abstract}{Find out how to get the best out of Visual Studio Code and C\#.}
       \field{langid}{english}
@@ -1355,11 +1460,12 @@
     \endentry
     \entry{Agnostisch}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=3c2a9a5cec6cec66d87c80c509bcec8c}{%
+        {{un=0,uniquepart=base,hash=3c2a9a5cec6cec66d87c80c509bcec8c}{%
            family={Wright},
            familyi={W\bibinitperiod},
            given={Gavin},
-           giveni={G\bibinitperiod}}}%
+           giveni={G\bibinitperiod},
+           givenun=0}}%
       }
       \list{organization}{1}{%
         {ComputerWeekly.de}%
@@ -1374,6 +1480,8 @@
       \strng{authorfullhashraw}{3c2a9a5cec6cec66d87c80c509bcec8c}
       \field{sortinit}{W}
       \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{url}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Agnostisch ist griechisch für ohne Kenntnis und bedeutet, dass Systeme, Software oder Anwendungen so allgemein konzipiert sind, dass sie interoperabel sind.}
@@ -1395,11 +1503,12 @@
     \endentry
     \entry{yosifovichMemoryInformationTask2023}{online}{}{}
       \name{author}{1}{}{%
-        {{hash=97abc320d485ae95bebc5b60c88587e2}{%
+        {{un=0,uniquepart=base,hash=97abc320d485ae95bebc5b60c88587e2}{%
            family={Yosifovich},
            familyi={Y\bibinitperiod},
            given={Pavel},
-           giveni={P\bibinitperiod}}}%
+           giveni={P\bibinitperiod},
+           givenun=0}}%
       }
       \list{organization}{1}{%
         {Pavel Yosifovich}%
@@ -1414,6 +1523,8 @@
       \strng{authorfullhashraw}{97abc320d485ae95bebc5b60c88587e2}
       \field{sortinit}{Y}
       \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{You may have been asked this question many times: “How much memory does this process consume?” The question seems innocent enough. Your first instinct might be to open Task Manager, go …}

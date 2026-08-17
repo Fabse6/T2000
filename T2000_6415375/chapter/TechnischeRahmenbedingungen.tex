@@ -8,13 +8,13 @@
 
     \subsection{Eignung der Sprache C\# für die Umsetzung}
        Für die Umsetzung der Applikation eignet sich insbesondere die Programmiersprache C\#. Sie bietet die Möglichkeit, Ereignisse asynchron zu verarbeiten, was bei großen Datenmengen eine entscheidende Rolle spielt. 
-        Dadurch werden andere Vorgänge beziehungsweise Prozesse nicht blockiert und die GUI bleibt bedienbar. Diese nicht blockierende Verarbeitung wird über die Befehle \lstinline{await} beim Aufruf von Funktionen und \lstinline{async} bei der Funktionsdeklaration möglich \autocite[334--343]{AsyncAwait}.
+        Dadurch werden andere Vorgänge beziehungsweise Prozesse nicht blockiert und die GUI bleibt bedienbar. Diese nicht blockierende Verarbeitung wird über die Befehle \lstinline{await} beim Aufruf von Funktionen und \lstinline{async} bei der Funktionsdeklaration möglich. \autocite[334--343]{AsyncAwait}
         
         Neben der asynchronen Verarbeitung bietet C\# außerdem ein großes Angebot an Bibliotheken, wodurch Datenbankzugriffe und Netzwerkverbindungen programmtechnisch wesentlich vereinfacht werden. Dazu kommen weitere Merkmale wie automatische Speicherverwaltung oder das Wegfallen des Arbeitens mit Pointern. \autocite[6--7]{CSwith.NET}
 
         C\# wird häufig für die Entwicklung technischer Desktop-Anwendungen verwendet, da es im Gegensatz zu vielen anderen Programmiersprachen wie Java eine tiefere Einbindung in das .NET-Ökosystem bietet. Verschiedene Frameworks wie Windows Presentation Foundation oder .NET MAUI erleichtern die Entwicklung moderner Anwendungen erheblich. Insbesondere WPF wurde für die Entwicklung von Windows-Anwendungen konzipiert. \autocite[5--6]{CSwith.NET}
         
-        Deshalb wird für die Erstellung der Monitoring- und Diagnose-Software die Programmiersprache C\# verwendet.
+        Für die Realisierung der Monitoring- und Diagnose-Software fällt die Wahl daher auf C\#. Die Programmiersprache bietet die erforderliche Flexibilität und Performanz für die Verarbeitung der Anwendungsdaten.
 
     \subsection{MQTT-Client-Bibliothek}
         Die eingesetzte MQTT-Bibliothek muss eine Unterstützung für MQTT 5.0 anbieten und dabei eine vollständige Implementierung der MQTT-Kernfunktionen 
@@ -23,11 +23,12 @@
         von Nachrichten. Außerdem sollte sie ähnlich wie bei MQTT.fx Quality-of-Service-Level, Retained Messages, Last-Will-Nachrichten und Clean Sessions abbilden können. 
         
         Diese Funktionen können durch die Bibliothek \textit{MQTTnet} durch wenige Zeilen Programmcode vereinfacht in C\# umgesetzt werden \autocite[]{teamHowUseMQTT}. 
-        Durch diese Bibliothek lassen sich auch Ereignis- und Callback-Mechanismen über Event-Handler implementieren. Callbacks sind registrierte Rückruffunktionen, die vom System oder
-        Framework automatisch aufgerufen werden, sobald ein Ereignis eintritt. Dadurch können nach dem Abonnieren von Topics empfangene Nachrichten ereignisbasiert 
+        Des Weiteren lassen sich durch die Bibliothek auch Ereignis- und Callback-Mechanismen über Event-Handler implementieren. Callbacks sind registrierte Rückruffunktionen, die vom System oder
+        Framework automatisch aufgerufen werden, sobald ein Ereignis eintritt \autocite{PollingCallbackThere}. Dadurch können nach dem Abonnieren von Topics empfangene Nachrichten ereignisbasiert 
         verarbeitet werden, ohne dass eine direkte Kopplung zwischen Netzwerk- und Anwendungslogik erforderlich ist.
          Somit ist eine Trennung zwischen Netzwerk- und Grafik-Logik möglich. Dies ist notwendig, um hohe Nachrichtenraten 
-        effizient verarbeiten zu können, ohne ständig die Benutzeroberfläche zu blockieren \autocite[113]{embeddedtechnologies}. 
+        effizient verarbeiten zu können, ohne ständig die Benutzeroberfläche zu blockieren \autocite[113]{embeddedtechnologies}.
+        Im Gegensatz zum ständigen abfragen auf neue Nachrichten, auch Polling genannt, wird die CPU nur beim Eintreffen neuer Nachrichten belastet \autocite{PollingCallbackThere}. 
         Neben dem Empfangen der Nachrichten deckt die Bibliothek auch das Senden von Nachrichten unter beliebigen Topics ab \autocite{teamHowUseMQTT}. 
         
     \subsection{Datenbank-Bibliothek}

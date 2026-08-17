@@ -22,8 +22,8 @@
             \label{fig:mqttfx_subscribe}
         \end{figure}
 
-        Neben dem Reiter Publish gibt es auch einen Subscribe-Reiter (\ref{fig:mqttfx_subscribe}). Hier können einzelne Topics oder Topic-Hierarchien abonniert werden.
-        Die Darstellung der empfangenen Nachrichten unter den abonnierten Topics erfolgt dann in Echtzeit und mit den relevanten Metadaten Topic, Payload, \acrshort{acr:QoS} und Empfangszeitpunkt.
+        Neben dem Reiter Publish gibt es auch einen Subscribe-Reiter, der in Listing \ref{fig:mqttfx_subscribe} dargestellt ist. Hier können einzelne Topics oder Topic-Hierarchien abonniert werden.
+        Die Darstellung der empfangenen Nachrichten unter den abonnierten Topics erfolgt dann in Echtzeit und mit den relevanten Metadaten Topic, Payload, \acrshort{acr:QoS} und Empfangszeitpunkt. \autocite{ouyangMQTTfxGuideFeatures}
 
         Darüber hinaus verfügt das Programm über eine Logging- und Analysefunktion. Dieser Reiter ist mit einem integrierten Log-Fenster ausgestattet, welches den Verbindungsaufbau und -abbau, Subscribe- und Publish-Events, MQTT-Nachrichten sowie Broker-Statusmeldungen protokolliert. \autocite{ouyangMQTTfxGuideFeatures}
 
@@ -50,7 +50,7 @@
         systematischen Auswertung von Tests oder zur Integration externer Datenquellen. Dadurch werden sowohl die Analyse als auch die Simulation bestimmter Szenarien eingeschränkt.
 
 \section{Monitoring über \acrshort{acr:MQTT} Explorer}
-    Eine weitere Möglichkeit für das Auslesen von MQTT-Nachrichten bietet \textit{MQTT Explorer} \autocite{MQTTExplorer}. Dieser bietet gegenüber MQTT.fx zusätzliche Funktionen und ist insgesamt übersichtlicher sowie stärker auf den Anwendungsfall ausgerichtet. Aus praktischen Explorationen konnten Funktionen sowie Vor- und Nachteile festgestellt werden.
+    Eine weitere Möglichkeit für das Auslesen von MQTT-Nachrichten bietet \textit{MQTT Explorer} \autocite{MQTTExplorer}. Dieser bietet gegenüber MQTT.fx zusätzliche Funktionen und ist insgesamt übersichtlicher sowie stärker auf den Anwendungsfall ausgerichtet. Aus praktischen Explorationen konnten seine Funktionen sowie Vor- und Nachteile festgestellt werden.
 
     \begin{figure}[htbp]
         \centering
@@ -59,7 +59,7 @@
         \label{fig:MQTTexplorer}
     \end{figure}
 
-    Wie in der Abbildung \ref{fig:MQTTexplorer} zu sehen ist, listet dieser alle erkannten Topics automatisch in einer Baumstruktur auf. Dadurch ist ein ausgiebiges Wissen über die Topicstruktur oder ein vorheriges Scannen von Topics wie bei MQTT.fx nicht erforderlich, damit man die Nachrichten topic-bezogen filtern kann. Auf der rechten Seite befindet sich dann zum einen ein Nachrichtenfenster, in dem die angeklickte Nachricht in der Baumstruktur angezeigt wird. Zum anderen kann man dort auch Nachrichten selbst unter einem selbst eingegebenen Topic publizieren.
+    Wie in der Abbildung \ref{fig:MQTTexplorer} zu sehen ist, listet dieser alle erkannten Topics automatisch in einer Baumstruktur auf. Dies funktioniert durch das Aufspalten der Topics in die einzelnen Hierarchischen Topic-Ebenen. Dadurch ist ein ausgiebiges Wissen über die Topicstruktur oder ein vorheriges Scannen von Topics wie bei MQTT.fx nicht erforderlich, damit man die Nachrichten topic-bezogen filtern kann. Auf der rechten Seite befindet sich dann zum einen ein Nachrichtenfenster, in dem die angeklickte Nachricht in der Baumstruktur angezeigt wird. Zum anderen kann man dort auch Nachrichten selbst unter einem selbst eingegebenen Topic publizieren.
 
     Ein wesentlicher Vorteil gegenüber MQTT.fx ist die Möglichkeit der Volltextsuche, die in der Abbildung \ref{fig:MQTTexplorer} oben als Sucheingabe-Feld zu sehen ist. Durch das Eingeben eines Begriffs werden nur noch die Nachrichten in der Baumstruktur angezeigt, die den Suchbegriff enthalten. So wird die Suche erheblich vereinfacht.  
 
@@ -69,7 +69,7 @@
 \section{Möglichkeit der Nutzung und Erweiterung bereits existenter Applikationen}
     Eine weitere Möglichkeit neben der Verwendung von bereits fertigen Programmen ist die Weiterentwicklung existenter Applikationen, die den Programmcode veröffentlichen. Eine hierfür besonders geeignete Applikation ist \textit{MQTTMultimeter}. Da der Quellcode von \textit{MQTTMultimeter} öffentlich verfügbar ist, konnten zentrale Komponenten der Anwendung praktisch analysiert und hinsichtlich ihrer Erweiterbarkeit bewertet werden. Die Analyse basiert auf dem auf GitHub veröffentlichten Projektstand \autocite{zotero-item-198}.
 \subsection{Funktionsweise von MQTTMultimeter}
-    Als eine schon sehr ausgereifte Applikation erweist sich \textit{MQTTMultimeter} \autocite{zotero-item-198}. Dieses Programm bietet eine geeignete Kombination aus MQTT.fx und dem \acrshort{acr:MQTT} Explorer. Es hat einen Reiter für die Anzeige der Baumstruktur, die sehr ähnlich funktioniert wie bei dem \acrshort{acr:MQTT} Explorer (siehe Abbildung \ref{fig:Baumstruktur}). Auch hier lässt sich der Nachrichtenverlauf nur durch eine Historie eines einzelnen Topics darstellen. 
+    \textit{MQTTMultimeter} erweist sich als eine schon sehr ausgereifte Applikation zum Anzeigen von MQTT-Nachrichten. Dieses Programm bietet eine geeignete Kombination aus MQTT.fx und dem \acrshort{acr:MQTT} Explorer. Es hat einen Reiter für die Anzeige der Baumstruktur, die sehr ähnlich funktioniert wie bei dem \acrshort{acr:MQTT} Explorer (siehe Abbildung \ref{fig:Baumstruktur}). Auch hier lässt sich der Nachrichtenverlauf nur durch eine Historie eines einzelnen Topics darstellen. 
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.9\linewidth]{images/MQTTMultimeter.png}
@@ -128,7 +128,7 @@ async Task OnApplicationMessageReceived(MqttApplicationMessageReceivedEventArgs 
     Die programmiertechnische Umsetzung basiert auf einer klar strukturierten Architektur mit einer Trennung von Kommunikation, Datenverarbeitung und Darstellung. Durch den Einsatz asynchroner und reaktiver Konzepte wird eine performante Verarbeitung der MQTT-Nachrichten sowie eine dynamische Aktualisierung der Benutzeroberfläche erreicht. Insgesamt ermöglicht dies eine effiziente, skalierbare und wartbare Realisierung der Anwendung.
 
 \subsection{Gründe gegen die Erweiterung von MQTTMultimeter}
-    Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und sie trennt sogar die Verbindung zum Broker. Dadurch wären grundlegende Änderungen in den Service-Komponenten erforderlich. Dieses Vorgehen erweist sich als sehr aufwendig, da der Programmcode eng mit den bestehenden Funktionalitäten verbunden ist. Das erhöht zum einen das Risiko von Fehlern und zum anderen die Komplexität, den Programmcode zu verstehen. \autocite{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}
+    Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und sie trennt sogar die Verbindung zum Broker. Dadurch wären grundlegende Änderungen in den Service-Komponenten erforderlich. Dieses Vorgehen erweist sich als sehr aufwendig, da der Programmcode eng mit den bestehenden Funktionalitäten verbunden ist. Das erhöht zum einen das Risiko von Fehlern und zum anderen die Komplexität, den Programmcode zu verstehen \autocite{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}.
 
 \section{Bewertung der Ausgangssituation}
 Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse anhand von Einsätzen der Applikationen in der Praxis durchgeführt. Dabei wurden die drei Applikationen MQTT.fx, MQTT Explorer und MQTTMultimeter anhand von sechs Kriterien bewertet. Die Kriterien wurden mit unterschiedlichen Gewichtungen versehen, um ihre relative Bedeutung für die Zielsetzung der Arbeit zu reflektieren. Die Bewertung erfolgte auf einer Skala von 1 bis 5, wobei 1 für keine Erfüllung des Kriteriums und 5 für eine vollständige Erfüllung steht. Die Ergebnisse der Nutzwertanalyse sind in Tabelle \ref{tab:nutzwertanalyse} zusammengefasst.

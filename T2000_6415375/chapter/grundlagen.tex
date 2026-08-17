@@ -46,7 +46,7 @@ Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können
             \item SUBSCRIBE (Topic abonnieren)
             \item DISCONNECT (Verbindung trennen)
         \end{itemize}
-        Flags besitzen je nach Pakettyp unterschiedliche Bedeutungen. Beim PUBLISH-Paket enthalten die Flags unter anderem ein \gls{acr:DUP}, was eine wiederholte Übertragung bedeutet, das Quality-of-Service-Level oder ein RETAIN-Flag \autocite[15]{hivemqMQTTMQTT5}. Dieses RETAIN-Flag ist dafür zuständig, dass der Broker diese Nachricht speichert. Verbindet sich ein neuer Client als Subscriber und abonniert das Topic dieser Nachricht, sendet der Broker sofort automatisch die RETAIN-Nachrichten \autocite[29]{hivemqMQTTMQTT5}. Dadurch erhalten Clients nach der Verbindung zum Client die wichtigsten Informationen beispielsweise über den aktuellen Stand, über andere Teilnehmer oder den aktiven Linienartikel, sobald sie sich mit dem Broker verbinden.
+        Flags besitzen je nach Pakettyp unterschiedliche Bedeutungen. Beim PUBLISH-Paket enthalten die Flags unter anderem ein \gls{acr:DUP}, was eine wiederholte Übertragung bedeutet, das Quality-of-Service-Level oder ein RETAIN-Flag \autocite[15]{hivemqMQTTMQTT5}. Dieses RETAIN-Flag ist dafür zuständig, dass der Broker diese Nachricht speichert. Verbindet sich ein neuer Client als Subscriber und abonniert das Topic dieser Nachricht, sendet der Broker sofort automatisch die RETAIN-Nachrichten \autocite[29]{hivemqMQTTMQTT5}. Dadurch erhalten Clients nach der Verbindung zum Client die wichtigsten Informationen beispielsweise über den aktuellen Stand, über andere Teilnehmer oder den aktiven Linienartikel, sobald sie sich mit dem Broker verbinden \autocite[29]{hivemqMQTTMQTT5}.
         
         Das zweite bis optional fünfte Byte enthält dann, wie viele Bytes nach dem Fixed Header folgen \autocite[30]{oasisMQTTVersion502019}. Die variable Kodierung zwischen zwei und fünf Bytes sorgt dafür, dass kleine Nachrichten sehr kurze Header besitzen. 
         Dies ist ein wesentlicher Faktor für die Effizienz von \acrshort{acr:MQTT}, vor allem bei kleinen Payloads \autocite[124]{angewandteNetzwerktechnik}.
@@ -98,7 +98,7 @@ Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können
         Dabei ist ein höheres \acrshort{acr:QoS}-Level nicht immer besser. \autocite[25]{hivemqMQTTMQTT5}
 
 \section{Vorteile von MQTT in der Automatisierung}
-        \acrshort{acr:MQTT} ist durch den sehr kleinen Nachrichten-Header, der aus nur zwei bis fünf Bytes besteht, ein sehr leichtgewichtiges Protokoll. Dadurch benötigt es nur geringe Bandbreite, wodurch es sich vor allem für ressourcenarme Geräte und \acrshort{acr:IoT}-Sensoren eignet \autocite[68--69]{IoTMQTT}. 
+        \acrshort{acr:MQTT} ist durch den sehr kleinen Nachrichten-Header, der aus nur zwei bis fünf Bytes besteht, ein sehr leichtgewichtiges Protokoll. Dadurch benötigt es nur geringe Bandbreite, wodurch es sich vor allem für ressourcenarme Geräte und \acrshort{acr:IoT}-Sensoren eignet. \autocite[68--69]{IoTMQTT}
 
         Durch das Publish-/Subscribe-Modell entsteht eine Entkopplung von Sendern und Empfängern, wodurch keine Geräte-zu-Geräte-Kommunikation notwendig ist. 
         So wird der Netzwerkverkehr im Vergleich zu Polling-Methoden wie HTTP oder \acrshort{acr:OPC} (\acrlong{acr:OPC}) sehr stark reduziert \autocite[31--32]{KommunikationskonzepteIoT}. Außerdem kann der Broker 
@@ -107,8 +107,8 @@ Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können
         unterschiedliche Einsatzszenarien angepasst werden. Das erleichtert auch die mögliche Weiterentwicklung der Anwendungsschicht, da diese klar von der Kommunikationsschicht
         getrennt ist \autocite[]{IPCOMMProtocolsMQTT}.
 
-        Durch die flexible Anpassung der Daten-Kritikalität durch die \acrshort{acr:QoS}-Stufen ist \acrshort{acr:MQTT} sehr gut für instabile Netzwerke geeignet. Dazu hilft auch die Unterstützung 
-für die Session-Wiederaufnahme, genauso wie die Zwischenspeicherung der Nachrichten und der Last-Will-Mechanismus zur Statusüberwachung \autocite[73--74]{IoTMQTT}. 
+        Durch die flexible Anpassung der Daten-Kritikalität durch die \acrshort{acr:QoS}-Stufen ist \acrshort{acr:MQTT} sehr gut für instabile Netzwerke geeignet. Dabei hilft auch die Unterstützung 
+für die Session-Wiederaufnahme, genauso wie die Zwischenspeicherung der Nachrichten und der Last-Will-Mechanismus zur Statusüberwachung. \autocite[73--74]{IoTMQTT}
 
 
     
@@ -126,14 +126,14 @@ Die Klassenbibliothek stellt eine Vielzahl objektorientierter Typen und Funktion
     Dies ermöglicht eine klare Entkopplung zwischen Darstellung und Programmlogik, da die Interaktions- und Verarbeitungslogik in Programmiersprachen wie C\# implementiert wird, 
     während XAML ausschließlich die Oberfläche beschreibt. \autocite[17--18]{wegenerWPF45Und2012}
     
-Die in XAML beschriebenen Elemente werden zur Laufzeit durch das jeweilige Framework instanziiert und mit den zugehörigen Programmkomponenten verknüpft. In Verbindung mit Mechanismen wie Data Binding unterstützt XAML die Umsetzung strukturierter Softwarearchitekturen und fördert eine lose Kopplung zwischen Benutzeroberfläche und Anwendungslogik. \autocite{adegeoXAMLLanguageOverview} \autocite{XAMLMitWPF}
+Die in XAML beschriebenen Elemente werden zur Laufzeit durch das jeweilige Framework instanziiert und mit den zugehörigen Programmkomponenten verknüpft \autocite{adegeoXAMLLanguageOverview}. In Verbindung mit Mechanismen wie Data Binding unterstützt XAML die Umsetzung strukturierter Softwarearchitekturen und fördert eine lose Kopplung zwischen Benutzeroberfläche und Anwendungslogik \autocite{XAMLMitWPF}.
 
 Durch diese Eigenschaften verbessert XAML die Wartbarkeit, Erweiterbarkeit und Wiederverwendbarkeit grafischer Anwendungen, da Änderungen an der Benutzeroberfläche weitgehend unabhängig von der zugrunde liegenden Programmlogik vorgenommen werden können.
 
   \section{\acrlong{acr:MVVM} als Architekturstruktur}
-\acrshort{acr:MVVM} (\acrlong{acr:MVVM}) ist ein Architekturmuster zur strukturierten Entwicklung von Anwendungen mit grafischer Benutzeroberfläche. Ziel des Musters ist die Trennung von Darstellung, Anwendungslogik und Datenmodell, wodurch die Wartbarkeit, Erweiterbarkeit und Testbarkeit einer Anwendung verbessert werden \autocite{MVVM}.
+\acrshort{acr:MVVM} (\acrlong{acr:MVVM}) ist ein Architekturmuster zur strukturierten Entwicklung von Anwendungen mit grafischer Benutzeroberfläche. Ziel des Musters ist die Trennung von Darstellung, Anwendungslogik und Datenmodell, wodurch die Wartbarkeit, Erweiterbarkeit und Testbarkeit einer Anwendung verbessert werden. \autocite{MVVM}
 
-Insbesondere bei datengetriebenen Anwendungen mit umfangreicher Benutzerinteraktion steigt die Komplexität der Softwarearchitektur. Ohne eine klare Trennung der Verantwortlichkeiten kann dies zu einer starken Kopplung zwischen Benutzeroberfläche und Anwendungslogik führen. Architekturmuster wie MVVM begegnen diesem Problem durch die Aufteilung der Anwendung in klar definierte Komponenten \autocite{MVVM}.
+Insbesondere bei datengetriebenen Anwendungen mit umfangreicher Benutzerinteraktion steigt die Komplexität der Softwarearchitektur. Ohne eine klare Trennung der Verantwortlichkeiten kann dies zu einer starken Kopplung zwischen Benutzeroberfläche und Anwendungslogik führen. Architekturmuster wie MVVM begegnen diesem Problem durch die Aufteilung der Anwendung in klar definierte Komponenten. \autocite{MVVM}
 
 Das MVVM-Muster unterteilt eine Anwendung in die drei Hauptbestandteile \textit{Model}, \textit{View} und \textit{View-Model}. Das Model repräsentiert die fachlichen Daten. Die View definiert die grafische Benutzeroberfläche und dient ausschließlich der Darstellung der Daten. Das View-Model fungiert als Vermittlungsschicht zwischen Model und View. Es stellt der Benutzeroberfläche die benötigten Daten und Befehle bereit und verarbeitet Benutzerinteraktionen. \autocite[145--148]{MVVMGarcia}
 

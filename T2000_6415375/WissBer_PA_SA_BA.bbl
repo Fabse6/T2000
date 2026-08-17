@@ -69,7 +69,7 @@
       \verb 1901.10938
       \endverb
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\RFXLDRBN\Arulraj et al. - 2019 - Multi-Tier Buffer Management and Storage System Design for Non-Volatile Memory.pdf
+      \verb /home/fabian/Zotero/storage/RFXLDRBN/Arulraj et al. - 2019 - Multi-Tier Buffer Management and Storage System Design for Non-Volatile Memory.pdf
       \endverb
       \verb{urlraw}
       \verb http://arxiv.org/abs/1901.10938
@@ -94,7 +94,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\M87KKJ3I\asyncio.html
+      \verb /home/fabian/Zotero/storage/M87KKJ3I/asyncio.html
       \endverb
       \verb{urlraw}
       \verb https://docs.python.org/3/library/asyncio.html
@@ -115,7 +115,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\RQDKQAMQ\automation-solutions.html
+      \verb /home/fabian/Zotero/storage/RQDKQAMQ/automation-solutions.html
       \endverb
       \verb{urlraw}
       \verb https://multivac.com/de/de/our-solutions/portfolio/automation-solutions
@@ -154,7 +154,7 @@
       \field{isbn}{978-3-658-42987-4}
       \field{title}{Systemintegration in {{Industrie}} 4.0 Und {{IoT}}}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\3C72BP79\Babel - Systemintegration in Industrie 4.0 und IoT.pdf
+      \verb /home/fabian/Zotero/storage/3C72BP79/Babel - Systemintegration in Industrie 4.0 und IoT.pdf
       \endverb
     \endentry
     \entry{PythonVSCS}{inproceedings}{}{}
@@ -214,7 +214,7 @@
       \verb 10.1109/ICETSIS55481.2022.9888839
       \endverb
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\WF7DFPHF\Bahar et al. - 2022 - Survey on Features and Comparisons of Programming Languages (PYTHON, JAVA, AND C#).pdf
+      \verb /home/fabian/Zotero/storage/WF7DFPHF/Bahar et al. - 2022 - Survey on Features and Comparisons of Programming Languages (PYTHON, JAVA, AND C#).pdf
       \endverb
       \verb{urlraw}
       \verb https://ieeexplore.ieee.org/abstract/document/9888839
@@ -248,6 +248,7 @@
       \field{langid}{english}
       \field{month}{4}
       \field{number}{4}
+      \field{shortjournal}{Computer}
       \field{title}{No {{Silver Bullet Essence}} and {{Accidents}} of {{Software Engineering}}}
       \field{urlday}{17}
       \field{urlmonth}{8}
@@ -262,7 +263,7 @@
       \verb 10.1109/MC.1987.1663532
       \endverb
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\225XJTE5\Brooks - 1987 - No Silver Bullet Essence and Accidents of Software Engineering.pdf
+      \verb /home/fabian/Zotero/storage/225XJTE5/Brooks - 1987 - No Silver Bullet Essence and Accidents of Software Engineering.pdf
       \endverb
       \verb{urlraw}
       \verb http://ieeexplore.ieee.org/document/1663532/
@@ -282,7 +283,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\H4UZCAVZ\mqttfx.html
+      \verb /home/fabian/Zotero/storage/H4UZCAVZ/mqttfx.html
       \endverb
       \verb{urlraw}
       \verb https://docs.emqx.com/en/cloud/latest/connect_to_deployments/mqttfx.html
@@ -323,7 +324,7 @@
       \field{year}{2023}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\U82L33UJ\Desbiens - 2023 - Building Enterprise IoT Solutions with Eclipse IoT Technologies An Open Source Approach to Edge Co.pdf
+      \verb /home/fabian/Zotero/storage/U82L33UJ/Desbiens - 2023 - Building Enterprise IoT Solutions with Eclipse IoT Technologies An Open Source Approach to Edge Co.pdf
       \endverb
     \endentry
     \entry{MQTTTestingDebugging}{online}{}{}
@@ -352,7 +353,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\P4S8Q2PB\mqtt-testing-debugging-using-mqttfx-hivemq-cloud.html
+      \verb /home/fabian/Zotero/storage/P4S8Q2PB/mqtt-testing-debugging-using-mqttfx-hivemq-cloud.html
       \endverb
       \verb{urlraw}
       \verb https://www.hivemq.com/blog/mqtt-testing-debugging-using-mqttfx-hivemq-cloud/
@@ -373,7 +374,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\7D2X39YG\mvvm.html
+      \verb /home/fabian/Zotero/storage/7D2X39YG/mvvm.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/de-de/dotnet/communitytoolkit/mvvm/
@@ -415,7 +416,7 @@
       \field{year}{2023}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\E5RLMQVQ\García - 2023 - iOS Architecture Patterns MVC, MVP, MVVM, VIPER, and VIP in Swift.pdf
+      \verb /home/fabian/Zotero/storage/E5RLMQVQ/García - 2023 - iOS Architecture Patterns MVC, MVP, MVVM, VIPER, and VIP in Swift.pdf
       \endverb
     \endentry
     \entry{hivemqMQTTMQTT5}{book}{}{}
@@ -442,7 +443,7 @@
       \field{isbn}{978-3-00-067913-1}
       \field{title}{{{MQTT}} \& {{MQTT}} 5 {{Essentials}}}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\ZU6SBCXL\HIVEMQ - MQTT & MQTT 5 Essentials.pdf
+      \verb /home/fabian/Zotero/storage/ZU6SBCXL/HIVEMQ - MQTT & MQTT 5 Essentials.pdf
       \endverb
     \endentry
     \entry{gewarrenHowDeserializeJSON}{online}{}{}
@@ -457,7 +458,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\YJ6IKHX8\deserialization.html
+      \verb /home/fabian/Zotero/storage/YJ6IKHX8/deserialization.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/deserialization
@@ -481,7 +482,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\RZ45DTVC\connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.html
+      \verb /home/fabian/Zotero/storage/RZ45DTVC/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp.html
       \endverb
       \verb{urlraw}
       \verb https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp
@@ -500,7 +501,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\6TD9RVRP\sheet.html
+      \verb /home/fabian/Zotero/storage/6TD9RVRP/sheet.html
       \endverb
       \verb{urlraw}
       \verb https://www.ipcomm.de/protocol/MQTT/en/sheet.html
@@ -535,7 +536,7 @@
       \field{year}{2016}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\GQNDFAWK\Kastning - 2016 - TLSSSL Kochbuch.pdf
+      \verb /home/fabian/Zotero/storage/GQNDFAWK/Kastning - 2016 - TLSSSL Kochbuch.pdf
       \endverb
     \endentry
     \entry{XAMLMitWPF}{online}{}{}
@@ -571,7 +572,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\4C9ZBZ2I\XAML-Frameworks-WPF-UWP-WinUI3-MAUI.html
+      \verb /home/fabian/Zotero/storage/4C9ZBZ2I/XAML-Frameworks-WPF-UWP-WinUI3-MAUI.html
       \endverb
       \verb{urlraw}
       \verb https://kirsch-software.de/blog/XAML-Frameworks-WPF-UWP-WinUI3-MAUI
@@ -630,7 +631,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\SXY3U3UN\mvvm.html
+      \verb /home/fabian/Zotero/storage/SXY3U3UN/mvvm.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/en-us/dotnet/architecture/maui/mvvm
@@ -649,7 +650,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\JN2XK644\2204051.html
+      \verb /home/fabian/Zotero/storage/JN2XK644/2204051.html
       \endverb
       \verb{urlraw}
       \verb https://www.elektronik-kompendium.de/sites/net/2204051.htm
@@ -674,7 +675,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\WFINNIHD\mqtt-fx-grafisches-werkzeug-zum-mqtt-debugging.html
+      \verb /home/fabian/Zotero/storage/WFINNIHD/mqtt-fx-grafisches-werkzeug-zum-mqtt-debugging.html
       \endverb
       \verb{urlraw}
       \verb https://www.codecentric.de/wissens-hub/blog/mqtt-fx-grafisches-werkzeug-zum-mqtt-debugging
@@ -800,7 +801,7 @@
       \field{year}{2019}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\JAYYGFSS\OASIS - 2019 - MQTT Version 5.0.pdf
+      \verb /home/fabian/Zotero/storage/JAYYGFSS/OASIS - 2019 - MQTT Version 5.0.pdf
       \endverb
     \endentry
     \entry{ottenwalderChurnDynamischenPublish}{thesis}{}{}
@@ -837,7 +838,7 @@
       \field{year}{2007}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\TQ6EY46G\Ottenwalder - 2007 - Churn in dynamischen PublishSubscribe Systemen.pdf
+      \verb /home/fabian/Zotero/storage/TQ6EY46G/Ottenwalder - 2007 - Churn in dynamischen PublishSubscribe Systemen.pdf
       \endverb
     \endentry
     \entry{ouyangMQTTfxGuideFeatures}{online}{}{}
@@ -872,7 +873,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\K7GVN36G\connecting-to-emqx-cloud-with-mqttfx.html
+      \verb /home/fabian/Zotero/storage/K7GVN36G/connecting-to-emqx-cloud-with-mqttfx.html
       \endverb
       \verb{urlraw}
       \verb https://www.emqx.com/en/blog/connecting-to-emqx-cloud-with-mqttfx
@@ -893,7 +894,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\KRH8TJ97\sqlite.html
+      \verb /home/fabian/Zotero/storage/KRH8TJ97/sqlite.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/
@@ -914,7 +915,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\NXA4XEY8\about-us.html
+      \verb /home/fabian/Zotero/storage/NXA4XEY8/about-us.html
       \endverb
       \verb{urlraw}
       \verb https://multivac.com/de/de/company/about-us
@@ -991,13 +992,32 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\I4IG45BD\Plenk - 2024 - Angewandte Netzwerktechnik kompakt.pdf
+      \verb /home/fabian/Zotero/storage/I4IG45BD/Plenk - 2024 - Angewandte Netzwerktechnik kompakt.pdf
       \endverb
       \verb{urlraw}
       \verb https://link.springer.com/chapter/10.1007/978-3-658-43530-1_7
       \endverb
       \verb{url}
       \verb https://link.springer.com/chapter/10.1007/978-3-658-43530-1_7
+      \endverb
+    \endentry
+    \entry{PollingCallbackThere}{online}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{Polling versus {{Callback}}. {{There}} Are Scenarios When a Software… | by {{Pavlo Morozov}} | {{Medium}}}
+      \field{urlday}{17}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/fabian/Zotero/storage/DXBRUVCB/polling-versus-callback-5bda6267eece.html
+      \endverb
+      \verb{urlraw}
+      \verb https://medium.com/@pavlomorozov78/polling-versus-callback-5bda6267eece
+      \endverb
+      \verb{url}
+      \verb https://medium.com/@pavlomorozov78/polling-versus-callback-5bda6267eece
       \endverb
     \endentry
     \entry{PsutilDocumentationPsutil}{online}{}{}
@@ -1010,7 +1030,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\UZ5IU4ZE\stable.html
+      \verb /home/fabian/Zotero/storage/UZ5IU4ZE/stable.html
       \endverb
       \verb{urlraw}
       \verb https://psutil.readthedocs.io/stable/
@@ -1033,7 +1053,7 @@
       \field{year}{Sun Feb 22 2026 00:00:00 GMT+0000 (Coordinated Universal Time)}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\AU258KRX\when-to-rebuild-vs-refactor-legacy-software.html
+      \verb /home/fabian/Zotero/storage/AU258KRX/when-to-rebuild-vs-refactor-legacy-software.html
       \endverb
       \verb{urlraw}
       \verb https://ztabs.co/blog/when-to-rebuild-vs-refactor-legacy-software
@@ -1058,7 +1078,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\XU5GIPAT\rider.html
+      \verb /home/fabian/Zotero/storage/XU5GIPAT/rider.html
       \endverb
       \verb{urlraw}
       \verb https://www.jetbrains.com/rider/
@@ -1099,7 +1119,7 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\RTS5LH5E\Sarcar - 2024 - Parallel Programming with C# and .NET.pdf
+      \verb /home/fabian/Zotero/storage/RTS5LH5E/Sarcar - 2024 - Parallel Programming with C# and .NET.pdf
       \endverb
     \endentry
     \entry{KommunikationskonzepteIoT}{misc}{}{}
@@ -1131,7 +1151,7 @@
       \field{year}{2021}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\PXCEGGTS\Schmidt - 2021 - Vergleich und Bewertung von Kommunikationskonzepten für Microservices imBereichdes Internetof Things.pdf
+      \verb /home/fabian/Zotero/storage/PXCEGGTS/Schmidt - 2021 - Vergleich und Bewertung von Kommunikationskonzepten für Microservices imBereichdes Internetof Things.pdf
       \endverb
     \endentry
     \entry{SchubertDatenbanken}{book}{}{}
@@ -1168,7 +1188,7 @@
       \field{year}{2007}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\NSSD3EHJ\Schubert - 2007 - Datenbanken.pdf
+      \verb /home/fabian/Zotero/storage/NSSD3EHJ/Schubert - 2007 - Datenbanken.pdf
       \endverb
     \endentry
     \entry{MVVM}{online}{}{}
@@ -1201,7 +1221,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\Y6RR8VD5\patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern.html
+      \verb /home/fabian/Zotero/storage/Y6RR8VD5/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern
@@ -1222,7 +1242,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\3AN3ILUE\microsoft.data.sqlclient.html
+      \verb /home/fabian/Zotero/storage/3AN3ILUE/microsoft.data.sqlclient.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/en-us/dotnet/api/microsoft.data.sqlclient.sqlconnection?view=sqlclient-dotnet-core-6.1
@@ -1268,7 +1288,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\9VJQDY7H\virtual-memory-explained-paging-segmentation-and-handling-page-faults.html
+      \verb /home/fabian/Zotero/storage/9VJQDY7H/virtual-memory-explained-paging-segmentation-and-handling-page-faults.html
       \endverb
       \verb{urlraw}
       \verb https://namastedev.com/blog/virtual-memory-explained-paging-segmentation-and-handling-page-faults/
@@ -1292,7 +1312,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\YEDH2U8X\tkinter.html
+      \verb /home/fabian/Zotero/storage/YEDH2U8X/tkinter.html
       \endverb
       \verb{urlraw}
       \verb https://docs.python.org/3/library/tkinter.html
@@ -1350,7 +1370,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\URV7IJIY\overview.html
+      \verb /home/fabian/Zotero/storage/URV7IJIY/overview.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/de-de/dotnet/framework/get-started/overview
@@ -1371,7 +1391,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\5BUUAQAD\portfolio.html
+      \verb /home/fabian/Zotero/storage/5BUUAQAD/portfolio.html
       \endverb
       \verb{urlraw}
       \verb https://multivac.com/de/de/our-solutions/portfolio
@@ -1411,7 +1431,7 @@
       \field{year}{2024}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\YB4D2YE8\Vileikis - 2024 - Hacking MySQL.pdf
+      \verb /home/fabian/Zotero/storage/YB4D2YE8/Vileikis - 2024 - Hacking MySQL.pdf
       \endverb
     \endentry
     \entry{billwagnerSemaphorUndSemaphoreSlim}{online}{}{}
@@ -1442,7 +1462,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\SRV56HP5\semaphore-and-semaphoreslim.html
+      \verb /home/fabian/Zotero/storage/SRV56HP5/semaphore-and-semaphoreslim.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/de-de/dotnet/standard/threading/semaphore-and-semaphoreslim
@@ -1541,7 +1561,7 @@
       \field{year}{2012}
       \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\BNFKAQWC\Wietzke - 2012 - Embedded Technologies.pdf
+      \verb /home/fabian/Zotero/storage/BNFKAQWC/Wietzke - 2012 - Embedded Technologies.pdf
       \endverb
     \endentry
     \entry{Working}{online}{}{}
@@ -1556,7 +1576,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\3USU8NQ6\csharp.html
+      \verb /home/fabian/Zotero/storage/3USU8NQ6/csharp.html
       \endverb
       \verb{urlraw}
       \verb https://code.visualstudio.com/docs/languages/csharp
@@ -1596,7 +1616,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\M2MXR5J5\Agnostisch.html
+      \verb /home/fabian/Zotero/storage/M2MXR5J5/Agnostisch.html
       \endverb
       \verb{urlraw}
       \verb https://www.computerweekly.com/de/definition/Agnostisch
@@ -1617,7 +1637,7 @@
       \field{urlyear}{2026}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\HK3T5IL9\xaml.html
+      \verb /home/fabian/Zotero/storage/HK3T5IL9/xaml.html
       \endverb
       \verb{urlraw}
       \verb https://learn.microsoft.com/en-us/dotnet/desktop/wpf/xaml/
@@ -1665,7 +1685,7 @@
       \field{dateera}{ce}
       \field{urldateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\5QGEI4TR\memory-information-in-task-manager.html
+      \verb /home/fabian/Zotero/storage/5QGEI4TR/memory-information-in-task-manager.html
       \endverb
       \verb{urlraw}
       \verb https://scorpiosoftware.net/2023/04/12/memory-information-in-task-manager/

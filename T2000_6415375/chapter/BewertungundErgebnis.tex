@@ -6,29 +6,28 @@ Die durchgeführten Funktionstests zeigen, dass die wesentlichen Anforderungen a
 
 Die definierten Performance-Ziele konnten nicht vollständig erreicht werden. Insbesondere die CPU-Auslastung überschritt die festgelegten Grenzwerte während mehrerer Testläufe. Ursache hierfür war die bewusst hohe und kontinuierliche Nachrichtenlast während der Messungen. Die Anwendung blieb trotz erhöhter Prozessor-Auslastung jederzeit stabil und konnte alle Nachrichten ohne Datenverluste verarbeiten. Aus diesem Grund kann die Performance trotz fehlgeschlagener Tests als ausreichend bewertet werden.
 \section{Umsetzung der Anforderungen}
-\subsection{Nachrichtendarstellung und Filterung}
 Die Anforderung zur Anzeige, Speicherung und Filterung von MQTT-Nachrichten wurde vollständig umgesetzt. Die Applikation ermöglicht sowohl die Filterung nach Topics als auch die Volltextsuche innerhalb der gespeicherten Nachrichten. Darüber hinaus können drei verschiedene Anzeigemöglichkeiten der Nachrichten ausgewählt werden, wodurch die Anwendung personalisierbar wird.
-\subsection{Fehlererkennung}
-Die automatische Erkennung von Strukturfehlern sowie verschiedener Prozessfehler wurde erfolgreich implementiert und konnte durch die Funktionstests validiert werden. Neben der reinen Anzeige von Fehlern können diese nach Ablauf- beziehungsweise Strukturfehler gefiltert werden. Außerdem wurde das Paging-Konzept auch für die Fehler umgesetzt, wodurch diese ressourcenarm angezeigt werden können.
-\subsection{Teilnehmerüberwachung}
+
+Die automatische Erkennung von Strukturfehlern sowie verschiedener Prozessfehler wurde erfolgreich implementiert und konnte durch die Funktionstests validiert werden. Neben der reinen Anzeige von Fehlern können diese nach Ablauf- beziehungsweise Strukturfehlern gefiltert werden. Außerdem wurde das Paging-Konzept auch für die Fehler umgesetzt, wodurch diese ressourcenarm angezeigt werden können.
+
 Die Teilnehmerüberwachung erkennt automatisch neue Teilnehmer und visualisiert deren Zustände sowie deren Verbindungsstatus, wodurch die Anforderungen dafür erfüllt wurden.
-\subsection{Automatisierungsablauf-Erkennung}
+
 Bei der Ablauferkennung bildeten sich bei der Durchführung der Funktionstests geringfügige Fehler heraus. Trotz dieser Einschränkungen bietet die implementierte Ablauferkennung einen deutlichen Mehrwert für die Analyse von Produktionsabläufen. Prozessereignisse können automatisch erkannt und fehlerhafte Abläufe durch entsprechende Fehlermeldungen hervorgehoben werden. Dadurch wird die Fehlersuche gegenüber einer rein manuellen Analyse erheblich vereinfacht.
-\subsection{Performance}
+
 Durch die Nutzung asynchroner Verarbeitung sowie eines Paging-Konzeptes konnte eine stabile Verarbeitung großer Nachrichtenmengen erreicht werden. Die definierten Zielwerte für CPU- und Arbeitsspeicherverbrauch wurden jedoch nicht in allen Testfällen eingehalten. 
-\subsection{Erweiterbarkeit und Zukunftstauglichkeit}
+
 Durch die Verwendung der MVVM-Architektur sowie der Trennung von Services, Repositories und Benutzeroberfläche wurde eine Grundlage für zukünftige Erweiterungen geschaffen. Für den Fall eines zukünftigen Umstiegs auf andere Betriebssysteme ist die Applikation nicht sofort übertragbar und einsetzbar. Dafür müsste die Anwendung auf ein anderes Framework übertragen werden, was jedoch durch die MVVM-Architektur stark vereinfacht wird.
 
-Die Anforderung an konfigurierbare Prüfmechanismen erfüllt der MQTT Analyzer nicht. Dafür ist der Prozessablauf einer jeden Maschine zu modular aufgebaut, wodurch die Umsetzung dieser Anforderung für den Umfang dieser Projektarbeit einen zu großen Aufwand mit sich bringen würde.
+Die Anforderung an konfigurierbare Prüfmechanismen erfüllt der MQTT Analyzer nicht. Dafür ist der Prozessablauf einer jeden Maschine zu modular aufgebaut, wodurch die Umsetzung dieser Anforderung für den Rahmen der vorliegenden Arbeit sprengen würde.
 
-Insgesamt zeigt die Bewertung, dass die entwickelte Anwendung für den Einsatz im Produktionsumfeld geeignet ist. Durch die Kombination aus Nachrichtenanalyse, automatischer Fehlererkennung, Teilnehmerüberwachung und Ablauferkennung bietet sie einen deutlichen Mehrwert gegenüber den bisher eingesetzten MQTT-Werkzeugen und unterstützt. Der Anwender wird dadurch bei der Inbetriebnahme, Analyse und Fehlerdiagnose von Verpackungslinien wirksam unterstützt.
+Insgesamt zeigt die Bewertung, dass die entwickelte Anwendung für den Einsatz im Produktionsumfeld geeignet ist. Durch die Kombination aus Nachrichtenanalyse, automatischer Fehlererkennung, Teilnehmerüberwachung und Ablauferkennung bietet sie einen deutlichen Mehrwert gegenüber den bisher eingesetzten MQTT-Werkzeugen. Der Anwender wird dadurch bei der Inbetriebnahme, Analyse und Fehlerdiagnose von Verpackungslinien wirksam unterstützt.
 
 \section{Vergleich mit bestehenden Werkzeugen}
-Die in Kapitel \ref{cha:Ausgangssituation} beschriebenen Werkzeuge bieten nur eingeschränkte Möglichkeiten zur Analyse von MQTT-Nachrichten. Die meisten Werkzeuge sind auf die reine Anzeige von Nachrichten beschränkt und bieten keine erweiterten Funktionen wie Filterung, Volltextsuche oder automatische Fehlererkennung. Der MQTT Analyzer hingegen bietet eine umfassende Lösung für die Analyse von MQTT-Nachrichten und unterstützt den Anwender bei der Inbetriebnahme, Analyse und Fehlerdiagnose von Verpackungslinien. Für einen genaueren Vergleich der Werkzeuge wurde eine Vergleichstabelle erstellt, die die wichtigsten Funktionen der Werkzeuge gegenüberstellt (siehe Tabelle \ref{tab:Werkzeugvergleich}). 
+Die in Kapitel \ref{cha:Ausgangssituation} beschriebenen Werkzeuge bieten nur eingeschränkte Möglichkeiten zur Analyse von MQTT-Nachrichten. Die meisten Werkzeuge sind auf die reine Anzeige von Nachrichten beschränkt und bieten keine erweiterten Funktionen wie Filterung, Volltextsuche oder automatische Fehlererkennung. Der MQTT Analyzer hingegen bietet eine umfassende Lösung für die Analyse von MQTT-Nachrichten und unterstützt den Anwender bei der Inbetriebnahme, Analyse und Fehlerdiagnose von Verpackungslinien. Für einen genaueren Vergleich zeig Tabelle \ref{tab:Werkzeugvergleich} die wesentlichen Unterschiede und Vorteile der einzelnen Applikationen. 
 
 \begin{table}[htbp] 
     \centering \caption{Nutzwertanalyse der untersuchten MQTT-Werkzeuge} 
-    \label{tab:Werkzeuganalyse} 
+    \label{tab:Werkzeugvergleich} 
     \begin{tabular}{lccccc} \hline \textbf{Kriterium} & \textbf{MQTT.fx} & \textbf{Explorer} & \textbf{Multimeter} & \textbf{Analyzer} \\ 
         \hline Nachrichtenanzeige (5\%) & 3 & 4 & 4 & 5 \\ 
         Topic-Filterung (15\%) & 3 & 4 & 3 & 5 \\ 
@@ -45,6 +44,6 @@ Die in Kapitel \ref{cha:Ausgangssituation} beschriebenen Werkzeuge bieten nur ei
     \end{tabular}
 \end{table}
 
-Die Tabelle zeigt, dass der MQTT Analyzer in allen relevanten Bereichen überlegen ist und somit eine wertvolle Ergänzung zu den bestehenden Werkzeugen darstellt. Vor allem durch die Fehler- und Ablauferkennung sowie Filterung der Nachrichten bietet die selbst entwickelte Anwendung eine Möglichkeit, die Zeit für Fehlersuche und Analyse deutlich zu reduzieren. 
+Die Tabelle zeigt, dass der MQTT Analyzer in allen relevanten Bereichen überlegen ist und somit eine wertvolle Erweiterung der zur Verfügung stehenden Analyse- und Diagnoseanwendungen. Vor allem durch die Fehler- und Ablauferkennung sowie Filterung der Nachrichten bietet die selbst entwickelte Anwendung eine Möglichkeit, die Zeit für Fehlersuche und Analyse deutlich zu reduzieren. 
 
 Die Zeitersparnis wirkt sich unmittelbar auf die Wirtschaftlichkeit aus. Kürzere Analyse- und Diagnosezeiten führen zu einem geringeren Personalaufwand während der Inbetriebnahme und Fehlerbehebungen von Verpackungslinien. Gleichzeitig können Kommunikationsprobleme schneller identifiziert und behoben werden, wodurch Stillstände von Maschinen reduziert werden können.

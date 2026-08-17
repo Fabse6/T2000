@@ -9,7 +9,7 @@
     \subsection{Funktionalität von MQTT.fx}
         MQTT.fx ist ein grafischer Desktop-Client für das MQTT-Protokoll. Die Anwendung verbindet sich als MQTT-Client mit dem externen Broker.
         Beim Verbinden erlaubt die Applikation das Anlegen wiederverwendbarer Verbindungsprofile. Konfigurierbare Parameter sind dabei die Broker-Adresse, Port, Client-ID, 
-        MQTT-Version, Clean-Session, Keep-Alive-Zeit, Authentifizierung durch Benutzername und Passwort und eine TLS/SSL-Verschlüsselung. 
+        MQTT-Version, Clean-Session, Keep-Alive-Zeit, Authentifizierung durch Benutzername und Passwort und eine TLS/SSL-Verschlüsselung. \autocite{ouyangMQTTfxGuideFeatures}
 
         Über einen Reiter Publish lassen sich Nachrichten über frei definierbare Topics versenden. Dazu lassen sich auch das QoS-Level und die Retain-Flag manuell einstellen. 
         Nachrichten können ähnlich wie Verbindungsprofile über Vorlagen oder die Historie wiederverwendet werden. So können Sensorwerte, Statusmeldungen und Steuerbefehle 
@@ -25,12 +25,12 @@
         Neben dem Reiter Publish gibt es auch einen Subscribe-Reiter (\ref{fig:mqttfx_subscribe}). Hier können einzelne Topics oder Topic-Hierarchien abonniert werden.
         Die Darstellung der empfangenen Nachrichten unter den abonnierten Topics erfolgt dann in Echtzeit und mit den relevanten Metadaten Topic, Payload, \acrshort{acr:QoS} und Empfangszeitpunkt.
 
-        Darüber hinaus verfügt das Programm über eine Logging- und Analysefunktion. Dieser Reiter ist mit einem integrierten Log-Fenster ausgestattet, welches den Verbindungsaufbau und -abbau, Subscribe- und Publish-Events, MQTT-Nachrichten sowie Broker-Statusmeldungen protokolliert.
+        Darüber hinaus verfügt das Programm über eine Logging- und Analysefunktion. Dieser Reiter ist mit einem integrierten Log-Fenster ausgestattet, welches den Verbindungsaufbau und -abbau, Subscribe- und Publish-Events, MQTT-Nachrichten sowie Broker-Statusmeldungen protokolliert. \autocite{ouyangMQTTfxGuideFeatures}
 
         Eine weitere wichtige Funktion stellt die Skript- und Automatisierungsfunktion dar. MQTT.fx stellt eine einfache Java-basierte Skript-Schnittstelle bereit. 
         Diese ermöglicht automatisiertes Publizieren bestimmter Nachrichtenverläufe, die manuell durch einen Java-Programmcode erstellt werden können \autocite{MQTTTestingDebugging}.
 
-        Zuletzt wird neben den zuvor genannten Reitern der Broker-Status angezeigt. In diesem werden grundsätzliche Informationen über die Anzahl der verbundenen Clients, Anzahl an gesendeten Nachrichten und weitere ähnliche Daten des Brokers angezeigt.
+        Zuletzt wird neben den zuvor genannten Reitern der Broker-Status angezeigt. In diesem werden grundsätzliche Informationen über die Anzahl der verbundenen Clients, Anzahl an gesendeten Nachrichten und weitere ähnliche Daten des Brokers angezeigt. \autocite{ouyangMQTTfxGuideFeatures}
 
         MQTT.fx stellt eine umfangreiche Sammlung von Funktionen zur Verfügung, die insbesondere für das Testen, Debuggen und Analysieren von MQTT-Kommunikation geeignet sind. 
         Der Funktionsumfang ist dabei bewusst auf die Rolle eines Client-Werkzeugs ausgelegt, wobei der produktive Einsatz als dauerhaftes Monitoring- oder Visualisierungssystem nicht intendiert ist.
@@ -42,15 +42,15 @@
         MQTT.fx bietet zudem unterschiedliche Payload-Decoder, wodurch eine bessere Analyse verschiedener MQTT-Nachrichten, ohne eigene Interpretation dieser, möglich 
         ist \autocite{MQTTTestingDebugging}.
          
-        MQTT.fx speichert die empfangenen Nachrichten nicht dauerhaft. Eine langfristige Analyse ist dadurch nur durch manuelles Kopieren der Logs in externe Applikationen möglich.
+        In der praktischen Exploration konnten jedoch auch folgende Nachteile erkannt werden. MQTT.fx speichert die empfangenen Nachrichten nicht dauerhaft. Eine langfristige Analyse ist dadurch nur durch manuelles Kopieren der Logs in externe Applikationen möglich.
         Außerdem ist MQTT.fx nur auf die Anzeige einzelner Subscriptions fokussiert. Deshalb ist die Darstellung zusammenhängender Nachrichtenflüsse über mehrere Topics hinweg 
         sehr eingeschränkt und erschwert die Analyse komplexer Topic-Hierarchien, wie sie in Automatisierungssystemen häufig auftreten.
         Ein weiterer zentraler Punkt, der gegen die Nutzung von MQTT.fx spricht, ist die Konzipierung als eigenständige Desktop-Anwendung. Deswegen ist eine Integration
-        in bestehende HMIs oder produktive Visualisierungssysteme nicht möglich. Außerdem gibt es keine Möglichkeit zur Weiterverarbeitung von Daten, 
-        systematischen Auswertung von Tests oder zur Integration externer Datenquellen. Dadurch werden sowohl die Analyse als auch die Simulation bestimmter Szenarien eingeschränkt. 
+        in bestehende \acrlong{acr:HMI} (\acrshort{acr:HMI}) oder produktive Visualisierungssysteme nicht möglich. Außerdem gibt es keine Möglichkeit zur Weiterverarbeitung von Daten, 
+        systematischen Auswertung von Tests oder zur Integration externer Datenquellen. Dadurch werden sowohl die Analyse als auch die Simulation bestimmter Szenarien eingeschränkt.
 
 \section{Monitoring über \acrshort{acr:MQTT} Explorer}
-    Eine weitere Möglichkeit für das Auslesen von MQTT-Nachrichten bietet ,,MQTT Explorer''. Dieser bietet gegenüber MQTT.fx zusätzliche Funktionen und ist insgesamt übersichtlicher sowie stärker auf den Anwendungsfall ausgerichtet.
+    Eine weitere Möglichkeit für das Auslesen von MQTT-Nachrichten bietet \textit{MQTT Explorer} \autocite{MQTTExplorer}. Dieser bietet gegenüber MQTT.fx zusätzliche Funktionen und ist insgesamt übersichtlicher sowie stärker auf den Anwendungsfall ausgerichtet. Aus praktischen Explorationen konnten Funktionen sowie Vor- und Nachteile festgestellt werden.
 
     \begin{figure}[htbp]
         \centering
@@ -67,9 +67,9 @@
 
     Dadurch wird die Analyse von Datenströmen, bei denen die Reihenfolge eingehender Nachrichten eine entscheidende Rolle spielt, deutlich erschwert. Aufgrund dessen erfüllt auch diese Applikation die definierten Anforderungen nicht.
 \section{Möglichkeit der Nutzung und Erweiterung bereits existenter Applikationen}
-    Eine weitere Möglichkeit neben der Verwendung von bereits fertigen Programmen ist die Weiterentwicklung existenter Applikationen, die den Programmcode veröffentlichen. Eine hierfür besonders geeignete Applikation ist MQTTMultimeter. Da der Quellcode von MQTTMultimeter öffentlich verfügbar ist, konnten zentrale Komponenten der Anwendung analysiert und hinsichtlich ihrer Erweiterbarkeit bewertet werden. Die Analyse basiert auf dem auf GitHub veröffentlichten Projektstand \autocite{zotero-item-198}.
+    Eine weitere Möglichkeit neben der Verwendung von bereits fertigen Programmen ist die Weiterentwicklung existenter Applikationen, die den Programmcode veröffentlichen. Eine hierfür besonders geeignete Applikation ist \textit{MQTTMultimeter}. Da der Quellcode von \textit{MQTTMultimeter} öffentlich verfügbar ist, konnten zentrale Komponenten der Anwendung praktisch analysiert und hinsichtlich ihrer Erweiterbarkeit bewertet werden. Die Analyse basiert auf dem auf GitHub veröffentlichten Projektstand \autocite{zotero-item-198}.
 \subsection{Funktionsweise von MQTTMultimeter}
-    Als eine schon sehr ausgereifte Applikation erweist sich \enquote{MQTTMultimeter} \autocite{zotero-item-198}. Dieses Programm bietet eine geeignete Kombination aus MQTT.fx und dem \acrshort{acr:MQTT} Explorer. Es hat einen Reiter für die Anzeige der Baumstruktur, die sehr ähnlich funktioniert wie bei dem \acrshort{acr:MQTT} Explorer (siehe Abbildung \ref{fig:Baumstruktur}). Auch hier lässt sich der Nachrichtenverlauf nur durch eine Historie eines einzelnen Topics darstellen. 
+    Als eine schon sehr ausgereifte Applikation erweist sich \textit{MQTTMultimeter} \autocite{zotero-item-198}. Dieses Programm bietet eine geeignete Kombination aus MQTT.fx und dem \acrshort{acr:MQTT} Explorer. Es hat einen Reiter für die Anzeige der Baumstruktur, die sehr ähnlich funktioniert wie bei dem \acrshort{acr:MQTT} Explorer (siehe Abbildung \ref{fig:Baumstruktur}). Auch hier lässt sich der Nachrichtenverlauf nur durch eine Historie eines einzelnen Topics darstellen. 
     \begin{figure}[htbp]
         \centering
         \includegraphics[width=0.9\linewidth]{images/MQTTMultimeter.png}
@@ -123,15 +123,15 @@ async Task OnApplicationMessageReceived(MqttApplicationMessageReceivedEventArgs 
 }
     \end{lstlisting}
 
-    Die Aufgabe der Klasse \textit{InflightPageViewModel} besteht in der Verarbeitung und Darstellung eingehender Nachrichten in der richtigen Empfangsreihenfolge (siehe Listing: \ref{lst:inflightpage}). Sie stellt eine Verbindung zwischen der Kommunikationsschicht (\textit{MqttClientService}) und der \acrshort{acr:UI} her und übernimmt damit eine zentrale Rolle im Datenfluss der Anwendung. Eingehende Nachrichten werden ereignisbasiert verarbeitet. Dazu registriert sich das View-Model auf das Ereignis \lstinline{ApplicationMessageRecieved} des \acrshort{acr:MQTT}-Services. Sobald eine neue Nachricht empfangen wird, wird diese asynchron entgegengenommen und in eine interne Datenquelle überführt (\lstinline|SourceList <InflightPageItemViewModel> \_itemsSource|). Diese Datenquelle enthält alle aktuell erfassten Nachrichten. Ein wesentliches Merkmal der Implementierung ist die Verwendung reaktiver Programmierung. Änderungen an der Benutzereingabe, insbesondere am Filtertext, werden nicht unmittelbar verarbeitet, sondern als kontinuierlicher Datenstrom behandelt. Durch den Einsatz eines Throttle-Operators wird die Verarbeitung verzögert, wodurch eine übermäßige Belastung des Systems verhindert wird. Die eigentliche Filterung der Nachrichten nach Topics oder nach einem eingegebenen Suchbegriff erfolgt innerhalb der Datenpipeline. Dabei wird ein dynamisch erzeugter Filter auf die Datenquelle angewendet, während die zugrundeliegende Liste dabei unverändert bleibt. Die Verarbeitung erfolgt vollständig asynchron, wobei Aktualisierungen der Benutzeroberfläche explizit im \acrshort{acr:UI}-Thread durchgeführt werden. Dadurch wird auch bei einer hohen Anzahl eingehender Nachrichten stabil und performant dargestellt.
+    Die Aufgabe der Klasse \textit{InflightPageViewModel} besteht in der Verarbeitung und Darstellung eingehender Nachrichten in der richtigen Empfangsreihenfolge (siehe Listing im Anhang: \ref{lst:inflightpage}). Sie stellt eine Verbindung zwischen der Kommunikationsschicht (\textit{MqttClientService}) und der \acrshort{acr:UI} her und übernimmt damit eine zentrale Rolle im Datenfluss der Anwendung. Eingehende Nachrichten werden ereignisbasiert verarbeitet. Dazu registriert sich das View-Model auf das Ereignis \lstinline{ApplicationMessageRecieved} des \acrshort{acr:MQTT}-Services. Sobald eine neue Nachricht empfangen wird, wird diese asynchron entgegengenommen und in eine interne Datenquelle überführt (\lstinline|SourceList <InflightPageItemViewModel> \_itemsSource|). Diese Datenquelle enthält alle aktuell erfassten Nachrichten. Ein wesentliches Merkmal der Implementierung ist die Verwendung reaktiver Programmierung. Änderungen an der Benutzereingabe, insbesondere am Filtertext, werden nicht unmittelbar verarbeitet, sondern als kontinuierlicher Datenstrom behandelt. Durch den Einsatz eines Throttle-Operators wird die Verarbeitung verzögert, wodurch eine übermäßige Belastung des Systems verhindert wird. Die eigentliche Filterung der Nachrichten nach Topics oder nach einem eingegebenen Suchbegriff erfolgt innerhalb der Datenpipeline. Dabei wird ein dynamisch erzeugter Filter auf die Datenquelle angewendet, während die zugrundeliegende Liste dabei unverändert bleibt. Die Verarbeitung erfolgt vollständig asynchron, wobei Aktualisierungen der Benutzeroberfläche explizit im \acrshort{acr:UI}-Thread durchgeführt werden. Dadurch wird auch bei einer hohen Anzahl eingehender Nachrichten stabil und performant dargestellt.
 
     Die programmiertechnische Umsetzung basiert auf einer klar strukturierten Architektur mit einer Trennung von Kommunikation, Datenverarbeitung und Darstellung. Durch den Einsatz asynchroner und reaktiver Konzepte wird eine performante Verarbeitung der MQTT-Nachrichten sowie eine dynamische Aktualisierung der Benutzeroberfläche erreicht. Insgesamt ermöglicht dies eine effiziente, skalierbare und wartbare Realisierung der Anwendung.
 
 \subsection{Gründe gegen die Erweiterung von MQTTMultimeter}
-    Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und trennt sogar die Verbindung zum Broker. Dadurch wären grundlegende Änderungen in den Service-Komponenten erforderlich. Dieses Vorgehen erweist sich als sehr aufwendig \autocite{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}, da der Programmcode eng mit den bestehenden Funktionalitäten verbunden ist. Das erhöht zum einen das Risiko von Fehlern und zum anderen die Komplexität, den Programmcode zu verstehen. 
+    Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und sie trennt sogar die Verbindung zum Broker. Dadurch wären grundlegende Änderungen in den Service-Komponenten erforderlich. Dieses Vorgehen erweist sich als sehr aufwendig, da der Programmcode eng mit den bestehenden Funktionalitäten verbunden ist. Das erhöht zum einen das Risiko von Fehlern und zum anderen die Komplexität, den Programmcode zu verstehen. \autocite{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}
 
 \section{Bewertung der Ausgangssituation}
-Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse durchgeführt. Dabei wurden die drei Applikationen MQTT.fx, MQTT Explorer und MQTTMultimeter anhand von sechs Kriterien bewertet. Die Kriterien wurden mit unterschiedlichen Gewichtungen versehen, um ihre relative Bedeutung für die Zielsetzung der Arbeit zu reflektieren. Die Bewertung erfolgte auf einer Skala von 1 bis 5, wobei 1 für keine Erfüllung des Kriteriums und 5 für eine vollständige Erfüllung steht. Die Ergebnisse der Nutzwertanalyse sind in Tabelle \ref{tab:nutzwertanalyse} zusammengefasst.
+Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse anhand von Einsätzen der Applikationen in der Praxis durchgeführt. Dabei wurden die drei Applikationen MQTT.fx, MQTT Explorer und MQTTMultimeter anhand von sechs Kriterien bewertet. Die Kriterien wurden mit unterschiedlichen Gewichtungen versehen, um ihre relative Bedeutung für die Zielsetzung der Arbeit zu reflektieren. Die Bewertung erfolgte auf einer Skala von 1 bis 5, wobei 1 für keine Erfüllung des Kriteriums und 5 für eine vollständige Erfüllung steht. Die Ergebnisse der Nutzwertanalyse sind in Tabelle \ref{tab:nutzwertanalyse} zusammengefasst.
 
 \begin{table}[htbp] 
     \centering 
@@ -139,13 +139,13 @@ Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse durchgeführt. Da
     \label{tab:nutzwertanalyse}
     \begin{tabular}{lccccc} 
         \toprule Kriterium & Gewicht & MQTT.fx & Explorer & Multimeter \\ 
-        \midrule Persistente Speicherung & 25\% & 0 & 0 & 3 \\ 
-        Volltextsuche & 15\% & 0 & 5 & 5 \\ 
+        \midrule Persistente Speicherung & 25\% & 1 & 1 & 3 \\ 
+        Volltextsuche & 15\% & 1 & 5 & 5 \\ 
         Erweiterbarkeit & 20\% & 1 & 1 & 3 \\ 
         Simulationsmöglichkeiten & 10\% & 5 & 4 & 5 \\ 
         Performance & 15\% & 4 & 4 & 2 \\ 
         Benutzerfreundlichkeit & 15\% & 3 & 5 & 3 \\ 
-        \midrule Gesamt & 100\% & 2,0 & 2,9 & 3,4 \\ 
+        \midrule Gesamt & 100\% & 2,15 & 2,95 & 3,35 \\ 
         \bottomrule 
     \end{tabular} 
 \end{table}

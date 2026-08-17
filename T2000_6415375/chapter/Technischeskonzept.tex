@@ -97,10 +97,12 @@ Benutzerfreundlichkeit und Analysefähigkeit zu verbessern.
 
         Für die prototypische Umsetzung wird Python in Kombination mit dem GUI-Framework Tkinter verwendet. Dieses Framework gilt als sehr leichtgewichtig und vereinfacht die Erstellung des \acrshort{acr:GUI} stark \autocite{TkinterPythonInterface}. Bereits der Prototyp weist einen modularen Aufbau auf, indem das Programm in mehrere, nach Aufgaben gegliederte Dateien aufgeteilt ist. 
 
-        Für die Architektur des Prototyps existiert eine zentrale Klasse \enquote{MQTTGui}. Diese ist für die Erstellung der grafischen Oberfläche, aber auch für die Datenhaltung über die Arrays "self.messages" und "self.topics" zuständig. Die \acrshort{acr:GUI} besteht aus einer Log-Anzeige, Fehleranalyse und der Verbindungssteuerung. 
+        Für die Architektur des Prototyps existiert eine zentrale Klasse \lstinline{MQTTGui}. Diese ist für die Erstellung der grafischen Oberfläche, aber auch für die Datenhaltung über die Arrays \lstinline{self.messages} und \lstinline{self.topics} zuständig. Die \acrshort{acr:GUI} besteht aus einer Log-Anzeige, Fehleranalyse und der Verbindungssteuerung. 
 
         \subsection{Verbindungsaufbau und Nachrichtenempfang}
-        Der Verbindungsaufbau wird in der Subscriber-Klasse implementiert. Dazu wird ein Objekt der Klasse \textit{MQTT\_Subscriber} erstellt und diesem die in der \acrshort{acr:GUI} eingegebenen Broker-IP und Port übergeben. Dadurch verbindet sich das Programm mit dem Broker und abonniert alle Topics. Bei der Erstellung des Objekts wird auch eine Callbackfunktion übergeben, die immer aufgerufen wird, wenn neue Nachrichten eintreffen (Listing: \ref{lst:Message-Empfang}). 
+        Der Verbindungsaufbau wird in der Subscriber-Klasse implementiert. Dazu wird ein Objekt der Klasse \textit{MQTT\_Subscriber} erstellt und diesem die in der \acrshort{acr:GUI} eingegebenen Broker-IP und Port übergeben. Dadurch verbindet sich das Programm mit dem Broker und abonniert alle Topics. Bei der Erstellung des Objekts wird auch eine Callbackfunktion übergeben, die immer aufgerufen wird, wenn neue Nachrichten eintreffen. Diese Callbackfunktion wird in Listing: \ref{lst:Message-Empfang} dargestellt. 
+
+        In dieser Callback-Funktion wird jede Nachricht in \lstinline{self.messages} mit Zeitstempel, dem Topic, Payload und dem \acrshort{acr:QoS} gespeichert und an die Fehleranalyse-Komponente übergeben. Optional können die Nachrichten auch in einer externen Datei gespeichert werden.
 
         \begin{lstlisting}[
         language=Python,
@@ -110,17 +112,13 @@ Benutzerfreundlichkeit und Analysefähigkeit zu verbessern.
 def on_message(self, topic, payload, qos, retained):
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     self.messages.append((ts, retained, topic, payload, qos))
-
     self.tool_pane.analyze_messages(self.messages, only_new=True)
 
     if self.save_var.get():
-        log_to_file(topic, payload, qos, retained)
-        \end{lstlisting}
-
-        In dieser Callback-Funktion wird jede Nachricht in \enquote{self.messages} mit Zeitstempel, dem Topic, Payload und dem \acrshort{acr:QoS} gespeichert und an die Fehleranalyse-Komponente übergeben. Optional können die Nachrichten auch in einer externen Datei gespeichert werden.
+        log_to_file(topic, payload, qos, retained) \end{lstlisting}
 
     \subsection{Nachrichtenverarbeitung}
-        Die Darstellung der Nachrichten in einem oder in verschiedenen Nachrichtenfenster implementiert die Klasse \enquote{LogPane}. In dieser wird neben Autoscroll-Funktionen auch eine Filterung nach Topics erstellt, die man in der \acrshort{acr:GUI} für jedes Nachrichtenfenster einzeln anwenden kann. Damit nur die Nachrichten der einzelnen Topics angezeigt werden, wird in der Methode \textit{append} herausgelesen, was in dem Filter eingegeben ist, und entscheidet auf dieser Grundlage über das Einfügen der einzelnen Nachrichten in die jeweilige Nachrichtenliste (Listing: \ref{lst:filtered_display}).
+        Die Darstellung der Nachrichten in einem oder in verschiedenen Nachrichtenfenster implementiert die Klasse \lstinline{LogPane}. In dieser wird neben Autoscroll-Funktionen auch eine Filterung nach Topics erstellt, die man in der \acrshort{acr:GUI} für jedes Nachrichtenfenster einzeln anwenden kann. Damit nur die Nachrichten der einzelnen Topics angezeigt werden, wird in der Methode \lstinline{append} herausgelesen, was in dem Filter eingegeben ist, und entscheidet auf dieser Grundlage über das Einfügen der einzelnen Nachrichten in die jeweilige Nachrichtenliste. Die Methode \lstinline{append} wird in Listing: \ref{lst:filtered_display} gezeigt.
         \begin{lstlisting}[
         language=Python, 
         caption={gefilterte Anzeige von Nachrichten},
@@ -131,11 +129,10 @@ def append(self):
     for ts, retained, topic, payload, qos in self.messages[self.last_index:]:
         if f == "ALL" or topic.startswith(f):
             self._insert(ts, retained, topic, payload, qos)
-    self.last_index = len(self.messages)
-        \end{lstlisting}
+    self.last_index = len(self.messages) \end{lstlisting}
 
     \subsection{Umgang mit großen Datenmengen}
-        Als weitere Funktion werden sehr große Payloads, die für die Anzeige die \acrshort{acr:GUI} stark belasten, ausgelagert. Durch einen Klick auf die Nachricht wird diese in einem externen Editor geöffnet. Ähnlich funktioniert auch das Aufrufen der Nachricht durch das Anklicken der Fehlermeldung in der Analysekomponente. In diesen Fehlermeldungen werden jeweils die Nachrichten- sowie Fehlernummern gespeichert. Beim Anzeigen der Fehlermeldung wird der Nachricht ein sogenannter \textit{Tag} übergeben. Dieser enthält die Fehlernummer und die Methode, die abgearbeitet werden soll, wenn auf die Nachricht geklickt wird. In diesem Fall wird die Methode \textit{on\_error\_click} aufgerufen (Listing: \ref{lst:error-click}).
+        Als weitere Funktion werden sehr große Payloads, die bei der Anzeige die \acrshort{acr:GUI} stark belasten, ausgelagert. Durch einen Klick auf die Nachricht wird diese in einem externen Editor geöffnet. Ähnlich funktioniert auch das Aufrufen der Nachricht durch das Anklicken der Fehlermeldung in der Analysekomponente. In diesen Fehlermeldungen werden jeweils die Nachrichten- sowie Fehlernummern gespeichert. Beim Anzeigen der Fehlermeldung wird der Nachricht ein sogenannter \textit{Tag} übergeben. Dieser enthält die Fehlernummer und die Methode, die abgearbeitet werden soll, wenn auf die Nachricht geklickt wird. In diesem Fall wird die Methode \textit{on\_error\_click} aufgerufen (Listing: \ref{lst:error-click}).
         \begin{lstlisting}[
         language=Python, 
         caption={gefilterte Anzaige von Nachrichten},
@@ -155,7 +152,7 @@ def on_error_click(self, index):
 
         Für die fertige Applikation darf eine sehr große Datenmenge kein Problem darstellen. Deswegen ist es wichtig, dass von Anfang an großen Wert auf die Performance und Stabilität des Programms gelegt wird. 
 
-        Durch die Implementierung einer separaten Analysekomponente können die Nachrichten auf das Vorhandensein eines Topics und Payloads überprüft werden. Des Weiteren werden die Payloads daraufhin auf ein korrektes JSON-Format überprüft. Als Zusatzfunktion dieser Analysekomponente kann eine sogenannte \textit{Line-Config}-Datei aus den Dateien heraus geladen werden. Diese beinhaltet alle Teilnehmer mit (Host-)Namen im JSON-Format. So kann überprüft werden, ob sich alle Teilnehmer beim Broker registrierten und auch weiterhin die Verbindung zum Broker nicht wieder schließen.
+        Durch die Implementierung einer separaten Analysekomponente können die Nachrichten auf das Vorhandensein eines Topics und Payloads überprüft werden. Des Weiteren werden die Payloads daraufhin auf ein korrektes JSON-Format überprüft. Als Zusatzfunktion dieser Analysekomponente kann eine sogenannte \textit{Line-Config}-Datei aus den Dateien heraus geladen werden. Diese beinhaltet alle Teilnehmer mit (Host-)Namen im JSON-Format. So kann überprüft werden, ob sich alle Teilnehmer beim Broker registrierten und auch weiterhin die Verbindung zum Broker halten.
 
         Somit enthält bereits der Prototyp einige Anforderungen an die Applikation und kann bereits für einfache Analysen eingesetzt werden. 
     \subsection{Grenzen des Prototyps}
@@ -167,32 +164,32 @@ def on_error_click(self, index):
 
         Für eine produktive Anwendung bestehen jedoch klare Anforderungen an Performance, Wartbarkeit, Typensicherheit und Integration. Diese Anforderungen sprechen deutlich für eine Neuimplementierung in C\#. Diese Programmiersprache bietet eine bessere Unterstützung für asynchrone Verarbeitungen, moderne \acrshort{acr:GUI}-Frameworks wie \acrshort{acr:WPF} und ermöglicht eine stärkere Integration in Windows-Systeme \autocite{PythonVSCS}. Dadurch wird eine langfristig stabile, erweiterbare und performante Lösung ermöglicht. 
 
-        Die gewonnenen Erkenntnisse aus dem Prototypen fließen direkt in die Konzeption der finalen Applikation ein. 
+        Der Prototyp konnte einige hilfreiche Erkenntnisse liefern. Diese fließen direkt in die Konzeption und Umsetzung der finalen Applikation ein.
 
    \section{Konzeptplan und Umsetzung der Benutzeroberfläche}
 
 \subsection{Systemarchitektur}
 Als Architekturgrundstein für die Applikation wird die \acrshort{acr:MVVM} (\acrlong{acr:MVVM})-Architektur genutzt. Durch diese Architektur entsteht eine saubere Trennung von UI und Logik. Die View dient dabei ausschließlich der Darstellung, während das View-Model die Logik
- und Bereitstellung der Daten für das View beinhaltet. Im UI-Programmcode selbst existiert dabei bestenfalls keinerlei Logik. Die Bereitstellung der Daten erfolgt durch die Models.
+ und Bereitstellung der Daten für die View beinhaltet. Im UI-Programmcode selbst existiert dabei bestenfalls keinerlei Logik. Die Bereitstellung der Daten erfolgt durch die Models.
 
 Durch dieses Modell entsteht wenig Code für die UI, da diese lediglich sogenannte Bindings hinterlegt, die von den View-Models gesteuert werden. So können die View-Models und Models auch ohne UI getestet werden und die View jederzeit einfacher ersetzt werden. 
 
 In diesem Projekt werden die View-Models durch Service- und Repository-Dateien unterstützt, in denen die Anwendungslogik verankert ist. Dadurch übernimmt das View-Model ausschließlich die Interaktion mit der Benutzeroberfläche und die Bereitstellung der Daten. Die Repository-Dateien übernehmen die Aufgabe der Initialisierung der Tabellen in der Datenbank
- sowie Speicherung und Laden von Daten aus der Datenbank. Die Service-Dateien verarbeiten die Daten der View-Models und rufen wenn nötig die Methoden der Repositorien auf.
+ sowie Speicherung und Laden von Daten aus der Datenbank. Die Service-Dateien verarbeiten die Daten der View-Models und rufen wenn nötig die Methoden der Repository-Dateien auf.
 
-Die Verbindung zwischen View und View-Model erfolgt über das Data-Binding-System von WPF. Dabei wird dem \lstinline|DataContext| einer View ein entsprechendes ViewModel zugewiesen. Die Benutzeroberfläche kann anschließend über Bindings auf die Eigenschaften und Befehle des View-Models zugreifen, ohne dieses direkt zu kennen. Dadurch entsteht eine lose Kopplung zwischen Darstellung und Anwendungslogik \autocite{michaelstonisModelViewViewModelNET}.
+Die Verbindung zwischen View und View-Model erfolgt über das Data-Binding-System von WPF. Dabei wird dem \lstinline|DataContext| einer View ein entsprechendes View-Model zugewiesen. Die Benutzeroberfläche kann anschließend über Bindings auf die Eigenschaften und Befehle des View-Models zugreifen, ohne dieses direkt zu kennen. Dadurch entsteht eine lose Kopplung zwischen Darstellung und Anwendungslogik \autocite[Vgl.][]{michaelstonisModelViewViewModelNET}.
 
 Änderungen an Eigenschaften des View-Models werden über das Interface \lstinline|INotifyPropertyChanged| an die View weitergegeben. Dadurch werden zum einen Änderungen aus der View automatisch in die Variablen der View-Model geschrieben, zum anderen Änderungen aus dem View-Model automatisch in der Benutzeroberfläche dargestellt. Für Auflistungen wird eine \lstinline|ObservableCollection| verwendet, die Änderungen innerhalb einer Sammlung selbständig an die View weitergibt. Benutzerinteraktionen wie beispielsweise das Betätigen eines Buttons oder die Auswahl eines Tabelleneintrags können über Commands an das View-Model weitergeleitet werden. Die eigentliche Verarbeitungslogik verbleibt dabei im View-Model, während die View ausschließlich für die Darstellung und Entgegennahme von Benutzereingaben zuständig ist \autocite{michaelstonisModelViewViewModelNET}.
 
 Zur erleichterten Umsetzung der MVVM-Struktur wird die,CommunityToolkit.Mvvm''-Bibliothek verwendet. Mit dieser Bibliothek kann zum einen die ansonsten aufwendige Implementierung des Interfaces \lstinline |INotifyPropertyChanged| erleichtert werden. Mittels Source-Generatoren wird die benötigte Property-Changed-Logik automatisch erzeugt. Dadurch kann redundanter Boilerplate-Code vermieden werden, was sowohl den Implementierungsaufwand als auch die Lesbarkeit des Quellcodes verbessert \autocite[S. 106 ff.]{nijsMVVMPatternNET2023a}.
 
-Darüber hinaus ermöglicht die Bibliothek CommunityToolkit.Mvvm eine einfache Implementierung von \lstinline|ICommand|-Schnittstellen. Diese werden benötigt, um Benutzerinteraktionen wie beispielsweise Button-Klicks an das ViewModel weiterzuleiten. Während ohne die Bibliothek zusätzlicher Programmieraufwand für die Implementierung eines Commands erforderlich ist, genügt mit CommunityToolkit.Mvvm die Verwendung des Attributs \lstinline|[RelayCommand]| oberhalb der entsprechenden Methode. Aus dieser Methode wird automatisch ein Command erzeugt, welches anschließend über ein Binding in der View verwendet werden kann \autocite[S. 106 ff.]{nijsMVVMPatternNET2023a}.
+Darüber hinaus ermöglicht die Bibliothek CommunityToolkit.Mvvm eine einfache Implementierung von \lstinline|ICommand|-Schnittstellen. Diese werden benötigt, um Benutzerinteraktionen wie beispielsweise Button-Klicks an das View-Model weiterzuleiten. Während ohne die Bibliothek zusätzlicher Programmieraufwand für die Implementierung eines Commands erforderlich ist, genügt mit CommunityToolkit.Mvvm die Verwendung des Attributs \lstinline|[RelayCommand]| oberhalb der entsprechenden Methode. Aus dieser Methode wird automatisch ein Command erzeugt, welches anschließend über ein Binding in der View verwendet werden kann \autocite[S. 106 ff.]{nijsMVVMPatternNET2023a}.
 \subsection{Datenbankkonzept}
 Ziel des Datenbank-Designs ist die Speicherung aller MQTT-Nachrichten, eine effiziente Suche in allen Nachrichten, die Teilnehmer und Statusüberwachung, eine Prozessanalyse und die Speicherung von Vorlagen und Einstellungen.
 Dazu werden unterschiedliche Haupttabellen erstellt.
 
 Die Tabelle \textit{Messages} speichert die ID, Zeitstempel, Topic, Payload und den Sender der Nachricht. Die Tabelle \textit{Participants} speichert die Namen und den Maschinentyp aller Teilnehmer sowie deren zuletzt gesehener Zeitstempel, den Status und den Zustand, in dem sie sich gerade befinden.
-In der Tabelle \textit{Errors} werden alle Fehler mit der entsprechenden Nachrichten-ID sowie Fehlertext und -Art gespeichert.
+In der Tabelle \textit{Errors} werden alle Fehler mit der entsprechenden Nachrichten-ID sowie Fehlertext und -art gespeichert.
 In der Tabelle \textit{ProcessEvent} werden die verschiedenen durchlaufenen Prozesse sowie deren Startzeit, Endzeit, bereits empfangene Nachrichten und die als Nächstes erwarteten Nachrichten gespeichert.
 
 Die bereits beschriebenen Tabellen sollen ihren Inhalt beim Starten der Anwendung und bei der manuellen Verbindungstrennung zum Broker wieder löschen, damit die Nachrichten, Teilnehmer und Prozesse bei einer neuen Verpackungslinie auch wieder neu aufgezeichnet werden können. Die folgenden Tabellen besitzen dieses Verhalten gezielt nicht, da diese Informationen zwischen verschiedenen Anwendungssitzungen gespeichert werden sollen.
@@ -209,11 +206,9 @@ Sollte diese Prüfung fehlschlagen, wird der Fehler zusammen mit einer Fehlernac
 
 Als nächstes erfolgt die Aktualisierung des Senders in der Teilnehmerliste. Sollte der Sender noch nicht existieren, wird ein neuer Teilnehmer in die Liste aufgenommen und eine entsprechende Warnung in der Fehlerliste erzeugt.
 
-Als letztes wird die Nachricht auf Prozesse analysiert. Dies startet mit der Überprüfung auf einen neuen Prozess. Wenn dies zutrifft, wird ein neuer Prozess in die ProcessEvent-Tabelle der Datenbank geschrieben sowie die erwarteten Nachrichten aus der Teilnehmerliste und anhand des Prozesstyps abgeleitet. 
+Als letztes wird die Nachricht auf Prozesse analysiert. Dies startet mit der Überprüfung auf einen neuen Prozess. Wenn dies zutrifft, wird ein neuer Prozess in die Process-Event-Tabelle der Datenbank geschrieben sowie die erwarteten Nachrichten aus der Teilnehmerliste und anhand des Prozesstyps abgeleitet. 
 Gehört die Nachricht zu einem laufenden Prozess, wird sie auf Richtigkeit überprüft. Ist sie fehlerhaft, wird ein Fehler mit Fehlernachricht und der Nachricht-ID in die Fehlertabelle gespeichert. Wenn die Nachricht einer der erwarteten Nachrichten entspricht, werden die erwarteten und bereits empfangenen Nachrichten in der Datenbank aktualisiert.
- Endet der Prozess durch eine Nachricht, wird dem Prozess in der Datenbank ein End-Zeitstempel hinzugefügt und als abgeschlossen gekennzeichnet.
-
-Diesen Ablauf durchläuft jede eintreffende \acrshort{acr:MQTT}-Nachricht.
+ Endet der Prozess durch eine Nachricht, wird dem Prozess in der Datenbank ein End-Zeitstempel hinzugefügt und als abgeschlossen gekennzeichnet. Diesen Ablauf durchläuft jede eintreffende \acrshort{acr:MQTT}-Nachricht.
 
 \subsection{Performance-Konzept}
 Damit die UI trotz vieler Nachrichten flüssig bedienbar bleibt und die Anwendung nicht zu viel Arbeitsspeicher in Anspruch nimmt, wird ein Threading- und Paging-Konzept erstellt. 

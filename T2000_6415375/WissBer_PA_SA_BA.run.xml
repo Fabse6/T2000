@@ -55,8 +55,8 @@
       <file>biblatex.def</file>
       <file>blx-natbib.def</file>
       <file>standard.bbx</file>
-      <file>authoryear.bbx</file>
-      <file>authoryear.cbx</file>
+      <file>numeric.bbx</file>
+      <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
       <file>german.lbx</file>
       <file>ngerman.lbx</file>
@@ -81,7 +81,7 @@
       <file>WissBer_PA_SA_BA.bcf</file>
     </requires>
     <requires type="editable">
-      <file>literature/T2000.bib</file>
+      <file>literature/T2000/Literature_T2000.bib</file>
     </requires>
   </external>
 </requests>

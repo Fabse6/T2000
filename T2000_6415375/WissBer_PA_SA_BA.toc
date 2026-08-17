@@ -11,99 +11,94 @@
 \contentsline {subsection}{\numberline {3.1.3}Broker}{6}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Topics als Adressierungsmechanismus}{7}{subsection.3.1.4}%
 \contentsline {section}{\numberline {3.2}Architektur der MQTT-Nachrichten}{7}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Aufbau eines MQTT-Control-Packets}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Aufbau eines MQTT-Control-Packets}{7}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Datensicherheit bei \acrshort {acr:MQTT}}{9}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Quality of Service}{10}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Allgemeine Definition}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Übersicht der Quality-of-Service-Level}{10}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Vorteile von MQTT in der Automatisierung}{11}{section.3.4}%
-\contentsline {section}{\numberline {3.5}.Net als Laufzeitplattform}{12}{section.3.5}%
+\contentsline {section}{\numberline {3.3}Quality of Service}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Allgemeine Definition}{9}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Übersicht der Quality-of-Service-Level}{9}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Vorteile von MQTT in der Automatisierung}{10}{section.3.4}%
+\contentsline {section}{\numberline {3.5}.Net als Laufzeitplattform}{11}{section.3.5}%
 \contentsline {section}{\numberline {3.6}XAML und Deklarative Benutzeroberflächen}{12}{section.3.6}%
-\contentsline {section}{\numberline {3.7}\acrlong {acr:MVVM} als Architekturstruktur}{13}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Ausgangssituation}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Monitoring über MQTT.fx}{15}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Funktionalität von MQTT.fx}{15}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Gründe für und gegen den Einsatz von MQTT.fx}{17}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Monitoring über \acrshort {acr:MQTT} Explorer}{17}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Möglichkeit der Nutzung und Erweiterung bereits existenter Applikationen}{19}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Funktionsweise von MQTTMultimeter}{19}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Technische Realisierung von MQTTMultimeter}{21}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Gründe gegen die Erweiterung von MQTTMultimeter}{23}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}Bewertung der Ausgangssituation}{23}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Technische Rahmenbedingungen für die Neuentwicklung einer Diagnose- und Überwachungsapplikation}{25}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Anforderungen an die Programmiersprache}{25}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Eignung der Sprache C\# für die Umsetzung}{25}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}MQTT-Client-Bibliothek}{26}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Datenbank-Bibliothek}{27}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Graphical User Interface Framework}{28}{subsection.5.1.4}%
-\contentsline {section}{\numberline {5.2}Anforderungen an die Test- und Entwicklungsumgebung}{31}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Entwicklungsumgebung}{31}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Testumgebung}{32}{subsection.5.2.2}%
-\contentsline {chapter}{\numberline {6}Technisches Konzept}{33}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Anforderungen an die Applikation}{33}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Nachrichtendarstellung und Filterung}{33}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Automatische Fehlererkennung}{33}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Überwachung der Automatisierungs-Abläufe}{34}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Simulationsmöglichkeiten}{34}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Anforderungen an die Performance}{35}{subsection.6.1.5}%
-\contentsline {subsection}{\numberline {6.1.6}Erweiterbarkeit und Zukunftssicherheit}{35}{subsection.6.1.6}%
-\contentsline {section}{\numberline {6.2}Prototypische Umsetzung und Erkenntnisse aus der Entwicklung}{37}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Umsetzung des Prototyps in Python}{37}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Verbindungsaufbau und Nachrichtenempfang}{37}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}Nachrichtenverarbeitung}{38}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}Umgang mit großen Datenmengen}{39}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Grenzen des Prototyps}{40}{subsection.6.2.5}%
-\contentsline {section}{\numberline {6.3}Konzeptplan und Umsetzung der Benutzeroberfläche}{41}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Systemarchitektur}{41}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Datenbankkonzept}{42}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Nachrichtenfluss und -Verarbeitung}{43}{subsection.6.3.3}%
-\contentsline {subsection}{\numberline {6.3.4}Performance-Konzept}{44}{subsection.6.3.4}%
-\contentsline {subsection}{\numberline {6.3.5}Aufbau der Benutzeroberfläche}{45}{subsection.6.3.5}%
-\contentsline {chapter}{\numberline {7}Umsetzung}{46}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Realisierung der Softwarearchitektur}{46}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Verarbeitung eingehender MQTT-Nachrichten}{46}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Persistente Speicherung der Kommunikationsdaten}{47}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Realisierung des Paging-Konzepts}{49}{section.7.4}%
-\contentsline {section}{\numberline {7.5}Teilnehmerüberwachung}{51}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Realisierung der Automatisierungsablaufanalyse}{51}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Benutzeroberfläche}{53}{section.7.7}%
-\contentsline {chapter}{\numberline {8}Testkonzept und Durchführung von Tests}{55}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Testkonzept}{55}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}Testumgebung}{55}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Funktionstests}{55}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Performance-Tests}{56}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Ergebnisse der Tests}{57}{section.8.2}%
-\contentsline {chapter}{\numberline {9}Bewertung und Ergebnis}{58}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Bewertung der Testergebnisse}{58}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Umsetzung der Anforderungen}{59}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Nachrichtendarstellung und Filterung}{59}{subsection.9.2.1}%
-\contentsline {subsection}{\numberline {9.2.2}Fehlererkennung}{59}{subsection.9.2.2}%
-\contentsline {subsection}{\numberline {9.2.3}Teilnehmerüberwachung}{59}{subsection.9.2.3}%
-\contentsline {subsection}{\numberline {9.2.4}Automatisierungsablauf-Erkennung}{59}{subsection.9.2.4}%
-\contentsline {subsection}{\numberline {9.2.5}Performance}{60}{subsection.9.2.5}%
-\contentsline {subsection}{\numberline {9.2.6}Erweiterbarkeit und Zukunftstauglichkeit}{60}{subsection.9.2.6}%
-\contentsline {section}{\numberline {9.3}Vergleich mit bestehenden Werkzeugen}{60}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Fazit und Ausblick}{62}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Überblick über das Projekt}{62}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Zukünftige Entwicklung der Anwendung}{63}{section.10.2}%
-\contentsline {subsection}{\numberline {10.2.1}Weitere Automatisierungsabläufe}{63}{subsection.10.2.1}%
-\contentsline {subsection}{\numberline {10.2.2}Verbesserte Konfigurierbarkeit}{63}{subsection.10.2.2}%
-\contentsline {subsection}{\numberline {10.2.3}Linux / HMI}{63}{subsection.10.2.3}%
-\contentsline {chapter}{\nonumberline Quellenverzeichnis}{64}{chapter*.16}%
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{68}{chapter*.19}%
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{69}{chapter*.20}%
-\contentsline {chapter}{\nonumberline A Anmerkung zur Nutzung von Künstlicher Intelligenz}{70}{chapter*.21}%
-\contentsline {chapter}{\nonumberline B Ergänzungen}{71}{chapter*.23}%
-\contentsline {section}{\numberline {B.1}Details zu bestimmten theoretischen Grundlagen}{71}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Weitere Details, welche im Hauptteil den Lesefluss behindern}{71}{section.B.2}%
-\contentsline {chapter}{\nonumberline C Details zu Laboraufbauten und Messergebnissen}{77}{chapter*.25}%
-\contentsline {section}{\numberline {C.1}Versuchsanordnung}{77}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Liste der verwendeten Messgeräte}{77}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Übersicht der Messergebnisse}{77}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Schaltplan und Bild der Prototypenplatine}{77}{section.C.4}%
-\contentsline {chapter}{\nonumberline D Zusatzinformationen zu verwendeter Software}{78}{chapter*.26}%
-\contentsline {section}{\numberline {D.1}Struktogramm des Programmentwurfs}{78}{section.D.1}%
-\contentsline {section}{\numberline {D.2}Wichtige Teile des Quellcodes}{78}{section.D.2}%
-\contentsline {chapter}{\nonumberline E Datenblätter}{83}{chapter*.27}%
-\contentsline {chapter}{Sachwortverzeichnis}{84}{section*.28}%
+\contentsline {section}{\numberline {3.7}\acrlong {acr:MVVM} als Architekturstruktur}{12}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Ausgangssituation}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Monitoring über MQTT.fx}{14}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Funktionalität von MQTT.fx}{14}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Gründe für und gegen den Einsatz von MQTT.fx}{16}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Monitoring über \acrshort {acr:MQTT} Explorer}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Möglichkeit der Nutzung und Erweiterung bereits existenter Applikationen}{18}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Funktionsweise von MQTTMultimeter}{18}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Technische Realisierung von MQTTMultimeter}{20}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Gründe gegen die Erweiterung von MQTTMultimeter}{21}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Bewertung der Ausgangssituation}{22}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Technische Rahmenbedingungen für die Neuentwicklung einer Diagnose- und Überwachungsapplikation}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Anforderungen an die Programmiersprache}{23}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Eignung der Sprache C\# für die Umsetzung}{23}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}MQTT-Client-Bibliothek}{24}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Datenbank-Bibliothek}{25}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Graphical User Interface Framework}{26}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Anforderungen an die Test- und Entwicklungsumgebung}{28}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Entwicklungsumgebung}{28}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Testumgebung}{29}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}Technisches Konzept}{31}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Anforderungen an die Applikation}{31}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Nachrichtendarstellung und Filterung}{31}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Automatische Fehlererkennung}{31}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Überwachung der Automatisierungs-Abläufe}{32}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Simulationsmöglichkeiten}{32}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Anforderungen an die Performance}{33}{subsection.6.1.5}%
+\contentsline {subsection}{\numberline {6.1.6}Erweiterbarkeit und Zukunftssicherheit}{33}{subsection.6.1.6}%
+\contentsline {section}{\numberline {6.2}Prototypische Umsetzung und Erkenntnisse aus der Entwicklung}{35}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Umsetzung des Prototyps in Python}{35}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Verbindungsaufbau und Nachrichtenempfang}{35}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Nachrichtenverarbeitung}{36}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Umgang mit großen Datenmengen}{36}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Grenzen des Prototyps}{38}{subsection.6.2.5}%
+\contentsline {section}{\numberline {6.3}Konzeptplan und Umsetzung der Benutzeroberfläche}{39}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Systemarchitektur}{39}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Datenbankkonzept}{40}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Nachrichtenfluss und -Verarbeitung}{41}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Performance-Konzept}{42}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Aufbau der Benutzeroberfläche}{42}{subsection.6.3.5}%
+\contentsline {chapter}{\numberline {7}Umsetzung}{44}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Realisierung der Softwarearchitektur}{44}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Verarbeitung eingehender MQTT-Nachrichten}{44}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Persistente Speicherung der Kommunikationsdaten}{45}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Realisierung des Paging-Konzepts}{47}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Teilnehmerüberwachung}{49}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Realisierung der Automatisierungsablaufanalyse}{50}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Benutzeroberfläche}{51}{section.7.7}%
+\contentsline {chapter}{\numberline {8}Testkonzept und Durchführung von Tests}{53}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Testkonzept}{53}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}Testumgebung}{53}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Funktionstests}{53}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Performance-Tests}{54}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Ergebnisse der Tests}{55}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Bewertung und Ergebnis}{56}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Bewertung der Testergebnisse}{56}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Umsetzung der Anforderungen}{57}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Vergleich mit bestehenden Werkzeugen}{58}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Fazit und Ausblick}{60}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Überblick über das Projekt}{60}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Zukünftige Entwicklung der Anwendung}{61}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Weitere Automatisierungsabläufe}{61}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Verbesserte Konfigurierbarkeit}{61}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Linux / HMI}{61}{subsection.10.2.3}%
+\contentsline {chapter}{\nonumberline Quellenverzeichnis}{62}{chapter*.16}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{67}{chapter*.17}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{68}{chapter*.18}%
+\def \@chapapp {\appendixname }
+\contentsline {chapter}{\nonumberline A Anmerkung zur Nutzung von Künstlicher Intelligenz}{69}{chapter*.19}%
+\contentsline {chapter}{\nonumberline B Ergänzungen}{70}{chapter*.21}%
+\contentsline {section}{\numberline {B.1}Details zu bestimmten theoretischen Grundlagen}{70}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Weitere Details, welche im Hauptteil den Lesefluss behindern}{70}{section.B.2}%
+\contentsline {chapter}{\nonumberline C Details zu Laboraufbauten und Messergebnissen}{76}{chapter*.23}%
+\contentsline {section}{\numberline {C.1}Versuchsanordnung}{76}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Liste der verwendeten Messgeräte}{76}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Übersicht der Messergebnisse}{76}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Schaltplan und Bild der Prototypenplatine}{76}{section.C.4}%
+\contentsline {chapter}{\nonumberline D Zusatzinformationen zu verwendeter Software}{77}{chapter*.24}%
+\contentsline {section}{\numberline {D.1}Struktogramm des Programmentwurfs}{77}{section.D.1}%
+\contentsline {section}{\numberline {D.2}Wichtige Teile des Quellcodes}{77}{section.D.2}%
+\contentsline {chapter}{\nonumberline E Datenblätter}{82}{chapter*.25}%
+\contentsline {chapter}{Sachwortverzeichnis}{83}{section*.26}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

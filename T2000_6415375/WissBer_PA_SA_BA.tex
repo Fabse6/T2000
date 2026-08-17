@@ -24,6 +24,8 @@ ngerman
 \renewcaptionname{ngerman}{\bibname}{Quellenverzeichnis}
 \setlength{\parindent}{0ex} 	% bei neuem Abschnitt nicht einrücken
 
+\makeatletter \renewcommand*{\chapterheadstartvskip}{\vspace*{-20pt}} \makeatother
+
 %------
 % Folgende Einstellungen entsprechen den Vorgaben der Leitlinien
 \usepackage[onehalfspacing]{setspace}
@@ -184,8 +186,8 @@ marginal
 \hyphenation{Schrift-ar-ten}
 
 %\usepackage{makeidx}			% Paket zur Erstellung eines Index
-\usepackage{imakeidx}			% Neueres Paket zur Erstellung eines Index
-\makeindex[title=Sachwortverzeichnis, intoc]						% Indexverzeichnis erstellen
+%\usepackage{imakeidx}			% Neueres Paket zur Erstellung eines Index
+%\makeindex[title=Sachwortverzeichnis, intoc]						% Indexverzeichnis erstellen
 
 \usepackage[					% Einstellunge Paket 
 hyperfootnotes=false,			% im pfd-Output Fußnoten nicht verlinken
@@ -345,7 +347,7 @@ type=main]
 
 %\renewcommand{\indexname}{Sachwortverzeichnis}
 %\addcontentsline{toc}{chapter}{\indexname}
-\printindex								% Erzeugen des Sachwortverzeichnisses
+%\printindex								% Erzeugen des Sachwortverzeichnisses
 %\ifthenelse{\boolean{@twoside}}{%
 %	\cleardoubleoddpage
 %}{%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  17 AUG 2026 12:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  17 AUG 2026 14:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1305,104 +1305,7 @@ File: tikzlibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 code.tex
 File: pgflibraryarrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \arrowsize=\dimen332
-)) (C:\Users\wiedemaf\Documents\MikTex\tex/latex/imakeidx\imakeidx.sty
-Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
-nous mode
-
-(C:\Users\wiedemaf\Documents\MikTex\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(C:\Users\wiedemaf\Documents\MikTex\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\wiedemaf\Documents\MikTex\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks54
-\XKV@tempa@toks=\toks55
-)
-\XKV@depth=\count500
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(C:\Users\wiedemaf\Documents\MikTex\tex/generic/iftex\ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-(C:\Users\wiedemaf\Documents\MikTex\tex/generic/iftex\ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-)
-(C:\Users\wiedemaf\Documents\MikTex\tex/latex/tools\multicol.sty
-Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count501
-\mult@box=\box88
-\multicol@leftmargin=\dimen333
-\c@unbalance=\count502
-\c@collectmore=\count503
-\doublecol@number=\count504
-\multicoltolerance=\count505
-\multicolpretolerance=\count506
-\full@width=\dimen334
-\page@free=\dimen335
-\premulticols=\dimen336
-\postmulticols=\dimen337
-\multicolsep=\skip98
-\multicolbaselineskip=\skip99
-\partial@page=\box89
-\last@line=\box90
-\mc@boxedresult=\box91
-\maxbalancingoverflow=\dimen338
-\mult@rightbox=\box92
-\mult@grightbox=\box93
-\mult@firstbox=\box94
-\mult@gfirstbox=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\@tempa=\box120
-\@tempa=\box121
-\@tempa=\box122
-\@tempa=\box123
-\@tempa=\box124
-\@tempa=\box125
-\@tempa=\box126
-\@tempa=\box127
-\@tempa=\box128
-\@tempa=\box129
-\@tempa=\box130
-\@tempa=\box131
-\c@minrows=\count507
-\c@columnbadness=\count508
-\c@finalcolumnbadness=\count509
-\last@try=\dimen339
-\multicolovershoot=\dimen340
-\multicolundershoot=\dimen341
-\mult@nat@firstbox=\box132
-\colbreak@box=\box133
-\mc@col@check@num=\count510
-\g__mc_curr_col_int=\count511
-))
-\WissBer_PA_SA_BA@idxfile=\write5
-\openout5 = `WissBer_PA_SA_BA.idx'.
-
-
-Writing index file WissBer_PA_SA_BA.idx
-(C:\Users\wiedemaf\Documents\MikTex\tex/latex/hyperref\hyperref.sty
+)) (C:\Users\wiedemaf\Documents\MikTex\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
@@ -1424,14 +1327,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count512
+\c@section@level=\count500
 ) (C:\Users\wiedemaf\Documents\MikTex\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen342
-\Hy@linkcounter=\count513
-\Hy@pagecounter=\count514
+\@linkdim=\dimen333
+\Hy@linkcounter=\count501
+\Hy@pagecounter=\count502
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
@@ -1441,7 +1344,7 @@ Now handling font encoding PD1 ...
 (C:\Users\wiedemaf\Documents\MikTex\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count515
+\Hy@SavedSpaceFactor=\count503
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/hyperref\puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
@@ -1456,9 +1359,9 @@ Package hyperref Info: Plain pages OFF on input line 4216.
 Package hyperref Info: Backreferencing OFF on input line 4221.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count516
+\c@Hy@tempcnt=\count504
 LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen343
+\XeTeXLinkMargin=\dimen334
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1467,9 +1370,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count517
-\Field@Width=\dimen344
-\Fld@charsize=\dimen345
+\Fld@menulength=\count505
+\Field@Width=\dimen335
+\Fld@charsize=\dimen336
 Package hyperref Info: Hyper figures OFF on input line 6084.
 Package hyperref Info: Link nesting OFF on input line 6089.
 Package hyperref Info: Hyper index ON on input line 6092.
@@ -1477,15 +1380,15 @@ Package hyperref Info: backreferencing OFF on input line 6099.
 Package hyperref Info: Link coloring OFF on input line 6104.
 Package hyperref Info: Link coloring with OCG OFF on input line 6109.
 Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count518
-\c@Item=\count519
+\Hy@abspage=\count506
+\c@Item=\count507
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count520
-\c@bookmark@seq@number=\count521
+\Fld@listcount=\count508
+\c@bookmark@seq@number=\count509
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
@@ -1496,11 +1399,22 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip100
+\Hy@SectionHShift=\skip98
 )
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/glossaries/base\glossaries.sty
 Package: glossaries 2026/03/06 v5.0 (NLCT)
 
+(C:\Users\wiedemaf\Documents\MikTex\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\wiedemaf\Documents\MikTex\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\wiedemaf\Documents\MikTex\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks54
+\XKV@tempa@toks=\toks55
+)
+\XKV@depth=\count510
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
 \@glsmfirst=\toks56
@@ -1525,55 +1439,55 @@ File: glossaries-german.ldf 2014/11/23 v1.0
 )
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/datatool\datatool-base.sty
 Package: datatool-base 2025/12/04 v3.4.3 (NLCT)
-\l__datatool_tmpa_int=\count522
-\l__datatool_tmpb_int=\count523
-\l__datatool_tmpc_int=\count524
-\l__datatool_tmpd_int=\count525
-\l__datatool_count_int=\count526
-\l__datatool_tmp_datatype_int=\count527
-\l__datatool_tmpa_dim=\dimen346
-\l__datatool_tmpb_dim=\dimen347
+\l__datatool_tmpa_int=\count511
+\l__datatool_tmpb_int=\count512
+\l__datatool_tmpc_int=\count513
+\l__datatool_tmpd_int=\count514
+\l__datatool_count_int=\count515
+\l__datatool_tmp_datatype_int=\count516
+\l__datatool_tmpa_dim=\dimen337
+\l__datatool_tmpb_dim=\dimen338
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/datatool\datatool-l3fp.def
 File: datatool-l3fp.def 2025/12/04 v3.4.3 (NLCT)
 )
 \@dtl@toks=\toks58
-\@dtl@tmpcount=\count528
-\dtl@tmplength=\skip101
-\l__datatool_measure_box=\box134
-\dtl@sortresult=\count529
+\@dtl@tmpcount=\count517
+\dtl@tmplength=\skip99
+\l__datatool_measure_box=\box88
+\dtl@sortresult=\count518
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/datatool\datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/12/04 v3.4.3 (NLCT)
 )
-\@dtl@datatype=\count530
-\c_datatool_unknown_int=\count531
-\l__datatool_year_int=\count532
-\l__datatool_month_int=\count533
-\l__datatool_day_int=\count534
-\l__datatool_hour_int=\count535
-\l__datatool_minute_int=\count536
-\l__datatool_second_int=\count537
-\l__datatool_tzhour_int=\count538
-\l__datatool_tzminute_int=\count539
-\l__datatool_julian_int=\count540
-\l__datatool_local_julian_int=\count541
-\l__datatool_prefix_int=\count542
-\l__datatool_suffix_int=\count543
-\@dtl@foreach@level=\count544
+\@dtl@datatype=\count519
+\c_datatool_unknown_int=\count520
+\l__datatool_year_int=\count521
+\l__datatool_month_int=\count522
+\l__datatool_day_int=\count523
+\l__datatool_hour_int=\count524
+\l__datatool_minute_int=\count525
+\l__datatool_second_int=\count526
+\l__datatool_tzhour_int=\count527
+\l__datatool_tzminute_int=\count528
+\l__datatool_julian_int=\count529
+\l__datatool_local_julian_int=\count530
+\l__datatool_prefix_int=\count531
+\l__datatool_suffix_int=\count532
+\@dtl@foreach@level=\count533
 
 
 Package tracklang Warning: No `datatool' support for dialect `ngerman'  on inpu
 t line 9924.
 
-\dtl@codeA=\count545
-\dtl@codeB=\count546
+\dtl@codeA=\count534
+\dtl@codeB=\count535
 )
-\gls@level=\count547
+\gls@level=\count536
 \@gls@tmpb=\toks59
-\gls@tmplen=\skip102
-\l__glossaries_tmpa_dim=\dimen348
-\l__glossaries_tmpb_dim=\dimen349
+\gls@tmplen=\skip100
+\l__glossaries_tmpa_dim=\dimen339
+\l__glossaries_tmpb_dim=\dimen340
 \glskeylisttok=\toks60
 \glslabeltok=\toks61
 \glsshorttok=\toks62
@@ -1586,92 +1500,92 @@ Package: glossary-hypernav 2026/03/06 v5.0 (NLCT)
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/glossaries/styles\glossary-list.s
 ty
 Package: glossary-list 2026/03/06 v5.0 (NLCT)
-\glslistdottedwidth=\skip103
+\glslistdottedwidth=\skip101
 )
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/glossaries/styles\glossary-long.s
 ty
 Package: glossary-long 2026/03/06 v5.0 (NLCT)
  (C:\Users\wiedemaf\Documents\MikTex\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip104
-\LTright=\skip105
-\LTpre=\skip106
-\LTpost=\skip107
-\LTchunksize=\count548
-\LTcapwidth=\dimen350
-\LT@head=\box135
-\LT@firsthead=\box136
-\LT@foot=\box137
-\LT@lastfoot=\box138
-\LT@gbox=\box139
-\LT@cols=\count549
-\LT@rows=\count550
-\c@LT@tables=\count551
-\c@LT@chunks=\count552
+\LTleft=\skip102
+\LTright=\skip103
+\LTpre=\skip104
+\LTpost=\skip105
+\LTchunksize=\count537
+\LTcapwidth=\dimen341
+\LT@head=\box89
+\LT@firsthead=\box90
+\LT@foot=\box91
+\LT@lastfoot=\box92
+\LT@gbox=\box93
+\LT@cols=\count538
+\LT@rows=\count539
+\c@LT@tables=\count540
+\c@LT@chunks=\count541
 \LT@p@ftn=\toks64
 )
 Class scrbook Info: longtable captions redefined on input line 47.
-\glsdescwidth=\skip108
-\glspagelistwidth=\skip109
+\glsdescwidth=\skip106
+\glspagelistwidth=\skip107
 )
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/glossaries/styles\glossary-super.
 sty
 Package: glossary-super 2026/03/06 v5.0 (NLCT)
  (C:\Users\wiedemaf\Documents\MikTex\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2025/06/26 v4.2d the supertabular environment
-\c@tracingst=\count553
-\ST@wd=\dimen351
-\ST@rightskip=\skip110
-\ST@leftskip=\skip111
-\ST@parfillskip=\skip112
-\ST@pageleft=\dimen352
-\ST@headht=\dimen353
-\ST@tailht=\dimen354
-\ST@pagesofar=\dimen355
-\ST@pboxht=\dimen356
-\ST@rowht=\dimen357
-\ST@prevht=\dimen358
-\ST@toadd=\dimen359
-\ST@dimen=\dimen360
-\ST@pbox=\box140
+\c@tracingst=\count542
+\ST@wd=\dimen342
+\ST@rightskip=\skip108
+\ST@leftskip=\skip109
+\ST@parfillskip=\skip110
+\ST@pageleft=\dimen343
+\ST@headht=\dimen344
+\ST@tailht=\dimen345
+\ST@pagesofar=\dimen346
+\ST@pboxht=\dimen347
+\ST@rowht=\dimen348
+\ST@prevht=\dimen349
+\ST@toadd=\dimen350
+\ST@dimen=\dimen351
+\ST@pbox=\box94
 ))
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/glossaries/styles\glossary-tree.s
 ty
 Package: glossary-tree 2026/03/06 v5.0 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count554
-\l__glossaries_tree_offset_dim=\dimen361
-\l__glossaries_tree_namewidth_dim=\dimen362
-\l__glossaries_tree_symbolwidth_dim=\dimen363
-\l__glossaries_tree_prenamesym_width_dim=\dimen364
-\l__glossaries_tree_presubnamesym_width_dim=\dimen365
-\l__glossaries_tree_namewidth_padding_dim=\dimen366
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen367
-\l__glossaries_tree_namesymbolwidth_dim=\dimen368
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen369
-\l__glossaries_tree_level_int=\count555
-\glstreeindent=\skip113
+\l__glossaries_tree_max_known_level_int=\count543
+\l__glossaries_tree_offset_dim=\dimen352
+\l__glossaries_tree_namewidth_dim=\dimen353
+\l__glossaries_tree_symbolwidth_dim=\dimen354
+\l__glossaries_tree_prenamesym_width_dim=\dimen355
+\l__glossaries_tree_presubnamesym_width_dim=\dimen356
+\l__glossaries_tree_namewidth_padding_dim=\dimen357
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen358
+\l__glossaries_tree_namesymbolwidth_dim=\dimen359
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen360
+\l__glossaries_tree_level_int=\count544
+\glstreeindent=\skip111
 )) (pages/glossar.tex)
-\glswrite=\write6
-\glo@acronym@file=\write7
-\openout7 = `WissBer_PA_SA_BA.acn'.
+\glswrite=\write5
+\glo@acronym@file=\write6
+\openout6 = `WissBer_PA_SA_BA.acn'.
 
 Package glossaries Info: Writing glossary file WissBer_PA_SA_BA.acn on input li
-ne 204.
+ne 206.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/nomencl\nomencl.sty
 Package: nomencl 2021/11/10 v5.6 Nomenclature package
 Package tocbasic Info: setting babel extension for `nlo' on input line 187.
 Package tocbasic Info: setting babel extension for `nls' on input line 188.
-\nomlabelwidth=\dimen370
-\nom@tempdim=\dimen371
-\nomitemsep=\skip114
+\nomlabelwidth=\dimen361
+\nom@tempdim=\dimen362
+\nomitemsep=\skip112
 )
 (pages/abkuerzungen.tex)
-\@nomenclaturefile=\write8
-\openout8 = `WissBer_PA_SA_BA.nlo'.
+\@nomenclaturefile=\write7
+\openout7 = `WissBer_PA_SA_BA.nlo'.
 
 Package nomencl Info: Writing nomenclature file WissBer_PA_SA_BA.nlo on input l
-ine 208.
+ine 210.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1683,7 +1597,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           `bookmarkpackage=false' before \begin{document} and
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
-(scrbook)           before \begin{document} on input line 214.
+(scrbook)           before \begin{document} on input line 216.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
@@ -1691,10 +1605,10 @@ Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count556
+\BKM@id=\count545
 ))
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 21
-4.
+6.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1711,24 +1625,24 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 (chapter/FazitundAusblick.aux) (chapter/anhang.aux))
 \openout1 = `WissBer_PA_SA_BA.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 214.
-LaTeX Font Info:    ... okay on input line 214.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 216.
+LaTeX Font Info:    ... okay on input line 216.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/translations/dicts\translations-b
 asic-dictionary-german.trsl
@@ -1736,20 +1650,20 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 214.
+or `german'. on input line 216.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count557
-\scratchdimen=\dimen372
-\scratchbox=\box141
-\nofMPsegments=\count558
-\nofMParguments=\count559
+\scratchcounter=\count546
+\scratchdimen=\dimen363
+\scratchbox=\box95
+\nofMPsegments=\count547
+\nofMParguments=\count548
 \everyMPshowfont=\toks65
-\MPscratchCnt=\count560
-\MPscratchDim=\dimen373
-\MPnumerator=\count561
-\makeMPintoPDFobject=\count562
+\MPscratchCnt=\count549
+\MPscratchDim=\dimen364
+\MPnumerator=\count550
+\makeMPintoPDFobject=\count551
 \everyMPtoPDFconversion=\toks66
 ) (C:\Users\wiedemaf\Documents\MikTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1761,24 +1675,24 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: Option `justification=RaggedRight' requires the `ragged2e
-' package on input line 214.
+' package on input line 216.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
-\CenteringLeftskip=\skip115
-\RaggedLeftLeftskip=\skip116
-\RaggedRightLeftskip=\skip117
-\CenteringRightskip=\skip118
-\RaggedLeftRightskip=\skip119
-\RaggedRightRightskip=\skip120
-\CenteringParfillskip=\skip121
-\RaggedLeftParfillskip=\skip122
-\RaggedRightParfillskip=\skip123
-\JustifyingParfillskip=\skip124
-\CenteringParindent=\skip125
-\RaggedLeftParindent=\skip126
-\RaggedRightParindent=\skip127
-\JustifyingParindent=\skip128
+\CenteringLeftskip=\skip113
+\RaggedLeftLeftskip=\skip114
+\RaggedRightLeftskip=\skip115
+\CenteringRightskip=\skip116
+\RaggedLeftRightskip=\skip117
+\RaggedRightRightskip=\skip118
+\CenteringParfillskip=\skip119
+\RaggedLeftParfillskip=\skip120
+\RaggedRightParfillskip=\skip121
+\JustifyingParfillskip=\skip122
+\CenteringParindent=\skip123
+\RaggedLeftParindent=\skip124
+\RaggedRightParindent=\skip125
+\JustifyingParindent=\skip126
 )
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1815,8 +1729,8 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'WissBer_PA_SA_BA.bbl' found.
 
 (WissBer_PA_SA_BA.bbl)
-Package biblatex Info: Reference section=0 on input line 214.
-Package biblatex Info: Reference segment=0 on input line 214.
+Package biblatex Info: Reference section=0 on input line 216.
+Package biblatex Info: Reference segment=0 on input line 216.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -1835,18 +1749,18 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 )
 Package lscapeenhanced Info: \landscape patched to make \textheight change opti
 onal on input line 72.
-\@lscapeenhanced@textheight=\skip129
+\@lscapeenhanced@textheight=\skip127
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-\c@lstlisting=\count563
-Package tocbasic Info: setting babel extension for `lol' on input line 214.
-\scr@dte@lstlisting@maxnumwidth=\skip130
+\c@lstlisting=\count552
+Package tocbasic Info: setting babel extension for `lol' on input line 216.
+\scr@dte@lstlisting@maxnumwidth=\skip128
 
 Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-Package hyperref Info: Link coloring OFF on input line 214.
+Package hyperref Info: Link coloring OFF on input line 216.
 
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/glossaries-english\glossaries-dic
 tionary-English.dict
@@ -1856,10 +1770,10 @@ Dictionary: glossaries-dictionary, Language: English
 ionary-German.dict
 Dictionary: glossaries-dictionary, Language: German 
 )
-Package scrbase Info: activating ngerman \contentsname on input line 214.
-Package scrbase Info: activating ngerman \bibname on input line 214.
+Package scrbase Info: activating ngerman \contentsname on input line 216.
+Package scrbase Info: activating ngerman \bibname on input line 216.
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-18.
+20.
  (C:\Users\wiedemaf\Documents\MikTex\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1910,7 +1824,7 @@ Overfull \hbox (14.3609pt too wide) in paragraph at lines 11--17
 
 [1
 
-\openout6 = `WissBer_PA_SA_BA.ist'.
+\openout5 = `WissBer_PA_SA_BA.ist'.
 
 
 
@@ -1948,11 +1862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
 
 
-]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[3] [4
+] [3
 
 
 
@@ -1960,7 +1870,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[5]) (WissBer_PA_SA_BA.toc [6
+[4]) (WissBer_PA_SA_BA.toc [5
 
 
 
@@ -1968,24 +1878,20 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 ]
 Package babel Info: 'ngerman' activates 'german' shorthands.
-(babel)             Reported on input line 64.
+(babel)             Reported on input line 68.
+
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[6])
+\tf@toc=\write8
+\openout8 = `WissBer_PA_SA_BA.toc'.
+
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [7]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[8])
-\tf@toc=\write9
-\openout9 = `WissBer_PA_SA_BA.toc'.
-
-
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[9]
 \openout2 = `chapter/einleitung.aux'.
 
  (chapter/einleitung.tex
@@ -2026,19 +1932,18 @@ chapter 3.
 
 
 ]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[6]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 7.
  (C:\Users\wiedemaf\Documents\MikTex\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[6]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 4
 4.
-
-(C:\Users\wiedemaf\Documents\MikTex\tex/latex/lm\ts1lmr.fd
+ (C:\Users\wiedemaf\Documents\MikTex\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
@@ -2083,7 +1988,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
  (chapter/Ausgangssituation.tex
 chapter 4.
-<images/mqttfx_subscribe.png, id=488, 1419.05156pt x 785.93625pt>
+<images/mqttfx_subscribe.png, id=460, 1419.05156pt x 785.93625pt>
 File: images/mqttfx_subscribe.png Graphic file (type png)
 <use images/mqttfx_subscribe.png>
 Package pdftex.def Info: images/mqttfx_subscribe.png  used on input line 20.
@@ -2115,7 +2020,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\acrshort' on input line 52.
 
-<images/MQTTexplorer.png, id=516, 944.02687pt x 667.74469pt>
+<images/MQTTexplorer.png, id=487, 944.02687pt x 667.74469pt>
 File: images/MQTTexplorer.png Graphic file (type png)
 <use images/MQTTexplorer.png>
 Package pdftex.def Info: images/MQTTexplorer.png  used on input line 57.
@@ -2129,23 +2034,22 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [17 <./images/MQTTexplorer.png>]
-<images/MQTTMultimeter.png, id=537, 1062.97125pt x 614.295pt>
+<images/MQTTMultimeter.png, id=509, 1062.97125pt x 614.295pt>
 File: images/MQTTMultimeter.png Graphic file (type png)
 <use images/MQTTMultimeter.png>
 Package pdftex.def Info: images/MQTTMultimeter.png  used on input line 75.
 (pdftex.def)             Requested size: 448.1279pt x 258.97696pt.
-
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[18 <./images/MQTTMultimeter.png>]
-<images/MQTTMultimeterInflight.png, id=546, 1069.74657pt x 615.80063pt>
+<images/MQTTMultimeterInflight.png, id=511, 1069.74657pt x 615.80063pt>
 File: images/MQTTMultimeterInflight.png Graphic file (type png)
 <use images/MQTTMultimeterInflight.png>
 Package pdftex.def Info: images/MQTTMultimeterInflight.png  used on input line 
 86.
 (pdftex.def)             Requested size: 448.1279pt x 257.96735pt.
 
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[18 <./images/MQTTMultimeter.png>]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2196,6 +2100,12 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [25]
+Overfull \hbox (33.2488pt too wide) in paragraph at lines 70--76
+\T1/lmr/m/n/12 me-work ei-ne um-fang-rei-che Un-ter-stüt-zung für Da-ten-bin-du
+ng, Sty-les so-wie das MVVM-Architekturmuster,
+ []
+
+
 Overfull \hbox (34.60179pt too wide) has occurred while \output is active
 [] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
  Diagnose- und Überwachungsapplikation []
@@ -2206,12 +2116,6 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [26]
-Overfull \hbox (33.2488pt too wide) in paragraph at lines 70--76
-\T1/lmr/m/n/12 me-work ei-ne um-fang-rei-che Un-ter-stüt-zung für Da-ten-bin-du
-ng, Sty-les so-wie das MVVM-Architekturmuster,
- []
-
-
 Overfull \hbox (34.60179pt too wide) has occurred while \output is active
 [] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
  Diagnose- und Überwachungsapplikation []
@@ -2242,21 +2146,11 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [29]
-Overfull \hbox (34.60179pt too wide) has occurred while \output is active
-[] |\T1/lmr/m/sl/12 5 Technische Rahmenbedingungen für die Neuentwicklung einer
- Diagnose- und Überwachungsapplikation []
- []
-
-
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[30]
 \openout2 = `chapter/Technischeskonzept.aux'.
 
  (chapter/Technischeskonzept.tex
 chapter 6.
-[31
+[30
 
 
 
@@ -2266,11 +2160,17 @@ chapter 6.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
+[31]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
 [32]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[33]
+[33] (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2278,23 +2178,21 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[35] (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
+[35]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [36]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[37]
 Overfull \hbox (17.19641pt too wide) in paragraph at lines 172--174
 \T1/lmr/m/n/12 Als Ar-chi-tek-tur-grund-stein für die Ap-pli-ka-ti-on wird die 
 [][]MVVM[] ([][]Model-View-ViewModel[])-Architektur
  []
 
 
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[37]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2307,11 +2205,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [40]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[41]
-<images/GUIKonzept.png, id=797, 685.8122pt x 481.04718pt>
+<images/GUIKonzept.png, id=764, 685.8122pt x 481.04718pt>
 File: images/GUIKonzept.png Graphic file (type png)
 <use images/GUIKonzept.png>
 Package pdftex.def Info: images/GUIKonzept.png  used on input line 228.
@@ -2320,11 +2214,11 @@ Package pdftex.def Info: images/GUIKonzept.png  used on input line 228.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[42]
+[41]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[43 <./images/GUIKonzept.png>]
+[42 <./images/GUIKonzept.png>]
 \openout2 = `chapter/Umsetzung1.aux'.
 
  (chapter/Umsetzung1.tex
@@ -2335,13 +2229,17 @@ Overfull \hbox (1.14827pt too wide) in paragraph at lines 12--13
 halb ei-ner zen-tra-len MQTT-Serviceklasse
  []
 
-[44
+[43
 
 
 
 
 
 ]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[44]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2354,15 +2252,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [47]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[48]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[49]
-<images/Prozesserkennungsablauf.png, id=905, 564.1075pt x 343.2825pt>
+<images/Prozesserkennungsablauf.png, id=869, 564.1075pt x 343.2825pt>
 File: images/Prozesserkennungsablauf.png Graphic file (type png)
 <use images/Prozesserkennungsablauf.png>
 Package pdftex.def Info: images/Prozesserkennungsablauf.png  used on input line
@@ -2372,26 +2262,30 @@ Package pdftex.def Info: images/Prozesserkennungsablauf.png  used on input line
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[50]
+[48]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[51 <./images/Prozesserkennungsablauf.png>]
+[49 <./images/Prozesserkennungsablauf.png>]
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
 )
 (C:\Users\wiedemaf\Documents\MikTex\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-))
+)
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[52]
+[50])
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[51]
 \openout2 = `chapter/TestkonzeptundTests.aux'.
 
  (chapter/TestkonzeptundTests.tex
 chapter 8.
-[53
+[52
 
 
 
@@ -2401,25 +2295,25 @@ chapter 8.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[54]
+[53]
 
-LaTeX Warning: Reference `tab:performancetests' on page 55 undefined on input l
+LaTeX Warning: Reference `tab:performancetests' on page 54 undefined on input l
 ine 29.
 
 
-LaTeX Warning: Reference `fig: Messwerte' on page 55 undefined on input line 29
+LaTeX Warning: Reference `fig: Messwerte' on page 54 undefined on input line 29
 .
 
 )
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[55]
+[54]
 \openout2 = `chapter/BewertungundErgebnis.aux'.
 
  (chapter/BewertungundErgebnis.tex
 chapter 9.
-[56
+[55
 
 
 
@@ -2429,20 +2323,16 @@ chapter 9.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[57])
+[56])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[58]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[59]
+[57]
 \openout2 = `chapter/FazitundAusblick.aux'.
 
  (chapter/FazitundAusblick.tex
 chapter 10.
-[60
+[58
 
 
 
@@ -2452,7 +2342,7 @@ chapter 10.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[61]
+[59]
 chapter without number
 
 Package biblatex Warning: Split bibliography detected.
@@ -2463,7 +2353,7 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                This warning can be suppressed with
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
-[62
+[60
 
 
 
@@ -2482,38 +2372,41 @@ Package biblatex Warning: Split bibliography detected.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[63]
+[61]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[64]
+[62]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[65]
-No file WissBer_PA_SA_BA.acr.
-(pages/formelzeichen.tex)
+[63] (WissBer_PA_SA_BA.acr
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[64]) (pages/formelzeichen.tex)
 No file WissBer_PA_SA_BA.nls.
+[65
 
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[66] (WissBer_PA_SA_BA.lof)
-\tf@lof=\write10
-\openout10 = `WissBer_PA_SA_BA.lof'.
 
- [67
+] (WissBer_PA_SA_BA.lof)
+\tf@lof=\write9
+\openout9 = `WissBer_PA_SA_BA.lof'.
+
+ [66
 
 
 ] (WissBer_PA_SA_BA.lot)
-\tf@lot=\write11
-\openout11 = `WissBer_PA_SA_BA.lot'.
+\tf@lot=\write10
+\openout10 = `WissBer_PA_SA_BA.lot'.
 
 
 
-Package glossaries Warning: Glossary `main' doesn't exist on input line 320.
+Package glossaries Warning: Glossary `main' doesn't exist on input line 322.
 
-[68
+[67
 
 
 ]
@@ -2521,64 +2414,64 @@ Package glossaries Warning: Glossary `main' doesn't exist on input line 320.
 
  (chapter/anhang.tex
 chapter without number
-[69
+[68
 
 
 
 ]
 chapter without number
-<images/floatchartmessages.png, id=1125, 743.77875pt x 1075.01625pt>
+<images/floatchartmessages.png, id=1135, 743.77875pt x 1075.01625pt>
 File: images/floatchartmessages.png Graphic file (type png)
 <use images/floatchartmessages.png>
-Package pdftex.def Info: images/floatchartmessages.png  used on input line 42.
+Package pdftex.def Info: images/floatchartmessages.png  used on input line 41.
 (pdftex.def)             Requested size: 398.34013pt x 575.74315pt.
 
-Underfull \hbox (badness 1308) in paragraph at lines 52--52
+Underfull \hbox (badness 1308) in paragraph at lines 51--51
 []\T1/lmr/m/n/12 Durchlaufene OMAC-Zustände: STOP-PING, STOP-
  []
 
 
-Overfull \hbox (18.13399pt too wide) in paragraph at lines 54--54
+Overfull \hbox (18.13399pt too wide) in paragraph at lines 53--53
 []|\T1/lmr/m/n/12 Linienquittierung| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
 []\T1/lmr/m/n/12 diagnosis/v1/messagesAcknowledged/reported/{ma-
  []
 
 
-Overfull \hbox (2.36565pt too wide) in paragraph at lines 55--55
+Overfull \hbox (2.36565pt too wide) in paragraph at lines 54--54
 []|\T1/lmr/m/n/12 Artikelwechsel| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []|\T1/lmr/m/n/12 Fliegender
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 \T1/lmr/m/n/12 Ar-ti-kel-wech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []\T1/lmr/m/n/12 mlc/v1/continuousArticleChange/parameterSets/hand-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
 []\T1/lmr/m/n/12 mlc/v1/continuousArticleChange/parameterSets/hand-
  []
 
 
-Overfull \hbox (17.31319pt too wide) in paragraph at lines 56--56
+Overfull \hbox (17.31319pt too wide) in paragraph at lines 55--55
 []\T1/lmr/m/n/12 mlc/v1/articleChange/producingBatches/reported/{MLC} 
  []
 
 
-ignored: Infinite glue shrinkage found in box being split [70
+ignored: Infinite glue shrinkage found in box being split [69
 
 
 ]
@@ -2586,24 +2479,44 @@ ignored: Infinite glue shrinkage found in box being split
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[71]
-Overfull \hbox (1.04623pt too wide) in paragraph at lines 61--61
+[70]
+Overfull \hbox (1.04623pt too wide) in paragraph at lines 60--60
 []|\T1/lmr/bx/n/12 Test-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
 []|\T1/lmr/m/n/12 Verbindungsuf-
  []
 
 
-Underfull \hbox (badness 6173) in paragraph at lines 61--61
+Underfull \hbox (badness 6173) in paragraph at lines 60--60
 []|\T1/lmr/m/n/12 Verbindung wird auf-ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 FT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 Ungültige
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 Falsche IP-Adresse
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 5 Se-kun-den lang ver-su-
  []
 
 
@@ -2613,12 +2526,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
-[]|\T1/lmr/m/n/12 Ungültige
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 62--62
-[]|\T1/lmr/m/n/12 Falsche IP-Adresse
+[]|\T1/lmr/m/n/12 Ungültiger
  []
 
 
@@ -2633,52 +2541,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]|\T1/lmr/m/n/12 Ungültiger
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 63--63
-[]|\T1/lmr/m/n/12 5 Se-kun-den lang ver-su-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
 []|\T1/lmr/m/n/12 Manuelle Ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 \T1/lmr/m/n/12 bin-dungs-tren-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/lmr/m/n/12 Brokerverbindung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 []|\T1/lmr/m/n/12 Verbindungs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
 []|\T1/lmr/m/n/12 Netzwerkkabel wird
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 65--65
+Underfull \hbox (badness 1072) in paragraph at lines 64--64
 []|\T1/lmr/m/n/12 Verbindungsabbruch wird
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\T1/lmr/m/n/12 FT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\T1/lmr/m/n/12 Nachrichten-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+[]|\T1/lmr/m/n/12 Maschine sen-det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+\T1/lmr/m/n/12 kon-ti-nu-ier-lich Nach-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+\T1/lmr/m/n/12 rich-ten; emp-fan-ge-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+\T1/lmr/m/n/12 Nach-rich-ten wer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--65
+\T1/lmr/m/n/12 den mit MQTT.fx
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 65--65
+[]|\T1/lmr/m/n/12 Alle Nach-rich-ten wer-den
  []
 
 
@@ -2688,32 +2621,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--66
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T1/lmr/m/n/12 Nachrichten-
+[]|\T1/lmr/m/n/12 Nachrichtenliste mit
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T1/lmr/m/n/12 Maschine sen-det
+\T1/lmr/m/n/12 min-des-tens 3000
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--66
-\T1/lmr/m/n/12 kon-ti-nu-ier-lich Nach-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-\T1/lmr/m/n/12 rich-ten; emp-fan-ge-ne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-\T1/lmr/m/n/12 Nach-rich-ten wer-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-\T1/lmr/m/n/12 den mit MQTT.fx
+\T1/lmr/m/n/12 Nach-rich-ten wird
  []
 
 
@@ -2722,43 +2640,23 @@ Underfull \hbox (badness 1975) in paragraph at lines 66--66
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-[]|\T1/lmr/m/n/12 Nachrichtenliste mit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-\T1/lmr/m/n/12 min-des-tens 3000
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
-\T1/lmr/m/n/12 Nach-rich-ten wird
- []
-
-
-Underfull \hbox (badness 1975) in paragraph at lines 67--67
-[]|\T1/lmr/m/n/12 Alle Nach-rich-ten wer-den
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 67--67
+Underfull \hbox (badness 1629) in paragraph at lines 66--66
 \T1/lmr/m/n/12 kor-rekt nach-ge-la-den und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--68
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
 []|\T1/lmr/m/n/12 Verschiedene Topic-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
+[]|\T1/lmr/m/n/12 FT-
  []
 
 
@@ -2767,106 +2665,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--69
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []|\T1/lmr/m/n/12 Datenbank-
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 70--70
+Underfull \hbox (badness 4726) in paragraph at lines 69--69
 []|\T1/lmr/m/n/12 Nachrichten emp-fan-
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 70--70
+Underfull \hbox (badness 2698) in paragraph at lines 69--69
 []|\T1/lmr/m/n/12 Gespeicherte Nach-rich-ten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 Teilnehmer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 Retain-Nachrichten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 Zustands- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 Alle OMAC-States
  []
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 72--72
+Underfull \hbox (badness 6675) in paragraph at lines 71--71
 \T1/lmr/m/n/12 von je-dem Teil-neh-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 \T1/lmr/m/n/12 mer sen-den und
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 72--72
+Underfull \hbox (badness 1043) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 Zustände wer-den kor-rekt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/lmr/m/n/12 Regulärer Pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/lmr/m/n/12 Verpackungslinie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 \T1/lmr/m/n/12 durch-läuft Pro-zess
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 \T1/lmr/m/n/12 und be-en-det ihn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []|\T1/lmr/m/n/12 Fehlerhafter
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\T1/lmr/m/n/12 Maschine durch-läuft
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+\T1/lmr/m/n/12 Pro-zess, be-en-det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
+[]|\T1/lmr/m/n/12 FT-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\T1/lmr/m/n/12 Maschine durch-läuft
  []
@@ -2883,71 +2791,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--75
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]|\T1/lmr/m/n/12 Maschine durch-läuft
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-\T1/lmr/m/n/12 Pro-zess, be-en-det
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []|\T1/lmr/m/n/12 Strukturfehler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 Alle ver-schie-de-nen
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 76--76
+Underfull \hbox (badness 4416) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 Alle Struk-tur-feh-ler wer-
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 76--76
+Underfull \hbox (badness 1708) in paragraph at lines 75--75
 \T1/lmr/m/n/12 den rich-tig er-kannt, an-
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 76--76
+Underfull \hbox (badness 2469) in paragraph at lines 75--75
 \T1/lmr/m/n/12 ge-zeigt und kön-nen an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 77--77
+Underfull \hbox (badness 1275) in paragraph at lines 76--76
 []|\T1/lmr/m/n/12 Linienfehler an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 []|\T1/lmr/m/n/12 Maschine sen-det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 \T1/lmr/m/n/12 drei ver-schie-de-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--77
+Underfull \hbox (badness 10000) in paragraph at lines 76--76
 \T1/lmr/m/n/12 li-nien-in-ter-ne Feh-ler-
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 77--77
+Underfull \hbox (badness 2538) in paragraph at lines 76--76
 []|\T1/lmr/m/n/12 Fehler und Sen-der wer-
  []
 
@@ -2956,8 +2849,12 @@ ignored: Infinite glue shrinkage found in box being split
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[72]
+[71]
 ignored: Infinite glue shrinkage found in box being split
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[72]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2965,21 +2862,20 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[74]
+[74 <./images/floatchartmessages.png>]
+chapter without number
+[75
+
+
+]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[75 <./images/floatchartmessages.png>]
-chapter without number
-[76
+[76]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-]
-chapter without number
-[77
-
-
-]
+[77]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2987,32 +2883,8 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[79]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[80]
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[81]
-chapter without number
-[82
-
-
-])
-runsystem(makeindex WissBer_PA_SA_BA.idx)...executed safely (allowed).
-
- (WissBer_PA_SA_BA.ind) [83
-
-
-
-
-
-
-
-] (WissBer_PA_SA_BA.aux (pages/titelseite.aux)
-(pages/erklaerung.aux) (chapter/abstract.aux) (chapter/einleitung.aux)
+[79]) (WissBer_PA_SA_BA.aux (pages/titelseite.aux) (pages/erklaerung.aux)
+(chapter/abstract.aux) (chapter/einleitung.aux)
 (chapter/unternehmens_projektumfeld.aux) (chapter/grundlagen.aux)
 (chapter/Ausgangssituation.aux) (chapter/TechnischeRahmenbedingungen.aux)
 (chapter/Technischeskonzept.aux) (chapter/Umsetzung1.aux)
@@ -3031,93 +2903,25 @@ Package logreq Info: Writing requests to 'WissBer_PA_SA_BA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64731 strings out of 467691
- 1498784 string characters out of 5419788
- 2946120 words of memory out of 5000000
- 92245 multiletter control sequences out of 15000+600000
+ 64391 strings out of 467691
+ 1492365 string characters out of 5419788
+ 2938613 words of memory out of 5000000
+ 91930 multiletter control sequences out of 15000+600000
  694656 words of font info for 76 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 108i,11n,108p,11257b,2862s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{glo:acr:KI} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:WPF} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:UI} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:HMI} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:GUI} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:CLR} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:OPC} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:QoS} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:TLS} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:SSL} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:DUP} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:OSI} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:IP} has been referenced but does not exist,
- replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:TCP} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:IoT} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:MVVM} has been referenced but does not exis
-t, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:acr:MQTT} has been referenced but does not exis
-t, replaced by a fixed one
-
-<C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmbx12.pfb><C:/Users/
-wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/wiedemaf/
-Documents/MikTex/fonts/type1/public/lm/lmr10.pfb><C:/Users/wiedemaf/Documents/M
-ikTex/fonts/type1/public/lm/lmr12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts
-/type1/public/lm/lmr6.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/publi
-c/lm/lmri12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmro1
-2.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmss12.pfb><C:/
-Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/wi
-edemaf/Documents/MikTex/fonts/type1/public/lm/lmtt12.pfb>
-Output written on WissBer_PA_SA_BA.pdf (93 pages, 1309804 bytes).
+ 108i,11n,108p,11257b,2860s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmbx12.pfb><C:/User
+s/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/wiedema
+f/Documents/MikTex/fonts/type1/public/lm/lmr10.pfb><C:/Users/wiedemaf/Documents
+/MikTex/fonts/type1/public/lm/lmr12.pfb><C:/Users/wiedemaf/Documents/MikTex/fon
+ts/type1/public/lm/lmr6.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/pub
+lic/lm/lmri12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmr
+o12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmss12.pfb><C
+:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/
+wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmtt12.pfb>
+Output written on WissBer_PA_SA_BA.pdf (87 pages, 1307437 bytes).
 PDF statistics:
- 1818 PDF objects out of 2073 (max. 8388607)
- 572 named destinations out of 1000 (max. 500000)
- 877 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1791 PDF objects out of 2073 (max. 8388607)
+ 559 named destinations out of 1000 (max. 500000)
+ 821 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -620,6 +620,47 @@
       \verb https://kirsch-software.de/blog/XAML-Frameworks-WPF-UWP-WinUI3-MAUI
       \endverb
     \endentry
+    \entry{garbagecollector}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=f0f6cc4612499b8b8b3fd378cf940d96}{%
+           family={Kokosa},
+           familyi={K\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=445b012435bb9e5f59dd0bce3cf3db68}{%
+           family={Nasarre},
+           familyi={N\bibinitperiod},
+           given={Christophe},
+           giveni={C\bibinitperiod}}}%
+        {{hash=170374d9c7769c3fea143f84bb5f000d}{%
+           family={Gosse},
+           familyi={G\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{fullhash}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{fullhashraw}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{bibnamehash}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{authorbibnamehash}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{authornamehash}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{authorfullhash}{503684fdbd3a6d914dbbb252b259c168}
+      \strng{authorfullhashraw}{503684fdbd3a6d914dbbb252b259c168}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{979-8-8688-0452-6}
+      \field{title}{Pro .{{NET Memory}} {{Management}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+    \endentry
     \entry{kreibichUsingSQLite2010}{book}{}{}
       \name{author}{1}{}{%
         {{hash=b71dc4c9809f89cb578ee0b8caf851cb}{%

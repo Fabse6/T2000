@@ -2510,6 +2510,11 @@
     <bcf:citekey order="135" intorder="1">ajcvickersOverviewMicrosoftDataSqlite</bcf:citekey>
     <bcf:citekey order="136" intorder="1">PsutilDocumentationPsutil</bcf:citekey>
     <bcf:citekey order="137" intorder="1">yosifovichMemoryInformationTask2023</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">garbagecollector</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">garbagecollector</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">garbagecollector</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">garbagecollector</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">garbagecollector</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

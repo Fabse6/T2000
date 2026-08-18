@@ -22,7 +22,7 @@
         Die Kernfunktionen bestehen dabei vor allem aus \textit{Connect} und \textit{Disconnect}, \textit{Subscribe} und \textit{Unsubscribe} und dem Veröffentlichen
         von Nachrichten. Außerdem sollte sie ähnlich wie bei MQTT.fx Quality-of-Service-Level, Retained Messages, Last-Will-Nachrichten und Clean Sessions abbilden können. 
         
-        Diese Funktionen können durch die Bibliothek \textit{MQTTnet} durch wenige Zeilen Programmcode vereinfacht in C\# umgesetzt werden \autocite[]{teamHowUseMQTT}. 
+        Diese geforderten Funktionen können durch die Bibliothek \textit{MQTTnet} durch wenige Zeilen Programmcode vereinfacht in C\# umgesetzt werden \autocite[]{teamHowUseMQTT}. 
         Des Weiteren lassen sich durch die Bibliothek auch Ereignis- und Callback-Mechanismen über Event-Handler implementieren. Callbacks sind registrierte Rückruffunktionen, die vom System oder
         Framework automatisch aufgerufen werden, sobald ein Ereignis eintritt \autocite{PollingCallbackThere}. Dadurch können nach dem Abonnieren von Topics empfangene Nachrichten ereignisbasiert 
         verarbeitet werden, ohne dass eine direkte Kopplung zwischen Netzwerk- und Anwendungslogik erforderlich ist.
@@ -46,7 +46,7 @@
         
         Die aufwendige Serverimplementierung bei MySQL und SQL Server führt dann aber auch dazu, dass mehrere Schreibzugriffe gleichzeitig möglich sind. Daneben werden Schreibzugriffe bei SQLite serialisiert, wodurch die Performance bei mehreren Zugriffen zur selben Zeit sinkt. \autocite[13--14]{kreibichUsingSQLite2010}
         
-        Da die zu entwickelnde Monitoring-Applikation ausschließlich lokal auf einem einzelnen Rechner betrieben wird und kein Mehrbenutzerbetrieb vorgesehen ist, bieten die zusätzlichen Funktionen von MySQL beziehungsweise Microsoft SQL Server keinen wesentlichen Mehrwert. Aufgrund dessen kann über die Nachteile der Serialisierung von Schreiboperationen und die daraus entstehenden Performance-Einbußen hinweggesehen werden. Wegen der serverlosen Architektur, des geringen Installationsaufwands sowie der einfachen Bereitstellung wird daher SQLite als Datenbankmanagementsystem ausgewählt. Da sowohl SQLite als auch die anderen vorgestellten Datenbankmanagementsysteme Datenbankzugriffe in SQL modelliert, ist eine Erweiterung mit anderen Managementsystemen in Zukunft möglich.
+        Da die zu entwickelnde Monitoring-Applikation ausschließlich lokal auf einem einzelnen Rechner betrieben wird und kein Mehrbenutzerbetrieb vorgesehen ist, bieten die zusätzlichen Funktionen von MySQL beziehungsweise Microsoft SQL Server keinen wesentlichen Mehrwert. Aufgrund dessen kann über die Nachteile der Serialisierung von Schreiboperationen und die daraus entstehenden Performance-Einbußen hinweggesehen werden. Wegen der serverlosen Architektur, des geringen Installationsaufwands sowie der einfachen Bereitstellung wird daher SQLite als Datenbankmanagementsystem ausgewählt. Da sowohl SQLite als auch die anderen vorgestellten Datenbankmanagementsysteme Datenbankzugriffe in SQL modellieren \autocite{SQLiteHomePage} \autocite{MySQLMySQL84} \autocite{MySQLMySQL84}, ist eine Erweiterung mit anderen Managementsystemen in Zukunft möglich.
         
         Zur Integration in C\# wird die Bibliothek Microsoft.Data.Sqlite verwendet. 
         Diese stellt eine moderne und leichtgewichtige Schnittstelle zur SQLite-Datenbank 
@@ -54,7 +54,7 @@
         und nicht-blockierende Verarbeitung der Daten gewährleistet werden kann. Darüber hinaus integriert sich die Bibliothek nahtlos in das .NET-Ökosystem. \autocite{ajcvickersOverviewMicrosoftDataSqlite}
         
     \subsection{Graphical User Interface Framework}
-        Für die Umsetzung einer Monitoring- und Visualisierungsapplikation muss das \acrshort{acr:GUI}-Framework ein ereignisgesteuertes Modell mit einer
+        Aus den bereits vorgestellten Applikationen können einige Anforderungen an die grafische Oberfläche herausgefiltert werden. Für die Umsetzung einer Monitoring- und Visualisierungsapplikation muss das \acrshort{acr:GUI}-Framework ein ereignisgesteuertes Modell mit einer
         zentralen Ereignisschleife (Eventloop) bereitstellen. Dazu muss es den User-Interface-(UI)-Thread durch Callbacks von den Hintergrundoperationen wie Netzwerkkommunikation und Datenverarbeitung
         trennen, aber auch die Möglichkeit bieten, grafische Aktualisierungen aus Hintergrundprozessen sicher anzustoßen.
 
@@ -69,11 +69,11 @@
         was die Strukturierung und Wartbarkeit von Anwendungen verbessert. \autocite{XAMLMitWPF}
         
         WPF stellt eine etablierte und weit verbreitete Technologie für die Entwicklung von Desktop-Anwendungen unter Windows dar. 
-        Durch ein integriertes Event-System sowie einen zentralen Eventloop eignet sich WPF besonders für ereignisgesteuerte Anwendungen.
-        Zudem bietet das Framework eine umfangreiche Unterstützung für Datenbindung, Styles sowie das MVVM-Architekturmuster, wodurch datengetriebene Benutzeroberflächen
-        effizient umgesetzt werden können.
+        Durch ein integriertes Event-System sowie einen zentralen Eventloop eignet sich WPF besonders für ereignisgesteuerte Anwendungen \autocite{XAMLMitWPF}.
+        Zudem bietet das Framework eine umfangreiche Unterstützung für Datenbindung \autocite[7]{wegenerWPF45Und2012}, Styles sowie das MVVM-Architekturmuster, wodurch datengetriebene Benutzeroberflächen
+        effizient umgesetzt werden können \autocite{XAMLMitWPF}.
         Insbesondere bei Anwendungen wie Monitoring-Systemen, bei denen kontinuierlich neue Daten wie zum Beispiel Nachrichten verarbeitet und dargestellt werden müssen,
-        spielt diese Eigenschaft eine zentrale Rolle. \autocite{XAMLMitWPF}
+        spielt diese Eigenschaft eine zentrale Rolle. 
 
         WinUI ist eine modernere Weiterentwicklung im Windows-Ökosystem und ist Teil des Windows App SDK. Es basiert auf ähnlichen Konzepten
         wie WPF, insbesondere der Nutzung von XAML, setzt jedoch stärker auf moderne UI-Designs. Durch eine engere Integration in die aktuellen Windows-Versionen
@@ -144,3 +144,5 @@
 
         Daneben wird eine Möglichkeit zur Erzeugung hoher Nachrichtenfrequenzen benötigt, damit die Reaktionsfähigkeit und das Zusammenspiel der verschiedenen Programmebenen 
         analysiert werden kann. Dadurch können die Leistungsgrenzen der Applikation ermittelt werden.
+
+        Es stellt sich also heraus, dass selbst erstellte Testumgebungen für realitätsnahe Tests nicht ausreichen. Durch das fehlen von Simulationsmöglichkeiten durch andere Applikationen können Abläufe mit realen Topics und Nachrichtenlasten nicht nachgebaut werden. Deswegen muss eine Verpackungslinie für Testdurchführungen genutzt werden, die durch eine möglichst große Anzahl an Teilnehmern und eingebauten Automatisierungsabläufen eine möglichst hohe Nachrichtenfrequenz bereitstellt.

@@ -14,8 +14,11 @@ Besonders hervorzuheben ist, dass die entwickelte Software bereits von Softwaree
 \subsection{Weitere Automatisierungsabläufe}
 Die aktuelle Implementierung unterstützt bereits die wichtigsten Automatisierungsabläufe. Für eine umfassendere automatische Analyse der Verpackungslinien durch die Software können weitere Ablaufvarianten ergänzt werden. Dafür muss lediglich die \textit{ProcessService}-Datei erweitert werden.
 
-\subsection{Verbesserte Konfigurierbarkeit}
-Darüber hinaus kann die fehlende Anforderung der konfigurierbaren Analyse- und Validierungslogik umgesetzt werden. Dadurch sollen neue Prüfmechanismen ohne Änderungen am Quellcode ergänzt werden können.
+Darüber hinaus kann die fehlende Anforderung der konfigurierbaren Analyse- und Validierungslogik umgesetzt werden. Diese fordert das Implementierung von Ablauferkennungen innerhalb der Applikation, wodurch Quellcode-Änderungen in dieser Hinsicht obsolet werden können.
 
 \subsection{Linux / HMI}
 Ein weiterer Entwicklungsschwerpunkt ergibt sich aus der geplanten Umstellung zukünfitger Bedienoberflächen auf Linux-basierte Systeme. Da die vorliegende Anwendung auf WPF basiert, ist diese aktuell an Windows gebunden. Für einen zukünftigen Einsatz direkt auf den HMIs könnte die Anwendung auf ein plattformübergreifendes Framework wie .NET MAUI oder Avalonia portiert werden. Die verwendete MVVM-Architektur erleichtert eine solche Migration, da große Teile der Anwendungslogik bereits von der Benutzeroberfläche getrennt sind. Dadurch könnte die entwickelte Lösung zukünftig direkt auf den Bediengeräten der Maschine eingesetzt werden und den Anwendern ohne zusätzliche Hardware zur Verfügung stehen.
+
+Durch eine frühere Spezialisierung auf die Integration in \gls{acr:HMI}s hätten auch andere Ansätze früher abgewägt werden können. Gerade eine Client-Server-Architektur, bei der das \gls{acr:HMI} als Server fungiert und andere Geräte als Clients per Browser auf die vom Server bereitgestellten Webseiten zugreifen können, wäre eine passende Entwicklung für diesen Anwendungsfall. Dadurch könnte jedes Endgerät nur mithilfe eines Browsers auf den MQTT Analyzer zugreifen.
+
+Insgesamt konnte mit der entwickelten Anwendung eine zukunftsfähige Grundlage für die Analyse von MQTT-Kommunikation in Verpackungslinien geschaffen werden. Die bereits erfolgreiche Nutzung im Arbeitsumfeld bestätigt den praktischen Nutzen der Lösung. Durch die vorhandenen Erweiterungsmöglichkeiten und die Anpassbarkeit an zukünftige Systemarchitekturen kann die Anwendung auch langfristig an neue Anforderungen angepasst und weiter ausgebaut werden.

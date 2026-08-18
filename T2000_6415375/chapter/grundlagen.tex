@@ -13,9 +13,9 @@ Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können
         Der Publisher besitzt keine Kenntnis darüber, welche Clients die Nachricht empfangen sollen, wodurch eine logische Entkopplung zwischen Sender und Empfänger entsteht. \autocite[15--16]{hivemqMQTTMQTT5}
 
     \subsection{Subscriber}
-        Ein Client des \gls{acr:MQTT}-Brokers kann neben der Rolle als Publisher auch ein Subscriber sein. Dieser registriert sich für bestimmte Topics. Dafür sendet er eine \lstinline|SUBSCRIBE|-Nachricht, in der jedes einzelne Topic, das der Client abonnieren will, mit dem zugehörigen Quality of Service Level angegeben wird. \autocite[16]{hivemqMQTTMQTT5}
+        Ein Client des \gls{acr:MQTT}-Brokers kann neben der Rolle als Publisher auch ein Subscriber sein. Dieser registriert sich für bestimmte Topics. Dafür sendet er eine \lstinline|SUBSCRIBE|-Nachricht, in der jedes einzelne Topic, das der Client abonnieren will, mit dem zugehörigen Quality of Service Level angegeben wird \autocite[16]{hivemqMQTTMQTT5}.
         Der Subscriber erhält durch den Broker automatisch alle Nachrichten, die unter den von ihm abonnierten Topics veröffentlicht werden. 
-        Genau wie die Publisher keine Kenntnisse über Empfänger haben, haben die Subscriber auch keine direkten Informationen über den Sender und über die Existenz von Publishern. Die Information über den Sender einer Nachricht kann dadurch erst in der Nachricht selbst freigegeben werden. \autocite[12]{hivemqMQTTMQTT5}             
+        Genau wie die Publisher keine Kenntnisse über Empfänger haben, haben die Subscriber auch keine direkten Informationen über den Sender und über die Existenz von Publishern. Die Information über den Sender einer Nachricht kann dadurch erst in der Nachricht selbst freigegeben werden \autocite[12]{hivemqMQTTMQTT5}.      
 
     \subsection{Broker}
         Der MQTT-Broker selbst ist die zentrale Instanz im \gls{acr:MQTT}-System. Er ist für den Empfang von Nachrichten seitens der Publisher zuständig, verwaltet die Topic-Abonnements und verteilt die Nachrichten an die entsprechenden Subscriber.
@@ -52,23 +52,25 @@ Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können
         Dies ist ein wesentlicher Faktor für die Effizienz von \acrshort{acr:MQTT}, vor allem bei kleinen Payloads \autocite[124]{angewandteNetzwerktechnik}.
 
         Der Variable Header enthält steuerungsrelevante Zusatzinformationen und ist abhängig vom jeweiligen Control-Packet Typ.
-        Er enthält zum Beispiel den Topic-Namen, Protokollnamen und -Versionen und Verbindungsflags \autocite[30--39]{oasisMQTTVersion502019}.
+        Er enthält zum Beispiel den Topic-Namen, Protokollnamen und -Versionen sowie Verbindungsflags \autocite[30--39]{oasisMQTTVersion502019}.
 
-        Die Payload enthält die eigentlichen Nutzdaten der \acrshort{acr:MQTT}-Nachricht. Aufgrund der agnostischen Natur von MQTT existieren keine Vorgaben bezüglich des Datenformats oder der Struktur. 
-        Der Begriff ,,agnostisch'' beschreibt die Tatsache, dass MQTT über keine detaillierten Kenntnisse bezüglich des Systems verfügt, sondern lediglich die Einhaltung von Standards gewährleisten muss. Eine einheitliche Kodierung ist dabei ein mögliches Beispiel für einen Standard \autocite[]{Agnostisch}.
+        Die Payload enthält die eigentlichen Nutzdaten der \acrshort{acr:MQTT}-Nachricht. Aufgrund der agnostischen Natur von MQTT existieren keine Vorgaben bezüglich des Datenformats oder der Struktur \autocite[15]{hivemqMQTTMQTT5}. Der Begriff ,,agnostisch'' beschreibt die Tatsache, dass MQTT über keine detaillierten Kenntnisse bezüglich des Systems verfügt, sondern lediglich die Einhaltung von Standards gewährleisten muss. Eine einheitliche Kodierung ist dabei ein mögliches Beispiel für einen Standard \autocite[]{Agnostisch}.
         Mögliche Inhalte sind beispielsweise Texte, JSON-Daten oder Binärdaten. Diese sind typischerweise maximal wenige Kilobytes groß. Bei MULTIVAC ist die Payload als JSON-Dokument definiert. Die Interpretation der Payload erfolgt ausschließlich in der Anwendungsschicht, nicht durch den Broker \autocite[15]{hivemqMQTTMQTT5}.
         Dadurch ist \acrshort{acr:MQTT} universell einsetzbar \autocite[69]{IoTMQTT}. 
+
+        Der grundlegende Aufbau der MQTT-Nachrichten genügt für die vorliegende Arbeit, da die Auswertung der einzelnen Bits später durch eine Bibliothek umgesetzt wird. Für ein tiefergehendes Verständnis kann \autocite{oasisMQTTVersion502019} herangezogen werden. In diesem wird jedes mögliche Bit des Fixed und Variablen Headers erläutert.
    
     \subsection{Datensicherheit bei \acrshort{acr:MQTT}}
-        In der Grundkonfiguration eines \acrshort{acr:MQTT}-Brokers ist \acrshort{acr:MQTT} ebenso unsicher wie HTTP. 
+        In der Grundkonfiguration eines \acrshort{acr:MQTT}-Brokers ist \acrshort{acr:MQTT} ebenso unsicher wie \gls{acr:HTTP} \autocite[]{MQTTMessageQueue}. 
         Das heißt, dass jeder, der den Port des Brokers kennt, alle Nachrichten mitverfolgen kann.
-        Außerdem und viel schwerwiegender ist jedoch die Möglichkeit, schädliche Nachrichten unter bestimmten Topics zu senden. Diese können beispielsweise dazu führen, dass eine gesamte Maschine kurz- oder langfristig lahmgelegt wird.
-        Um dieses Problem zu umgehen, besteht die Möglichkeit, die Kommunikation mit \acrlong{acr:SSL} (\acrshort{acr:SSL})/ \acrlong{acr:TLS} (\acrshort{acr:TLS}) zu verschlüsseln. \autocite[]{MQTTMessageQueue}
+        Außerdem und viel schwerwiegender ist jedoch die Möglichkeit, schädliche Nachrichten unter bestimmten Topics zu senden \autocite[]{MQTTMessageQueue}. Diese können beispielsweise dazu führen, dass eine gesamte Maschine kurz- oder langfristig lahmgelegt wird. Um dieses Problem zu umgehen, besteht die Möglichkeit, die Kommunikation mit \gls{acr:SSL}/ \gls{acr:TLS} zu verschlüsseln \autocite{SecurityFeaturesHiveMQ}.
 
         Im Rahmen des \acrshort{acr:TLS}-Handshakes tauschen Client und Broker Informationen aus, aus denen anschließend ein gemeinsamer Sitzungsschlüssel abgeleitet wird. \autocite[5--7]{tslsslKastning}
         Für die Authentifizierung von Publishern und Subscribern kann außerdem
-        ein Benutzername und ein Passwort hinterlegt werden, damit der Broker nicht frei zugänglich ist. \autocite{MQTTMessageQueue} 
-        Bei Verpackungslinien von MULTIVAC ist das Netzwerk nicht von außen zugänglich, weswegen auf Verschlüsselung und das Nutzen von Benutzername und Passwort verzichtet wird.
+        ein Benutzername und ein Passwort hinterlegt werden, damit der Broker nicht frei zugänglich ist \autocite{MQTTMessageQueue}. 
+        Bei Verpackungslinien von MULTIVAC ist das Netzwerk nicht aus externen Netzen erreichbar und zusätzlich physisch abgesichert. Deswegen wurde auf eine Transportverschlüsselung wie TLS verzichtet. Die dadurch eingesparten kryptographischen Operationen reduzieren CPU-Last und Latenz \autocite[9--10]{kant}. Das verbleibende Risiko wurde im Rahmen der Sicherheitsbetrachtung als akzeptabel eingestuft.
+
+        Aufgrund von der wegfallenden \gls{acr:TLS}-Verschlüsselung wird auf ein genaueres Eingehen auf die Funktionsweise in der vorliegenden Arbeit verzichtet. Für ein tieferes Verständnis der Funktionsweise kann \autocite{tslsslKastning} herangezogen werden.
 
 \section{Quality of Service}
     \subsection{Allgemeine Definition}
@@ -97,6 +99,8 @@ Damit verschiedene Maschinen im Linienverbund wichtige Daten austauschen können
         Neben den reinen Nachrichteneigenschaften spielt die gesamte System- und Brokerlast bei der Auswahl des Levels auch eine entscheidende Rolle. 
         Dabei ist ein höheres \acrshort{acr:QoS}-Level nicht immer besser. \autocite[25]{hivemqMQTTMQTT5}
 
+        MUTLIVAC verwendet für alle Nachrichtenströme innerhalb der Maschinenkommunikation \acrshort{acr:QoS}-Level null. Aufgrund dessen kann eine Darstellung dieser Information für jede einzelne Nachricht in der zu entwickelnden Applikation weggelassen werden.
+
 \section{Vorteile von MQTT in der Automatisierung}
         \acrshort{acr:MQTT} ist durch den sehr kleinen Nachrichten-Header, der aus nur zwei bis fünf Bytes besteht, ein sehr leichtgewichtiges Protokoll. Dadurch benötigt es nur geringe Bandbreite, wodurch es sich vor allem für ressourcenarme Geräte und \acrshort{acr:IoT}-Sensoren eignet. \autocite[68--69]{IoTMQTT}
 
@@ -113,7 +117,7 @@ für die Session-Wiederaufnahme, genauso wie die Zwischenspeicherung der Nachric
 
     
   \section{.Net als Laufzeitplattform}
-  Im Rahmen dieser Arbeit wird \textit{.NET} als Ausführungsplattform eingesetzt, da MULTIVAC für Endgeräte überwiegend Windows einsetzt. Das ,,.Net-Framework ist eine Technologie, die die Erstellung und Ausführung von Windows-Apps und Webdiensten unterstützt'' \autocite{gewarrenUebersichtUeberNET}.  Es besteht aus der \acrlong{acr:CLR} (\acrshort{acr:CLR}) und der .NET-Framework-Klassenbibliothek. 
+  Im Rahmen der vorliegenden Arbeit wird \textit{.NET} als Ausführungsplattform eingesetzt, da MULTIVAC für Endgeräte überwiegend Windows einsetzt. Das ,,.Net-Framework ist eine Technologie, die die Erstellung und Ausführung von Windows-Apps und Webdiensten unterstützt'' \autocite{gewarrenUebersichtUeberNET}.  Es besteht aus der \acrlong{acr:CLR} (\acrshort{acr:CLR}) und der .NET-Framework-Klassenbibliothek. 
  Die \acrshort{acr:CLR} bildet die Laufzeitumgebung von \textit{.NET}. Sie ist für die Programmausführung, die Speicherverwaltung, das Thread-Management sowie sicherheitsrelevante Funktionen verantwortlich.
 Die Klassenbibliothek stellt eine Vielzahl objektorientierter Typen und Funktionen bereit, die bei der Entwicklung von Anwendungen genutzt werden können. Dazu zählen unter anderem Bibliotheken für Netzwerkkommunikation, Datenbankzugriffe und die Entwicklung grafischer Benutzeroberflächen. Darüber hinaus umfasst .NET verschiedene Frameworks zur Erstellung von Benutzeroberflächen, beispielsweise Windows Presentation Foundation (WPF) und .NET MAUI. \autocite{gewarrenUebersichtUeberNET}
   

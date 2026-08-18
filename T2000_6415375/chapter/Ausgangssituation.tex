@@ -22,7 +22,7 @@
             \label{fig:mqttfx_subscribe}
         \end{figure}
 
-        Neben dem Reiter Publish gibt es auch einen Subscribe-Reiter, der in Listing \ref{fig:mqttfx_subscribe} dargestellt ist. Hier können einzelne Topics oder Topic-Hierarchien abonniert werden.
+        Neben dem Publish-Reiter verfügt \textit{MQTT.fx} auch über einen Subscribe-Reiter, der in Listing \ref{fig:mqttfx_subscribe} dargestellt ist. Hier können einzelne Topics oder Topic-Hierarchien abonniert werden.
         Die Darstellung der empfangenen Nachrichten unter den abonnierten Topics erfolgt dann in Echtzeit und mit den relevanten Metadaten Topic, Payload, \acrshort{acr:QoS} und Empfangszeitpunkt. \autocite{ouyangMQTTfxGuideFeatures}
 
         Darüber hinaus verfügt das Programm über eine Logging- und Analysefunktion. Dieser Reiter ist mit einem integrierten Log-Fenster ausgestattet, welches den Verbindungsaufbau und -abbau, Subscribe- und Publish-Events, MQTT-Nachrichten sowie Broker-Statusmeldungen protokolliert. \autocite{ouyangMQTTfxGuideFeatures}
@@ -32,7 +32,7 @@
 
         Zuletzt wird neben den zuvor genannten Reitern der Broker-Status angezeigt. In diesem werden grundsätzliche Informationen über die Anzahl der verbundenen Clients, Anzahl an gesendeten Nachrichten und weitere ähnliche Daten des Brokers angezeigt. \autocite{ouyangMQTTfxGuideFeatures}
 
-        MQTT.fx stellt eine umfangreiche Sammlung von Funktionen zur Verfügung, die insbesondere für das Testen, Debuggen und Analysieren von MQTT-Kommunikation geeignet sind. 
+        MQTT.fx stellt eine umfangreiche Sammlung von Funktionen zur Verfügung, die insbesondere für das Testen, Debuggen und Analysieren von MQTT-Kommunikation geeignet sind \autocite{MQTTTestingDebugging}. 
         Der Funktionsumfang ist dabei bewusst auf die Rolle eines Client-Werkzeugs ausgelegt, wobei der produktive Einsatz als dauerhaftes Monitoring- oder Visualisierungssystem nicht intendiert ist.
     \subsection{Gründe für und gegen den Einsatz von MQTT.fx}
         Diese Applikation ermöglicht es Entwicklern, ohne eigene Implementierung Publisher- und Subscriber-Rollen zu simulieren. 
@@ -46,7 +46,7 @@
         Außerdem ist MQTT.fx nur auf die Anzeige einzelner Subscriptions fokussiert. Deshalb ist die Darstellung zusammenhängender Nachrichtenflüsse über mehrere Topics hinweg 
         sehr eingeschränkt und erschwert die Analyse komplexer Topic-Hierarchien, wie sie in Automatisierungssystemen häufig auftreten.
         Ein weiterer zentraler Punkt, der gegen die Nutzung von MQTT.fx spricht, ist die Konzipierung als eigenständige Desktop-Anwendung. Deswegen ist eine Integration
-        in bestehende \acrlong{acr:HMI} (\acrshort{acr:HMI}) oder produktive Visualisierungssysteme nicht möglich. Außerdem gibt es keine Möglichkeit zur Weiterverarbeitung von Daten, 
+        in bestehende \gls{acr:HMI} oder produktive Visualisierungssysteme nicht möglich. Außerdem gibt es keine Möglichkeit zur Weiterverarbeitung von Daten, 
         systematischen Auswertung von Tests oder zur Integration externer Datenquellen. Dadurch werden sowohl die Analyse als auch die Simulation bestimmter Szenarien eingeschränkt.
 
 \section{Monitoring über \acrshort{acr:MQTT} Explorer}
@@ -139,13 +139,13 @@ Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse anhand von Einsä
     \label{tab:nutzwertanalyse}
     \begin{tabular}{lccccc} 
         \toprule Kriterium & Gewicht & MQTT.fx & Explorer & Multimeter \\ 
-        \midrule Persistente Speicherung & 25\% & 1 & 1 & 3 \\ 
-        Volltextsuche & 15\% & 1 & 5 & 5 \\ 
+        \midrule Persistente Speicherung & 25\% & 1 & 1 & 2 \\ 
+        Volltextsuche & 15\% & 1 & 5 & 3 \\ 
         Erweiterbarkeit & 20\% & 1 & 1 & 3 \\ 
-        Simulationsmöglichkeiten & 10\% & 5 & 4 & 5 \\ 
+        Simulationsmöglichkeiten & 10\% & 3 & 1 & 2 \\ 
         Performance & 15\% & 4 & 4 & 2 \\ 
-        Benutzerfreundlichkeit & 15\% & 3 & 5 & 3 \\ 
-        \midrule Gesamt & 100\% & 2,15 & 2,95 & 3,35 \\ 
+        Benutzerfreundlichkeit & 15\% & 2 & 3 & 3 \\ 
+        \midrule Gesamt & 100\% & 1,8 & 2,35 & 2,5 \\ 
         \bottomrule 
     \end{tabular} 
 \end{table}

@@ -25,8 +25,26 @@ Wie in Tabelle \ref{tab:funktionstests} dargestellt wird, wurden 16 von 17 Funkt
 
 Der Testfall zur vollständigen Ablauferkennung konnte nicht vollständig abgeschlossen werden, da die für die Tests verwendete Testlinie nicht jeden von der Applikation unterstützten Automatisierungsablauf bereitstellte. Die vorhandenen und testbaren Abläufe wurden von der Anwendung erkannt und überwiegend korrekt erfolgreich oder fehlerhaft abgeschlossen. In einzelnen Fällen wurden Prozessabläufe fehlerhaft beendet, wenn ein neuer Ablauf erkannt wird, bevor die für die Auswertung benötigten OMAC-Zustände vollständig erfasst werden konnten. 
 
-Während der Durchführung der Funktionstests wurden zusätzlich fünf Performance-Messungen durchgeführt. Die Ergebnisse sind in Tabelle \ref{tab:performancetests} dargestellt. Sie zeigt den durchschnittlichen und Maximalen Arbeitsspeicherverbrauch sowie CPU-Auslastung. Die Tabelle zeigt klar, dass bei keinem Performancetest die geforderten Grenzwerte eingehalten werden konnten. Die grafische Auswertung der Messwerte in Abbildung \ref{fig:Messwerte} zeigt, dass der Arbeitsspeicherverbrauch bis zu ungefähr 1,2 Gigabyte ansteigt. Sobald es diese Grenze erreicht hat, pendelt der Verbrauch um diesen Wert. Die CPU-Auslastung in Abbildung \ref{fig:Messwerte} variiert extrem zwischen wenig sehr viel Auslastung. Dies kann auf die unterschiedliche Verwendung der Applikation zurückgeführt werden. Werden ständig neue Plots der Teilnehmer angezeigt oder zwischen den einzelnen Reitern gewechselt, wird die CPU deutlich mehr belastet, während der reine Empfang und Verarbeitung der Nachrichten weniger Leistung benötigt. Wie in \ref{tab:performancetests} zu sehen ist, beträgt die durchschnittliche CPU-Auslastung trotzdem das eineinhalb bis zweifache des geforderten Grenzwertes. Das ist eine deutliche Abweichung zum erwarteten Wert. Während der gesamten Messdauer konnte die Anwendung jedoch ohne Abstürze betrieben werden.
+Während der Durchführung der Funktionstests wurden zusätzlich fünf Performance-Messungen durchgeführt. Die Ergebnisse sind in Tabelle \ref{tab:performancetests} dargestellt. Sie zeigt den durchschnittlichen und Maximalen Arbeitsspeicherverbrauch sowie CPU-Auslastung. Die Ergebnisse der Performance-Tests zeigen, dass die definierten Grenzwerte in keinem Testlauf eingehalten wurden. Zur genaueren Untersuchung des Performance-Verhaltens wurde ein eigener Testdurchlauf durchgeführt. Hierbei erfolgte der Versand und Empfang von Nachrichten in einem festen Intervall von 100 Millisekunden. Gleichzeitig wurden alle verfügbaren Anwendungsfunktionen intensiv verwendet sowie wiederholt Reiter- und Einstellungswechsel vorgenommen. Die grafische Auswertung der Messwerte dieses Hochleistungstests in Abbildung \ref{fig:Messwerte} zeigt, dass der Arbeitsspeicherverbrauch bis zu ungefähr 1,2 Gigabyte ansteigt. Sobald es diese Grenze erreicht hat, pendelt der Verbrauch um diesen Wert. Die CPU-Auslastung in Abbildung \ref{fig:Messwerte} variiert stark zwischen niedriger bis gar keiner Beanspruchung des Prozessors und sehr hoher Auslastung. Dies kann auf die unterschiedliche Verwendung der Applikation zurückgeführt werden. Wie in Tabelle \ref{tab:performancetests} zu sehen ist, beträgt die durchschnittliche CPU-Auslastung das eineinhalb bis zweifache des geforderten Grenzwertes von zehn Prozent. Das ist eine deutliche Abweichung zum erwarteten Wert. Während der Dauer der unterschiedlichen Testdurchläufe konnte die Anwendung jedoch ohne Abstürze betrieben werden.
  
+\begin{table}[htbp] 
+    \centering 
+    \caption{Ergebnisse der Performance-Tests} 
+    \label{tab:performancetests} 
+    \resizebox{\textwidth}{!}{ 
+        \begin{tabular}{lcccccc} 
+            \hline 
+            \textbf{Messpunkt} & \textbf{Testdauer} & \textbf{Nachrichtenanzahl} & \textbf{Ø CPU-Ausl. [\%]} & \textbf{Max. CPU-Ausl. [\%]} & \textbf{Ø RAM [MB]} & \textbf{Max. RAM [MB]} \\ 
+            \hline PT-1 & 30 min & 7350 & 18.95 & 201.9 & 410.02 & 443.13 \\ 
+            PT-2 & 33 min & 8200 & 15.84 & 216.7 & 394.93 & 490.20 
+            \\ PT-3 & 13 min & 1609 & 17.23 & 170.4 & 515.12 & 593.99 
+            \\ PT-4 & 14 min & 2030 & 15.83 & 171.3 & 533.94 & 828.20 
+            \\ PT-5 & 19 min & 3405 & 16.27 & 199.8 & 510.96 & 709.73 \\
+             \hline 
+    \end{tabular}
+    } 
+\end{table}
+
          \begin{figure}[htbp]
             \centering
             \includegraphics[width=0.8\textwidth]{images/Messwerte.png}

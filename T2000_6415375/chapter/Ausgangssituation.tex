@@ -33,20 +33,19 @@
         Zuletzt wird neben den zuvor genannten Reitern der Broker-Status angezeigt. In diesem werden grundsätzliche Informationen über die Anzahl der verbundenen Clients, Anzahl an gesendeten Nachrichten und weitere ähnliche Daten des Brokers angezeigt. \autocite{ouyangMQTTfxGuideFeatures}
 
         MQTT.fx stellt eine umfangreiche Sammlung von Funktionen zur Verfügung, die insbesondere für das Testen, Debuggen und Analysieren von MQTT-Kommunikation geeignet sind \autocite{MQTTTestingDebugging}. 
-        Der Funktionsumfang ist dabei bewusst auf die Rolle eines Client-Werkzeugs ausgelegt, wobei der produktive Einsatz als dauerhaftes Monitoring- oder Visualisierungssystem nicht intendiert ist.
+        Der Funktionsumfang ist dabei bewusst auf die Rolle eines Client-Werkzeugs ausgelegt, wobei der produktive Einsatz als dauerhaftes Monitoring- oder Visualisierungssystem nicht intendiert ist. Dadurch kann \textit{MQTT.fx} ein breites Publikum ansprechen, hat jedoch keine genaueren Analysemittel für genauere Anwendungen \autocite[13--14]{brooksNoSilverBullet1987}.
     \subsection{Gründe für und gegen den Einsatz von MQTT.fx}
         Diese Applikation ermöglicht es Entwicklern, ohne eigene Implementierung Publisher- und Subscriber-Rollen zu simulieren. 
-         Ein klarer Vorteil bei MQTT.fx ist die mögliche Darstellung von Clean Session, 
-        Last-Will-Nachrichten, QoS-Level oder Retained Messages. Darüber hinaus bietet MQTT.fx umfangreiche Logging- und Visualisierungsfunktionen, wodurch falsche Zustandsannahmen 
-        oder Timing-Probleme schnell erkannt werden können.
+         Ein klarer Vorteil bei MQTT.fx ist die Möglichkeit, Nachrichtenverläufe durch selbst erstellte Java-Skripte zu senden. Dadurch können jederzeit unterschiedliche Szenarien simuliert werden. Darüber hinaus bietet MQTT.fx eine chronologische Nachrichtenanzeige, wodurch falsche Zustandsannahmen 
+        oder Timing-Probleme von Nachrichten erkannt werden können.
         MQTT.fx bietet zudem unterschiedliche Payload-Decoder, wodurch eine bessere Analyse verschiedener MQTT-Nachrichten, ohne eigene Interpretation dieser, möglich 
-        ist \autocite{MQTTTestingDebugging}.
+        ist. \autocite{MQTTTestingDebugging}
          
         In der praktischen Exploration konnten jedoch auch folgende Nachteile erkannt werden. MQTT.fx speichert die empfangenen Nachrichten nicht dauerhaft. Eine langfristige Analyse ist dadurch nur durch manuelles Kopieren der Logs in externe Applikationen möglich.
         Außerdem ist MQTT.fx nur auf die Anzeige einzelner Subscriptions fokussiert. Deshalb ist die Darstellung zusammenhängender Nachrichtenflüsse über mehrere Topics hinweg 
-        sehr eingeschränkt und erschwert die Analyse komplexer Topic-Hierarchien, wie sie in Automatisierungssystemen häufig auftreten.
+       eingeschränkt und erschwert die Analyse komplexer Topic-Hierarchien, wie sie in Automatisierungssystemen häufig auftreten.
         Ein weiterer zentraler Punkt, der gegen die Nutzung von MQTT.fx spricht, ist die Konzipierung als eigenständige Desktop-Anwendung. Deswegen ist eine Integration
-        in bestehende \gls{acr:HMI} oder produktive Visualisierungssysteme nicht möglich. Außerdem gibt es keine Möglichkeit zur Weiterverarbeitung von Daten, 
+        in ein bestehendes \gls{acr:HMI} oder produktive Visualisierungssysteme nicht möglich. Außerdem gibt es keine Möglichkeit zur Weiterverarbeitung von Daten, 
         systematischen Auswertung von Tests oder zur Integration externer Datenquellen. Dadurch werden sowohl die Analyse als auch die Simulation bestimmter Szenarien eingeschränkt.
 
 \section{Monitoring über \acrshort{acr:MQTT} Explorer}
@@ -128,7 +127,7 @@ async Task OnApplicationMessageReceived(MqttApplicationMessageReceivedEventArgs 
     Die programmiertechnische Umsetzung basiert auf einer klar strukturierten Architektur mit einer Trennung von Kommunikation, Datenverarbeitung und Darstellung. Durch den Einsatz asynchroner und reaktiver Konzepte wird eine performante Verarbeitung der MQTT-Nachrichten sowie eine dynamische Aktualisierung der Benutzeroberfläche erreicht. Insgesamt ermöglicht dies eine effiziente, skalierbare und wartbare Realisierung der Anwendung.
 
 \subsection{Gründe gegen die Erweiterung von MQTTMultimeter}
-    Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und sie trennt sogar die Verbindung zum Broker. Dadurch wären grundlegende Änderungen in den Service-Komponenten erforderlich. Dieses Vorgehen erweist sich als sehr aufwendig, da der Programmcode eng mit den bestehenden Funktionalitäten verbunden ist. Das erhöht zum einen das Risiko von Fehlern und zum anderen die Komplexität, den Programmcode zu verstehen \autocite{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}.
+    Während diese Applikation durch das Speichern von Nachrichten und Nachrichtenvorlagen sowie die Darstellung der Nachrichten sowohl in zeitlicher Reihenfolge als auch in Baumstruktur viele der Anforderungen an das Monitoring-Tool erfüllt, erweist sich der Programmcode als nur schwer erweiterbar. Bei sehr hohen Nachrichtenfrequenzen gelingt es ihr nicht, alle Nachrichten anzuzeigen und sie trennt sogar die Verbindung zum Broker. Die dafür erforderlichen Anpassungen würden umfangreiche Änderungen an bereits etablierten Komponenten notwendig machen. Da die Systemkomplexität mit fortschreitender Evolution eines Softwaresystems tendenziell zunimmt, steigt gleichzeitig der Aufwand für Analyse, Wartung un Weiterentwicklung \autocite{milanovicLehmansLawsSoftware}. In der Forschung zu Technical Dept \autocite{avgeriouTechnicalDebtManagement2023} wird darauf hingewiesen, dass hohe Komplexität und strukturelle Defizite die Fehleranfälligkeit erhöhen und zukünftige Entwicklungsaktivitäten erschweren können. Vor diesem Hintergrund wird die Weiterentwicklung der bestehenden Anwendung verworfen und stattdessen eine Neuentwicklung einer Monitoring- und Diagnose-Applikation gewählt.
 
 \section{Bewertung der Ausgangssituation}
 Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse anhand von Einsätzen der Applikationen in der Praxis durchgeführt. Dabei wurden die drei Applikationen MQTT.fx, MQTT Explorer und MQTTMultimeter anhand von sechs Kriterien bewertet. Die Kriterien wurden mit unterschiedlichen Gewichtungen versehen, um ihre relative Bedeutung für die Zielsetzung der Arbeit zu reflektieren. Die Bewertung erfolgte auf einer Skala von 1 bis 5, wobei 1 für keine Erfüllung des Kriteriums und 5 für eine vollständige Erfüllung steht. Die Ergebnisse der Nutzwertanalyse sind in Tabelle \ref{tab:nutzwertanalyse} zusammengefasst.
@@ -139,13 +138,14 @@ Zur Bewertung der Ausgangssituation wurde eine Nutzwertanalyse anhand von Einsä
     \label{tab:nutzwertanalyse}
     \begin{tabular}{lccccc} 
         \toprule Kriterium & Gewicht & MQTT.fx & Explorer & Multimeter \\ 
-        \midrule Persistente Speicherung & 25\% & 1 & 1 & 2 \\ 
-        Volltextsuche & 15\% & 1 & 5 & 3 \\ 
-        Erweiterbarkeit & 20\% & 1 & 1 & 3 \\ 
-        Simulationsmöglichkeiten & 10\% & 3 & 1 & 2 \\ 
-        Performance & 15\% & 4 & 4 & 2 \\ 
-        Benutzerfreundlichkeit & 15\% & 2 & 3 & 3 \\ 
-        \midrule Gesamt & 100\% & 1,8 & 2,35 & 2,5 \\ 
+        \midrule 
+        Persistente Speicherung & 25\% & 1 & 1 & 2 \\ 
+        Nachrichtenanzeige & 25\% & 3 & 3 & 4 \\
+        Volltextsuche & 25\% & 1 & 5 & 3 \\ 
+        Erweiterbarkeit & 15\% & 1 & 1 & 3 \\ 
+        Simulationsmöglichkeiten & 5\% & 3 & 1 & 2 \\ 
+        Performance & 5\% & 4 & 4 & 2 \\ 
+        \midrule Gesamt & 100\% & 1,75 & 2,65 & 2,9 \\ 
         \bottomrule 
     \end{tabular} 
 \end{table}

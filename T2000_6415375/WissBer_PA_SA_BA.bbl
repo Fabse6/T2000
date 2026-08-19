@@ -19,7 +19,7 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{arulrajMultiTierBufferManagement2019}{online}{}{}
+    \entry{arulrajMultiTierBufferManagement2019}{misc}{}{}
       \name{author}{3}{}{%
         {{hash=c3b73a0138cf1584b135aa237699b50d}{%
            family={Arulraj},
@@ -36,6 +36,9 @@
            familyi={M\bibinitperiod},
            given={Krishna\bibnamedelima Teja},
            giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
       }
       \strng{namehash}{155c28e43b202ada82c7761d47f63f85}
       \strng{fullhash}{155c28e43b202ada82c7761d47f63f85}
@@ -54,7 +57,6 @@
       \field{eprintclass}{cs.DB}
       \field{eprinttype}{arXiv}
       \field{month}{1}
-      \field{pubstate}{prepublished}
       \field{title}{Multi-{{Tier Buffer Management}} and {{Storage System Design}} for {{Non-Volatile Memory}}}
       \field{urlday}{17}
       \field{urlmonth}{8}
@@ -123,6 +125,94 @@
       \verb{url}
       \verb https://multivac.com/de/de/our-solutions/portfolio/automation-solutions
       \endverb
+    \endentry
+    \entry{avgeriouTechnicalDebtManagement2023}{inproceedings}{}{}
+      \name{author}{8}{}{%
+        {{hash=c526947bff4f91d727e5b4dd9e8003d3}{%
+           family={Avgeriou},
+           familyi={A\bibinitperiod},
+           given={Paris},
+           giveni={P\bibinitperiod}}}%
+        {{hash=95ef659da576faeaea4f8eb3799cf955}{%
+           family={Ozkaya},
+           familyi={O\bibinitperiod},
+           given={Ipek},
+           giveni={I\bibinitperiod}}}%
+        {{hash=c4ffab925e2530c3d0e5dfb0c927b480}{%
+           family={Chatzigeorgiou},
+           familyi={C\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2c3addd393b457eb8f2fea51e74a7cff}{%
+           family={Ciolkowski},
+           familyi={C\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=833e337f211d700de4cc38883256b9aa}{%
+           family={Ernst},
+           familyi={E\bibinitperiod},
+           given={Neil\bibnamedelima A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fa9d373a25980418493be125e7fcb5f4}{%
+           family={Koontz},
+           familyi={K\bibinitperiod},
+           given={Ronald\bibnamedelima J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=d0d74d44e3a94a649b893583e1237d5f}{%
+           family={Poort},
+           familyi={P\bibinitperiod},
+           given={Eltjo},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1825e0deaadc2ce4781f0e9487d7fe14}{%
+           family={Shull},
+           familyi={S\bibinitperiod},
+           given={Forrest},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{a5beb9472e0dda36383003aa335afbf0}
+      \strng{fullhash}{f1c0ad15805b9b2e732a4cfbf19252d9}
+      \strng{fullhashraw}{f1c0ad15805b9b2e732a4cfbf19252d9}
+      \strng{bibnamehash}{a5beb9472e0dda36383003aa335afbf0}
+      \strng{authorbibnamehash}{a5beb9472e0dda36383003aa335afbf0}
+      \strng{authornamehash}{a5beb9472e0dda36383003aa335afbf0}
+      \strng{authorfullhash}{f1c0ad15805b9b2e732a4cfbf19252d9}
+      \strng{authorfullhashraw}{f1c0ad15805b9b2e732a4cfbf19252d9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Technical Debt, considered by many to be the 'silent killer' of software projects, has undeniably become part of the everyday vocabulary of software engineers. We know it compromises the internal quality of a system, either deliberately or inadvertently. We understand Technical Debt is not all derogatory, often serving the purpose of expediency. But, it is associated with a clear risk, especially for large and complex systems with extended service life: if we do not properly manage Technical Debt, it threatens to "bankrupt" those systems. Software engineers and organizations that develop software-intensive systems are facing an increasingly more dire future state of those systems if they do not start incorporating Technical Debt management into their day to day practice. But how? What have the wins and losses of the past decade of research and practice in managing Technical Debt taught us and where should we focus next? In this paper, we examine the state of the art in both industry and research communities in managing Technical Debt; we subsequently distill the gaps in industrial practice and the research shortcomings, and synthesize them to define and articulate a vision for what Technical Debt management looks like five years hence.}
+      \field{booktitle}{2023 {{IEEE}}/{{ACM International Conference}} on {{Software Engineering}}: {{Future}} of {{Software Engineering}} ({{ICSE-FoSE}})}
+      \field{day}{14}
+      \field{eprintclass}{cs.SE}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{shorttitle}{Technical {{Debt Management}}}
+      \field{title}{Technical {{Debt Management}}: {{The Road Ahead}} for {{Successful Software Delivery}}}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{15\bibrangedash 30}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/ICSE-FoSE59343.2023.00007
+      \endverb
+      \verb{eprint}
+      \verb 2403.06484
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\wiedemaf\\Zotero\\storage\\GHDESYGR\\Avgeriou et al. - 2023 - Technical Debt Management The Road Ahead for Successful Software Delivery.pdf;C\:\\Users\\wiedemaf\\Zotero\\storage\\KSFVUPEX\\2403.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2403.06484
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2403.06484
+      \endverb
+      \keyw{Computer Science - Software Engineering}
     \endentry
     \entry{EtherCAT}{book}{}{}
       \name{author}{1}{}{%
@@ -418,6 +508,39 @@
       \verb C:\Users\wiedemaf\Zotero\storage\E5RLMQVQ\García - 2023 - iOS Architecture Patterns MVC, MVP, MVVM, VIPER, and VIP in Swift.pdf
       \endverb
     \endentry
+    \entry{MQTTEssentials}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=8c3d40b3b551de963f857abc87af922f}{%
+           family={Hirsch},
+           familyi={H\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e18e3115a71602694e9f2ad1beac1f85}{%
+           family={Nipper},
+           familyi={N\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{fullhash}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{fullhashraw}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{bibnamehash}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{authorbibnamehash}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{authornamehash}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{authorfullhash}{8bedc004f3f4063fac65783a72421a4b}
+      \strng{authorfullhashraw}{8bedc004f3f4063fac65783a72421a4b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{{{MQTT Essentials The Ultimate Guide}} to the {{MQTT}} {{Protocol}} for {{IoT Messaging}}}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\ZLFENEBA\Hirsch und Nipper - 2024 - MQTT Essentials The Ultimate Guide to the MQTT Protocol for IoT Messaging.pdf
+      \endverb
+    \endentry
     \entry{hivemqMQTTMQTT5}{book}{}{}
       \name{editor}{1}{}{%
         {{hash=60979dd7cdfc198a564fa3fbca58fde7}{%
@@ -490,23 +613,63 @@
       \verb https://www.emqx.com/en/blog/connecting-to-serverless-mqtt-broker-with-mqttnet-in-csharp
       \endverb
     \endentry
-    \entry{IPCOMMProtocolsMQTT}{online}{}{}
+    \entry{Imran}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=933029c64e9f32d9522018ef7d4ed894}{%
+           family={Imran},
+           familyi={I\bibinitperiod}}}%
+        {{hash=067b66a821ff30bc8ecc261f684d984e}{%
+           family={Zuhairi},
+           familyi={Z\bibinitperiod},
+           given={Megat\bibnamedelimb Farez\bibnamedelima Azril},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dbc8ed054e804d262e60042a6c3e1ea0}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Syed\bibnamedelima Mubashir},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=01aee3f698629f3acfa82aeda6f77543}{%
+           family={Shahid},
+           familyi={S\bibinitperiod},
+           given={Zeeshan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=9b6e93c25c0da4ff826362734ea52cbe}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Muhammad\bibnamedelima Mansoor},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=bf59e16278b88f05c6d4aad9f121a486}{%
+           family={Su'ud},
+           familyi={S\bibinitperiod},
+           given={Mazliham\bibnamedelima Mohd},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Basel}%
+      }
+      \list{publisher}{1}{%
+        {Applied ScienceMDPI}%
+      }
+      \strng{namehash}{0d8cd975035aa97bf3a6982dce466bd6}
+      \strng{fullhash}{2d0793cb2421a188cc4e740830092871}
+      \strng{fullhashraw}{2d0793cb2421a188cc4e740830092871}
+      \strng{bibnamehash}{0d8cd975035aa97bf3a6982dce466bd6}
+      \strng{authorbibnamehash}{0d8cd975035aa97bf3a6982dce466bd6}
+      \strng{authornamehash}{0d8cd975035aa97bf3a6982dce466bd6}
+      \strng{authorfullhash}{2d0793cb2421a188cc4e740830092871}
+      \strng{authorfullhashraw}{2d0793cb2421a188cc4e740830092871}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{{{IPCOMM}}, {{Protocols}}: {{MQTT}}}
-      \field{urlday}{24}
-      \field{urlmonth}{7}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
+      \field{day}{1}
+      \field{entrysubtype}{magazine}
+      \field{month}{6}
+      \field{title}{Improving {{Reliability}} for {{Detecting Anomalies}} in the {{MQTT Network}} by {{Applying Correlation Analysis}} for {{Feature Selection Using Machine Learning Techniques}}}
+      \field{year}{2023}
+      \field{dateera}{ce}
       \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\6TD9RVRP\sheet.html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.ipcomm.de/protocol/MQTT/en/sheet.html
-      \endverb
-      \verb{url}
-      \verb https://www.ipcomm.de/protocol/MQTT/en/sheet.html
+      \verb C:\Users\wiedemaf\Zotero\storage\H4N8S8KN\Imran et al. - 2023 - Improving Reliability for Detecting Anomalies in the MQTT Network by Applying Correlation Analysis f.pdf
       \endverb
     \endentry
     \entry{kant}{misc}{}{}
@@ -698,6 +861,46 @@
       \verb HFIM47wp0X0C
       \endverb
       \keyw{Computers / Business & Productivity Software / Databases,Computers / Computer Science,Computers / Database Administration & Management,Computers / Desktop Applications / General,Computers / General,Computers / Languages / SQL,Computers / Programming / Open Source}
+    \endentry
+    \entry{milanovicLehmansLawsSoftware}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=74cf2d1644517cf4c0ea961962c037c9}{%
+           family={Milanović},
+           familyi={M\bibinitperiod},
+           given={Milan},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Laws of Software Engineering}%
+      }
+      \strng{namehash}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{fullhash}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{fullhashraw}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{bibnamehash}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{authorbibnamehash}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{authornamehash}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{authorfullhash}{74cf2d1644517cf4c0ea961962c037c9}
+      \strng{authorfullhashraw}{74cf2d1644517cf4c0ea961962c037c9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Software that reflects the real world must evolve, and that evolution has predictable limits.}
+      \field{langid}{american}
+      \field{title}{Lehman's {{Laws}} of {{Software Evolution}}}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\JQVZ46QZ\lehmans-laws.html
+      \endverb
+      \verb{urlraw}
+      \verb https://lawsofsoftwareengineering.com/laws/lehmans-laws/
+      \endverb
+      \verb{url}
+      \verb https://lawsofsoftwareengineering.com/laws/lehmans-laws/
+      \endverb
     \endentry
     \entry{michaelstonisModelViewViewModelNET}{online}{}{}
       \field{sortinit}{M}
@@ -903,6 +1106,28 @@
       \verb C:\Users\wiedemaf\Zotero\storage\JAYYGFSS\OASIS - 2019 - MQTT Version 5.0.pdf
       \endverb
     \endentry
+    \entry{adegeoOptimizingPerformanceData}{online}{}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Learn how to optimize the performance of Windows Presentation Foundation (WPF) data binding, for a simple, consistent way to present and interact with data.}
+      \field{langid}{american}
+      \field{shorttitle}{Optimizing {{Performance}}}
+      \field{title}{Optimizing {{Performance}}: {{Data Binding}} - {{WPF}}}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\UWUTDBQ8\optimizing-performance-data-binding.html
+      \endverb
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/optimizing-performance-data-binding
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/optimizing-performance-data-binding
+      \endverb
+    \endentry
     \entry{ottenwalderChurnDynamischenPublish}{thesis}{}{}
       \name{author}{1}{}{%
         {{hash=d2e1e19ae0de1ecf0646f266f37dc11d}{%
@@ -1100,25 +1325,6 @@
       \verb https://link.springer.com/chapter/10.1007/978-3-658-43530-1_7
       \endverb
     \endentry
-    \entry{PollingCallbackThere}{online}{}{}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labeltitlesource}{title}
-      \field{title}{Polling versus {{Callback}}. {{There}} Are Scenarios When a Software… | by {{Pavlo Morozov}} | {{Medium}}}
-      \field{urlday}{17}
-      \field{urlmonth}{8}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\DXBRUVCB\polling-versus-callback-5bda6267eece.html
-      \endverb
-      \verb{urlraw}
-      \verb https://medium.com/@pavlomorozov78/polling-versus-callback-5bda6267eece
-      \endverb
-      \verb{url}
-      \verb https://medium.com/@pavlomorozov78/polling-versus-callback-5bda6267eece
-      \endverb
-    \endentry
     \entry{PsutilDocumentationPsutil}{online}{}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
@@ -1136,29 +1342,6 @@
       \endverb
       \verb{url}
       \verb https://psutil.readthedocs.io/stable/
-      \endverb
-    \endentry
-    \entry{teamRebuildVsRefactorSunFeb22202600:00:00GMT+0000CoordinatedUniversalTime}{online}{}{}
-      \field{sortinit}{R}
-      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
-      \field{labeltitlesource}{shorttitle}
-      \field{abstract}{A decision framework for choosing between rebuilding and refactoring legacy software. Covers cost analysis, risk assessment, and migration strategies.}
-      \field{langid}{english}
-      \field{shorttitle}{Rebuild vs. {{Refactor Legacy Software}}}
-      \field{title}{Rebuild vs. {{Refactor Legacy Software}}: {{Decision Guide}}}
-      \field{urlday}{11}
-      \field{urlmonth}{6}
-      \field{urlyear}{2026}
-      \field{year}{Sun Feb 22 2026 00:00:00 GMT+0000 (Coordinated Universal Time)}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\AU258KRX\when-to-rebuild-vs-refactor-legacy-software.html
-      \endverb
-      \verb{urlraw}
-      \verb https://ztabs.co/blog/when-to-rebuild-vs-refactor-legacy-software
-      \endverb
-      \verb{url}
-      \verb https://ztabs.co/blog/when-to-rebuild-vs-refactor-legacy-software
       \endverb
     \endentry
     \entry{RiderCrossplatformNET}{online}{}{}
@@ -1542,6 +1725,114 @@
       \verb https://multivac.com/de/de/our-solutions/portfolio
       \endverb
     \endentry
+    \entry{callback}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c979708330a67b737b2a5a2144c47ff2}{%
+           family={Usui},
+           familyi={U\bibinitperiod},
+           given={Heyato},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d69cb82d5249f2ff4689f6e309f1142f}{%
+           family={Nagura},
+           familyi={N\bibinitperiod},
+           given={Masataka},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0190a9b40ed58724417227c2f16521b9}{%
+           family={Takada},
+           familyi={T\bibinitperiod},
+           given={Shingo},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE Computer Society}%
+      }
+      \strng{namehash}{35a1ac846146e8768a81b748820c301c}
+      \strng{fullhash}{35a1ac846146e8768a81b748820c301c}
+      \strng{fullhashraw}{35a1ac846146e8768a81b748820c301c}
+      \strng{bibnamehash}{35a1ac846146e8768a81b748820c301c}
+      \strng{authorbibnamehash}{35a1ac846146e8768a81b748820c301c}
+      \strng{authornamehash}{35a1ac846146e8768a81b748820c301c}
+      \strng{authorfullhash}{35a1ac846146e8768a81b748820c301c}
+      \strng{authorfullhashraw}{35a1ac846146e8768a81b748820c301c}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{entrysubtype}{magazine}
+      \field{journaltitle}{IEEE 8th International Workshop on Empirical Software Engineering in Practice}
+      \field{title}{Investigating {{Tendencies}} in {{Callback Method Implementations}} in {{Android Applications}}}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\7E7WKF8N\Usui et al. - Investigating Tendencies in Callback Method Implementations in Android Applications.pdf
+      \endverb
+    \endentry
+    \entry{venancioSecurityAnalysisCommunication2026}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=0e9f42af59c38ed0c2907f4fd60f958a}{%
+           family={Venâncio},
+           familyi={V\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2e99a84b6ab619a408e75f49967f48a7}{%
+           family={Sousa},
+           familyi={S\bibinitperiod},
+           given={Clarisse},
+           giveni={C\bibinitperiod}}}%
+        {{hash=80f27a5126b5ae8cf69a7afab3503ce1}{%
+           family={Duarte},
+           familyi={D\bibinitperiod},
+           given={Filipe},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d7ab033d6ccbf64cc1c13a0023e10e54}{%
+           family={Ribeiro},
+           familyi={R\bibinitperiod},
+           given={Luís},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{e4b2d1c5d19efd9130a06dd0ebe0f167}
+      \strng{fullhash}{e51fc788f5a9a3ae46e9d98a5ead1493}
+      \strng{fullhashraw}{e51fc788f5a9a3ae46e9d98a5ead1493}
+      \strng{bibnamehash}{e4b2d1c5d19efd9130a06dd0ebe0f167}
+      \strng{authorbibnamehash}{e4b2d1c5d19efd9130a06dd0ebe0f167}
+      \strng{authornamehash}{e4b2d1c5d19efd9130a06dd0ebe0f167}
+      \strng{authorfullhash}{e51fc788f5a9a3ae46e9d98a5ead1493}
+      \strng{authorfullhashraw}{e51fc788f5a9a3ae46e9d98a5ead1493}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This paper analyzes the security of the Message Queuing Telemetry Transport (MQTT) protocol in the context of the Internet of Things (IoT). The main objective consists of identifying vulnerabilities and proposing security improvements. Adopting a hybrid methodology, a theoretical review was combined with an experimental demonstration in a simulated Smart Home environment. Eavesdropping, Tampering, Denial of Service (DoS), and Brute Force attacks were executed and analyzed. The results evidenced critical risks due to the absence of robust encryption and authentication. Finally, mitigation strategies and best practices are proposed to strengthen MQTT implementations.}
+      \field{day}{15}
+      \field{eprintclass}{cs.CR}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{shorttitle}{Security {{Analysis}} of a {{Communication Protocol}}}
+      \field{title}{Security {{Analysis}} of a {{Communication Protocol}}: {{MQTT}}}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2605.15804
+      \endverb
+      \verb{eprint}
+      \verb 2605.15804
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\wiedemaf\\Zotero\\storage\\9BAPTYEM\\Venâncio et al. - 2026 - Security Analysis of a Communication Protocol MQTT.pdf;C\:\\Users\\wiedemaf\\Zotero\\storage\\JU79DF6L\\2605.html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2605.15804
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2605.15804
+      \endverb
+      \keyw{Computer Science - Cryptography and Security}
+    \endentry
     \entry{Vileikis}{book}{}{}
       \name{author}{1}{}{%
         {{hash=b0599442316e6fb20161f2eceffc6954}{%
@@ -1574,6 +1865,58 @@
       \field{dateera}{ce}
       \verb{file}
       \verb C:\Users\wiedemaf\Zotero\storage\YB4D2YE8\Vileikis - 2024 - Hacking MySQL.pdf
+      \endverb
+    \endentry
+    \entry{vyvereComparingPollingPushbased2020}{article}{}{}
+      \name{author}{3}{}{%
+        {{useprefix=false,hash=e76d19411142717d2bf4562484f053af}{%
+           family={Vyvere},
+           familyi={V\bibinitperiod},
+           given={Brecht\bibnamedelima Van},
+           giveni={B\bibinitperiod\bibinitdelim V\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=53f6105c441349d83d9fcbf7eb9640b5}{%
+           family={Colpaert},
+           familyi={C\bibinitperiod},
+           given={Pieter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=f6f7b1f03b36b6df0b508d6e0e17c85d}{%
+           family={Verborgh},
+           familyi={V\bibinitperiod},
+           given={Ruben},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{fullhash}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{fullhashraw}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{bibnamehash}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{authorbibnamehash}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{authornamehash}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{authorfullhash}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \strng{authorfullhashraw}{ac23bcf315d5420d5f07fe46f7f26e58}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Comparing a Polling and Push-Based Approach for Live {{Open Data}} Interfaces}
+      \field{urlday}{19}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\wiedemaf\Zotero\storage\FIU64W8C\Article-Live-Open-Data-Interfaces.html
+      \endverb
+      \verb{urlraw}
+      \verb https://brechtvdv.github.io/Article-Live-Open-Data-Interfaces/
+      \endverb
+      \verb{url}
+      \verb https://brechtvdv.github.io/Article-Live-Open-Data-Interfaces/
       \endverb
     \endentry
     \entry{billwagnerSemaphorUndSemaphoreSlim}{online}{}{}
@@ -1725,46 +2068,6 @@
       \endverb
       \verb{url}
       \verb https://code.visualstudio.com/docs/languages/csharp
-      \endverb
-    \endentry
-    \entry{Agnostisch}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=3c2a9a5cec6cec66d87c80c509bcec8c}{%
-           family={Wright},
-           familyi={W\bibinitperiod},
-           given={Gavin},
-           giveni={G\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {ComputerWeekly.de}%
-      }
-      \strng{namehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{fullhash}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{fullhashraw}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{bibnamehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{authorbibnamehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{authornamehash}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{authorfullhash}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \strng{authorfullhashraw}{3c2a9a5cec6cec66d87c80c509bcec8c}
-      \field{sortinit}{W}
-      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Agnostisch ist griechisch für ohne Kenntnis und bedeutet, dass Systeme, Software oder Anwendungen so allgemein konzipiert sind, dass sie interoperabel sind.}
-      \field{langid}{ngerman}
-      \field{title}{Definition Agnostisch}
-      \field{urlday}{23}
-      \field{urlmonth}{4}
-      \field{urlyear}{2026}
-      \field{urldateera}{ce}
-      \verb{file}
-      \verb C:\Users\wiedemaf\Zotero\storage\M2MXR5J5\Agnostisch.html
-      \endverb
-      \verb{urlraw}
-      \verb https://www.computerweekly.com/de/definition/Agnostisch
-      \endverb
-      \verb{url}
-      \verb https://www.computerweekly.com/de/definition/Agnostisch
       \endverb
     \endentry
     \entry{adegeoXAMLLanguageOverview}{online}{}{}

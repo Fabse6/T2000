@@ -24,11 +24,11 @@
         
         Diese geforderten Funktionen können durch die Bibliothek \textit{MQTTnet} durch wenige Zeilen Programmcode vereinfacht in C\# umgesetzt werden \autocite[]{teamHowUseMQTT}. 
         Des Weiteren lassen sich durch die Bibliothek auch Ereignis- und Callback-Mechanismen über Event-Handler implementieren. Callbacks sind registrierte Rückruffunktionen, die vom System oder
-        Framework automatisch aufgerufen werden, sobald ein Ereignis eintritt \autocite{PollingCallbackThere}. Dadurch können nach dem Abonnieren von Topics empfangene Nachrichten ereignisbasiert 
+        Framework automatisch aufgerufen werden, sobald ein Ereignis eintritt \autocite[23]{callback}. Dadurch können nach dem Abonnieren von Topics empfangene Nachrichten ereignisbasiert 
         verarbeitet werden, ohne dass eine direkte Kopplung zwischen Netzwerk- und Anwendungslogik erforderlich ist.
          Somit ist eine Trennung zwischen Netzwerk- und Grafik-Logik möglich. Dies ist notwendig, um hohe Nachrichtenraten 
         effizient verarbeiten zu können, ohne ständig die Benutzeroberfläche zu blockieren \autocite[113]{embeddedtechnologies}.
-        Im Gegensatz zum ständigen abfragen auf neue Nachrichten, auch Polling genannt, wird die CPU nur beim Eintreffen neuer Nachrichten belastet \autocite{PollingCallbackThere}. 
+        Studien zum Vergleich von Push- und Pull-Verfahren zeigen, dass Push-basierte Ansätze wie Callbacks hinsichtlich Latenz und Skalierbarkeit Vorteile gegenüber Polling aufweisen, insbesondere bei einer hohen Anzahl von Clients oder Ereignissen \autocite{vyvereComparingPollingPushbased2020}. 
         Neben dem Empfangen der Nachrichten deckt die Bibliothek auch das Senden von Nachrichten unter beliebigen Topics ab \autocite{teamHowUseMQTT}. 
         
     \subsection{Datenbank-Bibliothek}

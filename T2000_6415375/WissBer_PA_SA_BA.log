@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  19 AUG 2026 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.22)  19 AUG 2026 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1965,7 +1965,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrlong' on input line 137.
+(hyperref)                removing `\acrlong' on input line 134.
 
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
@@ -1980,7 +1980,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
  (chapter/Ausgangssituation.tex
 chapter 3.
-<images/mqttfx_subscribe.png, id=471, 1419.05156pt x 785.93625pt>
+<images/mqttfx_subscribe.png, id=478, 1419.05156pt x 785.93625pt>
 File: images/mqttfx_subscribe.png Graphic file (type png)
 <use images/mqttfx_subscribe.png>
 Package pdftex.def Info: images/mqttfx_subscribe.png  used on input line 20.
@@ -1992,15 +1992,9 @@ Package pdftex.def Info: images/mqttfx_subscribe.png  used on input line 20.
 
 
 ]
-Overfull \hbox (15.89928pt too wide) in paragraph at lines 38--44
+Overfull \hbox (15.89928pt too wide) in paragraph at lines 38--43
 \T1/lmr/m/n/12 Diese Ap-pli-ka-ti-on er-mög-licht es Ent-wick-lern, oh-ne ei-ge
 -ne Im-ple-men-tie-rung Publisher- und Subscriber-
- []
-
-
-Overfull \hbox (3.54137pt too wide) in paragraph at lines 38--44
-\T1/lmr/m/n/12 Timing-Probleme schnell er-kannt wer-den kön-nen. MQTT.fx bie-te
-t zu-dem un-ter-schied-li-che Payload-
  []
 
 
@@ -2010,12 +2004,12 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 [14 <./images/mqttfx_subscribe.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\acrshort' on input line 52.
+(hyperref)                removing `\acrshort' on input line 51.
 
-<images/MQTTexplorer.png, id=499, 944.02687pt x 667.74469pt>
+<images/MQTTexplorer.png, id=507, 944.02687pt x 667.74469pt>
 File: images/MQTTexplorer.png Graphic file (type png)
 <use images/MQTTexplorer.png>
-Package pdftex.def Info: images/MQTTexplorer.png  used on input line 57.
+Package pdftex.def Info: images/MQTTexplorer.png  used on input line 56.
 (pdftex.def)             Requested size: 348.54477pt x 246.54202pt.
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
@@ -2026,22 +2020,23 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [16 <./images/MQTTexplorer.png>]
-<images/MQTTMultimeter.png, id=520, 1062.97125pt x 614.295pt>
+<images/MQTTMultimeter.png, id=528, 1062.97125pt x 614.295pt>
 File: images/MQTTMultimeter.png Graphic file (type png)
 <use images/MQTTMultimeter.png>
-Package pdftex.def Info: images/MQTTMultimeter.png  used on input line 75.
+Package pdftex.def Info: images/MQTTMultimeter.png  used on input line 74.
 (pdftex.def)             Requested size: 448.1279pt x 258.97696pt.
-<images/MQTTMultimeterInflight.png, id=522, 1069.74657pt x 615.80063pt>
-File: images/MQTTMultimeterInflight.png Graphic file (type png)
-<use images/MQTTMultimeterInflight.png>
-Package pdftex.def Info: images/MQTTMultimeterInflight.png  used on input line 
-86.
-(pdftex.def)             Requested size: 448.1279pt x 257.96735pt.
 
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [17 <./images/MQTTMultimeter.png>]
+<images/MQTTMultimeterInflight.png, id=538, 1069.74657pt x 615.80063pt>
+File: images/MQTTMultimeterInflight.png Graphic file (type png)
+<use images/MQTTMultimeterInflight.png>
+Package pdftex.def Info: images/MQTTMultimeterInflight.png  used on input line 
+85.
+(pdftex.def)             Requested size: 448.1279pt x 257.96735pt.
+
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2201,7 +2196,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [40]
-<images/GUIKonzept.png, id=792, 685.8122pt x 481.04718pt>
+<images/GUIKonzept.png, id=803, 685.8122pt x 481.04718pt>
 File: images/GUIKonzept.png Graphic file (type png)
 <use images/GUIKonzept.png>
 Package pdftex.def Info: images/GUIKonzept.png  used on input line 229.
@@ -2252,7 +2247,7 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [48]
-<images/Prozesserkennungsablauf.png, id=903, 564.1075pt x 343.2825pt>
+<images/Prozesserkennungsablauf.png, id=914, 564.1075pt x 343.2825pt>
 File: images/Prozesserkennungsablauf.png Graphic file (type png)
 <use images/Prozesserkennungsablauf.png>
 Package pdftex.def Info: images/Prozesserkennungsablauf.png  used on input line
@@ -2292,24 +2287,16 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [53]
-
-LaTeX Warning: Reference `tab:performancetests' on page 54 undefined on input l
-ine 28.
-
-
-LaTeX Warning: Reference `tab:performancetests' on page 54 undefined on input l
-ine 28.
-
-<images/Messwerte.png, id=959, 926.71219pt x 709.90219pt>
-File: images/Messwerte.png Graphic file (type png)
-<use images/Messwerte.png>
-Package pdftex.def Info: images/Messwerte.png  used on input line 32.
-(pdftex.def)             Requested size: 398.34013pt x 305.14366pt.
-
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[54])
+[54]
+<images/Messwerte.png, id=981, 926.71219pt x 709.90219pt>
+File: images/Messwerte.png Graphic file (type png)
+<use images/Messwerte.png>
+Package pdftex.def Info: images/Messwerte.png  used on input line 50.
+(pdftex.def)             Requested size: 398.34013pt x 305.14366pt.
+)
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2328,11 +2315,11 @@ chapter 8.
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[57])
+[57]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
-[58]
+[58])
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2368,6 +2355,10 @@ Package biblatex Warning: Split bibliography detected.
 
 
 ]
+Overfull \vbox (1.76944pt too high) has occurred while \output is active []
+
+
+[63]
 
 Package biblatex Warning: Split bibliography detected.
 (biblatex)                Many simple split bibliography setups with
@@ -2378,10 +2369,6 @@ Package biblatex Warning: Split bibliography detected.
 (biblatex)                '\BiblatexSplitbibDefernumbersWarningOff'.
 
 
-Overfull \vbox (1.76944pt too high) has occurred while \output is active []
-
-
-[63]
 Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
@@ -2429,53 +2416,53 @@ chapter without number
 
 ]
 chapter without number
-<images/floatchartmessages.png, id=1199, 743.77875pt x 1075.01625pt>
+<images/floatchartmessages.png, id=1222, 743.77875pt x 1075.01625pt>
 File: images/floatchartmessages.png Graphic file (type png)
 <use images/floatchartmessages.png>
-Package pdftex.def Info: images/floatchartmessages.png  used on input line 41.
+Package pdftex.def Info: images/floatchartmessages.png  used on input line 40.
 (pdftex.def)             Requested size: 398.34013pt x 575.74315pt.
 
-Underfull \hbox (badness 1308) in paragraph at lines 51--51
+Underfull \hbox (badness 1308) in paragraph at lines 50--50
 []\T1/lmr/m/n/12 Durchlaufene OMAC-Zustände: STOP-PING, STOP-
  []
 
 
-Overfull \hbox (18.13399pt too wide) in paragraph at lines 53--53
+Overfull \hbox (18.13399pt too wide) in paragraph at lines 52--52
 []|\T1/lmr/m/n/12 Linienquittierung| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--53
+Underfull \hbox (badness 10000) in paragraph at lines 52--52
 []\T1/lmr/m/n/12 diagnosis/v1/messagesAcknowledged/reported/{ma-
  []
 
 
-Overfull \hbox (2.36565pt too wide) in paragraph at lines 54--54
+Overfull \hbox (2.36565pt too wide) in paragraph at lines 53--53
 []|\T1/lmr/m/n/12 Artikelwechsel| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 []|\T1/lmr/m/n/12 Fliegender
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 \T1/lmr/m/n/12 Ar-ti-kel-wech-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 []\T1/lmr/m/n/12 mlc/v1/continuousArticleChange/parameterSets/hand-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
 []\T1/lmr/m/n/12 mlc/v1/continuousArticleChange/parameterSets/hand-
  []
 
 
-Overfull \hbox (17.31319pt too wide) in paragraph at lines 55--55
+Overfull \hbox (17.31319pt too wide) in paragraph at lines 54--54
 []\T1/lmr/m/n/12 mlc/v1/articleChange/producingBatches/reported/{MLC} 
  []
 
@@ -2489,23 +2476,43 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 
 
 [72]
-Overfull \hbox (1.04623pt too wide) in paragraph at lines 60--60
+Overfull \hbox (1.04623pt too wide) in paragraph at lines 59--59
 []|\T1/lmr/bx/n/12 Test-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--60
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
 []|\T1/lmr/m/n/12 Verbindungsuf-
  []
 
 
-Underfull \hbox (badness 6173) in paragraph at lines 60--60
+Underfull \hbox (badness 6173) in paragraph at lines 59--59
 []|\T1/lmr/m/n/12 Verbindung wird auf-ge-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\T1/lmr/m/n/12 FT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\T1/lmr/m/n/12 Ungültige
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]|\T1/lmr/m/n/12 Falsche IP-Adresse
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 60--60
+[]|\T1/lmr/m/n/12 5 Se-kun-den lang ver-su-
  []
 
 
@@ -2515,12 +2522,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--61
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]|\T1/lmr/m/n/12 Ungültige
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]|\T1/lmr/m/n/12 Falsche IP-Adresse
+[]|\T1/lmr/m/n/12 Ungültiger
  []
 
 
@@ -2535,52 +2537,77 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 62--62
-[]|\T1/lmr/m/n/12 Ungültiger
- []
-
-
-Underfull \hbox (badness 2582) in paragraph at lines 62--62
-[]|\T1/lmr/m/n/12 5 Se-kun-den lang ver-su-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/lmr/m/n/12 Manuelle Ver-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 \T1/lmr/m/n/12 bin-dungs-tren-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 []|\T1/lmr/m/n/12 Brokerverbindung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/lmr/m/n/12 Verbindungs-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
 []|\T1/lmr/m/n/12 Netzwerkkabel wird
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 64--64
+Underfull \hbox (badness 1072) in paragraph at lines 63--63
 []|\T1/lmr/m/n/12 Verbindungsabbruch wird
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\T1/lmr/m/n/12 FT-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\T1/lmr/m/n/12 Nachrichten-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+[]|\T1/lmr/m/n/12 Maschine sen-det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\T1/lmr/m/n/12 kon-ti-nu-ier-lich Nach-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\T1/lmr/m/n/12 rich-ten; emp-fan-ge-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\T1/lmr/m/n/12 Nach-rich-ten wer-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--64
+\T1/lmr/m/n/12 den mit MQTT.fx
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 64--64
+[]|\T1/lmr/m/n/12 Alle Nach-rich-ten wer-den
  []
 
 
@@ -2590,32 +2617,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--65
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 65--65
-[]|\T1/lmr/m/n/12 Nachrichten-
+[]|\T1/lmr/m/n/12 Nachrichtenliste mit
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 65--65
-[]|\T1/lmr/m/n/12 Maschine sen-det
+\T1/lmr/m/n/12 min-des-tens 3000
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 65--65
-\T1/lmr/m/n/12 kon-ti-nu-ier-lich Nach-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
-\T1/lmr/m/n/12 rich-ten; emp-fan-ge-ne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
-\T1/lmr/m/n/12 Nach-rich-ten wer-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
-\T1/lmr/m/n/12 den mit MQTT.fx
+\T1/lmr/m/n/12 Nach-rich-ten wird
  []
 
 
@@ -2624,43 +2636,23 @@ Underfull \hbox (badness 1975) in paragraph at lines 65--65
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T1/lmr/m/n/12 Nachrichtenliste mit
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-\T1/lmr/m/n/12 min-des-tens 3000
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-\T1/lmr/m/n/12 Nach-rich-ten wird
- []
-
-
-Underfull \hbox (badness 1975) in paragraph at lines 66--66
-[]|\T1/lmr/m/n/12 Alle Nach-rich-ten wer-den
- []
-
-
-Underfull \hbox (badness 1629) in paragraph at lines 66--66
+Underfull \hbox (badness 1629) in paragraph at lines 65--65
 \T1/lmr/m/n/12 kor-rekt nach-ge-la-den und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--67
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
 []|\T1/lmr/m/n/12 Verschiedene Topic-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
+[]|\T1/lmr/m/n/12 FT-
  []
 
 
@@ -2669,106 +2661,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--68
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--69
+Underfull \hbox (badness 10000) in paragraph at lines 68--68
 []|\T1/lmr/m/n/12 Datenbank-
  []
 
 
-Underfull \hbox (badness 4726) in paragraph at lines 69--69
+Underfull \hbox (badness 4726) in paragraph at lines 68--68
 []|\T1/lmr/m/n/12 Nachrichten emp-fan-
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 69--69
+Underfull \hbox (badness 2698) in paragraph at lines 68--68
 []|\T1/lmr/m/n/12 Gespeicherte Nach-rich-ten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []|\T1/lmr/m/n/12 Teilnehmer-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
 []|\T1/lmr/m/n/12 Retain-Nachrichten
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 Zustands- und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 Alle OMAC-States
  []
 
 
-Underfull \hbox (badness 6675) in paragraph at lines 71--71
+Underfull \hbox (badness 6675) in paragraph at lines 70--70
 \T1/lmr/m/n/12 von je-dem Teil-neh-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--71
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 \T1/lmr/m/n/12 mer sen-den und
  []
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 71--71
+Underfull \hbox (badness 1043) in paragraph at lines 70--70
 []|\T1/lmr/m/n/12 Zustände wer-den kor-rekt
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 Regulärer Pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 []|\T1/lmr/m/n/12 Verpackungslinie
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 \T1/lmr/m/n/12 durch-läuft Pro-zess
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 \T1/lmr/m/n/12 und be-en-det ihn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--73
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []|\T1/lmr/m/n/12 Fehlerhafter
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\T1/lmr/m/n/12 Maschine durch-läuft
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\T1/lmr/m/n/12 Pro-zess, be-en-det
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--73
+[]|\T1/lmr/m/n/12 FT-
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 73--73
 []|\T1/lmr/m/n/12 Maschine durch-läuft
  []
@@ -2785,71 +2787,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--74
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]|\T1/lmr/m/n/12 Maschine durch-läuft
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-\T1/lmr/m/n/12 Pro-zess, be-en-det
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
-[]|\T1/lmr/m/n/12 FT-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 Strukturfehler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--75
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\T1/lmr/m/n/12 Alle ver-schie-de-nen
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 75--75
+Underfull \hbox (badness 4416) in paragraph at lines 74--74
 []|\T1/lmr/m/n/12 Alle Struk-tur-feh-ler wer-
  []
 
 
-Underfull \hbox (badness 1708) in paragraph at lines 75--75
+Underfull \hbox (badness 1708) in paragraph at lines 74--74
 \T1/lmr/m/n/12 den rich-tig er-kannt, an-
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 75--75
+Underfull \hbox (badness 2469) in paragraph at lines 74--74
 \T1/lmr/m/n/12 ge-zeigt und kön-nen an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 FT-
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 76--76
+Underfull \hbox (badness 1275) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 Linienfehler an-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 Maschine sen-det
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 \T1/lmr/m/n/12 drei ver-schie-de-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
 \T1/lmr/m/n/12 li-nien-in-ter-ne Feh-ler-
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 76--76
+Underfull \hbox (badness 2538) in paragraph at lines 75--75
 []|\T1/lmr/m/n/12 Fehler und Sen-der wer-
  []
 
@@ -2902,19 +2889,15 @@ Overfull \vbox (1.76944pt too high) has occurred while \output is active []
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'WissBer_PA_SA_BA.run.xml'.
 \openout1 = `WissBer_PA_SA_BA.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64430 strings out of 467691
- 1492749 string characters out of 5419788
- 2938819 words of memory out of 5000000
- 91966 multiletter control sequences out of 15000+600000
+ 64449 strings out of 467691
+ 1493618 string characters out of 5419788
+ 2940784 words of memory out of 5000000
+ 91980 multiletter control sequences out of 15000+600000
  694656 words of font info for 76 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  108i,11n,108p,11257b,2860s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2927,9 +2910,9 @@ lic/lm/lmri12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmr
 o12.pfb><C:/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmss12.pfb><C
 :/Users/wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmssbx10.pfb><C:/Users/
 wiedemaf/Documents/MikTex/fonts/type1/public/lm/lmtt12.pfb>
-Output written on WissBer_PA_SA_BA.pdf (90 pages, 1404424 bytes).
+Output written on WissBer_PA_SA_BA.pdf (90 pages, 1412755 bytes).
 PDF statistics:
- 1853 PDF objects out of 2073 (max. 8388607)
- 569 named destinations out of 1000 (max. 500000)
+ 1877 PDF objects out of 2073 (max. 8388607)
+ 574 named destinations out of 1000 (max. 500000)
  818 words of extra memory for PDF output out of 10000 (max. 10000000)
 

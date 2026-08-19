@@ -82,15 +82,15 @@
 \contentsline {section}{\numberline {9.2}Zukünftige Entwicklung der Anwendung}{60}{section.9.2}%
 \contentsline {subsection}{\numberline {9.2.1}Weitere Automatisierungsabläufe}{60}{subsection.9.2.1}%
 \contentsline {subsection}{\numberline {9.2.2}Linux / HMI}{61}{subsection.9.2.2}%
-\contentsline {chapter}{\nonumberline Quellenverzeichnis}{62}{chapter*.17}%
-\contentsline {chapter}{Abkürzungsverzeichnis}{67}{section*.18}%
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{68}{chapter*.20}%
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{69}{chapter*.21}%
+\contentsline {chapter}{\nonumberline Quellenverzeichnis}{62}{chapter*.18}%
+\contentsline {chapter}{Abkürzungsverzeichnis}{67}{section*.19}%
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{68}{chapter*.21}%
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{69}{chapter*.22}%
 \def \@chapapp {\appendixname }
-\contentsline {chapter}{\nonumberline A Anmerkung zur Nutzung von Künstlicher Intelligenz}{70}{chapter*.22}%
-\contentsline {chapter}{\nonumberline B Ergänzungen}{71}{chapter*.24}%
+\contentsline {chapter}{\nonumberline A Anmerkung zur Nutzung von Künstlicher Intelligenz}{70}{chapter*.23}%
+\contentsline {chapter}{\nonumberline B Ergänzungen}{71}{chapter*.25}%
 \contentsline {section}{\numberline {B.1}Details, welche im Hauptteil den Lesefluss behindern}{71}{section.B.1}%
-\contentsline {chapter}{\nonumberline C Zusatzinformationen zu verwendeter Software}{77}{chapter*.26}%
+\contentsline {chapter}{\nonumberline C Zusatzinformationen zu verwendeter Software}{77}{chapter*.27}%
 \contentsline {section}{\numberline {C.1}Elektronischer Anhang}{77}{section.C.1}%
 \contentsline {section}{\numberline {C.2}Wichtige Teile des Quellcodes}{77}{section.C.2}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
